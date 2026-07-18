@@ -33,11 +33,33 @@ python -m http.server 8080
 | `shared.js` | 追蹤邏輯 |
 | `script.js` | 搜尋邏輯 |
 
+## 系統類別
+
+首頁最上方可切換：
+
+| 類別 | 路徑 | 說明 |
+|------|------|------|
+| AI 查詢工具 | `index.html` | 原有工具搜尋 |
+| SmartDoc 編輯器 | `smartdoc/` | AI 修訂 + P2P（由 `smartdoc-ai/` 建置） |
+
+本機若尚未建置 SmartDoc：
+
+```bash
+cd ../smartdoc-ai
+npm install
+npm run build
+```
+
+產出會寫入 `web/smartdoc/`。
+
 ## 線上網站
 
 **https://hyi1105.github.io/AI_MD/**
 
-GitHub Pages 來源：GitHub Actions（`.github/workflows/pages.yml` 部署 `web/`）。詳見 `docs/03-implementation.md`。
+- AI 查詢：https://hyi1105.github.io/AI_MD/
+- SmartDoc：https://hyi1105.github.io/AI_MD/smartdoc/
+
+GitHub Pages 來源：GitHub Actions（`.github/workflows/pages.yml` 會先建置 SmartDoc，再部署 `web/`）。詳見 `docs/03-implementation.md`。
 
 ## 內容更新（交給 Cursor）
 

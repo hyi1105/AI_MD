@@ -4,7 +4,21 @@
 
 底層統一使用 Markdown（Local-First）。畫面可切換合約／流程圖／商用報告；右側支援 AI 對話修訂，以及 P2P Seed 節點、CRDT 離線合併與 10% 營收分紅任務模擬。
 
-## 快速開始
+## 掛在 AI_MD 網站
+
+目前借用 **AI_MD** GitHub Pages 發佈：
+
+1. 首頁頂部 **系統類別** →「SmartDoc 編輯器」
+2. 建置產物輸出至 `web/smartdoc/`（`vite.config.ts`）
+3. 線上：`https://hyi1105.github.io/AI_MD/smartdoc/`
+
+```bash
+cd smartdoc-ai
+npm install
+npm run build   # → ../web/smartdoc
+```
+
+## 快速開始（獨立開發）
 
 ```bash
 cd smartdoc-ai

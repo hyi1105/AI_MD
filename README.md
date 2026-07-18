@@ -6,14 +6,18 @@
 
 ## 功能
 
+- [x] 系統類別切換（AI 查詢工具 / SmartDoc 編輯器）
 - [x] 工具列表、搜尋、熱門標籤、排序
 - [x] 自訂追蹤關鍵字（localStorage）
 - [x] 每工具 Markdown 詳情（`web/tools/`）
+- [x] SmartDoc（`smartdoc-ai/` → 部署至 `web/smartdoc/`）
 - [x] GitHub Pages 公開上線
 
 ## 線上網站
 
 **https://hyi1105.github.io/AI_MD/**
+
+- SmartDoc：https://hyi1105.github.io/AI_MD/smartdoc/
 
 ## 本機開發
 

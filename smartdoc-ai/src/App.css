@@ -71,6 +71,24 @@ textarea {
   gap: 0.75rem;
 }
 
+.hub-back {
+  flex-shrink: 0;
+  text-decoration: none;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--sea);
+  padding: 0.35rem 0.55rem;
+  border-radius: 0.45rem;
+  border: 1px solid rgba(47, 111, 126, 0.28);
+  background: rgba(255, 255, 255, 0.55);
+  transition: background 0.15s ease, transform 0.15s ease;
+}
+
+.hub-back:hover {
+  background: rgba(255, 255, 255, 0.9);
+  transform: translateY(-1px);
+}
+
 .brand-mark {
   width: 2.4rem;
   height: 2.4rem;

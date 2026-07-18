@@ -1,7 +1,13 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
-// https://vite.dev/config/
+// Embedded under AI_MD GitHub Pages at /AI_MD/smartdoc/
+// Relative base keeps local `web/` HTTP server and Pages both working.
 export default defineConfig({
   plugins: [react()],
+  base: './',
+  build: {
+    outDir: '../web/smartdoc',
+    emptyOutDir: true,
+  },
 })

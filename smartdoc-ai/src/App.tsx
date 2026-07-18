@@ -359,6 +359,9 @@ export default function App() {
     <div className="app">
       <header className="topbar">
         <div className="brand-block">
+          <a className="hub-back" href="../index.html" title="返回 AI_MD 系統類別">
+            ← AI_MD
+          </a>
           <div className="brand-mark" aria-hidden />
           <div>
             <div className="brand">SmartDoc</div>

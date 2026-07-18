@@ -4,6 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>工具詳情 — AI 工具搜尋</title>
+  <script>
+    (function () {
+      try {
+        var theme = localStorage.getItem("ai_md_theme");
+        if (theme === "dark" || (!theme && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
+          document.documentElement.setAttribute("data-theme", "dark");
+        }
+      } catch (_) {}
+    })();
+  </script>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -16,6 +26,7 @@
           <p class="tagline">工具詳情</p>
         </div>
       </a>
+      <button type="button" id="theme-toggle" class="theme-toggle" aria-label="切換背景" title="切換背景">🌙</button>
     </div>
   </header>
 

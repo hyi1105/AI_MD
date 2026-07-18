@@ -1,5 +1,47 @@
 const WATCHLIST_KEY = "ai_md_watchlist";
 const WATCHLIST_MAX = 20;
+const THEME_KEY = "ai_md_theme";
+
+function getStoredTheme() {
+  try {
+    const saved = localStorage.getItem(THEME_KEY);
+    if (saved === "light" || saved === "dark") return saved;
+  } catch (_) {}
+  return window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+}
+
+function updateThemeToggleButton(theme) {
+  const btn = document.getElementById("theme-toggle");
+  if (!btn) return;
+  const isDark = theme === "dark";
+  btn.setAttribute("aria-label", isDark ? "切換至淺色背景" : "切換至深色背景");
+  btn.setAttribute("title", isDark ? "淺色背景" : "深色背景");
+  btn.textContent = isDark ? "☀️" : "🌙";
+}
+
+function applyTheme(theme) {
+  document.documentElement.setAttribute("data-theme", theme);
+  try {
+    localStorage.setItem(THEME_KEY, theme);
+  } catch (_) {}
+  updateThemeToggleButton(theme);
+}
+
+function toggleTheme() {
+  const current = document.documentElement.getAttribute("data-theme") === "dark" ? "dark" : "light";
+  applyTheme(current === "dark" ? "light" : "dark");
+}
+
+function initTheme() {
+  applyTheme(getStoredTheme());
+  document.getElementById("theme-toggle")?.addEventListener("click", toggleTheme);
+}
+
+if (document.readyState === "loading") {
+  document.addEventListener("DOMContentLoaded", initTheme);
+} else {
+  initTheme();
+}
 
 function getWatchlist() {
   try {

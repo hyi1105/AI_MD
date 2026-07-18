@@ -1,8 +1,8 @@
 {
   "name": "smartdoc-ai",
   "private": true,
-  "version": "0.1.0",
-  "description": "SmartDoc AI — Word 界的 Cursor，次世代 AI 文本編輯器",
+  "version": "0.2.0",
+  "description": "SmartDoc — AI 修訂與無網 P2P 協作文件系統",
   "type": "module",
   "scripts": {
     "dev": "vite",

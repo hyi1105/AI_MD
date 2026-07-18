@@ -8,19 +8,22 @@
 
 ## 技術棧（一句話）
 
-**純 HTML + CSS + JS + Markdown 檔 + GitHub Pages**，無框架、無建置步驟。
+**主站仍是純 HTML + CSS + JS + Markdown**；另嵌 **SmartDoc**（Vite/React，建置進 `web/smartdoc/`）供系統類別切換。
 
 | 項目 | 選擇 | 原因 |
 |------|------|------|
 | 前端 | 原生 HTML/CSS/JS | 最簡單、Cursor 最好改 |
+| 系統類別 | 頂部 nav：`AI 查詢工具` / `SmartDoc 編輯器` | 共用 GitHub Pages 發佈 |
 | 列表資料 | `web/data.js` | 已有，搜尋快 |
 | 詳情 | `web/tools/{id}.md` | 本機 HTTP 伺服器可 fetch |
 | MD 渲染 | [marked.js](https://marked.js.org/) CDN | 最流行的輕量 MD 解析 |
 | 追蹤 | `localStorage` | 免登入、業界常用 |
+| SmartDoc | `smartdoc-ai/` → `web/smartdoc/` | Pages workflow 建置 |
 | **上線** | **GitHub Pages** | 公開 repo 免費 |
 | **本機開發** | `web/start-local.ps1` | 改 code 時用 |
 
-> 線上網址：**https://hyi1105.github.io/AI_MD/**
+> 線上網址：**https://hyi1105.github.io/AI_MD/**  
+> SmartDoc：**https://hyi1105.github.io/AI_MD/smartdoc/**
 
 ---
 

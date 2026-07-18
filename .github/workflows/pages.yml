@@ -22,8 +22,22 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: smartdoc-ai/package-lock.json
+
+      - name: Build SmartDoc into web/smartdoc
+        run: |
+          cd smartdoc-ai
+          npm ci
+          npm run build
+
       - uses: actions/upload-pages-artifact@v3
         with:
           path: web
+
       - id: deployment
         uses: actions/deploy-pages@v4

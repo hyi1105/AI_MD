@@ -36,4 +36,4 @@ python -m http.server 8080
 
 **https://hyi1105.github.io/AI_MD/**
 
-GitHub Pages 來源：`main` 分支、`/web` 資料夾。詳見 `docs/03-implementation.md`。
+GitHub Pages 來源：GitHub Actions（`.github/workflows/pages.yml` 部署 `web/`）。詳見 `docs/03-implementation.md`。

@@ -13,7 +13,7 @@
 | F-07 | 外部連結至官網 | 必做 | `done` | 卡片可點 |
 | F-08 | 自訂追蹤關鍵字 | **必做** | `done` | localStorage |
 | F-09 | 工具 Markdown 詳情 | **必做** | `done` | `web/tools/` |
-| F-10 | 公開上線 | 必做 | `done` | GitHub Pages `/web` |
+| F-10 | 公開上線 | 必做 | `done` | GitHub Actions → `web/` |
 
 ## 非功能 / 其他
 

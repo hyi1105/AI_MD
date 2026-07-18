@@ -57,10 +57,10 @@
 
 | 決策 | 內容 |
 |------|------|
-| 平台 | **GitHub Pages**（公開 repo 免費） |
-| 來源 | `main` 分支、`/web` 資料夾 |
+| 平台 | **GitHub Pages**（GitHub Actions 部署 `web/`） |
+| 來源 | `main` 分支 push → `.github/workflows/pages.yml` |
 | 網址 | **https://hyi1105.github.io/AI_MD/** |
-| 設定 | Repo → Settings → Pages → Branch `main` → Folder `/web` |
+| 設定 | Repo → Settings → Pages → Source **GitHub Actions** |
 | 必要檔 | `web/.nojekyll`（已加，避免 Jekyll 忽略 `_` 開頭檔） |
 
 ### 本機開發（PowerShell）

@@ -34,6 +34,7 @@
           autofocus
         >
         <button type="button" id="clear-btn" class="clear-btn" aria-label="清除搜尋" hidden>✕</button>
+        <ul id="search-suggestions" class="search-suggestions" role="listbox" hidden></ul>
       </div>
 
       <div class="quick-tags" id="quick-tags">
@@ -56,6 +57,12 @@
       <div id="watchlist-chips" class="watchlist-chips"></div>
     </section>
 
+    <section id="featured-section" class="featured-section">
+      <h2 class="section-title">全球三大 AI 工具 · 評估</h2>
+      <p class="featured-note">依各官網公開重點整理，並附上團隊使用評估（非即時爬蟲）。</p>
+      <div id="featured-grid" class="featured-grid"></div>
+    </section>
+
     <section class="results-section">
       <div class="results-header">
         <p id="results-count" class="results-count">顯示全部 <strong>24</strong> 個 AI 工具</p>
@@ -67,6 +74,9 @@
       </div>
 
       <div id="results-grid" class="results-grid"></div>
+      <div class="load-more-wrap">
+        <button type="button" id="load-more-btn" class="btn btn-secondary load-more-btn" hidden>載入更多工具</button>
+      </div>
       <div id="empty-state" class="empty-state" hidden>
         <span class="empty-icon">🔍</span>
         <h2>找不到符合的工具</h2>

@@ -1,7 +1,9 @@
 const QUICK_TAGS = ["寫程式", "繪圖", "寫作", "影片", "翻譯", "配音", "簡報", "搜尋"];
+const PAGE_SIZE = 6;
 
 const searchInput = document.getElementById("search-input");
 const clearBtn = document.getElementById("clear-btn");
+const searchSuggestionsEl = document.getElementById("search-suggestions");
 const resultsGrid = document.getElementById("results-grid");
 const resultsCount = document.getElementById("results-count");
 const emptyState = document.getElementById("empty-state");
@@ -11,8 +13,24 @@ const watchlistInput = document.getElementById("watchlist-input");
 const watchlistAddBtn = document.getElementById("watchlist-add-btn");
 const watchlistChipsEl = document.getElementById("watchlist-chips");
 const watchlistOnlyEl = document.getElementById("watchlist-only");
+const featuredSection = document.getElementById("featured-section");
+const featuredGrid = document.getElementById("featured-grid");
+const loadMoreBtn = document.getElementById("load-more-btn");
 
 let watchlistKeywords = getWatchlist();
+let displayLimit = PAGE_SIZE;
+let suggestionActiveIndex = -1;
+
+const SEARCH_TERMS = (() => {
+  const terms = new Set(QUICK_TAGS);
+  for (const tool of AI_TOOLS) {
+    terms.add(tool.name);
+    tool.category.split(/\s+/).forEach((t) => terms.add(t));
+    tool.tags.forEach((t) => terms.add(t));
+    tool.keywords.forEach((t) => terms.add(t));
+  }
+  return [...terms].sort((a, b) => a.localeCompare(b, "zh-TW"));
+})();
 
 function scoreTool(tool, query) {
   if (!query) return 0;
@@ -91,8 +109,108 @@ function searchTools(query, sortBy, watchlistOnly) {
   return results;
 }
 
+function getSuggestions(query) {
+  const q = normalize(query);
+  if (!q) return [];
+
+  const scored = SEARCH_TERMS.map((term) => {
+    const n = normalize(term);
+    let score = 0;
+    if (n.startsWith(q)) score += 10;
+    else if (n.includes(q)) score += 5;
+    else return null;
+    return { term, score };
+  }).filter(Boolean);
+
+  scored.sort((a, b) => b.score - a.score || a.term.localeCompare(b.term, "zh-TW"));
+  return scored.slice(0, 8).map((s) => s.term);
+}
+
+function highlightTerm(text, query) {
+  const q = query.trim();
+  if (!q) return text;
+  const idx = normalize(text).indexOf(normalize(q));
+  if (idx === -1) return text;
+  return (
+    text.slice(0, idx) +
+    `<mark>${text.slice(idx, idx + q.length)}</mark>` +
+    text.slice(idx + q.length)
+  );
+}
+
+function renderSuggestions(query) {
+  const suggestions = getSuggestions(query);
+  suggestionActiveIndex = -1;
+
+  if (!query.trim() || !suggestions.length) {
+    searchSuggestionsEl.hidden = true;
+    searchSuggestionsEl.innerHTML = "";
+    return;
+  }
+
+  searchSuggestionsEl.innerHTML = suggestions
+    .map(
+      (term, i) =>
+        `<li><button type="button" class="search-suggestion-item" data-term="${term}" data-index="${i}">${highlightTerm(term, query)}</button></li>`
+    )
+    .join("");
+  searchSuggestionsEl.hidden = false;
+}
+
+function hideSuggestions() {
+  searchSuggestionsEl.hidden = true;
+  suggestionActiveIndex = -1;
+}
+
+function applySearch(term, saveToWatchlist = false) {
+  searchInput.value = term;
+  if (saveToWatchlist && term.trim()) {
+    addWatchKeyword(term, { silent: true });
+  }
+  document.querySelectorAll(".tag-btn").forEach((b) => {
+    b.classList.toggle("active", b.textContent === term.trim());
+  });
+  displayLimit = PAGE_SIZE;
+  hideSuggestions();
+  render(term);
+  searchInput.focus();
+}
+
 function renderStars(rating) {
   return "★".repeat(Math.round(rating)) + " " + rating.toFixed(1);
+}
+
+function renderFeaturedCard(tool) {
+  const ev = TOP_TIER_EVALUATIONS[tool.id];
+  if (!ev) return "";
+
+  const pros = ev.pros.map((p) => `<li>${p}</li>`).join("");
+  const cons = ev.cons.map((c) => `<li>${c}</li>`).join("");
+
+  return `
+    <article class="featured-card">
+      <div class="featured-card-header">
+        <span class="featured-name">${tool.name}</span>
+        <span class="tool-rating">${renderStars(tool.rating)}</span>
+      </div>
+      <p class="featured-source"><strong>官網重點：</strong>${ev.sourceSummary}</p>
+      <p class="tool-desc">${tool.description}</p>
+      <p><strong>優點</strong></p>
+      <ul class="featured-eval-list">${pros}</ul>
+      <p><strong>限制</strong></p>
+      <ul class="featured-eval-list">${cons}</ul>
+      <p class="featured-verdict">評估：${ev.verdict}</p>
+      <div class="tool-actions">
+        <a href="tool.html?id=${tool.id}" class="btn btn-secondary">查看詳情</a>
+        <a href="${tool.url}" target="_blank" rel="noopener noreferrer" class="btn btn-primary">前往官網</a>
+      </div>
+    </article>
+  `;
+}
+
+function renderFeatured() {
+  const tools = TOP_TIER_IDS.map((id) => getToolById(id)).filter(Boolean);
+  featuredGrid.innerHTML = tools.map(renderFeaturedCard).join("");
 }
 
 function renderCard({ tool, matchedTags, watchMatch }) {
@@ -130,25 +248,29 @@ function renderWatchlistChips() {
   watchlistChipsEl.innerHTML = watchlistKeywords
     .map(
       (kw) =>
-        `<span class="watchlist-chip">${kw}<button type="button" class="watchlist-remove" data-kw="${kw}" aria-label="移除 ${kw}">✕</button></span>`
+        `<span class="watchlist-chip">
+          <button type="button" class="watchlist-chip-label" data-kw="${kw}">${kw}</button>
+          <button type="button" class="watchlist-remove" data-kw="${kw}" aria-label="移除 ${kw}">✕</button>
+        </span>`
     )
     .join("");
 
   watchlistChipsEl.hidden = watchlistKeywords.length === 0;
 }
 
-function addWatchKeyword(raw) {
+function addWatchKeyword(raw, { silent = false } = {}) {
   const kw = raw.trim();
-  if (!kw) return;
-  if (watchlistKeywords.includes(kw)) return;
+  if (!kw) return false;
+  if (watchlistKeywords.includes(kw)) return false;
   if (watchlistKeywords.length >= WATCHLIST_MAX) {
-    alert(`最多 ${WATCHLIST_MAX} 個追蹤關鍵字`);
-    return;
+    if (!silent) alert(`最多 ${WATCHLIST_MAX} 個追蹤關鍵字`);
+    return false;
   }
   watchlistKeywords.push(kw);
   saveWatchlist(watchlistKeywords);
   renderWatchlistChips();
   render(searchInput.value);
+  return true;
 }
 
 function removeWatchKeyword(kw) {
@@ -162,18 +284,29 @@ function render(query) {
   const sortBy = sortSelect.value;
   const watchlistOnly = watchlistOnlyEl.checked;
   const results = searchTools(query, sortBy, watchlistOnly);
+  const trimmed = query.trim();
+  const showFeatured = !trimmed && !watchlistOnly;
 
-  resultsGrid.innerHTML = results.map(renderCard).join("");
+  featuredSection.hidden = !showFeatured;
+  if (showFeatured) renderFeatured();
+
+  const visible = results.slice(0, displayLimit);
+  resultsGrid.innerHTML = visible.map(renderCard).join("");
 
   const count = results.length;
-  const trimmed = query.trim();
+  const hasMore = count > displayLimit;
+
+  loadMoreBtn.hidden = !hasMore;
+  loadMoreBtn.textContent = hasMore
+    ? `載入更多工具（還有 ${count - displayLimit} 個）`
+    : "載入更多工具";
 
   if (watchlistOnly && watchlistKeywords.length) {
-    resultsCount.innerHTML = `追蹤 <strong>${watchlistKeywords.join("、")}</strong>：顯示 <strong>${count}</strong> 個工具`;
+    resultsCount.innerHTML = `追蹤 <strong>${watchlistKeywords.join("、")}</strong>：顯示 <strong>${Math.min(displayLimit, count)}</strong> / ${count} 個工具`;
   } else if (trimmed) {
     resultsCount.innerHTML = `找到 <strong>${count}</strong> 個與「${trimmed}」相關的工具`;
   } else {
-    resultsCount.innerHTML = `顯示全部 <strong>${count}</strong> 個 AI 工具`;
+    resultsCount.innerHTML = `顯示 <strong>${Math.min(displayLimit, count)}</strong> / ${count} 個 AI 工具`;
   }
 
   emptyState.hidden = count > 0;
@@ -188,51 +321,122 @@ function initQuickTags() {
     btn.className = "tag-btn";
     btn.textContent = tag;
     btn.addEventListener("click", () => {
-      searchInput.value = tag;
-      document.querySelectorAll(".tag-btn").forEach((b) => b.classList.remove("active"));
-      btn.classList.add("active");
-      render(tag);
-      searchInput.focus();
+      applySearch(tag, true);
     });
     quickTagsEl.appendChild(btn);
   }
 }
 
+function persistWatchlistInput() {
+  const kw = watchlistInput.value.trim();
+  if (!kw) return;
+  if (addWatchKeyword(kw)) {
+    watchlistInput.value = "";
+  }
+}
+
 watchlistAddBtn.addEventListener("click", () => {
-  addWatchKeyword(watchlistInput.value);
-  watchlistInput.value = "";
+  persistWatchlistInput();
   watchlistInput.focus();
 });
 
 watchlistInput.addEventListener("keydown", (e) => {
   if (e.key === "Enter") {
     e.preventDefault();
-    addWatchKeyword(watchlistInput.value);
-    watchlistInput.value = "";
+    persistWatchlistInput();
   }
 });
 
-watchlistChipsEl.addEventListener("click", (e) => {
-  const btn = e.target.closest(".watchlist-remove");
-  if (btn) removeWatchKeyword(btn.dataset.kw);
+watchlistInput.addEventListener("blur", () => {
+  persistWatchlistInput();
 });
 
-watchlistOnlyEl.addEventListener("change", () => render(searchInput.value));
+watchlistChipsEl.addEventListener("click", (e) => {
+  const removeBtn = e.target.closest(".watchlist-remove");
+  if (removeBtn) {
+    removeWatchKeyword(removeBtn.dataset.kw);
+    return;
+  }
+  const labelBtn = e.target.closest(".watchlist-chip-label");
+  if (labelBtn) {
+    applySearch(labelBtn.dataset.kw, false);
+  }
+});
+
+watchlistOnlyEl.addEventListener("change", () => {
+  displayLimit = PAGE_SIZE;
+  render(searchInput.value);
+});
+
+loadMoreBtn.addEventListener("click", () => {
+  displayLimit += PAGE_SIZE;
+  render(searchInput.value);
+});
+
+searchSuggestionsEl.addEventListener("click", (e) => {
+  const btn = e.target.closest(".search-suggestion-item");
+  if (btn) applySearch(btn.dataset.term, true);
+});
 
 let debounceTimer;
 searchInput.addEventListener("input", () => {
   clearTimeout(debounceTimer);
   debounceTimer = setTimeout(() => {
+    displayLimit = PAGE_SIZE;
+    renderSuggestions(searchInput.value);
     document.querySelectorAll(".tag-btn").forEach((b) => {
       b.classList.toggle("active", b.textContent === searchInput.value.trim());
     });
     render(searchInput.value);
-  }, 200);
+  }, 150);
+});
+
+searchInput.addEventListener("keydown", (e) => {
+  const items = searchSuggestionsEl.querySelectorAll(".search-suggestion-item");
+
+  if (e.key === "ArrowDown" && items.length) {
+    e.preventDefault();
+    suggestionActiveIndex = Math.min(suggestionActiveIndex + 1, items.length - 1);
+    items.forEach((el, i) => el.classList.toggle("active", i === suggestionActiveIndex));
+    return;
+  }
+
+  if (e.key === "ArrowUp" && items.length) {
+    e.preventDefault();
+    suggestionActiveIndex = Math.max(suggestionActiveIndex - 1, 0);
+    items.forEach((el, i) => el.classList.toggle("active", i === suggestionActiveIndex));
+    return;
+  }
+
+  if (e.key === "Enter") {
+    if (suggestionActiveIndex >= 0 && items[suggestionActiveIndex]) {
+      e.preventDefault();
+      applySearch(items[suggestionActiveIndex].dataset.term, true);
+      return;
+    }
+    const term = searchInput.value.trim();
+    if (term) {
+      addWatchKeyword(term, { silent: true });
+      hideSuggestions();
+    }
+  }
+
+  if (e.key === "Escape") hideSuggestions();
+});
+
+searchInput.addEventListener("focus", () => {
+  renderSuggestions(searchInput.value);
+});
+
+document.addEventListener("click", (e) => {
+  if (!e.target.closest(".search-box")) hideSuggestions();
 });
 
 clearBtn.addEventListener("click", () => {
   searchInput.value = "";
   document.querySelectorAll(".tag-btn").forEach((b) => b.classList.remove("active"));
+  displayLimit = PAGE_SIZE;
+  hideSuggestions();
   render("");
   searchInput.focus();
 });
@@ -240,5 +444,6 @@ clearBtn.addEventListener("click", () => {
 sortSelect.addEventListener("change", () => render(searchInput.value));
 
 initQuickTags();
+renderFeatured();
 renderWatchlistChips();
 render("");

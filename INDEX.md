@@ -1,6 +1,6 @@
 # 文件索引
 
-> AI 工具搜尋 | 本機運行 | 2026-07-18
+> AI 工具搜尋 | GitHub Pages 上線 | 2026-07-18
 
 ## 必讀
 
@@ -8,7 +8,8 @@
 |------|------|
 | [README.md](README.md) | 入口 |
 | [docs/03-implementation.md](docs/03-implementation.md) | 實作 HOW |
-| [web/README.md](web/README.md) | **本機啟動方式** |
+| [docs/standup.md](docs/standup.md) | **會議 / 畫面問題 / Approve 紀錄** |
+| [web/README.md](web/README.md) | 本機啟動方式 |
 
 ## 本機啟動
 
@@ -17,6 +18,8 @@ cd web
 .\start-local.ps1
 ```
 
-## 延後
+## 協作
 
-- F-10 公開上線（正式營運時）
+- 同事：只提**畫面問題** → 開 Issue 或寫入 [docs/standup.md](docs/standup.md)
+- 實作：Cursor AI
+- 負責人：approve 規格外或 AI 無法決策的事項

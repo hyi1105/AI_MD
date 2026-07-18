@@ -1,110 +1,86 @@
 ---
-status: draft
-priority: P0
-owner: hyi1105
+status: review
 updated: 2026-07-18
 module: ai-tools-directory
 ---
 
-# 模組：AI 工具查詢網
+# AI 工具搜尋 — 產品規格
 
-> **優先級 P0 — 建議第一個實作的產品**
+> 可運行原型：`web/index.html`  
+> **本文件 F-01～F-10 與 [01-requirements-master.md](../docs/01-requirements-master.md) 完全一致**
 
-## 1. 問題陳述
+## 問題
 
-使用者難以在大量 AI 工具中快速找到適合自己情境的工具；現有列表站点多為英文、分类混乱、缺中文说明。
+使用者難以在大量 AI 工具中找到適合的中文說明，也難以長期追蹤自己關心的領域。
 
-## 2. 目標用戶
+## User Stories
 
-|  persona | 描述 | 核心需求 |
-|----------|------|----------|
-| 一般使用者 | 想试用 ChatGPT 替代品、图像工具 | 快速比较、中文说明 |
-| 开发者 | 需要 API、SDK 信息 | 技术规格、定价 |
-| 内容创作者 | 写作、视频、设计 | 按场景分类 |
+| ID | Story | MVP | 狀態 |
+|----|-------|-----|------|
+| AT-01 | 關鍵字搜尋工具 | 必做 | `done` |
+| AT-02 | 點卡片前往官網 | 必做 | `done` |
+| AT-03 | 自訂追蹤關鍵字並保存 | 必做 | `done` |
+| AT-04 | 閱讀工具 Markdown 詳情 | 必做 | `done` |
+| AT-05 | 依分類按鈕篩選 | 延後 | `deferred` |
 
-## 3. User Stories
+## 功能對照（F-01～F-10）
 
-| ID | Story | 優先級 | 狀態 |
-|----|-------|--------|------|
-| AT-01 | As a 使用者, I want 依分類瀏覽工具, So that 快速縮小範圍 | P0 | `missing` |
-| AT-02 | As a 使用者, I want 關鍵字搜尋, So that 找到特定功能工具 | P0 | `missing` |
-| AT-03 | As a 使用者, I want 每工具一頁 Markdown 說明, So that 了解優缺點與定價 | P0 | `missing` |
-| AT-04 | As a 使用者, I want 收藏工具, So that 下次快速访问 | P1 | `missing` |
-| AT-05 | As a 管理者, I want 新增/編輯工具条目, So that 保持目錄更新 | P1 | `missing` |
+| ID | 功能 | MVP | 狀態 |
+|----|------|-----|------|
+| F-01 | 工具列表 | 必做 | `done` |
+| F-02 | 全文搜尋 | 必做 | `done` |
+| F-03 | 分類篩選 UI | 延後 | `deferred` |
+| F-04 | 熱門標籤 | 必做 | `done` |
+| F-05 | 排序 | 必做 | `done` |
+| F-06 | 定價標記 | 必做 | `done` |
+| F-07 | 外部連結 | 必做 | `done` |
+| F-08 | 追蹤關鍵字 | **必做** | `done` |
+| F-09 | Markdown 詳情 | **必做** | `done` |
+| F-10 | 公開上線 | 延後 | `deferred` |
 
-> ⚠️ **缺口**：目前 0 條 story 有驗收標準。請補 §7。
+## 驗收標準
 
-## 4. 功能需求
+| Story | Given | When | Then | 狀態 |
+|-------|-------|------|------|------|
+| AT-01 | 站上有 24+ 工具 | 搜尋「繪圖」 | 顯示 Midjourney 等相關結果；無結果有提示 | `done` |
+| AT-02 | 工具卡片可見 | 點擊卡片 | 新分頁開啟官網 | `done` |
+| AT-03 | 在追蹤設定 | 新增「攝影」並重新整理 | 關鍵字仍保留；相關工具有標示或篩選 | `done` |
+| AT-04 | 工具已有 MD 檔 | 點工具詳情 | 顯示 Markdown 內容（優缺點、定價等） | `done` |
+| AT-05 | — | — | v1 不做；可用搜尋代替 | `deferred` |
 
-| ID | 功能 | 優先級 | 狀態 | 備註 |
-|----|------|--------|------|------|
-| F-01 | 工具列表頁（卡片 UI） | P0 | `missing` | |
-| F-02 | 分類篩選（寫作/圖像/程式/語音…） | P0 | `missing` | 分類 taxonomy 未定 |
-| F-03 | 全文搜尋 | P0 | `missing` | 對應 C-04 |
-| F-04 | 工具詳情頁（MD 渲染） | P0 | `missing` | |
-| F-05 | 標籤（tags） | P1 | `missing` | |
-| F-06 | 外部連結（官網、定價） | P0 | `missing` | |
-| F-07 | 免费/付费/ freemium 標記 | P1 | `missing` | |
-| F-08 | 使用者提交新工具 | P2 | `missing` | 需審核流程 |
-| F-09 | 評分 / 評論 | P2 | `missing` | 需 U-01 使用者系統 |
-| F-10 | SEO（每工具独立 URL） | P1 | `missing` | |
+## 資料
 
-## 5. 非功能需求
-
-| 項目 | 目標 | 狀態 |
+| 用途 | 位置 | 維護 |
 |------|------|------|
-| 首頁載入 | < 2s (LCP) | `missing` |
-| 可用性 | 99% (MVP) | `missing` |
-| 語系 | zh-TW 優先，en 可選 | `partial` |
-| 資料更新 | 工具 MD 可 Git 管理 | `partial`（本 repo） |
+| 列表 / 搜尋 | `web/data.js` | 你 + Cursor AI |
+| 詳情 | `web/tools/{id}.md` | 你 + Cursor AI |
+| 追蹤 v1 | localStorage | 瀏覽器本地 |
+| 追蹤 v2 | 帳號同步 | 待做 |
 
-## 6. 資料模型（草案）
+**工具數量**：不限，邊做邊加。
 
-```yaml
-Tool:
-  id: string          # slug
-  name: string
-  category: string[]
-  tags: string[]
-  pricing: free | freemium | paid
-  url: string
-  description: string  # 短描述
-  content: markdown    # 詳細說明檔
-  updated_at: date
-```
+## 不做（v1）
 
-> ⚠️ **缺口 G-003**：需與 [templates/module-spec.md](../templates/module-spec.md) frontmatter 對齊。
+- 登入、社群、金流、crypto
+- LLM 助手、自動爬蟲
+- 使用者提交工具
 
-## 7. 驗收標準（Acceptance Criteria）
+## 決策紀錄（Open Questions → 已關閉）
 
-| Story ID | 驗收條件 | 狀態 |
-|----------|----------|------|
-| AT-01 | _待填_ | `missing` |
-| AT-02 | _待填_ | `missing` |
-| AT-03 | _待填_ | `missing` |
+| 問題 | 決策 |
+|------|------|
+| 部署方式？ | **現階段本機**；公開上線延後 |
+| 分類篩選 MVP？ | **延後**，搜尋代替 |
+| 追蹤關鍵字 MVP？ | **必做** |
+| MD 詳情 MVP？ | **必做** |
+| 追蹤存哪？ | **v1 localStorage → v2 登入** |
+| 語言？ | **介面繁中，說明可中英混合** |
+| 誰維護資料？ | **你 + Cursor AI** |
+| 授權？ | **MIT** |
+| 工具數量？ | **不限，功能優先** |
 
-## 8. 不做（Out of Scope）— MVP
+## 變更紀錄
 
-- 不做工具本身 hosting
-- 不做 affiliate 分潤（v2 再议）
-- 不做 AI 自动爬蟲（v1 人工 curated）
-
-## 9. 依賴
-
-| 依賴 | 模組 / 文件 | 狀態 |
-|------|-------------|------|
-| Markdown 標準 | templates/module-spec.md | partial |
-| 使用者（收藏） | social-platform U-01 | missing |
-| 搜尋引擎 | 02-architecture.md | missing |
-
-## 10. Open Questions
-
-| # | 問題 | Owner | 決策 |
-|---|------|-------|------|
-| Q1 | 工具資料放 repo MD 還是 DB？ | hyi1105 | _未定_ |
-| Q2 | 首批收录多少工具？ | hyi1105 | _未定_ |
-| Q3 | 是否需要英文版？ | hyi1105 | _未定_ |
-
-## 11. 相關總需求
-
-- C-01, C-02, C-04 → [01-requirements-master.md](../docs/01-requirements-master.md)
+| 日期 | 摘要 |
+|------|------|
+| 2026-07-18 | 正式營運前改本機；F-10 延後 |

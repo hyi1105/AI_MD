@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>工具詳情 — AI 工具搜尋</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header-inner">
+      <a href="index.html" class="logo logo-link">
+        <span class="logo-icon">✦</span>
+        <div>
+          <h1>AI 工具搜尋</h1>
+          <p class="tagline">工具詳情</p>
+        </div>
+      </a>
+    </div>
+  </header>
+
+  <main class="main tool-page">
+    <a href="index.html" class="back-link">← 返回搜尋</a>
+    <div id="tool-header" class="tool-page-header"></div>
+    <div id="tool-content" class="tool-page-content markdown-body"></div>
+    <div id="tool-error" class="empty-state" hidden>
+      <h2>找不到此工具</h2>
+      <p><a href="index.html">返回首頁</a></p>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>資料僅供參考 · 以官方網站為準</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script src="data.js"></script>
+  <script src="shared.js"></script>
+  <script src="tool.js"></script>
+</body>
+</html>

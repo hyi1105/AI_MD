@@ -1,79 +1,50 @@
-# 01 — 總需求規格
+# 01 — 需求規格
 
-> 狀態：`draft` | 最後更新：2026-07-18
+> 更新：2026-07-18 | **F-01～F-10 為唯一 ID 對照表**
 
-本文件定義 **跨模組共用** 的需求。各模組專屬需求見 `modules/`。
+| ID | 需求 | MVP | 狀態 | 備註 |
+|----|------|-----|------|------|
+| F-01 | 工具列表（卡片） | 必做 | `done` | `web/` |
+| F-02 | 關鍵字搜尋 | 必做 | `done` | `web/script.js` |
+| F-03 | 分類篩選 UI | 延後 | `deferred` | 可用搜尋代替 |
+| F-04 | 熱門標籤快捷搜尋 | 必做 | `done` | `web/` |
+| F-05 | 排序（相關度/評分/名稱） | 必做 | `done` | `web/` |
+| F-06 | 定價標記 | 必做 | `done` | `data.js` |
+| F-07 | 外部連結至官網 | 必做 | `done` | 卡片可點 |
+| F-08 | 自訂追蹤關鍵字 | **必做** | `done` | localStorage |
+| F-09 | 工具 Markdown 詳情 | **必做** | `done` | `web/tools/` |
+| F-10 | 公開上線 | 必做 | `done` | GitHub Pages `/web` |
 
----
+## 非功能 / 其他
 
-## 1. 使用者與身分（跨模組）
+| ID | 需求 | 狀態 | 備註 |
+|----|------|------|------|
+| N-01 | 介面繁體中文 | `partial` | 模板待統一 |
+| N-02 | 說明可中英混合 | `partial` | |
+| N-03 | 工具數量不限 | `ongoing` | 邊做邊加 |
+| N-04 | MIT 授權 | `done` | `LICENSE` |
+| N-05 | 登入同步追蹤 | `deferred` | v2 |
 
-| ID | 需求 | 優先級 | 狀態 | 備註 |
-|----|------|--------|------|------|
-| U-01 | 使用者註冊（Email / OAuth） | P1 | `missing` | 未定 OAuth 提供者 |
-| U-02 | 登入 / 登出 / Session | P1 | `missing` | 未定 JWT vs Session |
-| U-03 | 個人資料與頭像 | P2 | `missing` | |
-| U-04 | 角色與權限（RBAC） | P2 | `missing` | admin / user / merchant? |
-| U-05 | 多語系（zh-TW 優先） | P2 | `missing` | |
+## 不做（v1）
 
-## 2. 內容與 Markdown
+- 登入、社群、金流、加密貨幣
+- LLM 助手、自動爬蟲、使用者提交
 
-| ID | 需求 | 優先級 | 狀態 | 備註 |
-|----|------|--------|------|------|
-| C-01 | Markdown 撰寫與預覽 | P0 | `partial` | 本 repo 已用 MD，未定义渲染規則 |
-| C-02 |  frontmatter 元資料標準 | P0 | `missing` | 見 [templates/module-spec.md](../templates/module-spec.md) |
-| C-03 | 版本修訂紀錄 | P1 | `missing` | |
-| C-04 | 全文搜尋 | P1 | `missing` | AI 工具網必需 |
+## 技術決策
 
-## 3. 金流（跨模組，詳見 payment-service）
-
-| ID | 需求 | 優先級 | 狀態 | 備註 |
-|----|------|--------|------|------|
-| P-01 | 支援台灣本地支付（綠界 / 藍新） | P2 | `missing` | 需商業登記 |
-| P-02 | 國際卡（Stripe） | P2 | `missing` | |
-| P-03 | 訂單狀態機 | P2 | `missing` | |
-| P-04 | 退款與爭議 | P3 | `missing` | |
-
-## 4. 安全與合規
-
-| ID | 需求 | 優先級 | 狀態 | 備註 |
-|----|------|--------|------|------|
-| S-01 | HTTPS 強制 | P0 | `missing` | 部署階段 |
-| S-02 | 個資法 / GDPR 告知 | P1 | `missing` | |
-| S-03 | 加密貨幣 KYC / AML | P3 | `missing` | 僅 crypto 模組 |
-| S-04 | API Rate Limit | P2 | `missing` | |
-
-## 5. 營運與可觀測性
-
-| ID | 需求 | 優先級 | 狀態 | 備註 |
-|----|------|--------|------|------|
-| O-01 | 錯誤監控（Sentry 等） | P2 | `missing` | |
-| O-02 | 分析（GA / Plausible） | P2 | `missing` | |
-| O-03 | 管理後台 | P2 | `missing` | |
-| O-04 | 備份與還原策略 | P3 | `missing` | |
-
-## 6. 技術決策（待 architecture 文件）
-
-| 決策 | 選項 | 狀態 |
-|------|------|------|
-| 前端框架 | Next.js / Nuxt / 純 MD | `undecided` |
-| 資料庫 | PostgreSQL / SQLite | `undecided` |
-| 部署 | Vercel / VPS / AWS | `undecided` |
-| Monorepo vs 多 repo | 單 repo MD + 多 code repo | `undecided` |
-
----
-
-## 模組對照
-
-| 總需求 ID | 相關模組 |
-|-----------|----------|
-| C-01, C-02, C-04 | ai-tools-directory |
-| U-01 ~ U-05 | social-platform, 全部 |
-| P-01 ~ P-04 | payment-service, crypto-trading |
-| S-03 | crypto-trading |
+| 項目 | 決策 |
+|------|------|
+| 前端 | HTML + CSS + JS（`web/`） |
+| 列表資料 | `web/data.js` |
+| 詳情資料 | `content/tools/*.md` |
+| 追蹤 v1 | localStorage |
+| 追蹤 v2 | 登入同步（待定） |
+| 運行 | **GitHub Pages**（`https://hyi1105.github.io/AI_MD/`） |
+| 本機開發 | `web/start-local.ps1` |
+| 維護 | 你 + Cursor AI |
 
 ## 變更紀錄
 
-| 日期 | 變更 | 作者 |
-|------|------|------|
-| 2026-07-18 | 初版骨架 | Agent |
+| 日期 | 摘要 |
+|------|------|
+| 2026-07-18 | 一問一答決策寫入；統一 F-ID；修正狀態 |

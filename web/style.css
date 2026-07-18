@@ -353,7 +353,194 @@ body {
   border-top: 1px solid var(--border);
 }
 
+.tool-card-watched {
+  border-color: rgba(52, 211, 153, 0.45);
+  box-shadow: 0 0 0 1px rgba(52, 211, 153, 0.15);
+}
+
+.tool-actions {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.875rem;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.45rem 0.75rem;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: background 0.15s, border-color 0.15s;
+}
+
+.btn-primary {
+  color: white;
+  background: var(--accent);
+}
+
+.btn-primary:hover {
+  background: var(--accent-light);
+}
+
+.btn-secondary {
+  color: var(--text);
+  background: rgba(255, 255, 255, 0.06);
+  border-color: var(--border);
+}
+
+.btn-secondary:hover {
+  border-color: var(--accent);
+  color: var(--accent-light);
+}
+
+.watchlist-section {
+  margin-bottom: 2rem;
+  padding: 1.25rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+
+.watchlist-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 0.875rem;
+}
+
+.section-title {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.watchlist-filter {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.8125rem;
+  color: var(--muted);
+  cursor: pointer;
+}
+
+.watchlist-add {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+#watchlist-input {
+  flex: 1;
+  padding: 0.55rem 0.75rem;
+  font-size: 0.875rem;
+  color: var(--text);
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 0.5rem;
+  outline: none;
+}
+
+#watchlist-input:focus {
+  border-color: var(--accent);
+}
+
+.watchlist-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.watchlist-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.3rem 0.55rem;
+  font-size: 0.8125rem;
+  color: var(--green);
+  background: rgba(52, 211, 153, 0.1);
+  border: 1px solid rgba(52, 211, 153, 0.25);
+  border-radius: 999px;
+}
+
+.watchlist-remove {
+  border: none;
+  background: transparent;
+  color: var(--muted);
+  cursor: pointer;
+  font-size: 0.75rem;
+  line-height: 1;
+}
+
+.logo-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 1rem;
+  color: var(--accent-light);
+  text-decoration: none;
+  font-size: 0.875rem;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
+
+.tool-page-header {
+  margin-bottom: 1.5rem;
+}
+
+.tool-page-title {
+  font-size: 1.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.tool-page-meta {
+  color: var(--muted);
+  margin-bottom: 1rem;
+}
+
+.tool-page-content {
+  padding: 1.25rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+
+.markdown-body h2 {
+  font-size: 1.125rem;
+  margin: 1.25rem 0 0.5rem;
+}
+
+.markdown-body h2:first-child {
+  margin-top: 0;
+}
+
+.markdown-body p,
+.markdown-body li {
+  color: var(--muted);
+  margin-bottom: 0.5rem;
+}
+
+.markdown-body a {
+  color: var(--accent-light);
+}
+
 @media (max-width: 600px) {
+  .watchlist-header,
+  .watchlist-add,
+  .tool-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
   .results-header {
     flex-direction: column;
     align-items: flex-start;

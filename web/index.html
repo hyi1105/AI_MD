@@ -41,6 +41,21 @@
       </div>
     </section>
 
+    <section class="watchlist-section">
+      <div class="watchlist-header">
+        <h2 class="section-title">我的追蹤</h2>
+        <label class="watchlist-filter">
+          <input type="checkbox" id="watchlist-only">
+          只顯示追蹤
+        </label>
+      </div>
+      <div class="watchlist-add">
+        <input type="text" id="watchlist-input" placeholder="新增追蹤關鍵字，例如：攝影、繪圖" maxlength="30">
+        <button type="button" id="watchlist-add-btn" class="btn btn-secondary">新增</button>
+      </div>
+      <div id="watchlist-chips" class="watchlist-chips"></div>
+    </section>
+
     <section class="results-section">
       <div class="results-header">
         <p id="results-count" class="results-count">顯示全部 <strong>24</strong> 個 AI 工具</p>
@@ -65,6 +80,7 @@
   </footer>
 
   <script src="data.js"></script>
+  <script src="shared.js"></script>
   <script src="script.js"></script>
 </body>
 </html>

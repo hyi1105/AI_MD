@@ -1,18 +1,15 @@
-# 工具資料目录
+# 工具 Markdown 詳情
 
-将各 AI 工具的 Markdown 条目放在此目录。
+**網站實際使用** `web/tools/{id}.md`（GitHub Pages 可直接讀取）。
 
-## 命名规则
+本目录 `content/tools/` 仅作规格参考；新增工具请编辑 **`web/tools/`**。
 
-- 文件名：`{tool_id}.md`（小写、连字符）
-- 模板：[templates/tool-entry.md](../templates/tool-entry.md)
+## 流程
 
-## 示例
+1. 在 `web/data.js` 新增列表项
+2. 复制 [templates/tool-entry.md](../templates/tool-entry.md) → `web/tools/{id}.md`
+3. 或运行：`web/scripts/generate-tools-md.ps1`（从 data.js 批量生成骨架）
 
-- `chatgpt.md`
-- `claude.md`
-- `midjourney.md`
+## 模板
 
-## 状态
-
-目前 **0** 个工具条目 — 见缺口：首批工具数量未定（ai-tools Q2）
+[templates/tool-entry.md](../templates/tool-entry.md)

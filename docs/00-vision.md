@@ -1,42 +1,45 @@
 # 00 — 專案願景
 
-> 狀態：`draft` | 最後更新：2026-07-18 | 負責：hyi1105
+> 更新：2026-07-18 | 決策來源：一問一答確認
 
-## 一句話描述
+## 一句話
 
-以 **Markdown 規格驅動** 的多產品平台藍圖：先寫清楚需求，再逐步實作；AI 協助審查缺口並同步更新文件。
+**繁體中文 AI 工具搜尋網站** — 搜尋工具、追蹤感興趣的領域、閱讀 Markdown 詳情。
 
-## 產品線（四大模組）
+## 本專案只做
 
-| 模組 | 檔案 | 優先級 | 說明 |
-|------|------|--------|------|
-| AI 工具查詢網 | [modules/ai-tools-directory.md](../modules/ai-tools-directory.md) | **P0** | 最先落地；目錄、搜尋、Markdown 說明 |
-| 社群平台 | [modules/social-platform.md](../modules/social-platform.md) | P1 | 使用者、貼文、互動、通知 |
-| 金流服務 | [modules/payment-service.md](../modules/payment-service.md) | P2 | 付款、訂單、退款、對帳 |
-| 加密貨幣交易 | [modules/crypto-trading.md](../modules/crypto-trading.md) | P3 | 行情、下單、錢包、合規 |
+- AI 工具目錄與關鍵字搜尋
+- 自訂追蹤關鍵字（v1：瀏覽器本地保存）
+- 每工具 Markdown 說明頁
+- **本機運行**（正式營運前不上線）
 
-## 核心原則
+## MVP 成功標準
 
-1. **Spec First**：任何功能先寫進 `.md`，通過缺口審查後才寫 code。
-2. **模組獨立、共享基礎**：各模組可獨立 repo / 部署，但共用使用者、金流、通知等底層（待 `docs/02-architecture.md` 定義）。
-3. **AI 可讀可改**：每份 MD 結構固定，方便 Agent 審查、補齊、更新。
-4. **缺口可追蹤**：所有不足記錄在 [02-gap-analysis.md](./02-gap-analysis.md)，不可只口頭討論。
+- [x] 可搜尋的工具列表（24+，數量持續增加）
+- [x] 自訂追蹤關鍵字（localStorage）
+- [x] 每工具 Markdown 詳情頁
+- [x] 本機可預覽
+- [x] MIT 授權
+- [ ] 公開上線（延後，正式營運時）
 
-## 成功指標（第一階段）
+## 可延後（非 MVP 阻塞）
 
-- [ ] 四大模組皆有 **完整規格骨架**（非空白模板）
-- [ ] [01-requirements-master.md](./01-requirements-master.md) 與各模組 **交叉引用一致**
-- [ ] 缺口分析 **零個「未分類」項目**
-- [ ] AI 工具查詢網 MVP 規格 **達 `review` 狀態**
+- 分類篩選 UI（目前可用搜尋代替）
+- 登入與跨裝置同步追蹤（v2）
 
-## 非目標（現階段不做）
+## 不做
 
-- 直接寫 production code（除非某模組規格達 `ready`）
-- 一次做完四個產品
-- 未經缺口審查就新增功能描述
+- 社群、金流、加密貨幣
+- LLM 對話助手、新工具自動爬蟲
+- 使用者提交工具（v1；維護方式：你 + Cursor AI）
+
+## 語言
+
+- **介面**：繁體中文
+- **工具說明**：可中英混合
 
 ## 相關文件
 
-- [01-requirements-master.md](./01-requirements-master.md) — 跨模組總需求
-- [02-gap-analysis.md](./02-gap-analysis.md) — 缺口清單（自動維護）
-- [INDEX.md](../INDEX.md) — 全 repo 文件索引
+- [01-requirements-master.md](./01-requirements-master.md)
+- [02-gap-analysis.md](./02-gap-analysis.md)
+- [modules/ai-tools-directory.md](../modules/ai-tools-directory.md)

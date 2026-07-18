@@ -1,43 +1,46 @@
 ---
 tool_id: example-tool
-name: 工具名称
-category: [writing, coding]
-tags: [chatbot, free]
-pricing: freemium
+name: 工具名稱
+category: 對話助手
+tags: [聊天, 寫作]
+keywords: [chat, 文案]
+pricing: Freemium
+rating: 4.5
 url: https://example.com
+bestFor: 一句話最適合場景
 updated: 2026-07-18
 status: draft
 ---
 
 # {{ name }}
 
-## 一句话
+## 一句話
 
-<!-- 50 字以内 -->
+<!-- 50 字以內，可中英混合 -->
 
-## 适用场景
-
--
-
-## 优点
+## 適用場景
 
 -
 
-## 缺点
+## 優點
 
 -
 
-## 定价
+## 缺點
 
-| 方案 | 价格 | 说明 |
+-
+
+## 定價
+
+| 方案 | 價格 | 說明 |
 |------|------|------|
 | Free | $0 | |
 
-## 链接
+## 連結
 
-- 官网：
-- 文档：
+- 官網：
+- 文件：
 
-## 备注
+## 備註
 
-<!-- 更新记录、替代工具等 -->
+<!-- 更新紀錄、替代工具等 -->

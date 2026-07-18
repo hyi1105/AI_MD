@@ -18,6 +18,44 @@
   --gold: #d97706;
   --green: #059669;
   --radius: 1rem;
+  --header-bg: rgba(255, 255, 255, 0.92);
+  --shadow: rgba(15, 23, 42, 0.08);
+  --focus-ring: rgba(99, 102, 241, 0.2);
+  --chip-hover: rgba(15, 23, 42, 0.06);
+  --accent-soft: rgba(79, 70, 229, 0.08);
+  --accent-soft-strong: rgba(79, 70, 229, 0.1);
+  --accent-border: rgba(79, 70, 229, 0.35);
+  --watch-bg: rgba(5, 150, 105, 0.08);
+  --watch-border: rgba(5, 150, 105, 0.22);
+  --watch-hover: rgba(5, 150, 105, 0.12);
+  --watched-border: rgba(52, 211, 153, 0.45);
+  --watched-shadow: rgba(52, 211, 153, 0.15);
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: #0a0a0a;
+  --surface: #141414;
+  --surface-hover: #1f1f1f;
+  --border: rgba(255, 255, 255, 0.12);
+  --text: #f5f5f5;
+  --muted: #a3a3a3;
+  --accent: #818cf8;
+  --accent-light: #a5b4fc;
+  --gold: #fbbf24;
+  --green: #34d399;
+  --header-bg: rgba(10, 10, 10, 0.92);
+  --shadow: rgba(0, 0, 0, 0.45);
+  --focus-ring: rgba(129, 140, 248, 0.25);
+  --chip-hover: rgba(255, 255, 255, 0.08);
+  --accent-soft: rgba(129, 140, 248, 0.12);
+  --accent-soft-strong: rgba(129, 140, 248, 0.16);
+  --accent-border: rgba(129, 140, 248, 0.4);
+  --watch-bg: rgba(52, 211, 153, 0.1);
+  --watch-border: rgba(52, 211, 153, 0.28);
+  --watch-hover: rgba(52, 211, 153, 0.16);
+  --watched-border: rgba(52, 211, 153, 0.5);
+  --watched-shadow: rgba(52, 211, 153, 0.18);
 }
 
 body {
@@ -30,7 +68,7 @@ body {
 
 .header {
   border-bottom: 1px solid var(--border);
-  background: rgba(255, 255, 255, 0.92);
+  background: var(--header-bg);
   backdrop-filter: blur(12px);
   position: sticky;
   top: 0;
@@ -38,9 +76,35 @@ body {
 }
 
 .header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
   max-width: 960px;
   margin: 0 auto;
   padding: 1.25rem 1.5rem;
+}
+
+.theme-toggle {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 1px solid var(--border);
+  border-radius: 0.75rem;
+  background: var(--surface);
+  color: var(--text);
+  cursor: pointer;
+  font-size: 1.125rem;
+  line-height: 1;
+  transition: background 0.15s, border-color 0.15s;
+}
+
+.theme-toggle:hover {
+  background: var(--surface-hover);
+  border-color: var(--accent);
 }
 
 .logo {
@@ -100,7 +164,7 @@ body {
   background: var(--bg);
   border: 1px solid var(--border);
   border-radius: 0.75rem;
-  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
+  box-shadow: 0 8px 24px var(--shadow);
   max-height: 16rem;
   overflow-y: auto;
 }
@@ -125,7 +189,7 @@ body {
 }
 
 .search-suggestion-item mark {
-  background: rgba(79, 70, 229, 0.12);
+  background: var(--accent-soft-strong);
   color: inherit;
   font-weight: 600;
 }
@@ -157,7 +221,7 @@ body {
 
 #search-input:focus {
   border-color: var(--accent);
-  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.2);
+  box-shadow: 0 0 0 3px var(--focus-ring);
 }
 
 .clear-btn {
@@ -178,7 +242,7 @@ body {
 }
 
 .clear-btn:hover {
-  background: rgba(255, 255, 255, 0.15);
+  background: var(--chip-hover);
   color: var(--text);
 }
 
@@ -210,7 +274,7 @@ body {
 .tag-btn.active {
   color: var(--accent);
   border-color: var(--accent);
-  background: rgba(79, 70, 229, 0.08);
+  background: var(--accent-soft);
 }
 
 .featured-section {
@@ -345,7 +409,7 @@ body {
 
 .tool-card:hover {
   transform: translateY(-2px);
-  border-color: rgba(79, 70, 229, 0.35);
+  border-color: var(--accent-border);
   background: var(--surface-hover);
 }
 
@@ -380,7 +444,7 @@ body {
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: var(--accent);
-  background: rgba(79, 70, 229, 0.1);
+  background: var(--accent-soft-strong);
   border-radius: 999px;
   width: fit-content;
 }
@@ -440,7 +504,7 @@ body {
 
 .tool-tag.highlight {
   color: var(--accent);
-  background: rgba(79, 70, 229, 0.1);
+  background: var(--accent-soft-strong);
 }
 
 .empty-state {
@@ -473,8 +537,8 @@ body {
 }
 
 .tool-card-watched {
-  border-color: rgba(52, 211, 153, 0.45);
-  box-shadow: 0 0 0 1px rgba(52, 211, 153, 0.15);
+  border-color: var(--watched-border);
+  box-shadow: 0 0 0 1px var(--watched-shadow);
 }
 
 .tool-actions {
@@ -581,8 +645,8 @@ body {
   padding: 0.15rem 0.15rem 0.15rem 0.65rem;
   font-size: 0.8125rem;
   color: var(--green);
-  background: rgba(5, 150, 105, 0.08);
-  border: 1px solid rgba(5, 150, 105, 0.22);
+  background: var(--watch-bg);
+  border: 1px solid var(--watch-border);
   border-radius: 999px;
 }
 
@@ -597,7 +661,7 @@ body {
 }
 
 .watchlist-chip-label:hover {
-  background: rgba(5, 150, 105, 0.12);
+  background: var(--watch-hover);
 }
 
 .watchlist-remove {
@@ -617,7 +681,7 @@ body {
 }
 
 .watchlist-remove:hover {
-  background: rgba(15, 23, 42, 0.06);
+  background: var(--chip-hover);
   color: var(--text);
 }
 

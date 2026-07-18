@@ -51,4 +51,9 @@ async function loadTool() {
   }
 }
 
-loadTool();
+loadCatalog().then(loadTool).catch(() => {
+  errorEl.hidden = false;
+  errorEl.textContent = "無法載入工具目錄，請重新整理頁面";
+  headerEl.hidden = true;
+  contentEl.hidden = true;
+});

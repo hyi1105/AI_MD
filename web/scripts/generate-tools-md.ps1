@@ -1,38 +1,29 @@
-# Generate web/tools/*.md from web/data.js (no Node required)
+# Generate web/tools/*.md from web/catalog.json (no Node required)
 $ErrorActionPreference = "Stop"
 $webRoot = Split-Path $PSScriptRoot -Parent
 $outDir = Join-Path $webRoot "tools"
+$catalogFile = Join-Path $webRoot "catalog.json"
 New-Item -ItemType Directory -Force -Path $outDir | Out-Null
 
-$dataJs = Get-Content (Join-Path $webRoot "data.js") -Raw -Encoding UTF8
-$pattern = '(?s)id:\s*"(?<id>[^"]+)".*?name:\s*"(?<name>[^"]+)".*?description:\s*"(?<desc>[^"]+)".*?category:\s*"(?<cat>[^"]+)".*?tags:\s*\[(?<tags>[^\]]+)\].*?pricing:\s*"(?<pricing>[^"]+)".*?url:\s*"(?<url>[^"]+)".*?bestFor:\s*"(?<best>[^"]+)"'
-$matches = [regex]::Matches($dataJs, $pattern)
-
+$tools = Get-Content $catalogFile -Raw -Encoding UTF8 | ConvertFrom-Json
 $count = 0
-foreach ($m in $matches) {
-  $id = $m.Groups["id"].Value
-  $name = $m.Groups["name"].Value
-  $desc = $m.Groups["desc"].Value
-  $cat = $m.Groups["cat"].Value
-  $tags = ($m.Groups["tags"].Value -replace '"', "" -replace ",\s*", " | ")
-  $pricing = $m.Groups["pricing"].Value
-  $url = $m.Groups["url"].Value
-  $best = $m.Groups["best"].Value
 
+foreach ($tool in $tools) {
+  $tags = $tool.tags -join " | "
   $lines = @(
-    "# $name",
+    "# $($tool.name)",
     "",
     "## 一句話",
     "",
-    $desc,
+    $tool.description,
     "",
     "## 最適合",
     "",
-    $best,
+    $tool.bestFor,
     "",
     "## 分類",
     "",
-    $cat,
+    $tool.category,
     "",
     "## 標籤",
     "",
@@ -40,13 +31,14 @@ foreach ($m in $matches) {
     "",
     "## 定價",
     "",
-    $pricing,
+    $tool.pricing,
     "",
     "## 連結",
     "",
-    "- [前往官網]($url)"
+    "- [前往官網]($($tool.url))"
   )
-  Set-Content -Path (Join-Path $outDir "$id.md") -Value ($lines -join "`n") -Encoding UTF8
+  Set-Content -Path (Join-Path $outDir "$($tool.id).md") -Value ($lines -join "`n") -Encoding UTF8
   $count++
 }
-Write-Output "Generated $count markdown files"
+
+Write-Output "Generated $count markdown files from catalog.json"

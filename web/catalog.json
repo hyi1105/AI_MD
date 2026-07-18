@@ -1,0 +1,6007 @@
+[
+    {
+        "id":  "chatgpt",
+        "name":  "ChatGPT",
+        "description":  "OpenAI 出品的通用對話 AI，擅長寫作、問答、腦力激盪與日常任務。",
+        "category":  "對話助手",
+        "tags":  [
+                     "聊天",
+                     "寫作",
+                     "問答",
+                     "GPT",
+                     "OpenAI"
+                 ],
+        "keywords":  [
+                         "chat",
+                         "gpt",
+                         "openai",
+                         "寫文章",
+                         "文案",
+                         "通用"
+                     ],
+        "rating":  4.8,
+        "pricing":  "Freemium",
+        "url":  "https://chat.openai.com",
+        "bestFor":  "日常問答與文案撰寫"
+    },
+    {
+        "id":  "claude",
+        "name":  "Claude",
+        "description":  "Anthropic 開發的 AI 助手，長文理解與程式碼分析表現優異。",
+        "category":  "對話助手",
+        "tags":  [
+                     "聊天",
+                     "長文",
+                     "分析",
+                     "Anthropic"
+                 ],
+        "keywords":  [
+                         "claude",
+                         "anthropic",
+                         "分析",
+                         "程式"
+                     ],
+        "rating":  4.7,
+        "pricing":  "Freemium",
+        "url":  "https://claude.ai",
+        "bestFor":  "長文件分析與深度推理"
+    },
+    {
+        "id":  "gemini",
+        "name":  "Google Gemini",
+        "description":  "Google 多模態 AI，整合搜尋與 Google 生態。",
+        "category":  "對話助手",
+        "tags":  [
+                     "Google",
+                     "搜尋",
+                     "多模態"
+                 ],
+        "keywords":  [
+                         "gemini",
+                         "google",
+                         "搜尋",
+                         "research"
+                     ],
+        "rating":  4.5,
+        "pricing":  "Freemium",
+        "url":  "https://gemini.google.com",
+        "bestFor":  "結合搜尋的研究與整理"
+    },
+    {
+        "id":  "kimi",
+        "name":  "Kimi",
+        "description":  "月之暗面 AI 助手，中文理解強，支援超長上下文。",
+        "category":  "對話助手",
+        "tags":  [
+                     "中文",
+                     "長上下文",
+                     "Moonshot"
+                 ],
+        "keywords":  [
+                         "kimi",
+                         "月之暗面",
+                         "中文",
+                         "長文"
+                     ],
+        "rating":  4.5,
+        "pricing":  "Freemium",
+        "url":  "https://kimi.moonshot.cn",
+        "bestFor":  "中文長文理解與問答"
+    },
+    {
+        "id":  "microsoft-copilot",
+        "name":  "Microsoft Copilot",
+        "description":  "微軟 AI 助手，整合 Bing 搜尋與 Office 生態。",
+        "category":  "對話助手",
+        "tags":  [
+                     "微軟",
+                     "Bing",
+                     "Office"
+                 ],
+        "keywords":  [
+                         "copilot",
+                         "microsoft",
+                         "bing",
+                         "微軟"
+                     ],
+        "rating":  4.4,
+        "pricing":  "Freemium",
+        "url":  "https://copilot.microsoft.com",
+        "bestFor":  "Windows 與 Office 使用者"
+    },
+    {
+        "id":  "grok",
+        "name":  "Grok",
+        "description":  "xAI 出品的 AI 助手，強調即時資訊與幽默風格。",
+        "category":  "對話助手",
+        "tags":  [
+                     "xAI",
+                     "即時",
+                     "X"
+                 ],
+        "keywords":  [
+                         "grok",
+                         "xai",
+                         "twitter",
+                         "即時"
+                     ],
+        "rating":  4.3,
+        "pricing":  "Freemium",
+        "url":  "https://grok.com",
+        "bestFor":  "即時新聞與社群話題"
+    },
+    {
+        "id":  "deepseek",
+        "name":  "DeepSeek",
+        "description":  "深度求索 AI，程式與推理能力強，中文支援佳。",
+        "category":  "對話助手",
+        "tags":  [
+                     "中文",
+                     "推理",
+                     "程式"
+                 ],
+        "keywords":  [
+                         "deepseek",
+                         "深度求索",
+                         "推理",
+                         "coding"
+                     ],
+        "rating":  4.6,
+        "pricing":  "Freemium",
+        "url":  "https://chat.deepseek.com",
+        "bestFor":  "程式推理與中文問答"
+    },
+    {
+        "id":  "meta-ai",
+        "name":  "Meta AI",
+        "description":  "Meta 官方 AI 助手，整合 WhatsApp、Instagram 等平台。",
+        "category":  "對話助手",
+        "tags":  [
+                     "Meta",
+                     "Facebook",
+                     "社群"
+                 ],
+        "keywords":  [
+                         "meta ai",
+                         "facebook",
+                         "llama"
+                     ],
+        "rating":  4.2,
+        "pricing":  "Freemium",
+        "url":  "https://www.meta.ai",
+        "bestFor":  "Meta 生態使用者"
+    },
+    {
+        "id":  "mistral-le-chat",
+        "name":  "Mistral Le Chat",
+        "description":  "Mistral AI 對話產品，歐洲開源模型代表，多語言佳。",
+        "category":  "對話助手",
+        "tags":  [
+                     "Mistral",
+                     "歐洲",
+                     "開源"
+                 ],
+        "keywords":  [
+                         "mistral",
+                         "le chat",
+                         "法國"
+                     ],
+        "rating":  4.4,
+        "pricing":  "Freemium",
+        "url":  "https://chat.mistral.ai",
+        "bestFor":  "多語言對話與研究"
+    },
+    {
+        "id":  "poe",
+        "name":  "Poe",
+        "description":  "Quora 出品的多模型聊天平台，可切換 GPT、Claude 等。",
+        "category":  "對話助手",
+        "tags":  [
+                     "多模型",
+                     "Quora",
+                     "聚合"
+                 ],
+        "keywords":  [
+                         "poe",
+                         "quora",
+                         "多模型"
+                     ],
+        "rating":  4.3,
+        "pricing":  "Freemium",
+        "url":  "https://poe.com",
+        "bestFor":  "一次使用多種 AI 模型"
+    },
+    {
+        "id":  "character-ai",
+        "name":  "Character.AI",
+        "description":  "角色扮演 AI 聊天，可與虛擬人物對話或自訂角色。",
+        "category":  "對話助手",
+        "tags":  [
+                     "角色",
+                     "娛樂",
+                     "聊天"
+                 ],
+        "keywords":  [
+                         "character ai",
+                         "角色",
+                         "roleplay"
+                     ],
+        "rating":  4.2,
+        "pricing":  "Freemium",
+        "url":  "https://character.ai",
+        "bestFor":  "角色扮演與創意對話"
+    },
+    {
+        "id":  "pi",
+        "name":  "Pi",
+        "description":  "Inflection AI 的個人化 AI 助手，語氣友善、適合日常陪伴。",
+        "category":  "對話助手",
+        "tags":  [
+                     "Inflection",
+                     "陪伴",
+                     "對話"
+                 ],
+        "keywords":  [
+                         "pi",
+                         "inflection",
+                         "personal"
+                     ],
+        "rating":  4.1,
+        "pricing":  "Freemium",
+        "url":  "https://pi.ai",
+        "bestFor":  "輕鬆日常聊天"
+    },
+    {
+        "id":  "huggingchat",
+        "name":  "HuggingChat",
+        "description":  "Hugging Face 免費開源模型聊天介面。",
+        "category":  "對話助手",
+        "tags":  [
+                     "開源",
+                     "Hugging Face",
+                     "免費"
+                 ],
+        "keywords":  [
+                         "huggingchat",
+                         "huggingface",
+                         "開源"
+                     ],
+        "rating":  4,
+        "pricing":  "免費",
+        "url":  "https://huggingface.co/chat",
+        "bestFor":  "免費試用開源模型"
+    },
+    {
+        "id":  "you-com",
+        "name":  "You.com",
+        "description":  "AI 搜尋與聊天結合，可自訂 AI 模式。",
+        "category":  "對話助手",
+        "tags":  [
+                     "搜尋",
+                     "聊天",
+                     "自訂"
+                 ],
+        "keywords":  [
+                         "you.com",
+                         "youchat",
+                         "搜尋"
+                     ],
+        "rating":  4.1,
+        "pricing":  "Freemium",
+        "url":  "https://you.com",
+        "bestFor":  "搜尋加對話混合使用"
+    },
+    {
+        "id":  "phind",
+        "name":  "Phind",
+        "description":  "面向開發者的 AI 搜尋問答，程式問題回答精準。",
+        "category":  "對話助手",
+        "tags":  [
+                     "開發",
+                     "搜尋",
+                     "程式"
+                 ],
+        "keywords":  [
+                         "phind",
+                         "developer",
+                         "coding"
+                     ],
+        "rating":  4.3,
+        "pricing":  "Freemium",
+        "url":  "https://www.phind.com",
+        "bestFor":  "開發者技術問答"
+    },
+    {
+        "id":  "qwen-chat",
+        "name":  "Qwen Chat",
+        "description":  "阿里通義千問對話產品，中文與多模態能力強。",
+        "category":  "對話助手",
+        "tags":  [
+                     "阿里",
+                     "通義",
+                     "中文"
+                 ],
+        "keywords":  [
+                         "qwen",
+                         "通義",
+                         "tongyi",
+                         "阿里"
+                     ],
+        "rating":  4.4,
+        "pricing":  "Freemium",
+        "url":  "https://chat.qwen.ai",
+        "bestFor":  "中文與企業場景"
+    },
+    {
+        "id":  "qwen",
+        "name":  "豆包",
+        "description":  "字節跳動 AI 助手，中文對話與創作功能豐富。",
+        "category":  "對話助手",
+        "tags":  [
+                     "字節",
+                     "中文",
+                     "創作"
+                 ],
+        "keywords":  [
+                         "doubao",
+                         "豆包",
+                         "bytedance"
+                     ],
+        "rating":  4.3,
+        "pricing":  "Freemium",
+        "url":  "https://www.doubao.com",
+        "bestFor":  "中文日常與創意寫作"
+    },
+    {
+        "id":  "doubao",
+        "name":  "文心一言",
+        "description":  "百度文心大模型對話產品，中文理解與搜尋整合。",
+        "category":  "對話助手",
+        "tags":  [
+                     "百度",
+                     "中文",
+                     "搜尋"
+                 ],
+        "keywords":  [
+                         "ernie",
+                         "文心",
+                         "baidu"
+                     ],
+        "rating":  4.2,
+        "pricing":  "Freemium",
+        "url":  "https://yiyan.baidu.com",
+        "bestFor":  "中文搜尋與問答"
+    },
+    {
+        "id":  "ernie",
+        "name":  "讯飞星火",
+        "description":  "科大訊飛星火認知大模型，中文與語音場景強。",
+        "category":  "對話助手",
+        "tags":  [
+                     "訊飛",
+                     "中文",
+                     "語音"
+                 ],
+        "keywords":  [
+                         "spark",
+                         "訊飛",
+                         "星火"
+                     ],
+        "rating":  4.2,
+        "pricing":  "Freemium",
+        "url":  "https://xinghuo.xfyun.cn",
+        "bestFor":  "中文語音與教育場景"
+    },
+    {
+        "id":  "replika",
+        "name":  "Replika",
+        "description":  "AI 陪伴聊天機器人，注重情感互動與個人化。",
+        "category":  "對話助手",
+        "tags":  [
+                     "陪伴",
+                     "情感",
+                     "聊天"
+                 ],
+        "keywords":  [
+                         "replika",
+                         "companion",
+                         "陪伴"
+                     ],
+        "rating":  4,
+        "pricing":  "Freemium",
+        "url":  "https://replika.com",
+        "bestFor":  "情感陪伴與日記對話"
+    },
+    {
+        "id":  "openrouter",
+        "name":  "OpenRouter",
+        "description":  "聚合多家 LLM API 的路由平台，開發者與進階用戶適用。",
+        "category":  "對話助手",
+        "tags":  [
+                     "API",
+                     "聚合",
+                     "開發"
+                 ],
+        "keywords":  [
+                         "openrouter",
+                         "api",
+                         "llm"
+                     ],
+        "rating":  4.3,
+        "pricing":  "Freemium",
+        "url":  "https://openrouter.ai",
+        "bestFor":  "多模型 API 統一入口"
+    },
+    {
+        "id":  "venice-ai",
+        "name":  "Venice AI",
+        "description":  "注重隱私的去中心化 AI 聊天，無帳號追蹤。",
+        "category":  "對話助手",
+        "tags":  [
+                     "隱私",
+                     "去中心化",
+                     "聊天"
+                 ],
+        "keywords":  [
+                         "venice",
+                         "privacy",
+                         "private"
+                     ],
+        "rating":  4.1,
+        "pricing":  "Freemium",
+        "url":  "https://venice.ai",
+        "bestFor":  "注重隱私的 AI 對話"
+    },
+    {
+        "id":  "lm-studio",
+        "name":  "LM Studio",
+        "description":  "本地運行 LLM 的桌面應用，離線對話與模型管理。",
+        "category":  "對話助手",
+        "tags":  [
+                     "本地",
+                     "離線",
+                     "開源"
+                 ],
+        "keywords":  [
+                         "lm studio",
+                         "local",
+                         "offline"
+                     ],
+        "rating":  4.2,
+        "pricing":  "免費",
+        "url":  "https://lmstudio.ai",
+        "bestFor":  "本地離線 AI 對話"
+    },
+    {
+        "id":  "jan",
+        "name":  "Jan",
+        "description":  "開源本地 AI 助手，可離線使用多種開源模型。",
+        "category":  "對話助手",
+        "tags":  [
+                     "開源",
+                     "本地",
+                     "離線"
+                 ],
+        "keywords":  [
+                         "jan ai",
+                         "local",
+                         "opensource"
+                     ],
+        "rating":  4.1,
+        "pricing":  "免費",
+        "url":  "https://jan.ai",
+        "bestFor":  "開源本地 AI 助手"
+    },
+    {
+        "id":  "chatpdf",
+        "name":  "ChatPDF",
+        "description":  "上傳 PDF 後與文件 AI 對話，快速摘要與問答。",
+        "category":  "對話助手",
+        "tags":  [
+                     "PDF",
+                     "文件",
+                     "摘要"
+                 ],
+        "keywords":  [
+                         "chatpdf",
+                         "pdf",
+                         "document"
+                     ],
+        "rating":  4.3,
+        "pricing":  "Freemium",
+        "url":  "https://www.chatpdf.com",
+        "bestFor":  "PDF 文件問答"
+    },
+    {
+        "id":  "cursor",
+        "name":  "Cursor",
+        "description":  "AI 驅動程式編輯器，可讀取、修改程式碼並執行終端指令。",
+        "category":  "程式開發",
+        "tags":  [
+                     "IDE",
+                     "編程",
+                     "Agent"
+                 ],
+        "keywords":  [
+                         "cursor",
+                         "coding",
+                         "程式",
+                         "agent"
+                     ],
+        "rating":  4.8,
+        "pricing":  "Freemium",
+        "url":  "https://cursor.com",
+        "bestFor":  "AI 輔助寫程式與除錯"
+    },
+    {
+        "id":  "github-copilot",
+        "name":  "GitHub Copilot",
+        "description":  "微軟 AI 程式助手，編輯器內即時補全程式碼。",
+        "category":  "程式開發",
+        "tags":  [
+                     "GitHub",
+                     "補全",
+                     "IDE"
+                 ],
+        "keywords":  [
+                         "copilot",
+                         "github",
+                         "coding"
+                     ],
+        "rating":  4.6,
+        "pricing":  "付費",
+        "url":  "https://github.com/features/copilot",
+        "bestFor":  "編輯器內程式碼自動補全"
+    },
+    {
+        "id":  "codeium",
+        "name":  "Codeium",
+        "description":  "免費 AI 程式碼助手，支援多種 IDE 補全與聊天。",
+        "category":  "程式開發",
+        "tags":  [
+                     "免費",
+                     "補全",
+                     "Windsurf"
+                 ],
+        "keywords":  [
+                         "codeium",
+                         "windsurf",
+                         "free"
+                     ],
+        "rating":  4.4,
+        "pricing":  "免費",
+        "url":  "https://codeium.com",
+        "bestFor":  "免費程式碼 AI 補全"
+    },
+    {
+        "id":  "tabnine",
+        "name":  "Tabnine",
+        "description":  "企業級 AI 程式碼補全，支援私有部署。",
+        "category":  "程式開發",
+        "tags":  [
+                     "企業",
+                     "補全",
+                     "私有"
+                 ],
+        "keywords":  [
+                         "tabnine",
+                         "enterprise",
+                         "autocomplete"
+                     ],
+        "rating":  4.3,
+        "pricing":  "Freemium",
+        "url":  "https://www.tabnine.com",
+        "bestFor":  "企業程式碼補全"
+    },
+    {
+        "id":  "amazon-q-developer",
+        "name":  "Amazon Q Developer",
+        "description":  "AWS 出品 AI 開發助手，整合雲端與程式碼生成。",
+        "category":  "程式開發",
+        "tags":  [
+                     "AWS",
+                     "雲端",
+                     "企業"
+                 ],
+        "keywords":  [
+                         "amazon q",
+                         "codewhisperer",
+                         "aws"
+                     ],
+        "rating":  4.2,
+        "pricing":  "Freemium",
+        "url":  "https://aws.amazon.com/q/developer",
+        "bestFor":  "AWS 雲端開發輔助"
+    },
+    {
+        "id":  "replit-agent",
+        "name":  "Replit Agent",
+        "description":  "線上 IDE 與 AI Agent，可從描述生成完整應用。",
+        "category":  "程式開發",
+        "tags":  [
+                     "IDE",
+                     "Agent",
+                     "線上"
+                 ],
+        "keywords":  [
+                         "replit",
+                         "agent",
+                         "ide"
+                     ],
+        "rating":  4.4,
+        "pricing":  "Freemium",
+        "url":  "https://replit.com",
+        "bestFor":  "快速原型與全端開發"
+    },
+    {
+        "id":  "bolt-new",
+        "name":  "Bolt.new",
+        "description":  "StackBlitz AI 全端應用生成，文字描述即可建專案。",
+        "category":  "程式開發",
+        "tags":  [
+                     "全端",
+                     "Agent",
+                     "Web"
+                 ],
+        "keywords":  [
+                         "bolt",
+                         "stackblitz",
+                         "fullstack"
+                     ],
+        "rating":  4.5,
+        "pricing":  "Freemium",
+        "url":  "https://bolt.new",
+        "bestFor":  "文字生成 Web 應用"
+    },
+    {
+        "id":  "v0-by-vercel",
+        "name":  "v0 by Vercel",
+        "description":  "Vercel AI UI 生成器，描述即可產出 React 介面。",
+        "category":  "程式開發",
+        "tags":  [
+                     "UI",
+                     "React",
+                     "Vercel"
+                 ],
+        "keywords":  [
+                         "v0",
+                         "vercel",
+                         "ui",
+                         "frontend"
+                     ],
+        "rating":  4.5,
+        "pricing":  "Freemium",
+        "url":  "https://v0.dev",
+        "bestFor":  "AI 生成前端 UI"
+    },
+    {
+        "id":  "lovable",
+        "name":  "Lovable",
+        "description":  "AI 全端應用建構平台，自然語言生成可部署 App。",
+        "category":  "程式開發",
+        "tags":  [
+                     "全端",
+                     "No-code",
+                     "App"
+                 ],
+        "keywords":  [
+                         "lovable",
+                         "gpt engineer",
+                         "app"
+                     ],
+        "rating":  4.4,
+        "pricing":  "Freemium",
+        "url":  "https://lovable.dev",
+        "bestFor":  "自然語言建 Web App"
+    },
+    {
+        "id":  "sourcegraph-cody",
+        "name":  "Sourcegraph Cody",
+        "description":  "程式碼庫 AI 助手，理解整個 repo 並回答問題。",
+        "category":  "程式開發",
+        "tags":  [
+                     "Repo",
+                     "搜尋",
+                     "企業"
+                 ],
+        "keywords":  [
+                         "cody",
+                         "sourcegraph",
+                         "codebase"
+                     ],
+        "rating":  4.3,
+        "pricing":  "Freemium",
+        "url":  "https://sourcegraph.com/cody",
+        "bestFor":  "大型程式碼庫問答"
+    },
+    {
+        "id":  "continue",
+        "name":  "Continue",
+        "description":  "開源 IDE 外掛，連接任意 LLM 輔助寫程式。",
+        "category":  "程式開發",
+        "tags":  [
+                     "開源",
+                     "外掛",
+                     "IDE"
+                 ],
+        "keywords":  [
+                         "continue",
+                         "vscode",
+                         "opensource"
+                     ],
+        "rating":  4.2,
+        "pricing":  "免費",
+        "url":  "https://continue.dev",
+        "bestFor":  "自訂 LLM 程式助手"
+    },
+    {
+        "id":  "aider",
+        "name":  "Aider",
+        "description":  "終端機 AI pair programming，直接編輯 git 專案檔案。",
+        "category":  "程式開發",
+        "tags":  [
+                     "終端",
+                     "Git",
+                     "Pair"
+                 ],
+        "keywords":  [
+                         "aider",
+                         "cli",
+                         "terminal"
+                     ],
+        "rating":  4.3,
+        "pricing":  "Freemium",
+        "url":  "https://aider.chat",
+        "bestFor":  "終端機 pair programming"
+    },
+    {
+        "id":  "coderabbit",
+        "name":  "CodeRabbit",
+        "description":  "AI Pull Request 程式碼審查，自動提出改進建議。",
+        "category":  "程式開發",
+        "tags":  [
+                     "Code Review",
+                     "PR",
+                     "Git"
+                 ],
+        "keywords":  [
+                         "coderabbit",
+                         "review",
+                         "pr"
+                     ],
+        "rating":  4.4,
+        "pricing":  "Freemium",
+        "url":  "https://coderabbit.ai",
+        "bestFor":  "自動 PR 程式碼審查"
+    },
+    {
+        "id":  "mintlify",
+        "name":  "Mintlify",
+        "description":  "AI 驅動 API 文件生成與維護平台。",
+        "category":  "程式開發",
+        "tags":  [
+                     "文件",
+                     "API",
+                     "Docs"
+                 ],
+        "keywords":  [
+                         "mintlify",
+                         "documentation",
+                         "api"
+                     ],
+        "rating":  4.3,
+        "pricing":  "Freemium",
+        "url":  "https://mintlify.com",
+        "bestFor":  "API 文件自動生成"
+    },
+    {
+        "id":  "sweep-ai",
+        "name":  "Sweep AI",
+        "description":  "AI 軟體工程師 Agent，從 GitHub Issue 自動修 bug。",
+        "category":  "程式開發",
+        "tags":  [
+                     "Agent",
+                     "GitHub",
+                     "自動化"
+                 ],
+        "keywords":  [
+                         "sweep",
+                         "issue",
+                         "automation"
+                     ],
+        "rating":  4.1,
+        "pricing":  "Freemium",
+        "url":  "https://sweep.dev",
+        "bestFor":  "Issue 自動修復"
+    },
+    {
+        "id":  "devin",
+        "name":  "Devin",
+        "description":  "Cognition AI 軟體工程 Agent，可自主完成開發任務。",
+        "category":  "程式開發",
+        "tags":  [
+                     "Agent",
+                     "自主",
+                     "工程"
+                 ],
+        "keywords":  [
+                         "devin",
+                         "cognition",
+                         "agent"
+                     ],
+        "rating":  4.2,
+        "pricing":  "付費",
+        "url":  "https://devin.ai",
+        "bestFor":  "自主軟體工程任務"
+    },
+    {
+        "id":  "blackbox-ai",
+        "name":  "Blackbox AI",
+        "description":  "AI 程式碼生成與搜尋，支援多語言補全。",
+        "category":  "程式開發",
+        "tags":  [
+                     "補全",
+                     "搜尋",
+                     "多語言"
+                 ],
+        "keywords":  [
+                         "blackbox",
+                         "code",
+                         "search"
+                     ],
+        "rating":  4.2,
+        "pricing":  "Freemium",
+        "url":  "https://www.blackbox.ai",
+        "bestFor":  "程式碼生成與搜尋"
+    },
+    {
+        "id":  "pieces",
+        "name":  "Pieces",
+        "description":  "AI 程式碼片段管理與上下文助手。",
+        "category":  "程式開發",
+        "tags":  [
+                     "片段",
+                     "生產力",
+                     "IDE"
+                 ],
+        "keywords":  [
+                         "pieces",
+                         "snippets",
+                         "productivity"
+                     ],
+        "rating":  4.1,
+        "pricing":  "Freemium",
+        "url":  "https://pieces.app",
+        "bestFor":  "程式碼片段 AI 管理"
+    },
+    {
+        "id":  "supermaven",
+        "name":  "Supermaven",
+        "description":  "高速 AI 程式碼補全，大上下文窗口。",
+        "category":  "程式開發",
+        "tags":  [
+                     "補全",
+                     "速度",
+                     "IDE"
+                 ],
+        "keywords":  [
+                         "supermaven",
+                         "autocomplete"
+                     ],
+        "rating":  4.2,
+        "pricing":  "Freemium",
+        "url":  "https://supermaven.com",
+        "bestFor":  "高速程式碼補全"
+    },
+    {
+        "id":  "jetbrains-ai",
+        "name":  "JetBrains AI",
+        "description":  "JetBrains IDE 內建 AI 助手，整合 IntelliJ 系列。",
+        "category":  "程式開發",
+        "tags":  [
+                     "JetBrains",
+                     "IDE",
+                     "Java"
+                 ],
+        "keywords":  [
+                         "jetbrains",
+                         "intellij",
+                         "ai assistant"
+                     ],
+        "rating":  4.3,
+        "pricing":  "Freemium",
+        "url":  "https://www.jetbrains.com/ai",
+        "bestFor":  "JetBrains IDE 使用者"
+    },
+    {
+        "id":  "snyk-code",
+        "name":  "Snyk Code",
+        "description":  "AI 驅動程式碼安全掃描與漏洞修復建議。",
+        "category":  "程式開發",
+        "tags":  [
+                     "安全",
+                     "漏洞",
+                     "DevSecOps"
+                 ],
+        "keywords":  [
+                         "snyk",
+                         "security",
+                         "vulnerability"
+                     ],
+        "rating":  4.4,
+        "pricing":  "Freemium",
+        "url":  "https://snyk.io/product/snyk-code",
+        "bestFor":  "程式碼安全掃描"
+    },
+    {
+        "id":  "qodo",
+        "name":  "Qodo",
+        "description":  "AI 測試生成與程式碼品質平台（原 CodiumAI）。",
+        "category":  "程式開發",
+        "tags":  [
+                     "測試",
+                     "品質",
+                     "Review"
+                 ],
+        "keywords":  [
+                         "qodo",
+                         "codium",
+                         "test"
+                     ],
+        "rating":  4.2,
+        "pricing":  "Freemium",
+        "url":  "https://www.qodo.ai",
+        "bestFor":  "AI 生成單元測試"
+    },
+    {
+        "id":  "warp-ai",
+        "name":  "Warp AI",
+        "description":  "AI 增強終端機，自然語言轉 shell 指令。",
+        "category":  "程式開發",
+        "tags":  [
+                     "終端",
+                     "Shell",
+                     "CLI"
+                 ],
+        "keywords":  [
+                         "warp",
+                         "terminal",
+                         "shell"
+                     ],
+        "rating":  4.3,
+        "pricing":  "Freemium",
+        "url":  "https://www.warp.dev",
+        "bestFor":  "AI 終端機指令助手"
+    },
+    {
+        "id":  "fig",
+        "name":  "Fig",
+        "description":  "終端機自動完成與 AI 指令建議（Amazon 收購）。",
+        "category":  "程式開發",
+        "tags":  [
+                     "終端",
+                     "Autocomplete",
+                     "CLI"
+                 ],
+        "keywords":  [
+                         "fig",
+                         "terminal",
+                         "aws"
+                     ],
+        "rating":  4.1,
+        "pricing":  "Freemium",
+        "url":  "https://fig.io",
+        "bestFor":  "終端機自動完成"
+    },
+    {
+        "id":  "mutable-ai",
+        "name":  "Mutable AI",
+        "description":  "AI 自動完成與重構程式碼，整合 VS Code。",
+        "category":  "程式開發",
+        "tags":  [
+                     "重構",
+                     "補全",
+                     "VS Code"
+                 ],
+        "keywords":  [
+                         "mutable",
+                         "refactor",
+                         "vscode"
+                     ],
+        "rating":  4,
+        "pricing":  "Freemium",
+        "url":  "https://mutable.ai",
+        "bestFor":  "程式碼重構輔助"
+    },
+    {
+        "id":  "midjourney",
+        "name":  "Midjourney",
+        "description":  "高品質 AI 繪圖，藝術風格強、視覺效果出色。",
+        "category":  "圖像生成",
+        "tags":  [
+                     "繪圖",
+                     "設計",
+                     "藝術"
+                 ],
+        "keywords":  [
+                         "midjourney",
+                         "mj",
+                         "繪圖",
+                         "image"
+                     ],
+        "rating":  4.7,
+        "pricing":  "付費",
+        "url":  "https://www.midjourney.com",
+        "bestFor":  "高質感藝術風格圖像"
+    },
+    {
+        "id":  "dalle",
+        "name":  "DALL·E",
+        "description":  "OpenAI AI 繪圖，文字描述生成圖片，與 ChatGPT 整合。",
+        "category":  "圖像生成",
+        "tags":  [
+                     "OpenAI",
+                     "繪圖",
+                     "ChatGPT"
+                 ],
+        "keywords":  [
+                         "dalle",
+                         "dall-e",
+                         "openai"
+                     ],
+        "rating":  4.4,
+        "pricing":  "Freemium",
+        "url":  "https://openai.com/dall-e",
+        "bestFor":  "快速文字轉圖片"
+    },
+    {
+        "id":  "stable-diffusion",
+        "name":  "Stable Diffusion",
+        "description":  "開源 AI 繪圖模型，可本地部署，高度客製化。",
+        "category":  "圖像生成",
+        "tags":  [
+                     "開源",
+                     "本地",
+                     "ComfyUI"
+                 ],
+        "keywords":  [
+                         "stable diffusion",
+                         "sd",
+                         "開源"
+                     ],
+        "rating":  4.3,
+        "pricing":  "免費",
+        "url":  "https://stability.ai",
+        "bestFor":  "可自架的開源繪圖"
+    },
+    {
+        "id":  "adobe-firefly",
+        "name":  "Adobe Firefly",
+        "description":  "Adobe 商用安全 AI 繪圖，整合 Creative Cloud。",
+        "category":  "圖像生成",
+        "tags":  [
+                     "Adobe",
+                     "商用",
+                     "設計"
+                 ],
+        "keywords":  [
+                         "firefly",
+                         "adobe",
+                         "commercial"
+                     ],
+        "rating":  4.5,
+        "pricing":  "Freemium",
+        "url":  "https://firefly.adobe.com",
+        "bestFor":  "商用安全 AI 繪圖"
+    },
+    {
+        "id":  "leonardo-ai",
+        "name":  "Leonardo AI",
+        "description":  "遊戲與概念藝術 AI 繪圖平台，模型豐富。",
+        "category":  "圖像生成",
+        "tags":  [
+                     "遊戲",
+                     "概念藝術",
+                     "3D"
+                 ],
+        "keywords":  [
+                         "leonardo",
+                         "game art",
+                         "concept"
+                     ],
+        "rating":  4.5,
+        "pricing":  "Freemium",
+        "url":  "https://leonardo.ai",
+        "bestFor":  "遊戲與概念藝術"
+    },
+    {
+        "id":  "ideogram",
+        "name":  "Ideogram",
+        "description":  "擅長文字渲染的 AI 繪圖，海報與 Logo 表現佳。",
+        "category":  "圖像生成",
+        "tags":  [
+                     "文字",
+                     "Logo",
+                     "海報"
+                 ],
+        "keywords":  [
+                         "ideogram",
+                         "text",
+                         "typography"
+                     ],
+        "rating":  4.5,
+        "pricing":  "Freemium",
+        "url":  "https://ideogram.ai",
+        "bestFor":  "含文字的視覺設計"
+    },
+    {
+        "id":  "flux",
+        "name":  "Flux",
+        "description":  "Black Forest Labs 高品質開源繪圖模型系列。",
+        "category":  "圖像生成",
+        "tags":  [
+                     "開源",
+                     "寫實",
+                     "高品質"
+                 ],
+        "keywords":  [
+                         "flux",
+                         "black forest",
+                         "realistic"
+                     ],
+        "rating":  4.6,
+        "pricing":  "Freemium",
+        "url":  "https://blackforestlabs.ai",
+        "bestFor":  "寫實風格高品質繪圖"
+    },
+    {
+        "id":  "playground-ai",
+        "name":  "Playground AI",
+        "description":  "易用 AI 繪圖平台，混合多種模型與風格。",
+        "category":  "圖像生成",
+        "tags":  [
+                     "易用",
+                     "混合",
+                     "社群"
+                 ],
+        "keywords":  [
+                         "playground",
+                         "image",
+                         "free tier"
+                     ],
+        "rating":  4.3,
+        "pricing":  "Freemium",
+        "url":  "https://playground.com",
+        "bestFor":  "入門 AI 繪圖"
+    },
+    {
+        "id":  "nightcafe",
+        "name":  "NightCafe",
+        "description":  "社群 AI 藝術平台，支援多種演算法與挑戰。",
+        "category":  "圖像生成",
+        "tags":  [
+                     "社群",
+                     "藝術",
+                     "挑戰"
+                 ],
+        "keywords":  [
+                         "nightcafe",
+                         "community",
+                         "art"
+                     ],
+        "rating":  4.2,
+        "pricing":  "Freemium",
+        "url":  "https://creator.nightcafe.studio",
+        "bestFor":  "社群 AI 藝術創作"
+    },
+    {
+        "id":  "craiyon",
+        "name":  "Craiyon",
+        "description":  "免費 AI 繪圖（原 DALL-E mini），快速試玩。",
+        "category":  "圖像生成",
+        "tags":  [
+                     "免費",
+                     "快速",
+                     "入門"
+                 ],
+        "keywords":  [
+                         "craiyon",
+                         "dalle mini",
+                         "free"
+                     ],
+        "rating":  4,
+        "pricing":  "免費",
+        "url":  "https://www.craiyon.com",
+        "bestFor":  "免費快速試玩繪圖"
+    },
+    {
+        "id":  "krea-ai",
+        "name":  "Krea AI",
+        "description":  "即時 AI 繪圖與風格轉換，創意工作流工具。",
+        "category":  "圖像生成",
+        "tags":  [
+                     "即時",
+                     "風格",
+                     "工作流"
+                 ],
+        "keywords":  [
+                         "krea",
+                         "realtime",
+                         "style"
+                     ],
+        "rating":  4.4,
+        "pricing":  "Freemium",
+        "url":  "https://www.krea.ai",
+        "bestFor":  "即時創意繪圖"
+    },
+    {
+        "id":  "magnific-ai",
+        "name":  "Magnific AI",
+        "description":  "AI 圖像放大與細節增強，提升解析度與質感。",
+        "category":  "圖像生成",
+        "tags":  [
+                     "放大",
+                     "增強",
+                     "Upscale"
+                 ],
+        "keywords":  [
+                         "magnific",
+                         "upscale",
+                         "enhance"
+                     ],
+        "rating":  4.5,
+        "pricing":  "付費",
+        "url":  "https://magnific.ai",
+        "bestFor":  "AI 圖像放大增強"
+    },
+    {
+        "id":  "scenario",
+        "name":  "Scenario",
+        "description":  "遊戲工作室 AI 素材生成，可訓練自訂風格。",
+        "category":  "圖像生成",
+        "tags":  [
+                     "遊戲",
+                     "自訂",
+                     "素材"
+                 ],
+        "keywords":  [
+                         "scenario",
+                         "game assets",
+                         "custom"
+                     ],
+        "rating":  4.3,
+        "pricing":  "Freemium",
+        "url":  "https://www.scenario.com",
+        "bestFor":  "遊戲素材批量生成"
+    },
+    {
+        "id":  "artbreeder",
+        "name":  "Artbreeder",
+        "description":  "基因混合式 AI 藝術創作，可融合與演化圖像。",
+        "category":  "圖像生成",
+        "tags":  [
+                     "混合",
+                     "演化",
+                     "藝術"
+                 ],
+        "keywords":  [
+                         "artbreeder",
+                         "blend",
+                         "genetic"
+                     ],
+        "rating":  4.1,
+        "pricing":  "Freemium",
+        "url":  "https://www.artbreeder.com",
+        "bestFor":  "創意圖像混合演化"
+    },
+    {
+        "id":  "bluewillow",
+        "name":  "BlueWillow",
+        "description":  "Discord 社群 AI 繪圖，類 Midjourney 體驗。",
+        "category":  "圖像生成",
+        "tags":  [
+                     "Discord",
+                     "社群",
+                     "免費"
+                 ],
+        "keywords":  [
+                         "bluewillow",
+                         "discord",
+                         "free"
+                     ],
+        "rating":  4,
+        "pricing":  "Freemium",
+        "url":  "https://www.bluewillow.ai",
+        "bestFor":  "Discord 社群繪圖"
+    },
+    {
+        "id":  "lexica",
+        "name":  "Lexica",
+        "description":  "Stable Diffusion 提示詞搜尋與圖庫平台。",
+        "category":  "圖像生成",
+        "tags":  [
+                     "提示詞",
+                     "搜尋",
+                     "SD"
+                 ],
+        "keywords":  [
+                         "lexica",
+                         "prompt",
+                         "search"
+                     ],
+        "rating":  4.2,
+        "pricing":  "Freemium",
+        "url":  "https://lexica.art",
+        "bestFor":  "提示詞靈感搜尋"
+    },
+    {
+        "id":  "tensor-art",
+        "name":  "Tensor.art",
+        "description":  "AI 模型分享與線上生成平台，社群模型豐富。",
+        "category":  "圖像生成",
+        "tags":  [
+                     "模型",
+                     "社群",
+                     "SD"
+                 ],
+        "keywords":  [
+                         "tensor art",
+                         "models",
+                         "community"
+                     ],
+        "rating":  4.2,
+        "pricing":  "Freemium",
+        "url":  "https://tensor.art",
+        "bestFor":  "社群模型線上生成"
+    },
+    {
+        "id":  "seaart",
+        "name":  "SeaArt",
+        "description":  "多模型 AI 繪圖平台，支援 LoRA 與風格訓練。",
+        "category":  "圖像生成",
+        "tags":  [
+                     "LoRA",
+                     "模型",
+                     "亞洲"
+                 ],
+        "keywords":  [
+                         "seaart",
+                         "lora",
+                         "models"
+                     ],
+        "rating":  4.3,
+        "pricing":  "Freemium",
+        "url":  "https://www.seaart.ai",
+        "bestFor":  "多模型繪圖與訓練"
+    },
+    {
+        "id":  "dreamstudio",
+        "name":  "DreamStudio",
+        "description":  "Stability AI 官方 SD 線上繪圖介面。",
+        "category":  "圖像生成",
+        "tags":  [
+                     "Stability",
+                     "SD",
+                     "官方"
+                 ],
+        "keywords":  [
+                         "dreamstudio",
+                         "stability",
+                         "sd"
+                     ],
+        "rating":  4.2,
+        "pricing":  "Freemium",
+        "url":  "https://dreamstudio.ai",
+        "bestFor":  "官方 Stable Diffusion 介面"
+    },
+    {
+        "id":  "wombo-dream",
+        "name":  "Wombo Dream",
+        "description":  "手機 App AI 繪圖，一鍵生成藝術風格圖片。",
+        "category":  "圖像生成",
+        "tags":  [
+                     "手機",
+                     "App",
+                     "快速"
+                 ],
+        "keywords":  [
+                         "wombo",
+                         "dream",
+                         "mobile"
+                     ],
+        "rating":  4,
+        "pricing":  "Freemium",
+        "url":  "https://www.wombodream.com",
+        "bestFor":  "手機快速 AI 繪圖"
+    },
+    {
+        "id":  "starryai",
+        "name":  "StarryAI",
+        "description":  "手機 AI 藝術生成 App，多種風格可選。",
+        "category":  "圖像生成",
+        "tags":  [
+                     "手機",
+                     "App",
+                     "藝術"
+                 ],
+        "keywords":  [
+                         "starryai",
+                         "mobile",
+                         "art"
+                     ],
+        "rating":  4,
+        "pricing":  "Freemium",
+        "url":  "https://starryai.com",
+        "bestFor":  "手機 AI 藝術 App"
+    },
+    {
+        "id":  "getimg-ai",
+        "name":  "getimg.ai",
+        "description":  "多合一 AI 影像工具，生成、編輯、擴圖一次完成。",
+        "category":  "圖像生成",
+        "tags":  [
+                     "多合一",
+                     "編輯",
+                     "擴圖"
+                 ],
+        "keywords":  [
+                         "getimg",
+                         "inpaint",
+                         "outpaint"
+                     ],
+        "rating":  4.3,
+        "pricing":  "Freemium",
+        "url":  "https://getimg.ai",
+        "bestFor":  "生成加編輯一站式"
+    },
+    {
+        "id":  "recraft",
+        "name":  "Recraft",
+        "description":  "向量風格 AI 繪圖，適合品牌與設計系統。",
+        "category":  "圖像生成",
+        "tags":  [
+                     "向量",
+                     "品牌",
+                     "設計"
+                 ],
+        "keywords":  [
+                         "recraft",
+                         "vector",
+                         "brand"
+                     ],
+        "rating":  4.4,
+        "pricing":  "Freemium",
+        "url":  "https://www.recraft.ai",
+        "bestFor":  "向量風格品牌素材"
+    },
+    {
+        "id":  "piclumen",
+        "name":  "PicLumen",
+        "description":  "免費 AI 繪圖平台，多模型選擇。",
+        "category":  "圖像生成",
+        "tags":  [
+                     "免費",
+                     "多模型",
+                     "繪圖"
+                 ],
+        "keywords":  [
+                         "piclumen",
+                         "free",
+                         "image"
+                     ],
+        "rating":  4.1,
+        "pricing":  "Freemium",
+        "url":  "https://www.piclumen.com",
+        "bestFor":  "免費多模型繪圖"
+    },
+    {
+        "id":  "bing-image-creator",
+        "name":  "Bing Image Creator",
+        "description":  "微軟 Bing 免費 DALL-E 繪圖，Microsoft 帳號即可用。",
+        "category":  "圖像生成",
+        "tags":  [
+                     "微軟",
+                     "免費",
+                     "DALL-E"
+                 ],
+        "keywords":  [
+                         "bing",
+                         "image creator",
+                         "microsoft"
+                     ],
+        "rating":  4.3,
+        "pricing":  "免費",
+        "url":  "https://www.bing.com/images/create",
+        "bestFor":  "免費微軟 AI 繪圖"
+    },
+    {
+        "id":  "canva-ai",
+        "name":  "Canva AI",
+        "description":  "Canva 內建 AI，一鍵生成海報、簡報、社群貼文。",
+        "category":  "設計",
+        "tags":  [
+                     "Canva",
+                     "海報",
+                     "簡報"
+                 ],
+        "keywords":  [
+                         "canva",
+                         "設計",
+                         "海報",
+                         "ppt"
+                     ],
+        "rating":  4.5,
+        "pricing":  "Freemium",
+        "url":  "https://www.canva.com",
+        "bestFor":  "非設計師快速做視覺素材"
+    },
+    {
+        "id":  "figma-ai",
+        "name":  "Figma AI",
+        "description":  "Figma 內建 AI 設計助手，快速生成 UI 原型。",
+        "category":  "設計",
+        "tags":  [
+                     "Figma",
+                     "UI",
+                     "UX"
+                 ],
+        "keywords":  [
+                         "figma",
+                         "ui",
+                         "ux",
+                         "prototype"
+                     ],
+        "rating":  4.4,
+        "pricing":  "Freemium",
+        "url":  "https://www.figma.com",
+        "bestFor":  "UI/UX 設計與原型"
+    },
+    {
+        "id":  "uizard",
+        "name":  "Uizard",
+        "description":  "AI 將手繪草圖轉為可編輯 UI 設計。",
+        "category":  "設計",
+        "tags":  [
+                     "UI",
+                     "草圖",
+                     "原型"
+                 ],
+        "keywords":  [
+                         "uizard",
+                         "wireframe",
+                         "sketch"
+                     ],
+        "rating":  4.3,
+        "pricing":  "Freemium",
+        "url":  "https://uizard.io",
+        "bestFor":  "草圖轉 UI 設計"
+    },
+    {
+        "id":  "galileo-ai",
+        "name":  "Galileo AI",
+        "description":  "文字描述生成高保真 UI 設計稿。",
+        "category":  "設計",
+        "tags":  [
+                     "UI",
+                     "高保真",
+                     "Figma"
+                 ],
+        "keywords":  [
+                         "galileo",
+                         "ui design",
+                         "figma"
+                     ],
+        "rating":  4.3,
+        "pricing":  "Freemium",
+        "url":  "https://www.usegalileo.ai",
+        "bestFor":  "文字生成 UI 設計"
+    },
+    {
+        "id":  "khroma",
+        "name":  "Khroma",
+        "description":  "AI 學習你的色彩偏好，生成配色方案。",
+        "category":  "設計",
+        "tags":  [
+                     "配色",
+                     "色彩",
+                     "品牌"
+                 ],
+        "keywords":  [
+                         "khroma",
+                         "color",
+                         "palette"
+                     ],
+        "rating":  4.2,
+        "pricing":  "免費",
+        "url":  "https://www.khroma.co",
+        "bestFor":  "AI 配色方案生成"
+    },
+    {
+        "id":  "looka",
+        "name":  "Looka",
+        "description":  "AI Logo 與品牌識別設計平台。",
+        "category":  "設計",
+        "tags":  [
+                     "Logo",
+                     "品牌",
+                     "識別"
+                 ],
+        "keywords":  [
+                         "looka",
+                         "logo",
+                         "branding"
+                     ],
+        "rating":  4.2,
+        "pricing":  "付費",
+        "url":  "https://looka.com",
+        "bestFor":  "AI Logo 與品牌套件"
+    },
+    {
+        "id":  "brandmark",
+        "name":  "Brandmark",
+        "description":  "AI 自動生成 Logo 與品牌素材。",
+        "category":  "設計",
+        "tags":  [
+                     "Logo",
+                     "品牌",
+                     "自動"
+                 ],
+        "keywords":  [
+                         "brandmark",
+                         "logo",
+                         "brand"
+                     ],
+        "rating":  4.1,
+        "pricing":  "付費",
+        "url":  "https://brandmark.io",
+        "bestFor":  "快速 AI Logo 設計"
+    },
+    {
+        "id":  "designs-ai",
+        "name":  "Designs.ai",
+        "description":  "AI 設計套件，含 Logo、影片、語音等。",
+        "category":  "設計",
+        "tags":  [
+                     "套件",
+                     "Logo",
+                     "多媒體"
+                 ],
+        "keywords":  [
+                         "designs.ai",
+                         "logo",
+                         "video"
+                     ],
+        "rating":  4.1,
+        "pricing":  "Freemium",
+        "url":  "https://designs.ai",
+        "bestFor":  "一站式 AI 設計套件"
+    },
+    {
+        "id":  "microsoft-designer",
+        "name":  "Microsoft Designer",
+        "description":  "微軟 AI 設計工具，文字生成社群與印刷素材。",
+        "category":  "設計",
+        "tags":  [
+                     "微軟",
+                     "社群",
+                     "模板"
+                 ],
+        "keywords":  [
+                         "designer",
+                         "microsoft",
+                         "social"
+                     ],
+        "rating":  4.3,
+        "pricing":  "Freemium",
+        "url":  "https://designer.microsoft.com",
+        "bestFor":  "微軟 AI 視覺設計"
+    },
+    {
+        "id":  "kittl",
+        "name":  "Kittl",
+        "description":  "AI 輔助平面設計，模板與字體豐富。",
+        "category":  "設計",
+        "tags":  [
+                     "平面",
+                     "模板",
+                     "字體"
+                 ],
+        "keywords":  [
+                         "kittl",
+                         "graphic",
+                         "templates"
+                     ],
+        "rating":  4.3,
+        "pricing":  "Freemium",
+        "url":  "https://www.kittl.com",
+        "bestFor":  "平面設計與模板"
+    },
+    {
+        "id":  "visme-ai",
+        "name":  "Visme AI",
+        "description":  "AI 簡報與資訊圖表設計平台。",
+        "category":  "設計",
+        "tags":  [
+                     "簡報",
+                     "資訊圖",
+                     "視覺"
+                 ],
+        "keywords":  [
+                         "visme",
+                         "infographic",
+                         "presentation"
+                     ],
+        "rating":  4.2,
+        "pricing":  "Freemium",
+        "url":  "https://www.visme.co",
+        "bestFor":  "資訊圖表與簡報"
+    },
+    {
+        "id":  "magician-for-figma",
+        "name":  "Magician for Figma",
+        "description":  "Figma 外掛 AI，生成圖示、文案與圖片。",
+        "category":  "設計",
+        "tags":  [
+                     "Figma",
+                     "外掛",
+                     "圖示"
+                 ],
+        "keywords":  [
+                         "magician",
+                         "figma plugin",
+                         "icons"
+                     ],
+        "rating":  4.2,
+        "pricing":  "Freemium",
+        "url":  "https://magician.design",
+        "bestFor":  "Figma AI 外掛"
+    },
+    {
+        "id":  "relume",
+        "name":  "Relume",
+        "description":  "AI 網站 sitemap 與 wireframe 生成。",
+        "category":  "設計",
+        "tags":  [
+                     "網站",
+                     "Wireframe",
+                     "Sitemap"
+                 ],
+        "keywords":  [
+                         "relume",
+                         "website",
+                         "wireframe"
+                     ],
+        "rating":  4.4,
+        "pricing":  "Freemium",
+        "url":  "https://www.relume.io",
+        "bestFor":  "網站結構與線框圖"
+    },
+    {
+        "id":  "framer-ai",
+        "name":  "Framer AI",
+        "description":  "AI 生成完整網站頁面，可視化編輯發布。",
+        "category":  "設計",
+        "tags":  [
+                     "網站",
+                     "No-code",
+                     "Landing"
+                 ],
+        "keywords":  [
+                         "framer",
+                         "website",
+                         "landing page"
+                     ],
+        "rating":  4.5,
+        "pricing":  "Freemium",
+        "url":  "https://www.framer.com",
+        "bestFor":  "AI 生成 Landing Page"
+    },
+    {
+        "id":  "durable",
+        "name":  "Durable",
+        "description":  "30 秒 AI 生成完整小型企業網站。",
+        "category":  "設計",
+        "tags":  [
+                     "網站",
+                     "小企",
+                     "快速"
+                 ],
+        "keywords":  [
+                         "durable",
+                         "website builder",
+                         "small business"
+                     ],
+        "rating":  4.2,
+        "pricing":  "Freemium",
+        "url":  "https://durable.co",
+        "bestFor":  "快速生成小企業網站"
+    },
+    {
+        "id":  "10web",
+        "name":  "10Web",
+        "description":  "AI WordPress 網站建構與優化平台。",
+        "category":  "設計",
+        "tags":  [
+                     "WordPress",
+                     "網站",
+                     "SEO"
+                 ],
+        "keywords":  [
+                         "10web",
+                         "wordpress",
+                         "website"
+                     ],
+        "rating":  4.2,
+        "pricing":  "Freemium",
+        "url":  "https://10web.io",
+        "bestFor":  "AI WordPress 建站"
+    },
+    {
+        "id":  "hostinger-ai",
+        "name":  "Hostinger AI",
+        "description":  "AI 網站建構器，拖曳加 AI 生成內容。",
+        "category":  "設計",
+        "tags":  [
+                     "網站",
+                     "建站",
+                     "Hosting"
+                 ],
+        "keywords":  [
+                         "hostinger",
+                         "website builder",
+                         "ai"
+                     ],
+        "rating":  4.1,
+        "pricing":  "Freemium",
+        "url":  "https://www.hostinger.com/ai-website-builder",
+        "bestFor":  "AI 網站建構"
+    },
+    {
+        "id":  "spline-ai",
+        "name":  "Spline AI",
+        "description":  "AI 3D 設計工具，文字生成 3D 場景。",
+        "category":  "設計",
+        "tags":  [
+                     "3D",
+                     "場景",
+                     "互動"
+                 ],
+        "keywords":  [
+                         "spline",
+                         "3d",
+                         "design"
+                     ],
+        "rating":  4.3,
+        "pricing":  "Freemium",
+        "url":  "https://spline.design",
+        "bestFor":  "AI 3D 場景設計"
+    },
+    {
+        "id":  "autodraw",
+        "name":  "Autodraw",
+        "description":  "Google AI 塗鴉辨識，自動美化手繪草圖。",
+        "category":  "設計",
+        "tags":  [
+                     "Google",
+                     "塗鴉",
+                     "免費"
+                 ],
+        "keywords":  [
+                         "autodraw",
+                         "google",
+                         "sketch"
+                     ],
+        "rating":  4,
+        "pricing":  "免費",
+        "url":  "https://www.autodraw.com",
+        "bestFor":  "塗鴉自動美化"
+    },
+    {
+        "id":  "picsart-ai",
+        "name":  "Picsart AI",
+        "description":  "AI 照片編輯與創意設計 App，濾鏡與模板豐富。",
+        "category":  "設計",
+        "tags":  [
+                     "照片",
+                     "App",
+                     "濾鏡"
+                 ],
+        "keywords":  [
+                         "picsart",
+                         "photo edit",
+                         "mobile"
+                     ],
+        "rating":  4.3,
+        "pricing":  "Freemium",
+        "url":  "https://picsart.com",
+        "bestFor":  "手機 AI 創意設計"
+    },
+    {
+        "id":  "adobe-express",
+        "name":  "Adobe Express",
+        "description":  "Adobe 輕量設計工具，內建 Firefly AI 功能。",
+        "category":  "設計",
+        "tags":  [
+                     "Adobe",
+                     "Firefly",
+                     "社群"
+                 ],
+        "keywords":  [
+                         "adobe express",
+                         "firefly",
+                         "social"
+                     ],
+        "rating":  4.4,
+        "pricing":  "Freemium",
+        "url":  "https://www.adobe.com/express",
+        "bestFor":  "輕量 Adobe AI 設計"
+    },
+    {
+        "id":  "miro-ai",
+        "name":  "Miro AI",
+        "description":  "白板 AI 助手，生成腦力激盪與流程圖。",
+        "category":  "設計",
+        "tags":  [
+                     "白板",
+                     "協作",
+                     "流程圖"
+                 ],
+        "keywords":  [
+                         "miro",
+                         "whiteboard",
+                         "brainstorm"
+                     ],
+        "rating":  4.3,
+        "pricing":  "Freemium",
+        "url":  "https://miro.com/ai",
+        "bestFor":  "協作白板 AI 整理"
+    },
+    {
+        "id":  "whimsical-ai",
+        "name":  "Whimsical AI",
+        "description":  "AI 生成流程圖、線框圖與專案文件。",
+        "category":  "設計",
+        "tags":  [
+                     "流程圖",
+                     "線框",
+                     "文件"
+                 ],
+        "keywords":  [
+                         "whimsical",
+                         "flowchart",
+                         "wireframe"
+                     ],
+        "rating":  4.2,
+        "pricing":  "Freemium",
+        "url":  "https://whimsical.com",
+        "bestFor":  "流程圖與線框 AI"
+    },
+    {
+        "id":  "mockplus-dt",
+        "name":  "Mockplus DT",
+        "description":  "AI 原型設計工具，快速生成互動原型。",
+        "category":  "設計",
+        "tags":  [
+                     "原型",
+                     "互動",
+                     "UI"
+                 ],
+        "keywords":  [
+                         "mockplus",
+                         "prototype",
+                         "ui"
+                     ],
+        "rating":  4.1,
+        "pricing":  "Freemium",
+        "url":  "https://dt.mockplus.com",
+        "bestFor":  "AI 互動原型設計"
+    },
+    {
+        "id":  "runway",
+        "name":  "Runway",
+        "description":  "專業 AI 影片生成與編輯，文字轉影片、去背、特效。",
+        "category":  "影片",
+        "tags":  [
+                     "影片",
+                     "Gen-3",
+                     "剪輯"
+                 ],
+        "keywords":  [
+                         "runway",
+                         "video",
+                         "gen-3"
+                     ],
+        "rating":  4.6,
+        "pricing":  "Freemium",
+        "url":  "https://runwayml.com",
+        "bestFor":  "AI 影片生成與剪輯"
+    },
+    {
+        "id":  "pika",
+        "name":  "Pika",
+        "description":  "易上手 AI 影片生成，文字或圖片生成短影片。",
+        "category":  "影片",
+        "tags":  [
+                     "短片",
+                     "動畫",
+                     "社群"
+                 ],
+        "keywords":  [
+                         "pika",
+                         "video",
+                         "short"
+                     ],
+        "rating":  4.4,
+        "pricing":  "Freemium",
+        "url":  "https://pika.art",
+        "bestFor":  "輕量 AI 短影片"
+    },
+    {
+        "id":  "sora",
+        "name":  "Sora",
+        "description":  "OpenAI 文字生成高品質影片模型。",
+        "category":  "影片",
+        "tags":  [
+                     "OpenAI",
+                     "文字轉影片",
+                     "高品質"
+                 ],
+        "keywords":  [
+                         "sora",
+                         "openai",
+                         "text to video"
+                     ],
+        "rating":  4.5,
+        "pricing":  "Freemium",
+        "url":  "https://openai.com/sora",
+        "bestFor":  "高品質文字轉影片"
+    },
+    {
+        "id":  "luma-dream-machine",
+        "name":  "Luma Dream Machine",
+        "description":  "Luma AI 文字與圖片轉影片，物理效果自然。",
+        "category":  "影片",
+        "tags":  [
+                     "Luma",
+                     "3D",
+                     "物理"
+                 ],
+        "keywords":  [
+                         "luma",
+                         "dream machine",
+                         "video"
+                     ],
+        "rating":  4.5,
+        "pricing":  "Freemium",
+        "url":  "https://lumalabs.ai/dream-machine",
+        "bestFor":  "自然物理效果影片"
+    },
+    {
+        "id":  "kling-ai",
+        "name":  "Kling AI",
+        "description":  "快手 AI 影片生成，中文場景支援佳。",
+        "category":  "影片",
+        "tags":  [
+                     "快手",
+                     "中文",
+                     "長影片"
+                 ],
+        "keywords":  [
+                         "kling",
+                         "kuaishou",
+                         "video"
+                     ],
+        "rating":  4.4,
+        "pricing":  "Freemium",
+        "url":  "https://klingai.com",
+        "bestFor":  "中文 AI 影片生成"
+    },
+    {
+        "id":  "hailuo-ai",
+        "name":  "Hailuo AI",
+        "description":  "MiniMax AI 影片生成，人物動作流暢。",
+        "category":  "影片",
+        "tags":  [
+                     "MiniMax",
+                     "人物",
+                     "動作"
+                 ],
+        "keywords":  [
+                         "hailuo",
+                         "minimax",
+                         "video"
+                     ],
+        "rating":  4.3,
+        "pricing":  "Freemium",
+        "url":  "https://hailuoai.com",
+        "bestFor":  "人物動態影片"
+    },
+    {
+        "id":  "heygen",
+        "name":  "HeyGen",
+        "description":  "AI 數位人影片，多語言口型同步。",
+        "category":  "影片",
+        "tags":  [
+                     "數位人",
+                     "Avatar",
+                     "多語言"
+                 ],
+        "keywords":  [
+                         "heygen",
+                         "avatar",
+                         "lip sync"
+                     ],
+        "rating":  4.5,
+        "pricing":  "Freemium",
+        "url":  "https://www.heygen.com",
+        "bestFor":  "AI 數位人影片"
+    },
+    {
+        "id":  "synthesia",
+        "name":  "Synthesia",
+        "description":  "AI 虛擬主播影片，企業培訓與行銷常用。",
+        "category":  "影片",
+        "tags":  [
+                     "虛擬主播",
+                     "培訓",
+                     "企業"
+                 ],
+        "keywords":  [
+                         "synthesia",
+                         "avatar",
+                         "training"
+                     ],
+        "rating":  4.4,
+        "pricing":  "付費",
+        "url":  "https://www.synthesia.io",
+        "bestFor":  "企業培訓 AI 影片"
+    },
+    {
+        "id":  "d-id",
+        "name":  "D-ID",
+        "description":  "照片轉會說話的 AI 影片，Creative Reality。",
+        "category":  "影片",
+        "tags":  [
+                     "照片",
+                     "Talking",
+                     "Avatar"
+                 ],
+        "keywords":  [
+                         "d-id",
+                         "talking photo",
+                         "avatar"
+                     ],
+        "rating":  4.3,
+        "pricing":  "Freemium",
+        "url":  "https://www.d-id.com",
+        "bestFor":  "照片轉 AI 講話影片"
+    },
+    {
+        "id":  "invideo-ai",
+        "name":  "Invideo AI",
+        "description":  "文字腳本一鍵生成完整行銷影片。",
+        "category":  "影片",
+        "tags":  [
+                     "行銷",
+                     "腳本",
+                     "模板"
+                 ],
+        "keywords":  [
+                         "invideo",
+                         "marketing video",
+                         "template"
+                     ],
+        "rating":  4.4,
+        "pricing":  "Freemium",
+        "url":  "https://invideo.io",
+        "bestFor":  "腳本轉行銷影片"
+    },
+    {
+        "id":  "pictory",
+        "name":  "Pictory",
+        "description":  "文章或腳本自動轉短影片，社群內容常用。",
+        "category":  "影片",
+        "tags":  [
+                     "文章轉影片",
+                     "社群",
+                     "Shorts"
+                 ],
+        "keywords":  [
+                         "pictory",
+                         "blog to video",
+                         "shorts"
+                     ],
+        "rating":  4.3,
+        "pricing":  "Freemium",
+        "url":  "https://pictory.ai",
+        "bestFor":  "文章轉短影片"
+    },
+    {
+        "id":  "fliki",
+        "name":  "Fliki",
+        "description":  "文字轉影片加 AI 配音，多語言支援。",
+        "category":  "影片",
+        "tags":  [
+                     "配音",
+                     "文字轉影片",
+                     "多語言"
+                 ],
+        "keywords":  [
+                         "fliki",
+                         "text to video",
+                         "voiceover"
+                     ],
+        "rating":  4.3,
+        "pricing":  "Freemium",
+        "url":  "https://fliki.ai",
+        "bestFor":  "文字轉影片加配音"
+    },
+    {
+        "id":  "descript",
+        "name":  "Descript",
+        "description":  "AI 影音編輯，文字編輯即可剪片與去雜音。",
+        "category":  "影片",
+        "tags":  [
+                     "剪輯",
+                     "Podcast",
+                     "文字編輯"
+                 ],
+        "keywords":  [
+                         "descript",
+                         "video edit",
+                         "podcast"
+                     ],
+        "rating":  4.5,
+        "pricing":  "Freemium",
+        "url":  "https://www.descript.com",
+        "bestFor":  "文字驅動影音剪輯"
+    },
+    {
+        "id":  "capcut-ai",
+        "name":  "CapCut AI",
+        "description":  "字節剪映 AI 功能，自動字幕、特效與剪輯。",
+        "category":  "影片",
+        "tags":  [
+                     "剪映",
+                     "字幕",
+                     "短影片"
+                 ],
+        "keywords":  [
+                         "capcut",
+                         "剪映",
+                         "tiktok"
+                     ],
+        "rating":  4.5,
+        "pricing":  "Freemium",
+        "url":  "https://www.capcut.com",
+        "bestFor":  "短影片 AI 剪輯"
+    },
+    {
+        "id":  "opus-clip",
+        "name":  "Opus Clip",
+        "description":  "長影片 AI 自動剪輯成社群短影片。",
+        "category":  "影片",
+        "tags":  [
+                     "Shorts",
+                     "剪輯",
+                     "社群"
+                 ],
+        "keywords":  [
+                         "opus clip",
+                         "shorts",
+                         "repurpose"
+                     ],
+        "rating":  4.4,
+        "pricing":  "Freemium",
+        "url":  "https://www.opus.pro",
+        "bestFor":  "長片自動剪短影片"
+    },
+    {
+        "id":  "veed-io",
+        "name":  "Veed.io",
+        "description":  "線上 AI 影片編輯，字幕、翻譯、去背。",
+        "category":  "影片",
+        "tags":  [
+                     "線上",
+                     "字幕",
+                     "翻譯"
+                 ],
+        "keywords":  [
+                         "veed",
+                         "subtitle",
+                         "online edit"
+                     ],
+        "rating":  4.3,
+        "pricing":  "Freemium",
+        "url":  "https://www.veed.io",
+        "bestFor":  "線上 AI 影片編輯"
+    },
+    {
+        "id":  "kapwing",
+        "name":  "Kapwing",
+        "description":  "協作 AI 影片編輯，模板與自動字幕。",
+        "category":  "影片",
+        "tags":  [
+                     "協作",
+                     "模板",
+                     "字幕"
+                 ],
+        "keywords":  [
+                         "kapwing",
+                         "collaboration",
+                         "subtitle"
+                     ],
+        "rating":  4.2,
+        "pricing":  "Freemium",
+        "url":  "https://www.kapwing.com",
+        "bestFor":  "協作影片編輯"
+    },
+    {
+        "id":  "topaz-video-ai",
+        "name":  "Topaz Video AI",
+        "description":  "AI 影片畫質增強與幀率提升。",
+        "category":  "影片",
+        "tags":  [
+                     "增強",
+                     "Upscale",
+                     "畫質"
+                 ],
+        "keywords":  [
+                         "topaz video",
+                         "upscale",
+                         "enhance"
+                     ],
+        "rating":  4.5,
+        "pricing":  "付費",
+        "url":  "https://www.topazlabs.com/topaz-video-ai",
+        "bestFor":  "AI 影片畫質增強"
+    },
+    {
+        "id":  "wondershare-filmora-ai",
+        "name":  "Wondershare Filmora AI",
+        "description":  "AI 智慧剪輯、去背與特效，入門友善。",
+        "category":  "影片",
+        "tags":  [
+                     "剪輯",
+                     "入門",
+                     "特效"
+                 ],
+        "keywords":  [
+                         "filmora",
+                         "wondershare",
+                         "edit"
+                     ],
+        "rating":  4.2,
+        "pricing":  "Freemium",
+        "url":  "https://filmora.wondershare.com",
+        "bestFor":  "入門 AI 影片剪輯"
+    },
+    {
+        "id":  "stable-video-diffusion",
+        "name":  "Stable Video Diffusion",
+        "description":  "Stability AI 開源影片生成模型。",
+        "category":  "影片",
+        "tags":  [
+                     "開源",
+                     "Stability",
+                     "SD"
+                 ],
+        "keywords":  [
+                         "stable video",
+                         "stability",
+                         "open"
+                     ],
+        "rating":  4.2,
+        "pricing":  "Freemium",
+        "url":  "https://stability.ai/stable-video",
+        "bestFor":  "開源影片生成"
+    },
+    {
+        "id":  "kaiber",
+        "name":  "Kaiber",
+        "description":  "AI 音樂影片與藝術風格動畫生成。",
+        "category":  "影片",
+        "tags":  [
+                     "音樂影片",
+                     "藝術",
+                     "動畫"
+                 ],
+        "keywords":  [
+                         "kaiber",
+                         "music video",
+                         "animation"
+                     ],
+        "rating":  4.2,
+        "pricing":  "Freemium",
+        "url":  "https://kaiber.ai",
+        "bestFor":  "藝術風格動畫影片"
+    },
+    {
+        "id":  "genmo",
+        "name":  "Genmo",
+        "description":  "AI 影片與 3D 生成，社群創意平台。",
+        "category":  "影片",
+        "tags":  [
+                     "3D",
+                     "社群",
+                     "創意"
+                 ],
+        "keywords":  [
+                         "genmo",
+                         "3d",
+                         "creative"
+                     ],
+        "rating":  4.1,
+        "pricing":  "Freemium",
+        "url":  "https://www.genmo.ai",
+        "bestFor":  "創意 AI 影片"
+    },
+    {
+        "id":  "morph-studio",
+        "name":  "Morph Studio",
+        "description":  "AI 影片編輯與風格轉換工作台。",
+        "category":  "影片",
+        "tags":  [
+                     "風格",
+                     "轉換",
+                     "編輯"
+                 ],
+        "keywords":  [
+                         "morph studio",
+                         "style transfer",
+                         "video"
+                     ],
+        "rating":  4,
+        "pricing":  "Freemium",
+        "url":  "https://www.morphstudio.com",
+        "bestFor":  "影片風格轉換"
+    },
+    {
+        "id":  "colossyan",
+        "name":  "Colossyan",
+        "description":  "企業 AI 培訓影片，多語言虛擬講師。",
+        "category":  "影片",
+        "tags":  [
+                     "培訓",
+                     "企業",
+                     "多語言"
+                 ],
+        "keywords":  [
+                         "colossyan",
+                         "training",
+                         "corporate"
+                     ],
+        "rating":  4.2,
+        "pricing":  "Freemium",
+        "url":  "https://www.colossyan.com",
+        "bestFor":  "企業培訓 AI 影片"
+    },
+    {
+        "id":  "elai-io",
+        "name":  "Elai.io",
+        "description":  "文字轉 AI 講者影片，無需攝影棚。",
+        "category":  "影片",
+        "tags":  [
+                     "講者",
+                     "文字轉影片",
+                     "Avatar"
+                 ],
+        "keywords":  [
+                         "elai",
+                         "presenter",
+                         "avatar"
+                     ],
+        "rating":  4.2,
+        "pricing":  "Freemium",
+        "url":  "https://elai.io",
+        "bestFor":  "文字轉講者影片"
+    },
+    {
+        "id":  "elevenlabs",
+        "name":  "ElevenLabs",
+        "description":  "頂尖 AI 語音合成，自然人聲配音與多語言朗讀。",
+        "category":  "語音",
+        "tags":  [
+                     "配音",
+                     "TTS",
+                     "語音"
+                 ],
+        "keywords":  [
+                         "elevenlabs",
+                         "voice",
+                         "tts"
+                     ],
+        "rating":  4.7,
+        "pricing":  "Freemium",
+        "url":  "https://elevenlabs.io",
+        "bestFor":  "自然語音合成與配音"
+    },
+    {
+        "id":  "otter",
+        "name":  "Otter.ai",
+        "description":  "AI 會議逐字稿，自動轉錄語音並生成摘要。",
+        "category":  "語音",
+        "tags":  [
+                     "會議",
+                     "逐字稿",
+                     "轉錄"
+                 ],
+        "keywords":  [
+                         "otter",
+                         "meeting",
+                         "transcription"
+                     ],
+        "rating":  4.4,
+        "pricing":  "Freemium",
+        "url":  "https://otter.ai",
+        "bestFor":  "會議語音轉文字"
+    },
+    {
+        "id":  "speechify",
+        "name":  "Speechify",
+        "description":  "AI 文字朗讀，將文章轉自然語音。",
+        "category":  "語音",
+        "tags":  [
+                     "朗讀",
+                     "TTS",
+                     "有聲書"
+                 ],
+        "keywords":  [
+                         "speechify",
+                         "read aloud",
+                         "audiobook"
+                     ],
+        "rating":  4.4,
+        "pricing":  "Freemium",
+        "url":  "https://speechify.com",
+        "bestFor":  "文章 AI 朗讀"
+    },
+    {
+        "id":  "murf-ai",
+        "name":  "Murf AI",
+        "description":  "AI 配音平台，多種專業聲線與語言。",
+        "category":  "語音",
+        "tags":  [
+                     "配音",
+                     "旁白",
+                     "廣告"
+                 ],
+        "keywords":  [
+                         "murf",
+                         "voiceover",
+                         "narration"
+                     ],
+        "rating":  4.4,
+        "pricing":  "Freemium",
+        "url":  "https://murf.ai",
+        "bestFor":  "專業 AI 配音"
+    },
+    {
+        "id":  "play-ht",
+        "name":  "Play.ht",
+        "description":  "AI 語音生成 API 與平台，支援克隆聲音。",
+        "category":  "語音",
+        "tags":  [
+                     "API",
+                     "克隆",
+                     "TTS"
+                 ],
+        "keywords":  [
+                         "playht",
+                         "voice clone",
+                         "api"
+                     ],
+        "rating":  4.3,
+        "pricing":  "Freemium",
+        "url":  "https://play.ht",
+        "bestFor":  "語音克隆與 API"
+    },
+    {
+        "id":  "resemble-ai",
+        "name":  "Resemble AI",
+        "description":  "AI 語音克隆與情感語音合成。",
+        "category":  "語音",
+        "tags":  [
+                     "克隆",
+                     "情感",
+                     "企業"
+                 ],
+        "keywords":  [
+                         "resemble",
+                         "voice clone",
+                         "emotion"
+                     ],
+        "rating":  4.3,
+        "pricing":  "Freemium",
+        "url":  "https://www.resemble.ai",
+        "bestFor":  "語音克隆與情感合成"
+    },
+    {
+        "id":  "assemblyai",
+        "name":  "AssemblyAI",
+        "description":  "語音轉文字 API，支援摘要與情緒分析。",
+        "category":  "語音",
+        "tags":  [
+                     "API",
+                     "STT",
+                     "分析"
+                 ],
+        "keywords":  [
+                         "assemblyai",
+                         "speech to text",
+                         "api"
+                     ],
+        "rating":  4.4,
+        "pricing":  "Freemium",
+        "url":  "https://www.assemblyai.com",
+        "bestFor":  "語音轉文字 API"
+    },
+    {
+        "id":  "rev-ai",
+        "name":  "Rev AI",
+        "description":  "高精度 AI 語音辨識與字幕 API。",
+        "category":  "語音",
+        "tags":  [
+                     "STT",
+                     "字幕",
+                     "API"
+                 ],
+        "keywords":  [
+                         "rev ai",
+                         "transcription",
+                         "caption"
+                     ],
+        "rating":  4.3,
+        "pricing":  "Freemium",
+        "url":  "https://www.rev.ai",
+        "bestFor":  "高精度語音辨識"
+    },
+    {
+        "id":  "whisper",
+        "name":  "Whisper",
+        "description":  "OpenAI 開源語音辨識模型，多語言支援。",
+        "category":  "語音",
+        "tags":  [
+                     "開源",
+                     "OpenAI",
+                     "STT"
+                 ],
+        "keywords":  [
+                         "whisper",
+                         "openai",
+                         "speech recognition"
+                     ],
+        "rating":  4.5,
+        "pricing":  "免費",
+        "url":  "https://openai.com/research/whisper",
+        "bestFor":  "開源語音辨識"
+    },
+    {
+        "id":  "fireflies-ai",
+        "name":  "Fireflies.ai",
+        "description":  "AI 會議助手，自動錄音、轉錄與行動項目。",
+        "category":  "語音",
+        "tags":  [
+                     "會議",
+                     "Zoom",
+                     "摘要"
+                 ],
+        "keywords":  [
+                         "fireflies",
+                         "meeting",
+                         "notes"
+                     ],
+        "rating":  4.4,
+        "pricing":  "Freemium",
+        "url":  "https://fireflies.ai",
+        "bestFor":  "會議自動記錄"
+    },
+    {
+        "id":  "fathom",
+        "name":  "Fathom",
+        "description":  "免費 AI 會議筆記，自動摘要與重點。",
+        "category":  "語音",
+        "tags":  [
+                     "會議",
+                     "免費",
+                     "摘要"
+                 ],
+        "keywords":  [
+                         "fathom",
+                         "meeting notes",
+                         "free"
+                     ],
+        "rating":  4.3,
+        "pricing":  "免費",
+        "url":  "https://fathom.video",
+        "bestFor":  "免費 AI 會議筆記"
+    },
+    {
+        "id":  "krisp",
+        "name":  "Krisp",
+        "description":  "AI 降噪，消除背景雜音提升通話品質。",
+        "category":  "語音",
+        "tags":  [
+                     "降噪",
+                     "通話",
+                     "會議"
+                 ],
+        "keywords":  [
+                         "krisp",
+                         "noise cancellation",
+                         "call"
+                     ],
+        "rating":  4.4,
+        "pricing":  "Freemium",
+        "url":  "https://krisp.ai",
+        "bestFor":  "通話 AI 降噪"
+    },
+    {
+        "id":  "adobe-podcast",
+        "name":  "Adobe Podcast",
+        "description":  "AI 音訊增強，一鍵提升 Podcast 音質。",
+        "category":  "語音",
+        "tags":  [
+                     "Podcast",
+                     "增強",
+                     "Adobe"
+                 ],
+        "keywords":  [
+                         "adobe podcast",
+                         "enhance",
+                         "audio"
+                     ],
+        "rating":  4.4,
+        "pricing":  "Freemium",
+        "url":  "https://podcast.adobe.com",
+        "bestFor":  "Podcast 音質增強"
+    },
+    {
+        "id":  "cleanvoice",
+        "name":  "Cleanvoice",
+        "description":  "AI 自動去除口癖、停頓與雜音。",
+        "category":  "語音",
+        "tags":  [
+                     "口癖",
+                     "剪輯",
+                     "Podcast"
+                 ],
+        "keywords":  [
+                         "cleanvoice",
+                         "filler words",
+                         "podcast"
+                     ],
+        "rating":  4.3,
+        "pricing":  "Freemium",
+        "url":  "https://cleanvoice.ai",
+        "bestFor":  "自動去除口癖雜音"
+    },
+    {
+        "id":  "listnr",
+        "name":  "Listnr",
+        "description":  "AI 文字轉語音與 Podcast 生成平台。",
+        "category":  "語音",
+        "tags":  [
+                     "Podcast",
+                     "TTS",
+                     "生成"
+                 ],
+        "keywords":  [
+                         "listnr",
+                         "podcast",
+                         "text to speech"
+                     ],
+        "rating":  4.2,
+        "pricing":  "Freemium",
+        "url":  "https://www.listnr.tech",
+        "bestFor":  "AI Podcast 生成"
+    },
+    {
+        "id":  "wellsaid-labs",
+        "name":  "WellSaid Labs",
+        "description":  "企業級 AI 配音，自然度與一致性高。",
+        "category":  "語音",
+        "tags":  [
+                     "企業",
+                     "配音",
+                     "一致性"
+                 ],
+        "keywords":  [
+                         "wellsaid",
+                         "enterprise",
+                         "voiceover"
+                     ],
+        "rating":  4.4,
+        "pricing":  "付費",
+        "url":  "https://wellsaidlabs.com",
+        "bestFor":  "企業級 AI 配音"
+    },
+    {
+        "id":  "lovo-ai",
+        "name":  "LOVO AI",
+        "description":  "AI 語音生成與情感表達，適合影片旁白。",
+        "category":  "語音",
+        "tags":  [
+                     "旁白",
+                     "情感",
+                     "影片"
+                 ],
+        "keywords":  [
+                         "lovo",
+                         "voiceover",
+                         "video"
+                     ],
+        "rating":  4.3,
+        "pricing":  "Freemium",
+        "url":  "https://lovo.ai",
+        "bestFor":  "影片旁白 AI 語音"
+    },
+    {
+        "id":  "typecast",
+        "name":  "Typecast",
+        "description":  "AI 虛擬演員配音，可控制情感與語調。",
+        "category":  "語音",
+        "tags":  [
+                     "演員",
+                     "情感",
+                     "配音"
+                 ],
+        "keywords":  [
+                         "typecast",
+                         "virtual actor",
+                         "emotion"
+                     ],
+        "rating":  4.2,
+        "pricing":  "Freemium",
+        "url":  "https://typecast.ai",
+        "bestFor":  "虛擬演員 AI 配音"
+    },
+    {
+        "id":  "sonantic",
+        "name":  "Sonantic",
+        "description":  "影視級 AI 語音，被 Spotify 收購。",
+        "category":  "語音",
+        "tags":  [
+                     "影視",
+                     "情感",
+                     "高品質"
+                 ],
+        "keywords":  [
+                         "sonantic",
+                         "film",
+                         "emotional"
+                     ],
+        "rating":  4.3,
+        "pricing":  "Freemium",
+        "url":  "https://sonantic.io",
+        "bestFor":  "影視級情感語音"
+    },
+    {
+        "id":  "coqui-tts",
+        "name":  "Coqui TTS",
+        "description":  "開源文字轉語音工具包，可本地部署。",
+        "category":  "語音",
+        "tags":  [
+                     "開源",
+                     "本地",
+                     "TTS"
+                 ],
+        "keywords":  [
+                         "coqui",
+                         "opensource",
+                         "tts"
+                     ],
+        "rating":  4.1,
+        "pricing":  "免費",
+        "url":  "https://coqui.ai",
+        "bestFor":  "開源 TTS 部署"
+    },
+    {
+        "id":  "tactiq",
+        "name":  "Tactiq",
+        "description":  "Google Meet 等會議 AI 即時轉錄。",
+        "category":  "語音",
+        "tags":  [
+                     "Meet",
+                     "即時",
+                     "轉錄"
+                 ],
+        "keywords":  [
+                         "tactiq",
+                         "google meet",
+                         "transcript"
+                     ],
+        "rating":  4.2,
+        "pricing":  "Freemium",
+        "url":  "https://tactiq.io",
+        "bestFor":  "線上會議即時轉錄"
+    },
+    {
+        "id":  "notta",
+        "name":  "Notta",
+        "description":  "AI 語音轉文字，支援 104 種語言。",
+        "category":  "語音",
+        "tags":  [
+                     "多語言",
+                     "STT",
+                     "摘要"
+                 ],
+        "keywords":  [
+                         "notta",
+                         "transcription",
+                         "multilingual"
+                     ],
+        "rating":  4.3,
+        "pricing":  "Freemium",
+        "url":  "https://www.notta.ai",
+        "bestFor":  "多語言語音轉文字"
+    },
+    {
+        "id":  "verbit",
+        "name":  "Verbit",
+        "description":  "企業 AI 轉錄與即時字幕，法律與媒體場景。",
+        "category":  "語音",
+        "tags":  [
+                     "企業",
+                     "字幕",
+                     "法律"
+                 ],
+        "keywords":  [
+                         "verbit",
+                         "caption",
+                         "enterprise"
+                     ],
+        "rating":  4.2,
+        "pricing":  "付費",
+        "url":  "https://verbit.ai",
+        "bestFor":  "企業即時字幕轉錄"
+    },
+    {
+        "id":  "suno",
+        "name":  "Suno",
+        "description":  "AI 音樂生成，輸入描述即可創作完整歌曲含人聲。",
+        "category":  "音樂",
+        "tags":  [
+                     "音樂",
+                     "作曲",
+                     "人聲"
+                 ],
+        "keywords":  [
+                         "suno",
+                         "music",
+                         "song"
+                     ],
+        "rating":  4.5,
+        "pricing":  "Freemium",
+        "url":  "https://suno.com",
+        "bestFor":  "快速生成 AI 音樂"
+    },
+    {
+        "id":  "udio",
+        "name":  "Udio",
+        "description":  "AI 音樂創作，高品質人聲與編曲。",
+        "category":  "音樂",
+        "tags":  [
+                     "作曲",
+                     "人聲",
+                     "編曲"
+                 ],
+        "keywords":  [
+                         "udio",
+                         "music",
+                         "vocals"
+                     ],
+        "rating":  4.5,
+        "pricing":  "Freemium",
+        "url":  "https://www.udio.com",
+        "bestFor":  "高品質 AI 歌曲"
+    },
+    {
+        "id":  "aiva",
+        "name":  "AIVA",
+        "description":  "AI 古典與電影配樂作曲，可商用授權。",
+        "category":  "音樂",
+        "tags":  [
+                     "配樂",
+                     "古典",
+                     "商用"
+                 ],
+        "keywords":  [
+                         "aiva",
+                         "soundtrack",
+                         "classical"
+                     ],
+        "rating":  4.3,
+        "pricing":  "Freemium",
+        "url":  "https://www.aiva.ai",
+        "bestFor":  "電影配樂 AI 作曲"
+    },
+    {
+        "id":  "soundraw",
+        "name":  "Soundraw",
+        "description":  "AI 免版稅背景音樂生成，可自訂長度與情緒。",
+        "category":  "音樂",
+        "tags":  [
+                     "BGM",
+                     "免版稅",
+                     "背景"
+                 ],
+        "keywords":  [
+                         "soundraw",
+                         "royalty free",
+                         "bgm"
+                     ],
+        "rating":  4.3,
+        "pricing":  "Freemium",
+        "url":  "https://soundraw.io",
+        "bestFor":  "免版稅 BGM 生成"
+    },
+    {
+        "id":  "boomy",
+        "name":  "Boomy",
+        "description":  "一鍵 AI 生成歌曲並發布到串流平台。",
+        "category":  "音樂",
+        "tags":  [
+                     "歌曲",
+                     "發布",
+                     "入門"
+                 ],
+        "keywords":  [
+                         "boomy",
+                         "create song",
+                         "streaming"
+                     ],
+        "rating":  4.1,
+        "pricing":  "Freemium",
+        "url":  "https://boomy.com",
+        "bestFor":  "一鍵創作並發布歌曲"
+    },
+    {
+        "id":  "mubert",
+        "name":  "Mubert",
+        "description":  "AI 即時生成免版稅音樂，適合直播與影片。",
+        "category":  "音樂",
+        "tags":  [
+                     "即時",
+                     "免版稅",
+                     "直播"
+                 ],
+        "keywords":  [
+                         "mubert",
+                         "realtime",
+                         "royalty free"
+                     ],
+        "rating":  4.2,
+        "pricing":  "Freemium",
+        "url":  "https://mubert.com",
+        "bestFor":  "即時 BGM 生成"
+    },
+    {
+        "id":  "beatoven-ai",
+        "name":  "Beatoven.ai",
+        "description":  "AI 依影片情緒自動生成配樂。",
+        "category":  "音樂",
+        "tags":  [
+                     "配樂",
+                     "情緒",
+                     "影片"
+                 ],
+        "keywords":  [
+                         "beatoven",
+                         "soundtrack",
+                         "video mood"
+                     ],
+        "rating":  4.2,
+        "pricing":  "Freemium",
+        "url":  "https://www.beatoven.ai",
+        "bestFor":  "依情緒生成配樂"
+    },
+    {
+        "id":  "loudly",
+        "name":  "Loudly",
+        "description":  "AI 音樂創作平台，社群音樂人協作。",
+        "category":  "音樂",
+        "tags":  [
+                     "社群",
+                     "創作",
+                     "協作"
+                 ],
+        "keywords":  [
+                         "loudly",
+                         "community",
+                         "music"
+                     ],
+        "rating":  4.1,
+        "pricing":  "Freemium",
+        "url":  "https://www.loudly.com",
+        "bestFor":  "社群 AI 音樂創作"
+    },
+    {
+        "id":  "ecrett-music",
+        "name":  "Ecrett Music",
+        "description":  "AI 場景式背景音樂生成，適合影片創作者。",
+        "category":  "音樂",
+        "tags":  [
+                     "場景",
+                     "BGM",
+                     "創作者"
+                 ],
+        "keywords":  [
+                         "ecrett",
+                         "scene",
+                         "background music"
+                     ],
+        "rating":  4.2,
+        "pricing":  "Freemium",
+        "url":  "https://ecrettmusic.com",
+        "bestFor":  "場景式 BGM"
+    },
+    {
+        "id":  "amper-music",
+        "name":  "Amper Music",
+        "description":  "AI 音樂作曲（Shutterstock 旗下），商用授權。",
+        "category":  "音樂",
+        "tags":  [
+                     "商用",
+                     "Shutterstock",
+                     "作曲"
+                 ],
+        "keywords":  [
+                         "amper",
+                         "shutterstock",
+                         "commercial"
+                     ],
+        "rating":  4.1,
+        "pricing":  "Freemium",
+        "url":  "https://www.ampermusic.com",
+        "bestFor":  "商用 AI 配樂"
+    },
+    {
+        "id":  "splash-pro",
+        "name":  "Splash Pro",
+        "description":  "AI 音樂創作 App，適合入門與教育。",
+        "category":  "音樂",
+        "tags":  [
+                     "App",
+                     "入門",
+                     "教育"
+                 ],
+        "keywords":  [
+                         "splash",
+                         "mobile",
+                         "beginner"
+                     ],
+        "rating":  4,
+        "pricing":  "Freemium",
+        "url":  "https://www.splashmusic.com",
+        "bestFor":  "入門 AI 音樂 App"
+    },
+    {
+        "id":  "riffusion",
+        "name":  "Riffusion",
+        "description":  "AI 即時音樂生成，視覺化頻譜繪圖。",
+        "category":  "音樂",
+        "tags":  [
+                     "即時",
+                     "視覺",
+                     "實驗"
+                 ],
+        "keywords":  [
+                         "riffusion",
+                         "realtime",
+                         "spectrogram"
+                     ],
+        "rating":  4,
+        "pricing":  "Freemium",
+        "url":  "https://www.riffusion.com",
+        "bestFor":  "實驗性 AI 音樂"
+    },
+    {
+        "id":  "stable-audio",
+        "name":  "Stable Audio",
+        "description":  "Stability AI 文字生成音樂與音效。",
+        "category":  "音樂",
+        "tags":  [
+                     "Stability",
+                     "音效",
+                     "文字轉音樂"
+                 ],
+        "keywords":  [
+                         "stable audio",
+                         "stability",
+                         "sound effects"
+                     ],
+        "rating":  4.3,
+        "pricing":  "Freemium",
+        "url":  "https://stableaudio.com",
+        "bestFor":  "文字生成音樂音效"
+    },
+    {
+        "id":  "audiocraft",
+        "name":  "AudioCraft",
+        "description":  "Meta 開源音訊生成模型套件 MusicGen。",
+        "category":  "音樂",
+        "tags":  [
+                     "Meta",
+                     "開源",
+                     "MusicGen"
+                 ],
+        "keywords":  [
+                         "audiocraft",
+                         "musicgen",
+                         "meta"
+                     ],
+        "rating":  4.2,
+        "pricing":  "免費",
+        "url":  "https://ai.meta.com/resources/models-and-libraries/audiocraft",
+        "bestFor":  "開源音樂生成"
+    },
+    {
+        "id":  "voicemod-ai",
+        "name":  "Voicemod AI",
+        "description":  "AI 變聲與音效，直播與遊戲常用。",
+        "category":  "音樂",
+        "tags":  [
+                     "變聲",
+                     "直播",
+                     "遊戲"
+                 ],
+        "keywords":  [
+                         "voicemod",
+                         "voice changer",
+                         "streaming"
+                     ],
+        "rating":  4.2,
+        "pricing":  "Freemium",
+        "url":  "https://www.voicemod.net",
+        "bestFor":  "AI 變聲與音效"
+    },
+    {
+        "id":  "endel",
+        "name":  "Endel",
+        "description":  "AI 個人化環境音樂，依時間與心情調整。",
+        "category":  "音樂",
+        "tags":  [
+                     "環境",
+                     "專注",
+                     "睡眠"
+                 ],
+        "keywords":  [
+                         "endel",
+                         "ambient",
+                         "focus"
+                     ],
+        "rating":  4.2,
+        "pricing":  "Freemium",
+        "url":  "https://endel.io",
+        "bestFor":  "個人化環境音樂"
+    },
+    {
+        "id":  "brain-fm",
+        "name":  "Brain.fm",
+        "description":  "AI 生成專注與放鬆音樂，科學驗證。",
+        "category":  "音樂",
+        "tags":  [
+                     "專注",
+                     "放鬆",
+                     "科學"
+                 ],
+        "keywords":  [
+                         "brain.fm",
+                         "focus",
+                         "productivity"
+                     ],
+        "rating":  4.3,
+        "pricing":  "Freemium",
+        "url":  "https://www.brain.fm",
+        "bestFor":  "專注力 AI 音樂"
+    },
+    {
+        "id":  "lalal-ai",
+        "name":  "LALAL.AI",
+        "description":  "AI 人聲與樂器分離，提取伴奏或人聲。",
+        "category":  "音樂",
+        "tags":  [
+                     "分離",
+                     "伴奏",
+                     "Remix"
+                 ],
+        "keywords":  [
+                         "lalal",
+                         "stem separation",
+                         "vocals"
+                     ],
+        "rating":  4.4,
+        "pricing":  "Freemium",
+        "url":  "https://www.lalal.ai",
+        "bestFor":  "人聲樂器分離"
+    },
+    {
+        "id":  "moises",
+        "name":  "Moises",
+        "description":  "AI 音樂練習工具，分離音軌與調整速度。",
+        "category":  "音樂",
+        "tags":  [
+                     "練習",
+                     "分軌",
+                     "音樂人"
+                 ],
+        "keywords":  [
+                         "moises",
+                         "practice",
+                         "stems"
+                     ],
+        "rating":  4.4,
+        "pricing":  "Freemium",
+        "url":  "https://moises.ai",
+        "bestFor":  "音樂人練習工具"
+    },
+    {
+        "id":  "bandlab-songstarter",
+        "name":  "BandLab SongStarter",
+        "description":  "AI 歌曲創意起點，生成旋律與和弦。",
+        "category":  "音樂",
+        "tags":  [
+                     "旋律",
+                     "和弦",
+                     "創作"
+                 ],
+        "keywords":  [
+                         "bandlab",
+                         "songstarter",
+                         "melody"
+                     ],
+        "rating":  4.2,
+        "pricing":  "免費",
+        "url":  "https://www.bandlab.com",
+        "bestFor":  "歌曲創意靈感"
+    },
+    {
+        "id":  "orb-producer-suite",
+        "name":  "Orb Producer Suite",
+        "description":  "AI 協助 MIDI 生成，輔助電子音樂製作。",
+        "category":  "音樂",
+        "tags":  [
+                     "MIDI",
+                     "電子",
+                     "DAW"
+                 ],
+        "keywords":  [
+                         "orb",
+                         "midi",
+                         "producer"
+                     ],
+        "rating":  4.1,
+        "pricing":  "付費",
+        "url":  "https://www.orbplugins.com",
+        "bestFor":  "AI 輔助 MIDI 創作"
+    },
+    {
+        "id":  "wavtool",
+        "name":  "WavTool",
+        "description":  "瀏覽器 AI DAW，文字指令編輯音樂。",
+        "category":  "音樂",
+        "tags":  [
+                     "DAW",
+                     "瀏覽器",
+                     "Agent"
+                 ],
+        "keywords":  [
+                         "wavtool",
+                         "daw",
+                         "browser"
+                     ],
+        "rating":  4.2,
+        "pricing":  "Freemium",
+        "url":  "https://wavtool.com",
+        "bestFor":  "瀏覽器 AI 音樂製作"
+    },
+    {
+        "id":  "producer-ai",
+        "name":  "Producer.ai",
+        "description":  "AI 音樂製作人，文字描述生成完整曲目。",
+        "category":  "音樂",
+        "tags":  [
+                     "製作",
+                     "描述",
+                     "曲目"
+                 ],
+        "keywords":  [
+                         "producer.ai",
+                         "music production",
+                         "generate"
+                     ],
+        "rating":  4.1,
+        "pricing":  "Freemium",
+        "url":  "https://producer.ai",
+        "bestFor":  "文字生成完整曲目"
+    },
+    {
+        "id":  "soundful",
+        "name":  "Soundful",
+        "description":  "AI 免版稅音樂生成，模板豐富。",
+        "category":  "音樂",
+        "tags":  [
+                     "免版稅",
+                     "模板",
+                     "BGM"
+                 ],
+        "keywords":  [
+                         "soundful",
+                         "royalty free",
+                         "templates"
+                     ],
+        "rating":  4.2,
+        "pricing":  "Freemium",
+        "url":  "https://soundful.com",
+        "bestFor":  "模板式 BGM 生成"
+    },
+    {
+        "id":  "hydra-ii",
+        "name":  "Hydra II",
+        "description":  "Rightsify AI 音樂生成，商用授權清晰。",
+        "category":  "音樂",
+        "tags":  [
+                     "商用",
+                     "授權",
+                     "BGM"
+                 ],
+        "keywords":  [
+                         "hydra",
+                         "rightsify",
+                         "commercial"
+                     ],
+        "rating":  4.1,
+        "pricing":  "Freemium",
+        "url":  "https://rightsify.com/hydra",
+        "bestFor":  "商用授權 AI 音樂"
+    },
+    {
+        "id":  "perplexity",
+        "name":  "Perplexity",
+        "description":  "AI 搜尋引擎，回答附引用來源，適合查資料。",
+        "category":  "搜尋研究",
+        "tags":  [
+                     "搜尋",
+                     "引用",
+                     "研究"
+                 ],
+        "keywords":  [
+                         "perplexity",
+                         "search",
+                         "research"
+                     ],
+        "rating":  4.6,
+        "pricing":  "Freemium",
+        "url":  "https://www.perplexity.ai",
+        "bestFor":  "有來源的 AI 搜尋問答"
+    },
+    {
+        "id":  "google-ai-mode",
+        "name":  "Google AI Mode",
+        "description":  "Google 搜尋 AI 模式，整合 Gemini 回答複雜問題。",
+        "category":  "搜尋研究",
+        "tags":  [
+                     "Google",
+                     "搜尋",
+                     "Gemini"
+                 ],
+        "keywords":  [
+                         "google ai",
+                         "search",
+                         "gemini"
+                     ],
+        "rating":  4.4,
+        "pricing":  "Freemium",
+        "url":  "https://www.google.com",
+        "bestFor":  "Google 搜尋 AI 回答"
+    },
+    {
+        "id":  "consensus",
+        "name":  "Consensus",
+        "description":  "AI 學術論文搜尋，從研究文献提取答案。",
+        "category":  "搜尋研究",
+        "tags":  [
+                     "論文",
+                     "學術",
+                     "研究"
+                 ],
+        "keywords":  [
+                         "consensus",
+                         "papers",
+                         "academic"
+                     ],
+        "rating":  4.4,
+        "pricing":  "Freemium",
+        "url":  "https://consensus.app",
+        "bestFor":  "學術論文 AI 搜尋"
+    },
+    {
+        "id":  "elicit",
+        "name":  "Elicit",
+        "description":  "AI 研究助手，自動整理文獻與提取重點。",
+        "category":  "搜尋研究",
+        "tags":  [
+                     "文獻",
+                     "整理",
+                     "研究"
+                 ],
+        "keywords":  [
+                         "elicit",
+                         "literature",
+                         "research"
+                     ],
+        "rating":  4.4,
+        "pricing":  "Freemium",
+        "url":  "https://elicit.com",
+        "bestFor":  "文獻回顧與整理"
+    },
+    {
+        "id":  "semantic-scholar",
+        "name":  "Semantic Scholar",
+        "description":  "AI 驅動學術搜尋，論文推薦與摘要。",
+        "category":  "搜尋研究",
+        "tags":  [
+                     "學術",
+                     "論文",
+                     "AI"
+                 ],
+        "keywords":  [
+                         "semantic scholar",
+                         "papers",
+                         "ai"
+                     ],
+        "rating":  4.3,
+        "pricing":  "免費",
+        "url":  "https://www.semanticscholar.org",
+        "bestFor":  "學術論文 AI 搜尋"
+    },
+    {
+        "id":  "scite-ai",
+        "name":  "Scite.ai",
+        "description":  "AI 引用分析，判斷論文被支持或反駁。",
+        "category":  "搜尋研究",
+        "tags":  [
+                     "引用",
+                     "分析",
+                     "論文"
+                 ],
+        "keywords":  [
+                         "scite",
+                         "citations",
+                         "research"
+                     ],
+        "rating":  4.3,
+        "pricing":  "Freemium",
+        "url":  "https://scite.ai",
+        "bestFor":  "論文引用脈絡分析"
+    },
+    {
+        "id":  "research-rabbit",
+        "name":  "Research Rabbit",
+        "description":  "AI 論文推薦與視覺化文獻網絡。",
+        "category":  "搜尋研究",
+        "tags":  [
+                     "推薦",
+                     "視覺化",
+                     "論文"
+                 ],
+        "keywords":  [
+                         "research rabbit",
+                         "papers",
+                         "network"
+                     ],
+        "rating":  4.3,
+        "pricing":  "免費",
+        "url":  "https://www.researchrabbit.ai",
+        "bestFor":  "論文推薦與探索"
+    },
+    {
+        "id":  "connected-papers",
+        "name":  "Connected Papers",
+        "description":  "論文關聯視覺化，探索研究前沿。",
+        "category":  "搜尋研究",
+        "tags":  [
+                     "視覺化",
+                     "關聯",
+                     "論文"
+                 ],
+        "keywords":  [
+                         "connected papers",
+                         "graph",
+                         "research"
+                     ],
+        "rating":  4.2,
+        "pricing":  "Freemium",
+        "url":  "https://www.connectedpapers.com",
+        "bestFor":  "論文關聯圖探索"
+    },
+    {
+        "id":  "litmaps",
+        "name":  "Litmaps",
+        "description":  "AI 文獻地圖，追蹤研究發展脈絡。",
+        "category":  "搜尋研究",
+        "tags":  [
+                     "地圖",
+                     "文獻",
+                     "追蹤"
+                 ],
+        "keywords":  [
+                         "litmaps",
+                         "literature map",
+                         "research"
+                     ],
+        "rating":  4.2,
+        "pricing":  "Freemium",
+        "url":  "https://www.litmaps.com",
+        "bestFor":  "文獻脈絡地圖"
+    },
+    {
+        "id":  "notebooklm",
+        "name":  "NotebookLM",
+        "description":  "Google AI 筆記研究助手，上傳來源後問答。",
+        "category":  "搜尋研究",
+        "tags":  [
+                     "Google",
+                     "筆記",
+                     "來源"
+                 ],
+        "keywords":  [
+                         "notebooklm",
+                         "google",
+                         "research"
+                     ],
+        "rating":  4.5,
+        "pricing":  "Freemium",
+        "url":  "https://notebooklm.google.com",
+        "bestFor":  "多來源 AI 研究筆記"
+    },
+    {
+        "id":  "glean",
+        "name":  "Glean",
+        "description":  "企業 AI 知識搜尋，整合內部文件與 Slack。",
+        "category":  "搜尋研究",
+        "tags":  [
+                     "企業",
+                     "知識",
+                     "搜尋"
+                 ],
+        "keywords":  [
+                         "glean",
+                         "enterprise search",
+                         "knowledge"
+                     ],
+        "rating":  4.4,
+        "pricing":  "付費",
+        "url":  "https://www.glean.com",
+        "bestFor":  "企業內部知識搜尋"
+    },
+    {
+        "id":  "kagi",
+        "name":  "Kagi",
+        "description":  "付費無廣告 AI 搜尋引擎，注重隱私。",
+        "category":  "搜尋研究",
+        "tags":  [
+                     "隱私",
+                     "無廣告",
+                     "搜尋"
+                 ],
+        "keywords":  [
+                         "kagi",
+                         "search",
+                         "privacy"
+                     ],
+        "rating":  4.3,
+        "pricing":  "付費",
+        "url":  "https://kagi.com",
+        "bestFor":  "無廣告 AI 搜尋"
+    },
+    {
+        "id":  "brave-search",
+        "name":  "Brave Search",
+        "description":  "Brave AI 搜尋摘要，獨立索引注重隱私。",
+        "category":  "搜尋研究",
+        "tags":  [
+                     "Brave",
+                     "隱私",
+                     "摘要"
+                 ],
+        "keywords":  [
+                         "brave search",
+                         "ai summary",
+                         "privacy"
+                     ],
+        "rating":  4.2,
+        "pricing":  "Freemium",
+        "url":  "https://search.brave.com",
+        "bestFor":  "隱私友善 AI 搜尋"
+    },
+    {
+        "id":  "andi-search",
+        "name":  "Andi Search",
+        "description":  "對話式 AI 搜尋，直接回答而非連結列表。",
+        "category":  "搜尋研究",
+        "tags":  [
+                     "對話",
+                     "搜尋",
+                     "回答"
+                 ],
+        "keywords":  [
+                         "andi",
+                         "conversational search"
+                     ],
+        "rating":  4.1,
+        "pricing":  "Freemium",
+        "url":  "https://andisearch.com",
+        "bestFor":  "對話式 AI 搜尋"
+    },
+    {
+        "id":  "metaphor",
+        "name":  "Metaphor",
+        "description":  "AI 語意搜尋 API，理解意圖而非關鍵字。",
+        "category":  "搜尋研究",
+        "tags":  [
+                     "語意",
+                     "API",
+                     "搜尋"
+                 ],
+        "keywords":  [
+                         "metaphor",
+                         "semantic search",
+                         "api"
+                     ],
+        "rating":  4.2,
+        "pricing":  "Freemium",
+        "url":  "https://metaphor.systems",
+        "bestFor":  "語意搜尋 API"
+    },
+    {
+        "id":  "exa",
+        "name":  "Exa",
+        "description":  "AI 原生搜尋 API，為 LLM 與 Agent 優化。",
+        "category":  "搜尋研究",
+        "tags":  [
+                     "API",
+                     "Agent",
+                     "LLM"
+                 ],
+        "keywords":  [
+                         "exa",
+                         "search api",
+                         "llm"
+                     ],
+        "rating":  4.3,
+        "pricing":  "Freemium",
+        "url":  "https://exa.ai",
+        "bestFor":  "LLM 優化搜尋 API"
+    },
+    {
+        "id":  "tavily",
+        "name":  "Tavily",
+        "description":  "AI Agent 搜尋 API，即時網路資訊檢索。",
+        "category":  "搜尋研究",
+        "tags":  [
+                     "Agent",
+                     "API",
+                     "即時"
+                 ],
+        "keywords":  [
+                         "tavily",
+                         "agent search",
+                         "realtime"
+                     ],
+        "rating":  4.3,
+        "pricing":  "Freemium",
+        "url":  "https://tavily.com",
+        "bestFor":  "Agent 即時搜尋 API"
+    },
+    {
+        "id":  "bing-copilot-search",
+        "name":  "Bing Copilot Search",
+        "description":  "Bing AI 搜尋對話，微軟 GPT 整合。",
+        "category":  "搜尋研究",
+        "tags":  [
+                     "Bing",
+                     "微軟",
+                     "GPT"
+                 ],
+        "keywords":  [
+                         "bing chat",
+                         "copilot search"
+                     ],
+        "rating":  4.3,
+        "pricing":  "Freemium",
+        "url":  "https://www.bing.com/chat",
+        "bestFor":  "微軟 AI 搜尋對話"
+    },
+    {
+        "id":  "wolfram-alpha",
+        "name":  "Wolfram Alpha",
+        "description":  "計算知識引擎，數學與科學問題精準回答。",
+        "category":  "搜尋研究",
+        "tags":  [
+                     "數學",
+                     "科學",
+                     "計算"
+                 ],
+        "keywords":  [
+                         "wolfram",
+                         "math",
+                         "computation"
+                     ],
+        "rating":  4.4,
+        "pricing":  "Freemium",
+        "url":  "https://www.wolframalpha.com",
+        "bestFor":  "數學科學計算查詢"
+    },
+    {
+        "id":  "iris-ai",
+        "name":  "Iris.ai",
+        "description":  "AI 研究項目助手，文獻映射與假設生成。",
+        "category":  "搜尋研究",
+        "tags":  [
+                     "項目",
+                     "假設",
+                     "文獻"
+                 ],
+        "keywords":  [
+                         "iris.ai",
+                         "research project",
+                         "hypothesis"
+                     ],
+        "rating":  4.1,
+        "pricing":  "Freemium",
+        "url":  "https://iris.ai",
+        "bestFor":  "研究項目 AI 助手"
+    },
+    {
+        "id":  "scholarcy",
+        "name":  "Scholarcy",
+        "description":  "AI 論文摘要，自動提取重點與參考。",
+        "category":  "搜尋研究",
+        "tags":  [
+                     "摘要",
+                     "論文",
+                     "重點"
+                 ],
+        "keywords":  [
+                         "scholarcy",
+                         "paper summary",
+                         "flashcard"
+                     ],
+        "rating":  4.2,
+        "pricing":  "Freemium",
+        "url":  "https://www.scholarcy.com",
+        "bestFor":  "論文自動摘要"
+    },
+    {
+        "id":  "typeset",
+        "name":  "Typeset",
+        "description":  "AI 學術寫作與論文搜尋平台 SciSpace。",
+        "category":  "搜尋研究",
+        "tags":  [
+                     "SciSpace",
+                     "論文",
+                     "寫作"
+                 ],
+        "keywords":  [
+                         "scispace",
+                         "typeset",
+                         "academic writing"
+                     ],
+        "rating":  4.3,
+        "pricing":  "Freemium",
+        "url":  "https://typeset.io",
+        "bestFor":  "學術論文 AI 助手"
+    },
+    {
+        "id":  "alphasense",
+        "name":  "AlphaSense",
+        "description":  "企業 AI 市場情報搜尋，金融與產業研究。",
+        "category":  "搜尋研究",
+        "tags":  [
+                     "金融",
+                     "市場",
+                     "企業"
+                 ],
+        "keywords":  [
+                         "alphasense",
+                         "market intelligence",
+                         "finance"
+                     ],
+        "rating":  4.3,
+        "pricing":  "付費",
+        "url":  "https://www.alpha-sense.com",
+        "bestFor":  "企業市場情報搜尋"
+    },
+    {
+        "id":  "feedly-leo",
+        "name":  "Feedly Leo",
+        "description":  "AI 情報助理，自動整理 RSS 與產業新聞。",
+        "category":  "搜尋研究",
+        "tags":  [
+                     "RSS",
+                     "情報",
+                     "新聞"
+                 ],
+        "keywords":  [
+                         "feedly leo",
+                         "news",
+                         "curation"
+                     ],
+        "rating":  4.2,
+        "pricing":  "Freemium",
+        "url":  "https://feedly.com/leo",
+        "bestFor":  "AI 情報與新聞整理"
+    },
+    {
+        "id":  "notion-ai",
+        "name":  "Notion AI",
+        "description":  "Notion 內建 AI，摘要、改寫、整理知識庫。",
+        "category":  "生產力",
+        "tags":  [
+                     "Notion",
+                     "筆記",
+                     "摘要"
+                 ],
+        "keywords":  [
+                         "notion",
+                         "note",
+                         "knowledge"
+                     ],
+        "rating":  4.4,
+        "pricing":  "Freemium",
+        "url":  "https://www.notion.so/product/ai",
+        "bestFor":  "筆記與知識庫 AI 整理"
+    },
+    {
+        "id":  "gamma",
+        "name":  "Gamma",
+        "description":  "AI 簡報生成，輸入主題自動產出投影片。",
+        "category":  "生產力",
+        "tags":  [
+                     "簡報",
+                     "PPT",
+                     "投影片"
+                 ],
+        "keywords":  [
+                         "gamma",
+                         "ppt",
+                         "presentation"
+                     ],
+        "rating":  4.5,
+        "pricing":  "Freemium",
+        "url":  "https://gamma.app",
+        "bestFor":  "AI 一鍵生成簡報"
+    },
+    {
+        "id":  "motion",
+        "name":  "Motion",
+        "description":  "AI 排程助手，自動規劃任務與日曆。",
+        "category":  "生產力",
+        "tags":  [
+                     "排程",
+                     "日曆",
+                     "任務"
+                 ],
+        "keywords":  [
+                         "motion",
+                         "scheduling",
+                         "calendar"
+                     ],
+        "rating":  4.3,
+        "pricing":  "付費",
+        "url":  "https://www.usemotion.com",
+        "bestFor":  "AI 自動排程"
+    },
+    {
+        "id":  "reclaim-ai",
+        "name":  "Reclaim.ai",
+        "description":  "AI 日曆優化，自動安排專注時間與會議。",
+        "category":  "生產力",
+        "tags":  [
+                     "日曆",
+                     "專注",
+                     "會議"
+                 ],
+        "keywords":  [
+                         "reclaim",
+                         "calendar",
+                         "focus time"
+                     ],
+        "rating":  4.3,
+        "pricing":  "Freemium",
+        "url":  "https://reclaim.ai",
+        "bestFor":  "日曆 AI 優化"
+    },
+    {
+        "id":  "clockwise",
+        "name":  "Clockwise",
+        "description":  "AI 團隊日曆優化，減少會議碎片化。",
+        "category":  "生產力",
+        "tags":  [
+                     "團隊",
+                     "日曆",
+                     "會議"
+                 ],
+        "keywords":  [
+                         "clockwise",
+                         "team calendar",
+                         "meetings"
+                     ],
+        "rating":  4.2,
+        "pricing":  "Freemium",
+        "url":  "https://www.getclockwise.com",
+        "bestFor":  "團隊日曆優化"
+    },
+    {
+        "id":  "mem",
+        "name":  "Mem",
+        "description":  "AI 筆記，自動連結相關想法與知識。",
+        "category":  "生產力",
+        "tags":  [
+                     "筆記",
+                     "連結",
+                     "知識"
+                 ],
+        "keywords":  [
+                         "mem",
+                         "notes",
+                         "knowledge graph"
+                     ],
+        "rating":  4.2,
+        "pricing":  "Freemium",
+        "url":  "https://mem.ai",
+        "bestFor":  "AI 智慧筆記"
+    },
+    {
+        "id":  "reflect",
+        "name":  "Reflect",
+        "description":  "AI 增強筆記，雙向連結加 GPT 助手。",
+        "category":  "生產力",
+        "tags":  [
+                     "筆記",
+                     "連結",
+                     "GPT"
+                 ],
+        "keywords":  [
+                         "reflect",
+                         "notes",
+                         "backlinks"
+                     ],
+        "rating":  4.2,
+        "pricing":  "Freemium",
+        "url":  "https://reflect.app",
+        "bestFor":  "AI 雙向連結筆記"
+    },
+    {
+        "id":  "taskade-ai",
+        "name":  "Taskade AI",
+        "description":  "AI 協作工作空間，任務、文件、心智圖。",
+        "category":  "生產力",
+        "tags":  [
+                     "協作",
+                     "任務",
+                     "心智圖"
+                 ],
+        "keywords":  [
+                         "taskade",
+                         "collaboration",
+                         "mindmap"
+                     ],
+        "rating":  4.2,
+        "pricing":  "Freemium",
+        "url":  "https://www.taskade.com",
+        "bestFor":  "AI 協作工作空間"
+    },
+    {
+        "id":  "clickup-ai",
+        "name":  "ClickUp AI",
+        "description":  "ClickUp 內建 AI，任務摘要、寫作與搜尋。",
+        "category":  "生產力",
+        "tags":  [
+                     "專案",
+                     "任務",
+                     "PM"
+                 ],
+        "keywords":  [
+                         "clickup",
+                         "project management",
+                         "ai"
+                     ],
+        "rating":  4.3,
+        "pricing":  "Freemium",
+        "url":  "https://clickup.com/ai",
+        "bestFor":  "專案管理 AI 助手"
+    },
+    {
+        "id":  "asana-ai",
+        "name":  "Asana AI",
+        "description":  "Asana AI 功能，智慧目標與工作流建議。",
+        "category":  "生產力",
+        "tags":  [
+                     "Asana",
+                     "專案",
+                     "工作流"
+                 ],
+        "keywords":  [
+                         "asana",
+                         "project",
+                         "workflow"
+                     ],
+        "rating":  4.2,
+        "pricing":  "Freemium",
+        "url":  "https://asana.com/product/ai",
+        "bestFor":  "團隊專案 AI 助手"
+    },
+    {
+        "id":  "monday-ai",
+        "name":  "Monday AI",
+        "description":  "Monday.com AI 助手，自動化工作流與摘要。",
+        "category":  "生產力",
+        "tags":  [
+                     "Monday",
+                     "自動化",
+                     "工作流"
+                 ],
+        "keywords":  [
+                         "monday",
+                         "automation",
+                         "workflow"
+                     ],
+        "rating":  4.2,
+        "pricing":  "Freemium",
+        "url":  "https://monday.com/w/ai",
+        "bestFor":  "工作流 AI 自動化"
+    },
+    {
+        "id":  "superhuman-ai",
+        "name":  "Superhuman AI",
+        "description":  "AI 增強電子郵件，快速撰寫與整理收件匣。",
+        "category":  "生產力",
+        "tags":  [
+                     "Email",
+                     "收件匣",
+                     "快速"
+                 ],
+        "keywords":  [
+                         "superhuman",
+                         "email",
+                         "inbox"
+                     ],
+        "rating":  4.4,
+        "pricing":  "付費",
+        "url":  "https://superhuman.com",
+        "bestFor":  "AI 增強 Email 效率"
+    },
+    {
+        "id":  "shortwave",
+        "name":  "Shortwave",
+        "description":  "AI 電子郵件客戶端，智慧搜尋與摘要。",
+        "category":  "生產力",
+        "tags":  [
+                     "Email",
+                     "搜尋",
+                     "摘要"
+                 ],
+        "keywords":  [
+                         "shortwave",
+                         "email",
+                         "ai search"
+                     ],
+        "rating":  4.3,
+        "pricing":  "Freemium",
+        "url":  "https://www.shortwave.com",
+        "bestFor":  "AI Email 整理"
+    },
+    {
+        "id":  "sanebox",
+        "name":  "SaneBox",
+        "description":  "AI 郵件過濾，自動整理重要與次要郵件。",
+        "category":  "生產力",
+        "tags":  [
+                     "Email",
+                     "過濾",
+                     "整理"
+                 ],
+        "keywords":  [
+                         "sanebox",
+                         "email filter",
+                         "inbox"
+                     ],
+        "rating":  4.3,
+        "pricing":  "付費",
+        "url":  "https://www.sanebox.com",
+        "bestFor":  "AI 郵件過濾整理"
+    },
+    {
+        "id":  "beautiful-ai",
+        "name":  "Beautiful.ai",
+        "description":  "AI 簡報設計，自動排版與視覺優化。",
+        "category":  "生產力",
+        "tags":  [
+                     "簡報",
+                     "排版",
+                     "設計"
+                 ],
+        "keywords":  [
+                         "beautiful.ai",
+                         "presentation",
+                         "design"
+                     ],
+        "rating":  4.3,
+        "pricing":  "Freemium",
+        "url":  "https://www.beautiful.ai",
+        "bestFor":  "AI 簡報排版"
+    },
+    {
+        "id":  "tome",
+        "name":  "Tome",
+        "description":  "AI 敘事簡報，生成故事化投影片與大綱。",
+        "category":  "生產力",
+        "tags":  [
+                     "敘事",
+                     "簡報",
+                     "故事"
+                 ],
+        "keywords":  [
+                         "tome",
+                         "storytelling",
+                         "presentation"
+                     ],
+        "rating":  4.2,
+        "pricing":  "Freemium",
+        "url":  "https://tome.app",
+        "bestFor":  "故事化 AI 簡報"
+    },
+    {
+        "id":  "slidesai",
+        "name":  "SlidesAI",
+        "description":  "Google Slides AI 外掛，文字轉投影片。",
+        "category":  "生產力",
+        "tags":  [
+                     "Google Slides",
+                     "外掛",
+                     "PPT"
+                 ],
+        "keywords":  [
+                         "slidesai",
+                         "google slides",
+                         "ppt"
+                     ],
+        "rating":  4.2,
+        "pricing":  "Freemium",
+        "url":  "https://www.slidesai.io",
+        "bestFor":  "Google Slides AI 外掛"
+    },
+    {
+        "id":  "magical",
+        "name":  "Magical",
+        "description":  "AI 文字擴展與表單自動填寫，跨網站生產力。",
+        "category":  "生產力",
+        "tags":  [
+                     "自動填寫",
+                     "擴展",
+                     "表單"
+                 ],
+        "keywords":  [
+                         "magical",
+                         "autofill",
+                         "text expander"
+                     ],
+        "rating":  4.2,
+        "pricing":  "Freemium",
+        "url":  "https://www.getmagical.com",
+        "bestFor":  "跨網站文字自動化"
+    },
+    {
+        "id":  "text-blaze",
+        "name":  "Text Blaze",
+        "description":  "AI 文字片段與模板，快速回覆與自動化。",
+        "category":  "生產力",
+        "tags":  [
+                     "片段",
+                     "模板",
+                     "回覆"
+                 ],
+        "keywords":  [
+                         "text blaze",
+                         "snippets",
+                         "templates"
+                     ],
+        "rating":  4.3,
+        "pricing":  "Freemium",
+        "url":  "https://blaze.today",
+        "bestFor":  "文字片段自動化"
+    },
+    {
+        "id":  "zapier-ai",
+        "name":  "Zapier AI",
+        "description":  "AI 驅動自動化，自然語言建立 Zap 工作流。",
+        "category":  "生產力",
+        "tags":  [
+                     "自動化",
+                     "Zap",
+                     "工作流"
+                 ],
+        "keywords":  [
+                         "zapier",
+                         "automation",
+                         "workflow"
+                     ],
+        "rating":  4.4,
+        "pricing":  "Freemium",
+        "url":  "https://zapier.com/ai",
+        "bestFor":  "自然語言建立自動化"
+    },
+    {
+        "id":  "make-ai",
+        "name":  "Make AI",
+        "description":  "視覺化 AI 自動化平台（原 Integromat）。",
+        "category":  "生產力",
+        "tags":  [
+                     "自動化",
+                     "整合",
+                     "視覺化"
+                 ],
+        "keywords":  [
+                         "make",
+                         "integromat",
+                         "automation"
+                     ],
+        "rating":  4.3,
+        "pricing":  "Freemium",
+        "url":  "https://www.make.com",
+        "bestFor":  "視覺化 AI 自動化"
+    },
+    {
+        "id":  "bardeen",
+        "name":  "Bardeen",
+        "description":  "AI 瀏覽器自動化，一鍵擷取資料與工作流。",
+        "category":  "生產力",
+        "tags":  [
+                     "瀏覽器",
+                     "自動化",
+                     "擷取"
+                 ],
+        "keywords":  [
+                         "bardeen",
+                         "browser automation",
+                         "scrape"
+                     ],
+        "rating":  4.2,
+        "pricing":  "Freemium",
+        "url":  "https://www.bardeen.ai",
+        "bestFor":  "瀏覽器 AI 自動化"
+    },
+    {
+        "id":  "raycast-ai",
+        "name":  "Raycast AI",
+        "description":  "Mac 啟動器 AI 助手，快速指令與 ChatGPT。",
+        "category":  "生產力",
+        "tags":  [
+                     "Mac",
+                     "啟動器",
+                     "快捷"
+                 ],
+        "keywords":  [
+                         "raycast",
+                         "launcher",
+                         "mac"
+                     ],
+        "rating":  4.4,
+        "pricing":  "Freemium",
+        "url":  "https://www.raycast.com/ai",
+        "bestFor":  "Mac AI 啟動器"
+    },
+    {
+        "id":  "arc-max",
+        "name":  "Arc Max",
+        "description":  "Arc 瀏覽器 AI 功能，摘要、提問與整理分頁。",
+        "category":  "生產力",
+        "tags":  [
+                     "瀏覽器",
+                     "摘要",
+                     "分頁"
+                 ],
+        "keywords":  [
+                         "arc max",
+                         "browser",
+                         "ai"
+                     ],
+        "rating":  4.3,
+        "pricing":  "Freemium",
+        "url":  "https://arc.net",
+        "bestFor":  "AI 瀏覽器助手"
+    },
+    {
+        "id":  "deepl",
+        "name":  "DeepL",
+        "description":  "高準確度 AI 翻譯，多語言品質業界領先。",
+        "category":  "翻譯",
+        "tags":  [
+                     "翻譯",
+                     "多語言",
+                     "準確"
+                 ],
+        "keywords":  [
+                         "deepl",
+                         "translate",
+                         "language"
+                     ],
+        "rating":  4.8,
+        "pricing":  "Freemium",
+        "url":  "https://www.deepl.com",
+        "bestFor":  "高品質文件翻譯"
+    },
+    {
+        "id":  "google-translate",
+        "name":  "Google Translate",
+        "description":  "Google AI 翻譯，支援 100+ 語言與相機翻譯。",
+        "category":  "翻譯",
+        "tags":  [
+                     "Google",
+                     "多語言",
+                     "相機"
+                 ],
+        "keywords":  [
+                         "google translate",
+                         "multilingual"
+                     ],
+        "rating":  4.3,
+        "pricing":  "免費",
+        "url":  "https://translate.google.com",
+        "bestFor":  "通用多語言翻譯"
+    },
+    {
+        "id":  "microsoft-translator",
+        "name":  "Microsoft Translator",
+        "description":  "微軟 AI 翻譯，整合 Office 與 Teams。",
+        "category":  "翻譯",
+        "tags":  [
+                     "微軟",
+                     "Office",
+                     "Teams"
+                 ],
+        "keywords":  [
+                         "microsoft translator",
+                         "office"
+                     ],
+        "rating":  4.2,
+        "pricing":  "免費",
+        "url":  "https://www.microsoft.com/translator",
+        "bestFor":  "微軟生態翻譯"
+    },
+    {
+        "id":  "reverso",
+        "name":  "Reverso",
+        "description":  "AI 翻譯加例句與語境，語言學習常用。",
+        "category":  "翻譯",
+        "tags":  [
+                     "例句",
+                     "語境",
+                     "學習"
+                 ],
+        "keywords":  [
+                         "reverso",
+                         "context",
+                         "examples"
+                     ],
+        "rating":  4.3,
+        "pricing":  "Freemium",
+        "url":  "https://www.reverso.net",
+        "bestFor":  "語境式翻譯學習"
+    },
+    {
+        "id":  "linguee",
+        "name":  "Linguee",
+        "description":  "DeepL 旗下雙語例句搜尋與翻譯。",
+        "category":  "翻譯",
+        "tags":  [
+                     "例句",
+                     "DeepL",
+                     "雙語"
+                 ],
+        "keywords":  [
+                         "linguee",
+                         "bilingual",
+                         "examples"
+                     ],
+        "rating":  4.2,
+        "pricing":  "Freemium",
+        "url":  "https://www.linguee.com",
+        "bestFor":  "雙語例句翻譯"
+    },
+    {
+        "id":  "modernmt",
+        "name":  "ModernMT",
+        "description":  "自適應 AI 機器翻譯，企業本地化。",
+        "category":  "翻譯",
+        "tags":  [
+                     "企業",
+                     "本地化",
+                     "自適應"
+                 ],
+        "keywords":  [
+                         "modernmt",
+                         "enterprise",
+                         "localization"
+                     ],
+        "rating":  4.2,
+        "pricing":  "Freemium",
+        "url":  "https://www.modernmt.com",
+        "bestFor":  "企業自適應翻譯"
+    },
+    {
+        "id":  "smartling",
+        "name":  "Smartling",
+        "description":  "AI 本地化平台，企業多語言內容管理。",
+        "category":  "翻譯",
+        "tags":  [
+                     "本地化",
+                     "企業",
+                     "CMS"
+                 ],
+        "keywords":  [
+                         "smartling",
+                         "localization",
+                         "enterprise"
+                     ],
+        "rating":  4.3,
+        "pricing":  "付費",
+        "url":  "https://www.smartling.com",
+        "bestFor":  "企業本地化平台"
+    },
+    {
+        "id":  "unbabel",
+        "name":  "Unbabel",
+        "description":  "AI 加人工審校翻譯，客服場景常用。",
+        "category":  "翻譯",
+        "tags":  [
+                     "客服",
+                     "人工",
+                     "品質"
+                 ],
+        "keywords":  [
+                         "unbabel",
+                         "customer service",
+                         "hybrid"
+                     ],
+        "rating":  4.2,
+        "pricing":  "付費",
+        "url":  "https://unbabel.com",
+        "bestFor":  "客服 AI 翻譯"
+    },
+    {
+        "id":  "phrase",
+        "name":  "Phrase",
+        "description":  "AI TMS 翻譯管理系統，軟體本地化。",
+        "category":  "翻譯",
+        "tags":  [
+                     "TMS",
+                     "軟體",
+                     "本地化"
+                 ],
+        "keywords":  [
+                         "phrase",
+                         "tms",
+                         "software localization"
+                     ],
+        "rating":  4.3,
+        "pricing":  "付費",
+        "url":  "https://phrase.com",
+        "bestFor":  "翻譯管理系統"
+    },
+    {
+        "id":  "lokalise-ai",
+        "name":  "Lokalise AI",
+        "description":  "AI 協作本地化平台，App 與網站多語言。",
+        "category":  "翻譯",
+        "tags":  [
+                     "App",
+                     "協作",
+                     "本地化"
+                 ],
+        "keywords":  [
+                         "lokalise",
+                         "app localization",
+                         "collaboration"
+                     ],
+        "rating":  4.3,
+        "pricing":  "Freemium",
+        "url":  "https://lokalise.com",
+        "bestFor":  "App 本地化協作"
+    },
+    {
+        "id":  "crowdin-ai",
+        "name":  "Crowdin AI",
+        "description":  "AI 輔助翻譯管理，開源與軟體專案常用。",
+        "category":  "翻譯",
+        "tags":  [
+                     "開源",
+                     "協作",
+                     "TMS"
+                 ],
+        "keywords":  [
+                         "crowdin",
+                         "open source",
+                         "translation"
+                     ],
+        "rating":  4.2,
+        "pricing":  "Freemium",
+        "url":  "https://crowdin.com",
+        "bestFor":  "開源專案本地化"
+    },
+    {
+        "id":  "mate-translate",
+        "name":  "Mate Translate",
+        "description":  "Mac 選取即翻 AI 翻譯工具。",
+        "category":  "翻譯",
+        "tags":  [
+                     "Mac",
+                     "選取",
+                     "即時"
+                 ],
+        "keywords":  [
+                         "mate translate",
+                         "mac",
+                         "instant"
+                     ],
+        "rating":  4.2,
+        "pricing":  "Freemium",
+        "url":  "https://gikken.co/mate-translate",
+        "bestFor":  "Mac 即時翻譯"
+    },
+    {
+        "id":  "itranslate",
+        "name":  "iTranslate",
+        "description":  "AI 翻譯 App，離線與對話模式。",
+        "category":  "翻譯",
+        "tags":  [
+                     "App",
+                     "離線",
+                     "對話"
+                 ],
+        "keywords":  [
+                         "itranslate",
+                         "mobile",
+                         "offline"
+                     ],
+        "rating":  4.1,
+        "pricing":  "Freemium",
+        "url":  "https://itranslate.com",
+        "bestFor":  "手機 AI 翻譯"
+    },
+    {
+        "id":  "papago",
+        "name":  "Papago",
+        "description":  "Naver AI 翻譯，韓語與亞洲語言強。",
+        "category":  "翻譯",
+        "tags":  [
+                     "Naver",
+                     "韓語",
+                     "亞洲"
+                 ],
+        "keywords":  [
+                         "papago",
+                         "naver",
+                         "korean"
+                     ],
+        "rating":  4.3,
+        "pricing":  "免費",
+        "url":  "https://papago.naver.com",
+        "bestFor":  "韓語亞洲語言翻譯"
+    },
+    {
+        "id":  "papago-2",
+        "name":  "有道翻譯",
+        "description":  "網易有道 AI 翻譯，中英文與學術場景。",
+        "category":  "翻譯",
+        "tags":  [
+                     "網易",
+                     "中文",
+                     "學術"
+                 ],
+        "keywords":  [
+                         "youdao",
+                         "有道",
+                         "chinese"
+                     ],
+        "rating":  4.3,
+        "pricing":  "Freemium",
+        "url":  "https://fanyi.youdao.com",
+        "bestFor":  "中英文翻譯學習"
+    },
+    {
+        "id":  "youdao",
+        "name":  "騰訊翻譯君",
+        "description":  "騰訊 AI 翻譯，多語言與 OCR 整合。",
+        "category":  "翻譯",
+        "tags":  [
+                     "騰訊",
+                     "OCR",
+                     "中文"
+                 ],
+        "keywords":  [
+                         "tencent translate",
+                         "qq",
+                         "ocr"
+                     ],
+        "rating":  4.2,
+        "pricing":  "免費",
+        "url":  "https://fanyi.qq.com",
+        "bestFor":  "騰訊生態翻譯"
+    },
+    {
+        "id":  "tencent-translate",
+        "name":  "百度翻譯",
+        "description":  "百度 AI 翻譯，文件與圖片翻譯。",
+        "category":  "翻譯",
+        "tags":  [
+                     "百度",
+                     "文件",
+                     "圖片"
+                 ],
+        "keywords":  [
+                         "baidu translate",
+                         "document",
+                         "image"
+                     ],
+        "rating":  4.2,
+        "pricing":  "Freemium",
+        "url":  "https://fanyi.baidu.com",
+        "bestFor":  "中文文件圖片翻譯"
+    },
+    {
+        "id":  "transifex-ai",
+        "name":  "Transifex AI",
+        "description":  "AI 本地化工作流，DevOps 整合。",
+        "category":  "翻譯",
+        "tags":  [
+                     "DevOps",
+                     "工作流",
+                     "本地化"
+                 ],
+        "keywords":  [
+                         "transifex",
+                         "devops",
+                         "localization"
+                     ],
+        "rating":  4.2,
+        "pricing":  "Freemium",
+        "url":  "https://www.transifex.com",
+        "bestFor":  "DevOps 本地化"
+    },
+    {
+        "id":  "wordly",
+        "name":  "Wordly",
+        "description":  "AI 即時口譯，會議與活動多語言。",
+        "category":  "翻譯",
+        "tags":  [
+                     "口譯",
+                     "即時",
+                     "會議"
+                 ],
+        "keywords":  [
+                         "wordly",
+                         "interpretation",
+                         "live"
+                     ],
+        "rating":  4.3,
+        "pricing":  "付費",
+        "url":  "https://wordly.ai",
+        "bestFor":  "即時 AI 口譯"
+    },
+    {
+        "id":  "kudo-ai",
+        "name":  "KUDO AI",
+        "description":  "AI 會議同聲傳譯平台。",
+        "category":  "翻譯",
+        "tags":  [
+                     "同傳",
+                     "會議",
+                     "多語言"
+                 ],
+        "keywords":  [
+                         "kudo",
+                         "simultaneous",
+                         "interpretation"
+                     ],
+        "rating":  4.2,
+        "pricing":  "Freemium",
+        "url":  "https://kudo.ai",
+        "bestFor":  "會議同聲傳譯"
+    },
+    {
+        "id":  "rask-ai",
+        "name":  "Rask AI",
+        "description":  "AI 影片配音翻譯，口型同步多語言。",
+        "category":  "翻譯",
+        "tags":  [
+                     "影片",
+                     "配音",
+                     "口型"
+                 ],
+        "keywords":  [
+                         "rask",
+                         "video dubbing",
+                         "lip sync"
+                     ],
+        "rating":  4.4,
+        "pricing":  "Freemium",
+        "url":  "https://rask.ai",
+        "bestFor":  "影片 AI 配音翻譯"
+    },
+    {
+        "id":  "heygen-translate",
+        "name":  "HeyGen Translate",
+        "description":  "AI 影片翻譯，保留原講者聲音與口型。",
+        "category":  "翻譯",
+        "tags":  [
+                     "影片",
+                     "翻譯",
+                     "Avatar"
+                 ],
+        "keywords":  [
+                         "heygen translate",
+                         "video translation"
+                     ],
+        "rating":  4.4,
+        "pricing":  "Freemium",
+        "url":  "https://www.heygen.com/translate",
+        "bestFor":  "影片保留原聲翻譯"
+    },
+    {
+        "id":  "blipcut",
+        "name":  "BlipCut",
+        "description":  "AI 影片翻譯與字幕生成。",
+        "category":  "翻譯",
+        "tags":  [
+                     "影片",
+                     "字幕",
+                     "翻譯"
+                 ],
+        "keywords":  [
+                         "blipcut",
+                         "video subtitle",
+                         "translate"
+                     ],
+        "rating":  4.2,
+        "pricing":  "Freemium",
+        "url":  "https://blipcut.com",
+        "bestFor":  "影片字幕 AI 翻譯"
+    },
+    {
+        "id":  "maestra",
+        "name":  "Maestra",
+        "description":  "AI 字幕、轉錄與翻譯一站式。",
+        "category":  "翻譯",
+        "tags":  [
+                     "字幕",
+                     "轉錄",
+                     "翻譯"
+                 ],
+        "keywords":  [
+                         "maestra",
+                         "subtitle",
+                         "transcription"
+                     ],
+        "rating":  4.2,
+        "pricing":  "Freemium",
+        "url":  "https://maestra.ai",
+        "bestFor":  "字幕轉錄翻譯"
+    },
+    {
+        "id":  "tarjimly",
+        "name":  "Tarjimly",
+        "description":  "AI 輔助難民與移民翻譯（公益向）。",
+        "category":  "翻譯",
+        "tags":  [
+                     "公益",
+                     "移民",
+                     "即時"
+                 ],
+        "keywords":  [
+                         "tarjimly",
+                         "nonprofit",
+                         "refugee"
+                     ],
+        "rating":  4,
+        "pricing":  "免費",
+        "url":  "https://tarjimly.org",
+        "bestFor":  "公益即時翻譯"
+    },
+    {
+        "id":  "grammarly",
+        "name":  "Grammarly",
+        "description":  "AI 英文寫作助手，文法潤飾與語氣調整。",
+        "category":  "寫作",
+        "tags":  [
+                     "英文",
+                     "文法",
+                     "潤飾"
+                 ],
+        "keywords":  [
+                         "grammarly",
+                         "english",
+                         "writing"
+                     ],
+        "rating":  4.5,
+        "pricing":  "Freemium",
+        "url":  "https://www.grammarly.com",
+        "bestFor":  "英文寫作文法潤飾"
+    },
+    {
+        "id":  "jasper",
+        "name":  "Jasper",
+        "description":  "行銷導向 AI 寫作，品牌文案與廣告內容。",
+        "category":  "寫作",
+        "tags":  [
+                     "行銷",
+                     "文案",
+                     "品牌"
+                 ],
+        "keywords":  [
+                         "jasper",
+                         "marketing",
+                         "copywriting"
+                     ],
+        "rating":  4.3,
+        "pricing":  "付費",
+        "url":  "https://www.jasper.ai",
+        "bestFor":  "行銷文案與品牌內容"
+    },
+    {
+        "id":  "copy-ai",
+        "name":  "Copy.ai",
+        "description":  "AI 文案生成，社群貼文、Email、廣告。",
+        "category":  "寫作",
+        "tags":  [
+                     "文案",
+                     "社群",
+                     "Email"
+                 ],
+        "keywords":  [
+                         "copy.ai",
+                         "copywriting",
+                         "social"
+                     ],
+        "rating":  4.3,
+        "pricing":  "Freemium",
+        "url":  "https://www.copy.ai",
+        "bestFor":  "快速 AI 文案生成"
+    },
+    {
+        "id":  "writesonic",
+        "name":  "Writesonic",
+        "description":  "AI 寫作平台，SEO 文章與行銷內容。",
+        "category":  "寫作",
+        "tags":  [
+                     "SEO",
+                     "文章",
+                     "行銷"
+                 ],
+        "keywords":  [
+                         "writesonic",
+                         "seo",
+                         "blog"
+                     ],
+        "rating":  4.3,
+        "pricing":  "Freemium",
+        "url":  "https://writesonic.com",
+        "bestFor":  "SEO 文章 AI 寫作"
+    },
+    {
+        "id":  "rytr",
+        "name":  "Rytr",
+        "description":  "平價 AI 寫作助手，多種語調與模板。",
+        "category":  "寫作",
+        "tags":  [
+                     "平價",
+                     "模板",
+                     "語調"
+                 ],
+        "keywords":  [
+                         "rytr",
+                         "affordable",
+                         "templates"
+                     ],
+        "rating":  4.2,
+        "pricing":  "Freemium",
+        "url":  "https://rytr.me",
+        "bestFor":  "平價 AI 寫作"
+    },
+    {
+        "id":  "anyword",
+        "name":  "Anyword",
+        "description":  "AI 行銷文案，預測轉換率的分數。",
+        "category":  "寫作",
+        "tags":  [
+                     "行銷",
+                     "轉換",
+                     "預測"
+                 ],
+        "keywords":  [
+                         "anyword",
+                         "conversion",
+                         "marketing"
+                     ],
+        "rating":  4.2,
+        "pricing":  "Freemium",
+        "url":  "https://anyword.com",
+        "bestFor":  "預測型行銷文案"
+    },
+    {
+        "id":  "wordtune",
+        "name":  "Wordtune",
+        "description":  "AI 改寫與潤色，調整語氣與清晰度。",
+        "category":  "寫作",
+        "tags":  [
+                     "改寫",
+                     "潤色",
+                     "語氣"
+                 ],
+        "keywords":  [
+                         "wordtune",
+                         "rewrite",
+                         "tone"
+                     ],
+        "rating":  4.3,
+        "pricing":  "Freemium",
+        "url":  "https://www.wordtune.com",
+        "bestFor":  "句子改寫潤色"
+    },
+    {
+        "id":  "quillbot",
+        "name":  "QuillBot",
+        "description":  "AI 改寫、摘要、文法檢查與引用。",
+        "category":  "寫作",
+        "tags":  [
+                     "改寫",
+                     "摘要",
+                     "引用"
+                 ],
+        "keywords":  [
+                         "quillbot",
+                         "paraphrase",
+                         "summarize"
+                     ],
+        "rating":  4.4,
+        "pricing":  "Freemium",
+        "url":  "https://quillbot.com",
+        "bestFor":  "改寫摘要文法檢查"
+    },
+    {
+        "id":  "prowritingaid",
+        "name":  "ProWritingAid",
+        "description":  "AI 寫作品質分析，深度文法與風格建議。",
+        "category":  "寫作",
+        "tags":  [
+                     "分析",
+                     "風格",
+                     "文法"
+                 ],
+        "keywords":  [
+                         "prowritingaid",
+                         "style",
+                         "grammar"
+                     ],
+        "rating":  4.3,
+        "pricing":  "Freemium",
+        "url":  "https://prowritingaid.com",
+        "bestFor":  "深度寫作品質分析"
+    },
+    {
+        "id":  "hemingway-editor",
+        "name":  "Hemingway Editor",
+        "description":  "AI 可讀性分析，簡化複雜句子。",
+        "category":  "寫作",
+        "tags":  [
+                     "可讀性",
+                     "簡化",
+                     "英文"
+                 ],
+        "keywords":  [
+                         "hemingway",
+                         "readability",
+                         "clarity"
+                     ],
+        "rating":  4.2,
+        "pricing":  "Freemium",
+        "url":  "https://hemingwayapp.com",
+        "bestFor":  "英文可讀性優化"
+    },
+    {
+        "id":  "sudowrite",
+        "name":  "Sudowrite",
+        "description":  "AI 小說與創意寫作助手，情節與描寫。",
+        "category":  "寫作",
+        "tags":  [
+                     "小說",
+                     "創意",
+                     "情節"
+                 ],
+        "keywords":  [
+                         "sudowrite",
+                         "fiction",
+                         "creative writing"
+                     ],
+        "rating":  4.4,
+        "pricing":  "Freemium",
+        "url":  "https://www.sudowrite.com",
+        "bestFor":  "小說創意寫作"
+    },
+    {
+        "id":  "novelai",
+        "name":  "NovelAI",
+        "description":  "AI 故事與小說生成，可自訂風格。",
+        "category":  "寫作",
+        "tags":  [
+                     "小說",
+                     "故事",
+                     "角色"
+                 ],
+        "keywords":  [
+                         "novelai",
+                         "story",
+                         "fiction"
+                     ],
+        "rating":  4.2,
+        "pricing":  "Freemium",
+        "url":  "https://novelai.net",
+        "bestFor":  "AI 故事小說生成"
+    },
+    {
+        "id":  "squibler",
+        "name":  "Squibler",
+        "description":  "AI 書籍與劇本寫作平台。",
+        "category":  "寫作",
+        "tags":  [
+                     "書籍",
+                     "劇本",
+                     "大綱"
+                 ],
+        "keywords":  [
+                         "squibler",
+                         "book",
+                         "screenplay"
+                     ],
+        "rating":  4.1,
+        "pricing":  "Freemium",
+        "url":  "https://www.squibler.io",
+        "bestFor":  "書籍劇本 AI 寫作"
+    },
+    {
+        "id":  "hyperwrite",
+        "name":  "HyperWrite",
+        "description":  "AI 寫作助手，瀏覽器擴充即時建議。",
+        "category":  "寫作",
+        "tags":  [
+                     "瀏覽器",
+                     "即時",
+                     "建議"
+                 ],
+        "keywords":  [
+                         "hyperwrite",
+                         "browser",
+                         "suggestions"
+                     ],
+        "rating":  4.2,
+        "pricing":  "Freemium",
+        "url":  "https://www.hyperwriteai.com",
+        "bestFor":  "瀏覽器即時寫作建議"
+    },
+    {
+        "id":  "lex",
+        "name":  "Lex",
+        "description":  "AI 寫作編輯器，專為長文與部落格。",
+        "category":  "寫作",
+        "tags":  [
+                     "編輯器",
+                     "部落格",
+                     "長文"
+                 ],
+        "keywords":  [
+                         "lex",
+                         "editor",
+                         "blog"
+                     ],
+        "rating":  4.2,
+        "pricing":  "Freemium",
+        "url":  "https://lex.page",
+        "bestFor":  "AI 長文編輯器"
+    },
+    {
+        "id":  "writer-com",
+        "name":  "Writer.com",
+        "description":  "企業 AI 寫作平台，品牌語調一致性。",
+        "category":  "寫作",
+        "tags":  [
+                     "企業",
+                     "品牌",
+                     "語調"
+                 ],
+        "keywords":  [
+                         "writer.com",
+                         "enterprise",
+                         "brand voice"
+                     ],
+        "rating":  4.3,
+        "pricing":  "付費",
+        "url":  "https://writer.com",
+        "bestFor":  "企業品牌語調寫作"
+    },
+    {
+        "id":  "longshot-ai",
+        "name":  "LongShot AI",
+        "description":  "AI 長文 SEO 內容生成與事實查核。",
+        "category":  "寫作",
+        "tags":  [
+                     "SEO",
+                     "長文",
+                     "查核"
+                 ],
+        "keywords":  [
+                         "longshot",
+                         "seo content",
+                         "fact check"
+                     ],
+        "rating":  4.2,
+        "pricing":  "Freemium",
+        "url":  "https://www.longshot.ai",
+        "bestFor":  "SEO 長文內容"
+    },
+    {
+        "id":  "frase",
+        "name":  "Frase",
+        "description":  "AI SEO 內容研究與撰寫，SERP 分析。",
+        "category":  "寫作",
+        "tags":  [
+                     "SEO",
+                     "SERP",
+                     "研究"
+                 ],
+        "keywords":  [
+                         "frase",
+                         "seo research",
+                         "content"
+                     ],
+        "rating":  4.3,
+        "pricing":  "Freemium",
+        "url":  "https://www.frase.io",
+        "bestFor":  "SEO 內容研究撰寫"
+    },
+    {
+        "id":  "surfer-seo",
+        "name":  "Surfer SEO",
+        "description":  "AI SEO 內容優化，關鍵字與結構建議。",
+        "category":  "寫作",
+        "tags":  [
+                     "SEO",
+                     "關鍵字",
+                     "優化"
+                 ],
+        "keywords":  [
+                         "surfer seo",
+                         "content optimization"
+                     ],
+        "rating":  4.4,
+        "pricing":  "Freemium",
+        "url":  "https://surferseo.com",
+        "bestFor":  "SEO 內容優化"
+    },
+    {
+        "id":  "koalawriter",
+        "name":  "KoalaWriter",
+        "description":  "AI SEO 部落格文章一鍵生成。",
+        "category":  "寫作",
+        "tags":  [
+                     "SEO",
+                     "部落格",
+                     "文章"
+                 ],
+        "keywords":  [
+                         "koala writer",
+                         "blog",
+                         "seo"
+                     ],
+        "rating":  4.2,
+        "pricing":  "Freemium",
+        "url":  "https://koala.sh",
+        "bestFor":  "SEO 部落格生成"
+    },
+    {
+        "id":  "jenni-ai",
+        "name":  "Jenni AI",
+        "description":  "AI 學術寫作助手，引用與段落生成。",
+        "category":  "寫作",
+        "tags":  [
+                     "學術",
+                     "引用",
+                     "論文"
+                 ],
+        "keywords":  [
+                         "jenni",
+                         "academic writing",
+                         "citations"
+                     ],
+        "rating":  4.3,
+        "pricing":  "Freemium",
+        "url":  "https://jenni.ai",
+        "bestFor":  "學術寫作 AI 助手"
+    },
+    {
+        "id":  "paperpal",
+        "name":  "Paperpal",
+        "description":  "AI 學術英文潤稿，期刊投稿常用。",
+        "category":  "寫作",
+        "tags":  [
+                     "學術",
+                     "潤稿",
+                     "期刊"
+                 ],
+        "keywords":  [
+                         "paperpal",
+                         "academic edit",
+                         "journal"
+                     ],
+        "rating":  4.3,
+        "pricing":  "Freemium",
+        "url":  "https://paperpal.com",
+        "bestFor":  "學術英文 AI 潤稿"
+    },
+    {
+        "id":  "writefull",
+        "name":  "Writefull",
+        "description":  "AI 學術寫作回饋，整合 Overleaf。",
+        "category":  "寫作",
+        "tags":  [
+                     "學術",
+                     "Overleaf",
+                     "回饋"
+                 ],
+        "keywords":  [
+                         "writefull",
+                         "overleaf",
+                         "academic"
+                     ],
+        "rating":  4.2,
+        "pricing":  "Freemium",
+        "url":  "https://writefull.com",
+        "bestFor":  "Overleaf 學術寫作"
+    },
+    {
+        "id":  "languagetool",
+        "name":  "LanguageTool",
+        "description":  "多語言 AI 文法與拼字檢查。",
+        "category":  "寫作",
+        "tags":  [
+                     "多語言",
+                     "文法",
+                     "拼字"
+                 ],
+        "keywords":  [
+                         "languagetool",
+                         "grammar",
+                         "multilingual"
+                     ],
+        "rating":  4.3,
+        "pricing":  "Freemium",
+        "url":  "https://languagetool.org",
+        "bestFor":  "多語言文法檢查"
+    },
+    {
+        "id":  "remove-bg",
+        "name":  "remove.bg",
+        "description":  "一鍵 AI 去背，上傳圖片自動移除背景。",
+        "category":  "圖像編輯",
+        "tags":  [
+                     "去背",
+                     "摳圖",
+                     "背景"
+                 ],
+        "keywords":  [
+                         "remove.bg",
+                         "background removal"
+                     ],
+        "rating":  4.6,
+        "pricing":  "Freemium",
+        "url":  "https://www.remove.bg",
+        "bestFor":  "快速圖片去背"
+    },
+    {
+        "id":  "photoroom",
+        "name":  "Photoroom",
+        "description":  "AI 產品攝影與去背，電商圖片常用。",
+        "category":  "圖像編輯",
+        "tags":  [
+                     "電商",
+                     "產品",
+                     "去背"
+                 ],
+        "keywords":  [
+                         "photoroom",
+                         "product photo",
+                         "ecommerce"
+                     ],
+        "rating":  4.5,
+        "pricing":  "Freemium",
+        "url":  "https://www.photoroom.com",
+        "bestFor":  "電商產品 AI 攝影"
+    },
+    {
+        "id":  "clipdrop",
+        "name":  "Clipdrop",
+        "description":  "AI 圖像編輯套件，去背、放大、重打光。",
+        "category":  "圖像編輯",
+        "tags":  [
+                     "套件",
+                     "去背",
+                     "重打光"
+                 ],
+        "keywords":  [
+                         "clipdrop",
+                         "cleanup",
+                         "relight"
+                     ],
+        "rating":  4.4,
+        "pricing":  "Freemium",
+        "url":  "https://clipdrop.co",
+        "bestFor":  "多合一 AI 圖像編輯"
+    },
+    {
+        "id":  "cleanup-pictures",
+        "name":  "Cleanup.pictures",
+        "description":  "AI 移除圖片中不需要的物件。",
+        "category":  "圖像編輯",
+        "tags":  [
+                     "移除",
+                     "修復",
+                     "物件"
+                 ],
+        "keywords":  [
+                         "cleanup pictures",
+                         "object removal"
+                     ],
+        "rating":  4.4,
+        "pricing":  "Freemium",
+        "url":  "https://cleanup.pictures",
+        "bestFor":  "移除圖中多餘物件"
+    },
+    {
+        "id":  "magic-eraser",
+        "name":  "Magic Eraser",
+        "description":  "AI 魔術橡皮擦，一鍵移除圖中元素。",
+        "category":  "圖像編輯",
+        "tags":  [
+                     "橡皮擦",
+                     "移除",
+                     "修復"
+                 ],
+        "keywords":  [
+                         "magic eraser",
+                         "remove object"
+                     ],
+        "rating":  4.3,
+        "pricing":  "Freemium",
+        "url":  "https://magicstudio.com/magiceraser",
+        "bestFor":  "魔術橡皮擦修圖"
+    },
+    {
+        "id":  "adobe-photoshop-ai",
+        "name":  "Adobe Photoshop AI",
+        "description":  "Photoshop 生成式填充與 AI 修圖功能。",
+        "category":  "圖像編輯",
+        "tags":  [
+                     "Photoshop",
+                     "Adobe",
+                     "生成式"
+                 ],
+        "keywords":  [
+                         "photoshop ai",
+                         "generative fill",
+                         "adobe"
+                     ],
+        "rating":  4.6,
+        "pricing":  "付費",
+        "url":  "https://www.adobe.com/products/photoshop.html",
+        "bestFor":  "專業 AI 修圖"
+    },
+    {
+        "id":  "luminar-neo",
+        "name":  "Luminar Neo",
+        "description":  "AI 照片編輯，天空替換與人像增強。",
+        "category":  "圖像編輯",
+        "tags":  [
+                     "照片",
+                     "天空",
+                     "人像"
+                 ],
+        "keywords":  [
+                         "luminar neo",
+                         "photo edit",
+                         "sky"
+                     ],
+        "rating":  4.4,
+        "pricing":  "付費",
+        "url":  "https://skylum.com/luminar",
+        "bestFor":  "AI 照片後製"
+    },
+    {
+        "id":  "topaz-photo-ai",
+        "name":  "Topaz Photo AI",
+        "description":  "AI 降噪、銳化與放大，攝影後製。",
+        "category":  "圖像編輯",
+        "tags":  [
+                     "降噪",
+                     "銳化",
+                     "放大"
+                 ],
+        "keywords":  [
+                         "topaz photo",
+                         "denoise",
+                         "upscale"
+                     ],
+        "rating":  4.5,
+        "pricing":  "付費",
+        "url":  "https://www.topazlabs.com/topaz-photo-ai",
+        "bestFor":  "攝影 AI 後製"
+    },
+    {
+        "id":  "let-s-enhance",
+        "name":  "Let\u0027s Enhance",
+        "description":  "AI 圖片放大至 4K+，提升細節。",
+        "category":  "圖像編輯",
+        "tags":  [
+                     "放大",
+                     "4K",
+                     "細節"
+                 ],
+        "keywords":  [
+                         "lets enhance",
+                         "upscale",
+                         "resolution"
+                     ],
+        "rating":  4.3,
+        "pricing":  "Freemium",
+        "url":  "https://letsenhance.io",
+        "bestFor":  "AI 圖片放大"
+    },
+    {
+        "id":  "upscale-media",
+        "name":  "Upscale.media",
+        "description":  "免費 AI 圖片放大與增強。",
+        "category":  "圖像編輯",
+        "tags":  [
+                     "放大",
+                     "免費",
+                     "增強"
+                 ],
+        "keywords":  [
+                         "upscale media",
+                         "free upscale"
+                     ],
+        "rating":  4.2,
+        "pricing":  "Freemium",
+        "url":  "https://www.upscale.media",
+        "bestFor":  "免費圖片放大"
+    },
+    {
+        "id":  "pixelcut",
+        "name":  "Pixelcut",
+        "description":  "AI 產品圖與背景生成，電商與社群。",
+        "category":  "圖像編輯",
+        "tags":  [
+                     "產品",
+                     "背景",
+                     "電商"
+                 ],
+        "keywords":  [
+                         "pixelcut",
+                         "product",
+                         "background"
+                     ],
+        "rating":  4.3,
+        "pricing":  "Freemium",
+        "url":  "https://www.pixelcut.ai",
+        "bestFor":  "產品圖 AI 編輯"
+    },
+    {
+        "id":  "fotor-ai",
+        "name":  "Fotor AI",
+        "description":  "AI 照片編輯與設計，一鍵美化。",
+        "category":  "圖像編輯",
+        "tags":  [
+                     "照片",
+                     "美化",
+                     "設計"
+                 ],
+        "keywords":  [
+                         "fotor",
+                         "photo edit",
+                         "enhance"
+                     ],
+        "rating":  4.2,
+        "pricing":  "Freemium",
+        "url":  "https://www.fotor.com",
+        "bestFor":  "一鍵 AI 照片美化"
+    },
+    {
+        "id":  "befunky",
+        "name":  "BeFunky",
+        "description":  "AI 照片編輯與拼貼，入門友善。",
+        "category":  "圖像編輯",
+        "tags":  [
+                     "拼貼",
+                     "入門",
+                     "照片"
+                 ],
+        "keywords":  [
+                         "befunky",
+                         "collage",
+                         "photo"
+                     ],
+        "rating":  4.1,
+        "pricing":  "Freemium",
+        "url":  "https://www.befunky.com",
+        "bestFor":  "入門 AI 照片編輯"
+    },
+    {
+        "id":  "pixlr-ai",
+        "name":  "Pixlr AI",
+        "description":  "線上 AI 圖像編輯，生成式填充與去背。",
+        "category":  "圖像編輯",
+        "tags":  [
+                     "線上",
+                     "生成式",
+                     "去背"
+                 ],
+        "keywords":  [
+                         "pixlr",
+                         "online edit",
+                         "generative"
+                     ],
+        "rating":  4.2,
+        "pricing":  "Freemium",
+        "url":  "https://pixlr.com",
+        "bestFor":  "線上 AI 修圖"
+    },
+    {
+        "id":  "adobe-lightroom-ai",
+        "name":  "Adobe Lightroom AI",
+        "description":  "Lightroom AI 降噪與自動調色。",
+        "category":  "圖像編輯",
+        "tags":  [
+                     "Lightroom",
+                     "降噪",
+                     "調色"
+                 ],
+        "keywords":  [
+                         "lightroom ai",
+                         "denoise",
+                         "color"
+                     ],
+        "rating":  4.5,
+        "pricing":  "付費",
+        "url":  "https://www.adobe.com/products/photoshop-lightroom.html",
+        "bestFor":  "AI 批量照片調色"
+    },
+    {
+        "id":  "remini",
+        "name":  "Remini",
+        "description":  "AI 老照片修復與畫質增強 App。",
+        "category":  "圖像編輯",
+        "tags":  [
+                     "修復",
+                     "老照片",
+                     "App"
+                 ],
+        "keywords":  [
+                         "remini",
+                         "photo restore",
+                         "enhance"
+                     ],
+        "rating":  4.3,
+        "pricing":  "Freemium",
+        "url":  "https://remini.ai",
+        "bestFor":  "老照片 AI 修復"
+    },
+    {
+        "id":  "vanceai",
+        "name":  "VanceAI",
+        "description":  "AI 圖片增強、去背、卡通化等工具集。",
+        "category":  "圖像編輯",
+        "tags":  [
+                     "工具集",
+                     "卡通",
+                     "增強"
+                 ],
+        "keywords":  [
+                         "vanceai",
+                         "cartoon",
+                         "enhance"
+                     ],
+        "rating":  4.2,
+        "pricing":  "Freemium",
+        "url":  "https://vanceai.com",
+        "bestFor":  "多種 AI 圖像工具"
+    },
+    {
+        "id":  "bgeraser",
+        "name":  "BgEraser",
+        "description":  "AI 去背與背景移除，批量處理。",
+        "category":  "圖像編輯",
+        "tags":  [
+                     "去背",
+                     "批量",
+                     "背景"
+                 ],
+        "keywords":  [
+                         "bgeraser",
+                         "batch",
+                         "background"
+                     ],
+        "rating":  4.2,
+        "pricing":  "Freemium",
+        "url":  "https://bgeraser.com",
+        "bestFor":  "批量 AI 去背"
+    },
+    {
+        "id":  "slazzer",
+        "name":  "Slazzer",
+        "description":  "AI 自動去背 API 與線上工具。",
+        "category":  "圖像編輯",
+        "tags":  [
+                     "API",
+                     "去背",
+                     "自動"
+                 ],
+        "keywords":  [
+                         "slazzer",
+                         "background removal",
+                         "api"
+                     ],
+        "rating":  4.2,
+        "pricing":  "Freemium",
+        "url":  "https://www.slazzer.com",
+        "bestFor":  "去背 API 與工具"
+    },
+    {
+        "id":  "palette-fm",
+        "name":  "Palette.fm",
+        "description":  "AI 黑白照片上色，歷史照片修復。",
+        "category":  "圖像編輯",
+        "tags":  [
+                     "上色",
+                     "黑白",
+                     "修復"
+                 ],
+        "keywords":  [
+                         "palette.fm",
+                         "colorize",
+                         "restore"
+                     ],
+        "rating":  4.3,
+        "pricing":  "Freemium",
+        "url":  "https://palette.fm",
+        "bestFor":  "黑白照片 AI 上色"
+    },
+    {
+        "id":  "hotpot-ai",
+        "name":  "Hotpot.ai",
+        "description":  "AI 圖像工具集，頭像、去背、修復。",
+        "category":  "圖像編輯",
+        "tags":  [
+                     "工具集",
+                     "頭像",
+                     "修復"
+                 ],
+        "keywords":  [
+                         "hotpot",
+                         "avatar",
+                         "tools"
+                     ],
+        "rating":  4.2,
+        "pricing":  "Freemium",
+        "url":  "https://hotpot.ai",
+        "bestFor":  "多種 AI 圖像小工具"
+    },
+    {
+        "id":  "aragon-ai",
+        "name":  "Aragon AI",
+        "description":  "AI 專業頭像生成，LinkedIn 常用。",
+        "category":  "圖像編輯",
+        "tags":  [
+                     "頭像",
+                     "LinkedIn",
+                     "專業"
+                 ],
+        "keywords":  [
+                         "aragon",
+                         "headshot",
+                         "professional"
+                     ],
+        "rating":  4.3,
+        "pricing":  "Freemium",
+        "url":  "https://www.aragon.ai",
+        "bestFor":  "AI 專業頭像"
+    },
+    {
+        "id":  "profilepicture-ai",
+        "name":  "ProfilePicture.ai",
+        "description":  "AI 社群頭像生成，多種風格。",
+        "category":  "圖像編輯",
+        "tags":  [
+                     "頭像",
+                     "社群",
+                     "風格"
+                 ],
+        "keywords":  [
+                         "profilepicture",
+                         "avatar",
+                         "social"
+                     ],
+        "rating":  4.2,
+        "pricing":  "Freemium",
+        "url":  "https://www.profilepicture.ai",
+        "bestFor":  "AI 社群頭像"
+    },
+    {
+        "id":  "headshot-pro",
+        "name":  "Headshot Pro",
+        "description":  "AI 商業證件照生成，無需攝影棚。",
+        "category":  "圖像編輯",
+        "tags":  [
+                     "證件照",
+                     "商業",
+                     "頭像"
+                 ],
+        "keywords":  [
+                         "headshot pro",
+                         "business photo"
+                     ],
+        "rating":  4.3,
+        "pricing":  "Freemium",
+        "url":  "https://www.headshotpro.com",
+        "bestFor":  "AI 商業證件照"
+    },
+    {
+        "id":  "cutout-pro",
+        "name":  "Cutout.pro",
+        "description":  "AI 去背、修復與證件照工具集。",
+        "category":  "圖像編輯",
+        "tags":  [
+                     "去背",
+                     "修復",
+                     "工具集"
+                 ],
+        "keywords":  [
+                         "cutout pro",
+                         "background",
+                         "tools"
+                     ],
+        "rating":  4.2,
+        "pricing":  "Freemium",
+        "url":  "https://www.cutout.pro",
+        "bestFor":  "多合一 AI 修圖工具"
+    },
+    {
+        "id":  "icons8-background-remover",
+        "name":  "Icons8 Background Remover",
+        "description":  "Icons8 AI 去背與背景替換工具。",
+        "category":  "圖像編輯",
+        "tags":  [
+                     "Icons8",
+                     "去背",
+                     "替換"
+                 ],
+        "keywords":  [
+                         "icons8",
+                         "bg remover",
+                         "background"
+                     ],
+        "rating":  4.2,
+        "pricing":  "Freemium",
+        "url":  "https://icons8.com/bgremover",
+        "bestFor":  "快速去背替換背景"
+    },
+    {
+        "id":  "adobe-firefly-image",
+        "name":  "Adobe Firefly Image",
+        "description":  "Adobe Firefly 官方 AI 圖像生成頁面。",
+        "category":  "圖像生成",
+        "tags":  [
+                     "Adobe",
+                     "Firefly",
+                     "商用"
+                 ],
+        "keywords":  [
+                         "firefly image",
+                         "adobe generate"
+                     ],
+        "rating":  4.5,
+        "pricing":  "Freemium",
+        "url":  "https://firefly.adobe.com/generate/images",
+        "bestFor":  "Adobe 官方 AI 繪圖"
+    },
+    {
+        "id":  "comfyui",
+        "name":  "ComfyUI",
+        "description":  "節點式 Stable Diffusion 工作流 UI，高度可定制。",
+        "category":  "圖像生成",
+        "tags":  [
+                     "SD",
+                     "節點",
+                     "開源"
+                 ],
+        "keywords":  [
+                         "comfyui",
+                         "workflow",
+                         "stable diffusion"
+                     ],
+        "rating":  4.5,
+        "pricing":  "免費",
+        "url":  "https://github.com/comfyanonymous/ComfyUI",
+        "bestFor":  "進階 SD 工作流"
+    },
+    {
+        "id":  "civitai",
+        "name":  "Civitai",
+        "description":  "Stable Diffusion 模型與作品社群平台。",
+        "category":  "圖像生成",
+        "tags":  [
+                     "SD",
+                     "模型",
+                     "社群"
+                 ],
+        "keywords":  [
+                         "civitai",
+                         "models",
+                         "lora"
+                     ],
+        "rating":  4.4,
+        "pricing":  "Freemium",
+        "url":  "https://civitai.com",
+        "bestFor":  "SD 模型下載社群"
+    },
+    {
+        "id":  "flowgpt",
+        "name":  "FlowGPT",
+        "description":  "AI 提示詞與 Chatbot 模板分享社群。",
+        "category":  "對話助手",
+        "tags":  [
+                     "提示詞",
+                     "模板",
+                     "社群"
+                 ],
+        "keywords":  [
+                         "flowgpt",
+                         "prompts",
+                         "chatbot"
+                     ],
+        "rating":  4.2,
+        "pricing":  "Freemium",
+        "url":  "https://flowgpt.com",
+        "bestFor":  "提示詞模板社群"
+    },
+    {
+        "id":  "promptbase",
+        "name":  "PromptBase",
+        "description":  "Midjourney 與 SD 提示詞交易市集。",
+        "category":  "圖像生成",
+        "tags":  [
+                     "提示詞",
+                     "Midjourney",
+                     "市集"
+                 ],
+        "keywords":  [
+                         "promptbase",
+                         "prompt market",
+                         "mj"
+                     ],
+        "rating":  4.1,
+        "pricing":  "Freemium",
+        "url":  "https://promptbase.com",
+        "bestFor":  "購買優質提示詞"
+    }
+]

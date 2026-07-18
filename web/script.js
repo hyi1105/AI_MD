@@ -21,7 +21,9 @@ let watchlistKeywords = getWatchlist();
 let displayLimit = PAGE_SIZE;
 let suggestionActiveIndex = -1;
 
-const SEARCH_TERMS = (() => {
+let SEARCH_TERMS = [];
+
+function buildSearchTerms() {
   const terms = new Set(QUICK_TAGS);
   for (const tool of AI_TOOLS) {
     terms.add(tool.name);
@@ -29,8 +31,8 @@ const SEARCH_TERMS = (() => {
     tool.tags.forEach((t) => terms.add(t));
     tool.keywords.forEach((t) => terms.add(t));
   }
-  return [...terms].sort((a, b) => a.localeCompare(b, "zh-TW"));
-})();
+  SEARCH_TERMS = [...terms].sort((a, b) => a.localeCompare(b, "zh-TW"));
+}
 
 function scoreTool(tool, query) {
   if (!query) return 0;
@@ -443,7 +445,19 @@ clearBtn.addEventListener("click", () => {
 
 sortSelect.addEventListener("change", () => render(searchInput.value));
 
-initQuickTags();
-renderFeatured();
-renderWatchlistChips();
-render("");
+function initApp() {
+  buildSearchTerms();
+  initQuickTags();
+  renderFeatured();
+  renderWatchlistChips();
+  render("");
+}
+
+loadCatalog()
+  .then(initApp)
+  .catch(() => {
+    resultsCount.textContent = "工具目錄載入失敗，請重新整理頁面";
+    emptyState.hidden = false;
+    emptyState.querySelector("h2").textContent = "無法載入工具資料";
+    emptyState.querySelector("p").textContent = "請確認網路連線後重新整理";
+  });

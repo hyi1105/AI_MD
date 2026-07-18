@@ -1,25 +1,25 @@
 ﻿# Figma AI
 
-## 一句話
+## 銝?亥店
 
-Figma 內建 AI 設計助手，快速生成 UI 原型與設計建議。
+Figma 內建 AI 設計助手，快速生成 UI 原型。
 
-## 最適合
+## ??拙?
 
 UI/UX 設計與原型
 
-## 分類
+## ??
 
 設計
 
-## 標籤
+## 璅惜
 
-Figma, UI, UX, 原型
+Figma | UI | UX
 
-## 定價
+## 摰
 
 Freemium
 
-## 連結
+## ???
 
-- [前往官網](https://www.figma.com)
+- [??摰雯](https://www.figma.com)

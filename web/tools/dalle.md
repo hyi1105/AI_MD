@@ -1,25 +1,25 @@
 ﻿# DALL·E
 
-## 一句話
+## 銝?亥店
 
-OpenAI 的 AI 繪圖工具，文字描述即可生成圖片，與 ChatGPT 整合。
+OpenAI AI 繪圖，文字描述生成圖片，與 ChatGPT 整合。
 
-## 最適合
+## ??拙?
 
 快速文字轉圖片
 
-## 分類
+## ??
 
 圖像生成
 
-## 標籤
+## 璅惜
 
-OpenAI, 繪圖, ChatGPT
+OpenAI | 繪圖 | ChatGPT
 
-## 定價
+## 摰
 
 Freemium
 
-## 連結
+## ???
 
-- [前往官網](https://openai.com/dall-e)
+- [??摰雯](https://openai.com/dall-e)

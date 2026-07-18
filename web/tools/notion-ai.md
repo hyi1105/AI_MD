@@ -1,25 +1,25 @@
 ﻿# Notion AI
 
-## 一句話
+## 銝?亥店
 
-整合在 Notion 筆記中的 AI，協助摘要、改寫、整理知識庫。
+Notion 內建 AI，摘要、改寫、整理知識庫。
 
-## 最適合
+## ??拙?
 
 筆記與知識庫 AI 整理
 
-## 分類
+## ??
 
 生產力
 
-## 標籤
+## 璅惜
 
-Notion, 筆記, 摘要, 知識管理
+Notion | 筆記 | 摘要
 
-## 定價
+## 摰
 
 Freemium
 
-## 連結
+## ???
 
-- [前往官網](https://www.notion.so/product/ai)
+- [??摰雯](https://www.notion.so/product/ai)

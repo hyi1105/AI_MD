@@ -1,25 +1,25 @@
 ﻿# GitHub Copilot
 
-## 一句話
+## 銝?亥店
 
-微軟出品的 AI 程式助手，在編輯器內即時補全程式碼與建議。
+微軟 AI 程式助手，編輯器內即時補全程式碼。
 
-## 最適合
+## ??拙?
 
 編輯器內程式碼自動補全
 
-## 分類
+## ??
 
 程式開發
 
-## 標籤
+## 璅惜
 
-GitHub, 補全, IDE, 微軟
+GitHub | 補全 | IDE
 
-## 定價
+## 摰
 
 付費
 
-## 連結
+## ???
 
-- [前往官網](https://github.com/features/copilot)
+- [??摰雯](https://github.com/features/copilot)

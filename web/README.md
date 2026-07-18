@@ -27,8 +27,9 @@ python -m http.server 8080
 |------|------|
 | `index.html` | 首頁 |
 | `tool.html` | 詳情頁 |
-| `tools/*.md` | 24 篇工具說明 |
-| `data.js` | 列表資料 |
+| `tools/*.md` | 300 篇工具說明（由 `catalog.json` 產生） |
+| `catalog.json` | 300 筆工具目錄（結構化資料） |
+| `data.js` | 載入 catalog + 精選評估 |
 | `shared.js` | 追蹤邏輯 |
 | `script.js` | 搜尋邏輯 |
 

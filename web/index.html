@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI 工具搜尋 — 找到最適合你的 AI</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header-inner">
+      <div class="logo">
+        <span class="logo-icon">✦</span>
+        <div>
+          <h1>AI 工具搜尋</h1>
+          <p class="tagline">輸入關鍵字，找到最適合你的 AI 工具</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="search-section">
+      <div class="search-box">
+        <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="11" cy="11" r="8"/>
+          <path d="m21 21-4.35-4.35"/>
+        </svg>
+        <input
+          type="search"
+          id="search-input"
+          placeholder="例如：寫程式、繪圖、翻譯、影片、配音..."
+          autocomplete="off"
+          autofocus
+        >
+        <button type="button" id="clear-btn" class="clear-btn" aria-label="清除搜尋" hidden>✕</button>
+      </div>
+
+      <div class="quick-tags" id="quick-tags">
+        <span class="quick-label">熱門搜尋：</span>
+      </div>
+    </section>
+
+    <section class="results-section">
+      <div class="results-header">
+        <p id="results-count" class="results-count">顯示全部 <strong>24</strong> 個 AI 工具</p>
+        <select id="sort-select" class="sort-select" aria-label="排序方式">
+          <option value="relevance">依相關度</option>
+          <option value="rating">依評分</option>
+          <option value="name">依名稱</option>
+        </select>
+      </div>
+
+      <div id="results-grid" class="results-grid"></div>
+      <div id="empty-state" class="empty-state" hidden>
+        <span class="empty-icon">🔍</span>
+        <h2>找不到符合的工具</h2>
+        <p>試試其他關鍵字，例如「繪圖」、「寫作」、「程式」</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>資料僅供參考 · 點擊工具卡片可前往官方網站</p>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+---
+description: AI_MD 規格框架 — 編輯 MD 時自動審查缺口並同步更新
+globs: "**/*.md"
+alwaysApply: false
+---
+
+# AI_MD 規格維護規則
+
+本 repo 是 **Markdown 規格驅動** 專案。編輯任何 `.md` 時：
+
+## 必做
+
+1. 讀 [prompts/AGENT-MASTER.md](../prompts/AGENT-MASTER.md) 的角色定義
+2. 若用户修改 `modules/` 或 `docs/` 需求內容 → 檢查是否需更新 [docs/02-gap-analysis.md](../docs/02-gap-analysis.md)
+3. 新增 User Story 時 → 同步补 **驗收標準** 或标 `missing`
+4. 更新 frontmatter 的 `updated` 日期
+5. 用繁體中文撰寫面向用户的規格
+
+## 缺口审查（像 Code Review）
+
+用户说「審查」「缺口」「缺什么」→ 執行 [prompts/review-gap.md](../prompts/review-gap.md)
+
+用户说「更新規格」「我決定」→ 執行 [prompts/auto-update.md](../prompts/auto-update.md)
+
+## 優先級
+
+- P0 先完善 `modules/ai-tools-directory.md`
+- 不要在 gap 🔴 未解决时建议写 crypto/payment code
+
+## 狀態詞
+
+`missing` | `draft` | `partial` | `review` | `ready` | `undecided`
+
+## 禁止
+
+- 不删除 gap-analysis 中的 open 项目不记录
+- 不把未審查規格标为 `ready`

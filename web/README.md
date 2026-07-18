@@ -38,3 +38,20 @@ python -m http.server 8080
 **https://hyi1105.github.io/AI_MD/**
 
 GitHub Pages 來源：GitHub Actions（`.github/workflows/pages.yml` 部署 `web/`）。詳見 `docs/03-implementation.md`。
+
+## 內容更新（交給 Cursor）
+
+**日常不用跑生成脚本。** 需要改工具列表时，在对话里直接说即可，例如：
+
+- 「加 5 个新的编程 AI 工具」
+- 「更新 ChatGPT 描述」
+- 「发布到线上」
+
+Agent 会直接改 `catalog.json` 并按需 push。详情页没有对应 `.md` 时，会自动用 catalog 字段显示。
+
+仅在做**整批从 SEEDS 重建**时才需：
+
+```powershell
+& web\scripts\build_catalog.ps1
+& web\scripts\generate-tools-md.ps1
+```

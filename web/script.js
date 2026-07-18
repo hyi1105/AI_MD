@@ -1,4 +1,5 @@
-const PAGE_SIZE = 12;
+const QUICK_TAGS = ["寫程式", "繪圖", "寫作", "影片", "翻譯", "配音", "簡報", "搜尋"];
+const PAGE_SIZE = 10;
 
 const searchInput = document.getElementById("search-input");
 const clearBtn = document.getElementById("clear-btn");
@@ -26,10 +27,7 @@ let scrollObserver = null;
 let SEARCH_TERMS = [];
 
 function buildQuickTags() {
-  const categories = [...new Set(AI_TOOLS.map((t) => t.category))].sort((a, b) =>
-    a.localeCompare(b, "zh-TW")
-  );
-  quickTags = categories;
+  quickTags = [...QUICK_TAGS];
 }
 
 function buildSearchTerms() {

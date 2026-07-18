@@ -46,3 +46,30 @@ export interface GateResult {
   ok: boolean
   reason?: string
 }
+
+export type TransportMode = 'lan' | 'hotspot' | 'bluetooth'
+
+export interface PeerDocRecord {
+  seed: string
+  markdown: string
+  signature: string
+  authorId: string
+  updatedAt: number
+  title: string
+}
+
+export interface ContributionState {
+  points: number
+  uploadedBytes: number
+  onlineMinutes: number
+  seeding: boolean
+  monthRevenueNtd: number
+  rejectedAttempts: number
+}
+
+export interface DownloadAttempt {
+  content: string
+  bytes: number
+  sameLanOrIp: boolean
+  signature?: string
+}

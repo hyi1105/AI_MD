@@ -59,12 +59,12 @@ function legalReview(md: string): string {
   let next = md
   if (!next.includes('不可抗力')) {
     next = next.replace(
-      /(## 第七條 準據法)/,
-      `## 第七條 不可抗力
+      /(## 第八條 準據法|## 第七條 準據法)/,
+      `## 不可抗力條款
 
 因天災、戰爭、政府行為或非可歸責於雙方之事由致無法履約，該方不負違約責任，但應盡速通知他方並協力減損。
 
-## 第八條 準據法`,
+$1`,
     )
   }
   next = next.replace(

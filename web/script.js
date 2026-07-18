@@ -1,5 +1,4 @@
-const QUICK_TAGS = ["寫程式", "繪圖", "寫作", "影片", "翻譯", "配音", "簡報", "搜尋"];
-const PAGE_SIZE = 6;
+const PAGE_SIZE = 12;
 
 const searchInput = document.getElementById("search-input");
 const clearBtn = document.getElementById("clear-btn");
@@ -15,16 +14,26 @@ const watchlistChipsEl = document.getElementById("watchlist-chips");
 const watchlistOnlyEl = document.getElementById("watchlist-only");
 const featuredSection = document.getElementById("featured-section");
 const featuredGrid = document.getElementById("featured-grid");
-const loadMoreBtn = document.getElementById("load-more-btn");
+const scrollSentinel = document.getElementById("scroll-sentinel");
+const scrollStatus = document.getElementById("scroll-status");
 
 let watchlistKeywords = getWatchlist();
 let displayLimit = PAGE_SIZE;
 let suggestionActiveIndex = -1;
+let quickTags = [];
+let scrollObserver = null;
 
 let SEARCH_TERMS = [];
 
+function buildQuickTags() {
+  const categories = [...new Set(AI_TOOLS.map((t) => t.category))].sort((a, b) =>
+    a.localeCompare(b, "zh-TW")
+  );
+  quickTags = categories;
+}
+
 function buildSearchTerms() {
-  const terms = new Set(QUICK_TAGS);
+  const terms = new Set(quickTags);
   for (const tool of AI_TOOLS) {
     terms.add(tool.name);
     tool.category.split(/\s+/).forEach((t) => terms.add(t));
@@ -125,7 +134,7 @@ function getSuggestions(query) {
   }).filter(Boolean);
 
   scored.sort((a, b) => b.score - a.score || a.term.localeCompare(b.term, "zh-TW"));
-  return scored.slice(0, 8).map((s) => s.term);
+  return scored.slice(0, 12).map((s) => s.term);
 }
 
 function highlightTerm(text, query) {
@@ -282,7 +291,33 @@ function removeWatchKeyword(kw) {
   render(searchInput.value);
 }
 
-function render(query) {
+function loadMoreResults() {
+  const sortBy = sortSelect.value;
+  const watchlistOnly = watchlistOnlyEl.checked;
+  const results = searchTools(searchInput.value, sortBy, watchlistOnly);
+  if (displayLimit >= results.length) return false;
+  displayLimit = Math.min(displayLimit + PAGE_SIZE, results.length);
+  return true;
+}
+
+function setupInfiniteScroll() {
+  if (!scrollSentinel) return;
+  if (scrollObserver) scrollObserver.disconnect();
+
+  scrollObserver = new IntersectionObserver(
+    (entries) => {
+      if (!entries[0]?.isIntersecting) return;
+      const loaded = loadMoreResults();
+      if (loaded) render(searchInput.value, { preserveScroll: true });
+    },
+    { root: null, rootMargin: "240px", threshold: 0 }
+  );
+
+  scrollObserver.observe(scrollSentinel);
+}
+
+function render(query, { preserveScroll = false } = {}) {
+  const scrollY = preserveScroll ? window.scrollY : null;
   const sortBy = sortSelect.value;
   const watchlistOnly = watchlistOnlyEl.checked;
   const results = searchTools(query, sortBy, watchlistOnly);
@@ -296,28 +331,39 @@ function render(query) {
   resultsGrid.innerHTML = visible.map(renderCard).join("");
 
   const count = results.length;
+  const shown = visible.length;
   const hasMore = count > displayLimit;
 
-  loadMoreBtn.hidden = !hasMore;
-  loadMoreBtn.textContent = hasMore
-    ? `載入更多工具（還有 ${count - displayLimit} 個）`
-    : "載入更多工具";
+  scrollStatus.hidden = !hasMore;
+  scrollStatus.textContent = hasMore
+    ? `向下捲動自動載入（已顯示 ${shown} / ${count}）`
+    : "";
+  scrollSentinel.hidden = !hasMore;
 
   if (watchlistOnly && watchlistKeywords.length) {
-    resultsCount.innerHTML = `追蹤 <strong>${watchlistKeywords.join("、")}</strong>：顯示 <strong>${Math.min(displayLimit, count)}</strong> / ${count} 個工具`;
+    resultsCount.innerHTML = `追蹤 <strong>${watchlistKeywords.join("、")}</strong>：顯示 <strong>${shown}</strong> / ${count} 個工具`;
   } else if (trimmed) {
-    resultsCount.innerHTML = `找到 <strong>${count}</strong> 個與「${trimmed}」相關的工具`;
+    resultsCount.innerHTML = `找到 <strong>${count}</strong> 個與「${trimmed}」相關的工具（已顯示 ${shown}）`;
+  } else if (shown >= count) {
+    resultsCount.innerHTML = `顯示全部 <strong>${count}</strong> 個 AI 工具`;
   } else {
-    resultsCount.innerHTML = `顯示 <strong>${Math.min(displayLimit, count)}</strong> / ${count} 個 AI 工具`;
+    resultsCount.innerHTML = `顯示 <strong>${shown}</strong> / ${count} 個 AI 工具 · 向下捲動載入更多`;
   }
 
   emptyState.hidden = count > 0;
   resultsGrid.hidden = count === 0;
   clearBtn.hidden = !trimmed;
+
+  if (preserveScroll && scrollY !== null) {
+    window.scrollTo(0, scrollY);
+  }
+
+  setupInfiniteScroll();
 }
 
 function initQuickTags() {
-  for (const tag of QUICK_TAGS) {
+  quickTagsEl.querySelectorAll(".tag-btn").forEach((btn) => btn.remove());
+  for (const tag of quickTags) {
     const btn = document.createElement("button");
     btn.type = "button";
     btn.className = "tag-btn";
@@ -367,11 +413,6 @@ watchlistChipsEl.addEventListener("click", (e) => {
 
 watchlistOnlyEl.addEventListener("change", () => {
   displayLimit = PAGE_SIZE;
-  render(searchInput.value);
-});
-
-loadMoreBtn.addEventListener("click", () => {
-  displayLimit += PAGE_SIZE;
   render(searchInput.value);
 });
 
@@ -446,6 +487,7 @@ clearBtn.addEventListener("click", () => {
 sortSelect.addEventListener("change", () => render(searchInput.value));
 
 function initApp() {
+  buildQuickTags();
   buildSearchTerms();
   initQuickTags();
   renderFeatured();

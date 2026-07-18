@@ -38,7 +38,7 @@
       </div>
 
       <div class="quick-tags" id="quick-tags">
-        <span class="quick-label">熱門搜尋：</span>
+        <span class="quick-label">全部分類（300 工具）：</span>
       </div>
     </section>
 
@@ -74,9 +74,8 @@
       </div>
 
       <div id="results-grid" class="results-grid"></div>
-      <div class="load-more-wrap">
-        <button type="button" id="load-more-btn" class="btn btn-secondary load-more-btn" hidden>載入更多工具</button>
-      </div>
+      <p id="scroll-status" class="scroll-status" hidden>載入更多工具…</p>
+      <div id="scroll-sentinel" class="scroll-sentinel" aria-hidden="true"></div>
       <div id="empty-state" class="empty-state" hidden>
         <span class="empty-icon">🔍</span>
         <h2>找不到符合的工具</h2>

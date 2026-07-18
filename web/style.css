@@ -270,6 +270,19 @@ body {
   margin-bottom: 0.875rem;
 }
 
+.scroll-status {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 0.8125rem;
+  color: var(--muted);
+}
+
+.scroll-sentinel {
+  width: 100%;
+  height: 1px;
+  margin-top: 0.5rem;
+}
+
 .load-more-wrap {
   display: flex;
   justify-content: center;

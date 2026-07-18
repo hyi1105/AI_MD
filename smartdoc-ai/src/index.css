@@ -1,0 +1,9 @@
+/* Base reset — atmosphere lives in App.css */
+body {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: rgba(47, 111, 126, 0.28);
+}

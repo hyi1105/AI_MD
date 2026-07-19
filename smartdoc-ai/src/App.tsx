@@ -359,13 +359,13 @@ export default function App() {
     <div className="app">
       <header className="topbar">
         <div className="brand-block">
-          <a className="hub-back" href="../index.html" title="返回 AI_MD 系統類別">
-            ← AI_MD
+          <a className="hub-back" href="../index.html" title="返回 SEED 平台">
+            ← SEED
           </a>
           <div className="brand-mark" aria-hidden />
           <div>
             <div className="brand">SmartDoc</div>
-            <p className="tagline">AI 修訂 · 無網 P2P 協作</p>
+            <p className="tagline">採集工具 · 把知識寫成 SEED</p>
           </div>
         </div>
 

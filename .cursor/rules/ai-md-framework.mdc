@@ -1,15 +1,19 @@
 ---
-description: AI 工具搜尋專案 — 編輯 MD 時同步規格與缺口
-globs: "**/*.md"
+description: Docs and gap workflow when editing Markdown specs
+globs: "docs/**/*.md,**/*.md"
 alwaysApply: false
 ---
 
-# AI_MD 規則
+# Docs workflow (SEED Platform)
 
-本專案 **只做 AI 工具搜尋**。
+This repo is the **SEED Platform** (knowledge books + long-term attention).  
+`web/` AI catalog and `smartdoc-ai/` are **tools** under that platform — see `docs/00-seed-platform.md`.
 
-- 改 `web/` 或規格 → 檢查 `docs/02-gap-analysis.md`
-- 審查：`prompts/review-gap.md`
-- 更新：`prompts/auto-update.md`
+When editing specs or Markdown docs:
 
-禁止：社群、金流、crypto、登入、LLM 助手、新工具追蹤。
+- Update `docs/00-seed-platform.md` if product positioning changes
+- Implementation HOW: `docs/03-implementation.md`
+- Gap / standup notes: `docs/02-gap-analysis.md`, `docs/standup.md` when relevant
+- Review prompts remain optional helpers under `prompts/`
+
+Do **not** claim the project “only does AI tool search” — that is outdated.

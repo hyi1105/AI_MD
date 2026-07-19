@@ -1,15 +1,17 @@
 # 文件索引
 
-> AI 工具搜尋 | GitHub Pages 上線 | 2026-07-18
+> SEED Platform | 知識書 · 長期關注 | 2026-07-19
 
 ## 必讀
 
 | 檔案 | 用途 |
 |------|------|
+| [docs/00-seed-platform.md](docs/00-seed-platform.md) | **產品北極星（SEED）** |
 | [README.md](README.md) | 入口 |
 | [docs/03-implementation.md](docs/03-implementation.md) | 實作 HOW |
-| [docs/standup.md](docs/standup.md) | **會議 / 畫面問題 / Approve 紀錄** |
-| [web/README.md](web/README.md) | 本機啟動方式 |
+| [docs/standup.md](docs/standup.md) | 會議／畫面問題／Approve |
+| [web/README.md](web/README.md) | 本機啟動 |
+| [smartdoc-ai/README.md](smartdoc-ai/README.md) | 編修工具 |
 
 ## 本機啟動
 
@@ -18,8 +20,8 @@ cd web
 .\start-local.ps1
 ```
 
-## 協作
+## 協作（給未來夥伴）
 
-- 同事：只提**畫面問題** → 開 Issue 或寫入 [docs/standup.md](docs/standup.md)
-- 實作：Cursor AI
-- 負責人：approve 規格外或 AI 無法決策的事項
+1. 先讀 `docs/00-seed-platform.md`：SEED＝知識書；工具≠產品本體  
+2. 畫面問題 → Issue 或 [docs/standup.md](docs/standup.md)  
+3. 實作可用 Cursor；規格外決策由負責人 approve  

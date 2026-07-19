@@ -1,0 +1,28 @@
+---
+description: SEED platform north star — tools only collect; SEED is the knowledge book
+alwaysApply: true
+---
+
+# SEED Platform (always)
+
+This repository is the **SEED Platform**: a website for **long-term attention** on a **product** or **KOL knowledge**.
+
+## Core definition
+
+- **SEED** = a cumulative **knowledge book** (professional knowledge asset a person/product accumulates).
+- Users and others may **follow, arrange, share**, and later apply **commercial** models (subscribe, unlock, licensing).
+- **AI tools directory** and **SmartDoc** are **collector/editor tools** whose job is to help **output SEEDs** — not the product itself.
+
+## Do / Don't
+
+- DO frame features as: discover → collect → edit → publish/share a SEED.
+- DO keep Markdown as the portable SEED body format unless the user asks otherwise.
+- DO NOT treat the editor, P2P demo, or catalog search as the north-star product.
+- DO NOT confuse technical content-hash `seed` / `sd_…` inside SmartDoc with the product concept **SEED** (knowledge book). When unclear, prefer the product meaning and name the hash “content id” / “edition fingerprint”.
+- When the user says publish/部署/上線, ship so the live site matches docs.
+
+## Layout reminder
+
+- Hub + AI catalog: `web/`
+- SmartDoc source: `smartdoc-ai/` → build to `web/smartdoc/`
+- Vision source of truth: `docs/00-seed-platform.md`

@@ -95,6 +95,7 @@
 - [x] 繁中；預設只改 MD；「改程式」「發布」才動 code／上線  
 - [x] 目錄未來只靠 JSON；已移除 `web/tools/*.md` 與工具 MD 模板  
 - [x] Cursor `.mdc` 規則保留，並在文件中可點連結（見 [`00-seed-platform.md`](./00-seed-platform.md) § AI 規則檔）  
+- [x] 2026-07-19 已發布至 `main`／GitHub Pages（https://hyi1105.github.io/AI_MD/）  
 
 ---
 

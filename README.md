@@ -5,7 +5,8 @@
 
 > 線上：**https://hyi1105.github.io/AI_MD/**
 
-北極星說明：[docs/00-seed-platform.md](docs/00-seed-platform.md)
+- 北極星：[docs/00-seed-platform.md](docs/00-seed-platform.md)  
+- **狀態總覽（問題／未做／你要留意）**：[docs/STATUS.md](docs/STATUS.md)
 
 ## 架構（給協作者）
 

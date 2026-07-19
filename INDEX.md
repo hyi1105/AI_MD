@@ -6,7 +6,8 @@
 
 | 檔案 | 用途 |
 |------|------|
-| [docs/00-seed-platform.md](docs/00-seed-platform.md) | **產品北極星（SEED）** |
+| [docs/STATUS.md](docs/STATUS.md) | **系統在做什麼／問題／未做／你要留意什麼** |
+| [docs/00-seed-platform.md](docs/00-seed-platform.md) | 產品北極星（SEED） |
 | [README.md](README.md) | 入口 |
 | [docs/03-implementation.md](docs/03-implementation.md) | 實作 HOW |
 | [docs/standup.md](docs/standup.md) | 會議／畫面問題／Approve |

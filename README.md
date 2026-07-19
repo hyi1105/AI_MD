@@ -21,7 +21,7 @@
 | 工具 | 說明 |
 |------|------|
 | AI 查詢 | `web/` + `catalog.json` |
-| **AI Doc** | 像 Cursor 改檔並顯示 Diff（程式暫在 `smartdoc-ai/` → `web/aidoc/`） |
+| **AI Doc** | 像 Cursor 改檔並顯示 Diff（程式在 `aidoc/` → `web/aidoc/`） |
 
 ## 本機
 
@@ -31,7 +31,7 @@ cd web
 ```
 
 ```bash
-cd smartdoc-ai && npm install && npm run build
+cd aidoc && npm install && npm run build
 ```
 
 構想 → `01-idea` → 改程式／發布成功 → 登記 `03-checklist` → 移 `02-idea-done`。

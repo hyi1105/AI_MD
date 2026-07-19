@@ -370,6 +370,32 @@ body {
   background: var(--accent-soft);
 }
 
+.category-filters {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+}
+
+.category-btn {
+  padding: 0.35rem 0.75rem;
+  font-size: 0.8125rem;
+  color: var(--muted);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.category-btn:hover,
+.category-btn.active {
+  color: var(--accent);
+  border-color: var(--accent);
+  background: var(--accent-soft);
+}
+
 .featured-section {
   margin-bottom: 2rem;
 }

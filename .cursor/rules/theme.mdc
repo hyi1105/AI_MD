@@ -7,7 +7,7 @@ alwaysApply: true
 
 - 主題文件：`docs/00-theme.md`（勿再用 00-seed-platform 檔名）。
 - **文稿（manuscript）**：同檔持續編修 → 輸出 A4；規格 `docs/manuscript.md`（舊稱 SmartDoc）。
-- 構想 → `01-idea.md`；**成功發布上線後**才寫入 `03-checklist.md`；結案 → `02-idea-done.md`。
+- 構想 → `01-idea.md`（每則寫清 Why／What／How／優缺點）；**成功發布上線後**才寫入 `03-checklist.md`；結案 → `02-idea-done.md`。
 - 禁止在 checklist 空想加未上線項。
 - 目錄只靠 `catalog.json`。
 - **一律繁體中文**（含語音轉文字後的整理與回覆）。

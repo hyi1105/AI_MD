@@ -15,4 +15,5 @@ alwaysApply: false
 | `docs/manuscript.md` | 文稿（同檔→A4） |
 | `prompts/AGENT-MASTER.md` | AI 規則 |
 
-checklist 禁止空想未上線項。
+checklist 禁止空想未上線項。  
+`01-idea` 每則必含 Why／What／How／Pros／Cons。

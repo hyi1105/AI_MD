@@ -8,11 +8,11 @@ alwaysApply: false
 
 | 檔案 | 用途 |
 |------|------|
-| `docs/00-seed-platform.md` | 產品；含 `.mdc` 連結 |
-| `docs/01-idea.md` | 對話入檔 |
-| `docs/02-idea-done.md` | 完成／取消對話 |
-| `docs/03-checklist.md` | 功能勾選真相 |
-| `docs/smartdoc.md` | SmartDoc 收集工具規格 |
+| `docs/00-theme.md` | 產品主題 |
+| `docs/01-idea.md` | 未上線構想 |
+| `docs/02-idea-done.md` | 构想归档 |
+| `docs/03-checklist.md` | 已上線驗收 |
+| `docs/manuscript.md` | 文稿（同檔→A4） |
 | `prompts/AGENT-MASTER.md` | AI 規則 |
 
-新構想必須變成 checklist 條目。
+checklist 禁止空想未上線項。

@@ -26,3 +26,6 @@ This repository is the **SEED Platform**: a website for **long-term attention** 
 - Hub + AI catalog: `web/`
 - SmartDoc source: `smartdoc-ai/` → build to `web/smartdoc/`
 - Vision source of truth: `docs/00-seed-platform.md`
+- **Status dashboard (what works / gaps / owner attention): `docs/STATUS.md`**
+  - After meaningful feature work or when the user asks “what’s left / what’s wrong”, update `docs/STATUS.md`.
+  - Do not claim the catalog MVP “98% done” as the whole platform.

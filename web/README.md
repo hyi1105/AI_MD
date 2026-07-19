@@ -33,14 +33,15 @@ python -m http.server 8080
 | `shared.js` | 追蹤邏輯 |
 | `script.js` | 搜尋邏輯 |
 
-## 系統類別
+## SEED 平台與採集工具
 
-首頁最上方可切換：
+本站定位見 [`docs/00-seed-platform.md`](../docs/00-seed-platform.md)。  
+首頁頂部可切換**採集工具**（用來產出 SEED 知識書）：
 
-| 類別 | 路徑 | 說明 |
+| 工具 | 路徑 | 說明 |
 |------|------|------|
-| AI 查詢工具 | `index.html` | 原有工具搜尋 |
-| SmartDoc 編輯器 | `smartdoc/` | AI 修訂 + P2P（由 `smartdoc-ai/` 建置） |
+| AI 查詢 | `index.html` | 發現／對照素材 |
+| SmartDoc 編修 | `smartdoc/` | 把素材寫成 Markdown SEED |
 
 本機若尚未建置 SmartDoc：
 

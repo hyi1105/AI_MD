@@ -84,6 +84,19 @@ body {
   flex-wrap: wrap;
 }
 
+.system-brand {
+  font-weight: 800;
+  font-size: 0.95rem;
+  letter-spacing: 0.08em;
+  color: var(--accent);
+  text-decoration: none;
+  flex-shrink: 0;
+}
+
+.system-brand:hover {
+  color: var(--accent-light);
+}
+
 .system-nav-label {
   font-size: 0.75rem;
   font-weight: 600;
@@ -91,6 +104,26 @@ body {
   color: var(--muted);
   text-transform: uppercase;
   flex-shrink: 0;
+}
+
+.seed-manifesto {
+  max-width: 960px;
+  margin: 0 auto 1.25rem;
+  padding: 1rem 1.25rem;
+  border: 1px solid var(--accent-border);
+  border-radius: var(--radius);
+  background: var(--accent-soft);
+}
+
+.seed-manifesto p {
+  margin: 0;
+  color: var(--text);
+  font-size: 0.95rem;
+  line-height: 1.65;
+}
+
+.seed-manifesto strong {
+  color: var(--accent);
 }
 
 .system-chips {

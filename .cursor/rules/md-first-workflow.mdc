@@ -7,7 +7,7 @@ alwaysApply: true
 
 見 `prompts/AGENT-MASTER.md`。
 
-1. 繁中。  
+1. **一律繁體中文**（回覆／文件／語音轉文字後的整理皆然；勿用英文整段回覆）。  
 2. 構想只進 `docs/01-idea.md`。  
 3. 「發布」成功後才更新 `docs/03-checklist.md`。  
 4. 結案進 `docs/02-idea-done.md`。  

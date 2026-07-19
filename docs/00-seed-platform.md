@@ -83,10 +83,23 @@ SEED 的本質是 **輸出結果（知識資產）**，不是某個單一編輯�
 
 ---
 
-## 6. 相關檔案
+## 6. 與 AI 協作方式
+
+| 規則 | 說明 |
+|------|------|
+| 語言 | 之後規格與說明用**繁體中文** |
+| 預設 | **只改 Markdown**（想法、對齊、缺口、決策入檔） |
+| 改程式 | 負責人明確說「改程式」之後 |
+| 發布 | 負責人明確說「發布／上線」之後 |
+
+詳見 `.cursor/rules/md-first-workflow.mdc` 與 [`STATUS.md`](./STATUS.md) §6。
+
+## 7. 相關檔案
 
 | 檔案 | 用途 |
 |------|------|
 | [README.md](../README.md) | 對外入口（SEED 平台） |
+| [STATUS.md](./STATUS.md) | 現況／真假／缺口（給負責人） |
 | [smartdoc-ai/docs/PRD.md](../smartdoc-ai/docs/PRD.md) | 編修工具細節 |
-| `.cursor/rules/seed-platform.mdc` | Agent 永久規則 |
+| `.cursor/rules/seed-platform.mdc` | 產品北極星（Agent） |
+| `.cursor/rules/md-first-workflow.mdc` | 文件優先工作流（Agent） |

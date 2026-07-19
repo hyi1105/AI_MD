@@ -1,8 +1,9 @@
 # 03 — 實作決策（HOW）
 
-> 更新：2026-07-18 | 上線方式：**GitHub Pages**
+> 更新：2026-07-19 | 上線方式：**GitHub Pages**
 
-本文件補齊規格裡沒寫的「怎麼做」。**實作以本文為準。**
+本文件補齊規格裡沒寫的「怎麼做」。**實作以本文為準。**  
+未聽到「改程式」前，Agent 只更新本類 Markdown，不動 `web/` 程式。
 
 ---
 
@@ -13,13 +14,14 @@
 | 項目 | 選擇 | 原因 |
 |------|------|------|
 | 前端 | 原生 HTML/CSS/JS | 最簡單、Cursor 最好改 |
-| 系統類別 | 頂部 nav：`AI 查詢工具` / `SmartDoc 編輯器` | 共用 GitHub Pages 發佈 |
-| 列表資料 | `web/data.js` | 已有，搜尋快 |
-| 詳情 | `web/tools/{id}.md` | 本機 HTTP 伺服器可 fetch |
+| 系統類別 | 頂部 nav：`AI 查詢` / `SmartDoc 編修` | 共用 GitHub Pages 發佈 |
+| 列表資料 | `web/catalog.json` | 站上真實列表；`data.js` 的 `loadCatalog()` 載入 |
+| 精選評估 | `web/data.js` | `TOP_TIER_*` 等，不是完整列表 |
+| 詳情 | `web/tools/{id}.md` | 無 MD 時 fallback catalog 欄位 |
 | MD 渲染 | [marked.js](https://marked.js.org/) CDN | 最流行的輕量 MD 解析 |
 | 追蹤 | `localStorage` | 免登入、業界常用 |
 | SmartDoc | `smartdoc-ai/` → `web/smartdoc/` | Pages workflow 建置 |
-| **上線** | **GitHub Pages** | 公開 repo 免費 |
+| **上線** | **GitHub Pages** | 公開 repo 免費；須負責人說「發布」 |
 | **本機開發** | `web/start-local.ps1` | 改 code 時用 |
 
 > 線上網址：**https://hyi1105.github.io/AI_MD/**  
@@ -49,10 +51,10 @@
 | URL | `tool.html?id=chatgpt` |
 | 卡片 | **兩個按鈕**：「查看詳情」「前往官網」 |
 | MD 路徑 | `web/tools/{id}.md` |
-| 無 MD 時 | 用 `data.js` 資料顯示基本詳情 |
-| 維護 | 列表改 `data.js`；長文改 `web/tools/*.md`（你 + Cursor） |
+| 無 MD 時 | 用 `catalog.json` 欄位顯示基本詳情 |
+| 維護 | 列表改 `catalog.json`；長文改 `web/tools/*.md`（須「改程式／改目錄」） |
 
-**注意**：詳情頁讀 MD 需 **本機 HTTP 伺服器**（直接雙擊 `file://` 可能無法 fetch MD，會自動 fallback 到 data.js）。
+**注意**：詳情頁讀 MD 需 **本機 HTTP 伺服器**（直接雙擊 `file://` 可能無法 fetch MD，會自動 fallback 到 catalog）。
 
 ---
 
@@ -78,11 +80,12 @@ python -m http.server 8080
 
 ---
 
-## 新增工具流程
+## 新增工具流程（須負責人說「改目錄」或「改程式」）
 
-1. 在 `web/data.js` 加一筆
-2. 複製 `templates/tool-entry.md` → `web/tools/{id}.md` 並填寫
+1. 在 `web/catalog.json` 加一筆（勿重跑 bulk 腳本，除非要求整批重建）
+2. （可選）複製 `templates/tool-entry.md` → `web/tools/{id}.md`；無 MD 也可靠 catalog fallback
 3. 本機伺服器重新整理頁面即可預覽
+4. 負責人說「發布」後再 push
 
 ---
 
@@ -90,6 +93,7 @@ python -m http.server 8080
 
 | 日期 | 摘要 |
 |------|------|
+| 2026-07-19 | 列表改 catalog.json；文件優先協作；釐清 F-10 已上線 |
 | 2026-07-18 | 初版 HOW |
 | 2026-07-18 | 啟用 GitHub Pages；F-10 完成 |
-| 2026-07-18 | 正式營運前改為本機；F-10 上線延後 |
+| 2026-07-18 | 曾短暫改本機延後上線；之後已恢復 Pages（以現況為準） |

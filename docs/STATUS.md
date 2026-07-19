@@ -3,7 +3,7 @@
 > **這是你要長期看的那一份。**  
 > 更新：2026-07-19  
 > 線上：https://hyi1105.github.io/AI_MD/  
-> 工作方式：你用對話分享想法 → Cursor 改程式 → **改完回來更新本檔**。
+> 工作方式（新規則）：你用對話分享想法 → Cursor **先只改 Markdown（繁中）** → 你說「改程式」才改 code → 你說「發布」才上線 → **每次回寫本檔**。
 
 北極星（產品是什麼）：[`00-seed-platform.md`](./00-seed-platform.md)
 
@@ -57,9 +57,9 @@ SEED 平台（品牌／定位已上線）
 | 高 | 目錄卡片用 `innerHTML` **未跳脫**，惡意資料可能 XSS | 渲染前 escape |
 | 中 | SmartDoc AI **對外寫真實模型名**，實際沒呼叫 | 文案改成「示範引擎」或接真 API |
 | 中 | Seed 索引每改一版存一份，**localStorage 可能膨脹** | 清舊版或只留最近 N 版 |
-| 中 | 文件互相打架：`prompts/AGENT-MASTER.md` 仍寫「只做工具搜尋」 | 改寫或刪除舊提示 |
+| 中 | `modules/ai-tools-directory.md` 的 F-10 曾標 `deferred`，與線上 Pages、`01-requirements` 的 `done` 打架 | 規格已改對齊；若再出現以本檔＋線上為準 |
 | 低 | Repo 名仍叫 `AI_MD`，產品叫 SEED | 之後可改名或只當歷史網址 |
-| 低 | `docs/02-gap-analysis.md` 寫「完成 98%」只指舊目錄 MVP | 以**本檔**為準 |
+| 低 | `docs/03-implementation.md` 等舊文曾寫列表在 `data.js` | 實際列表為 `catalog.json`；改 HOW 文件時一併校正 |
 
 ---
 
@@ -124,10 +124,12 @@ SEED 平台（品牌／定位已上線）
 ### 每次對話怎麼跟我配合
 
 1. 你說想法或畫面問題（不必講程式）  
-2. 我改程式／文件  
-3. 我更新**本檔**對應區塊（完成／未做／問題）  
-4. 你說「發布」我才上線  
+2. 我**預設只改 Markdown（繁體中文）**——規格、本檔、standup、prompts  
+3. 你明確說「**改程式**」→ 我才改 `web/`／`smartdoc-ai/` 等  
+4. 你明確說「**發布**」→ 我才 commit／push／上線  
+5. 每次都回寫**本檔**對應區塊（完成／未做／問題）  
 
+規則檔：`.cursor/rules/md-first-workflow.mdc`  
 會議畫面問題可另記：[`standup.md`](./standup.md)
 
 ---
@@ -144,6 +146,7 @@ SEED 平台（品牌／定位已上線）
 
 | 日期 | 摘要 |
 |------|------|
+| 2026-07-19 | 新協作規則：繁中、預設只改 MD；「改程式」「發布」才動 code／上線 |
 | 2026-07-19 | 建立本檔；盤點 SEED 定位、真／假能力、缺口、負責人事項 |
 | 2026-07-19 | SEED 平台品牌上線；工具改稱採集工具 |
 | 2026-07-18 | SmartDoc＋系統類別掛上 AI_MD Pages |

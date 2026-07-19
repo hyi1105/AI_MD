@@ -1,13 +1,15 @@
 ---
 status: review
-updated: 2026-07-18
+updated: 2026-07-19
 module: ai-tools-directory
 ---
 
-# AI 工具搜尋 — 產品規格
+# AI 查詢工具 — 產品規格（採集工具子規格）
 
+> 在 SEED Platform 中的角色：發現／對照素材，幫助產出 **SEED（知識書）**。  
+> 平台北極星：[`docs/00-seed-platform.md`](../docs/00-seed-platform.md)  
 > 可運行原型：`web/index.html`  
-> **本文件 F-01～F-10 與 [01-requirements-master.md](../docs/01-requirements-master.md) 完全一致**
+> **本文件 F-01～F-10 與 [01-requirements-master.md](../docs/01-requirements-master.md) 應對齊**
 
 ## 問題
 
@@ -36,7 +38,7 @@ module: ai-tools-directory
 | F-07 | 外部連結 | 必做 | `done` |
 | F-08 | 追蹤關鍵字 | **必做** | `done` |
 | F-09 | Markdown 詳情 | **必做** | `done` |
-| F-10 | 公開上線 | 延後 | `deferred` |
+| F-10 | 公開上線 | 必做 | `done` |
 
 ## 驗收標準
 
@@ -52,8 +54,9 @@ module: ai-tools-directory
 
 | 用途 | 位置 | 維護 |
 |------|------|------|
-| 列表 / 搜尋 | `web/data.js` | 你 + Cursor AI |
-| 詳情 | `web/tools/{id}.md` | 你 + Cursor AI |
+| 列表 / 搜尋 | `web/catalog.json`（`data.js` 的 `loadCatalog()`） | 負責人下令「改目錄／改程式」後由 Cursor 改 |
+| 精選評估 | `web/data.js`（`TOP_TIER_*`） | 同上 |
+| 詳情 | `web/tools/{id}.md`（無 MD 時 fallback catalog 欄位） | 同上 |
 | 追蹤 v1 | localStorage | 瀏覽器本地 |
 | 追蹤 v2 | 帳號同步 | 待做 |
 
@@ -69,7 +72,7 @@ module: ai-tools-directory
 
 | 問題 | 決策 |
 |------|------|
-| 部署方式？ | **現階段本機**；公開上線延後 |
+| 部署方式？ | **GitHub Pages 已上線**（`https://hyi1105.github.io/AI_MD/`） |
 | 分類篩選 MVP？ | **延後**，搜尋代替 |
 | 追蹤關鍵字 MVP？ | **必做** |
 | MD 詳情 MVP？ | **必做** |
@@ -83,4 +86,5 @@ module: ai-tools-directory
 
 | 日期 | 摘要 |
 |------|------|
-| 2026-07-18 | 正式營運前改本機；F-10 延後 |
+| 2026-07-19 | 對齊 SEED；F-10=`done`；列表來源改為 catalog.json |
+| 2026-07-18 | 正式營運前改本機；F-10 延後（之後已上線，見上列） |

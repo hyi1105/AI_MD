@@ -11,9 +11,11 @@ This repo is the **SEED Platform** (knowledge books + long-term attention).
 
 When editing specs or Markdown docs:
 
+- Prefer **Traditional Chinese** for narrative text
 - Update `docs/00-seed-platform.md` if product positioning changes
 - Implementation HOW: `docs/03-implementation.md`
-- Gap / standup notes: `docs/02-gap-analysis.md`, `docs/standup.md` when relevant
+- Gap / standup / STATUS: `docs/02-gap-analysis.md`, `docs/standup.md`, `docs/STATUS.md` when relevant
 - Review prompts remain optional helpers under `prompts/`
+- Unless the owner said 改程式 / 發布, **stop after MD updates** (see `md-first-workflow.mdc`)
 
 Do **not** claim the project “only does AI tool search” — that is outdated.

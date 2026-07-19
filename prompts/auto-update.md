@@ -1,25 +1,28 @@
-# 提示詞：自動更新規格
+# 提示詞：自動更新規格（文件優先）
 
 > `@prompts/auto-update.md` + 你的決策
 
 ## 步驟
 
-1. 解析用户決策（只限 AI 工具搜尋）
-2. 更新 `modules/ai-tools-directory.md`、`docs/01-requirements-master.md`（若需要）
-3. 更新 `docs/02-gap-analysis.md`
-4. 回覆：改了哪些檔、新缺口、仍待決策
+1. 解析負責人決策（繁體中文紀錄）
+2. 預設**只更新 Markdown**：
+   - 定位 → `docs/00-seed-platform.md`
+   - 進度／風險 → `docs/STATUS.md`
+   - 需求 ID → `docs/01-requirements-master.md`（必要時 `modules/ai-tools-directory.md`）
+   - HOW → `docs/03-implementation.md`
+   - 會議 → `docs/standup.md`
+3. 回覆：改了哪些 MD、新缺口、仍待決策；並註明「尚未改程式／尚未發布」
+4. 僅當負責人說「改程式」「發布」時，才動程式或 push（見 `md-first-workflow.mdc`）
 
-## 可更新範圍
+## 可更新範圍（預設＝文件）
 
-- 搜尋、分類、追蹤關鍵字、部署、工具資料格式
-- **`web/catalog.json`** 工具目录（用户开口 → Agent 直接改，不重跑 build 脚本）
+- 產品定位、商業方向、書架／關注敘述
+- 搜尋、分類、追蹤、部署方式等**規格文字**
+- 真／假能力表、Approve 清單
+- 目錄欄位 schema 的**文件說明**（實際改 `catalog.json` 要等「改程式」或明確「改目錄」）
 
-## 工具目录更新（默认）
+## 禁止（預設）
 
-1. 只改 `web/catalog.json`（增删改条目）
-2. 不运行 `build_catalog.ps1` / `generate-tools-md.ps1`，除非用户要求整批从 SEEDS 重建
-3. 用户说「发布 / push / 上线」再 commit + push
-
-## 禁止
-
-- 加回已刪功能（社群、金流、crypto、Build Assistant、Tracker）
+- 未下令就改程式或部署
+- 加回已明確刪除、且負責人未重新批准的功能敘述當「已完成」
+- 英文覆寫整份規格（識別字除外）

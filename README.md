@@ -50,6 +50,7 @@ npm run build   # 輸出到 web/smartdoc/
 | 工具 | AI 查詢、SmartDoc（採集／輸出） |
 | 運行 | GitHub Pages（`web/`） |
 | 授權 | MIT |
+| 與 AI 協作 | 繁中；預設只改 MD；說「改程式」「發布」才動 code／上線 |
 
 ## 文件
 

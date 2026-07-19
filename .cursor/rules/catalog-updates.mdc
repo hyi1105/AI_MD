@@ -5,20 +5,23 @@ alwaysApply: true
 
 # Catalog content updates (AI_MD)
 
-When the user asks to add, change, or remove AI tools, **edit data directly**. Do not rebuild generator code or rerun bulk scripts unless they explicitly ask.
+目錄資料在 `web/catalog.json`（站上資料，屬程式側）。  
+依 `md-first-workflow.mdc`：**只有**負責人明確說「改目錄／改程式」時才改 JSON；否則只改規格 MD 描述。
+
+When the owner asks to add, change, or remove AI tools **and** allows code/data edits, **edit data directly**. Do not rebuild generator code or rerun bulk scripts unless they explicitly ask.
 
 ## Source of truth
 
 - **`web/catalog.json`** — the live catalog the site loads (`loadCatalog()` in `data.js`)
 - **`web/data.js`** — only for `TOP_TIER_IDS` / evaluations; not the full tool list
 
-## Default workflow (low cost)
+## When allowed to edit catalog (low cost)
 
 1. Edit `web/catalog.json` (add/update/remove entries).
 2. **Do not** run `build_catalog.ps1`, `build_catalog.py`, or `generate-tools-md.ps1` for routine updates.
 3. **Do not** regenerate all `web/tools/*.md` — detail pages fall back to catalog fields in `tool.js` when MD is missing.
 4. Preview locally only if the user asks.
-5. Commit and push **only when the user asks** to publish.
+5. Commit and push **only when the user asks** to publish（發布／上線／push）.
 
 ## Entry schema
 

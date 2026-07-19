@@ -19,7 +19,8 @@ This repository is the **SEED Platform**: a website for **long-term attention** 
 - DO keep Markdown as the portable SEED body format unless the user asks otherwise.
 - DO NOT treat the editor, P2P demo, or catalog search as the north-star product.
 - DO NOT confuse technical content-hash `seed` / `sd_…` inside SmartDoc with the product concept **SEED** (knowledge book). When unclear, prefer the product meaning and name the hash “content id” / “edition fingerprint”.
-- When the user says publish/部署/上線, ship so the live site matches docs.
+- **Default collaboration**: only edit Markdown; use Traditional Chinese for new/updated docs. Change code or deploy **only** when the owner explicitly says 改程式 / 發布（see `md-first-workflow.mdc`).
+- When the user says publish/部署/上線 **after** asking for code changes (or says both), ship so the live site matches docs.
 
 ## Layout reminder
 

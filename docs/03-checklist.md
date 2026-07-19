@@ -57,10 +57,14 @@
 ## 4. 文件協作（已定案能力）
 
 - [x] 規格在 `docs/`：`00-theme`／`01-idea`／`02-idea-done`／`03-checklist`／`manuscript`  
-- [x] checklist＝功能查核；01／02 拆開省搜尋成本  
-- [x] 繁中；預設只改 MD；「改程式」「發布」才動 code／上線  
+- [x] checklist＝**現有功能查核表**（改版後可對照找缺漏）  
+- [x] 01＝進行中構想；02＝已結案（拆開省查檔成本）  
+- [x] Idea 條目含 Why／What／How／Pros／Cons  
+- [x] 一律繁體中文（含語音轉文字整理）  
+- [x] 預設只改 MD；「改程式」「發布」才動 code／上線  
 - [x] 目錄只靠 JSON  
 - [x] `.mdc` 可從 [`00-theme.md`](./00-theme.md) 點連結  
+- [x] 2026-07-19 theme／文稿／查核定位已發布至 Pages  
 
 ---
 

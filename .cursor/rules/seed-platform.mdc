@@ -1,32 +1,13 @@
 ---
-description: SEED platform north star — tools only collect; SEED is the knowledge book
+description: SEED 北極星 — 工具只是採集；SEED 是知識書
 alwaysApply: true
 ---
 
-# SEED Platform (always)
+# SEED Platform（永遠）
 
-This repository is the **SEED Platform**: a website for **long-term attention** on a **product** or **KOL knowledge**.
-
-## Core definition
-
-- **SEED** = a cumulative **knowledge book** (professional knowledge asset a person/product accumulates).
-- Users and others may **follow, arrange, share**, and later apply **commercial** models (subscribe, unlock, licensing).
-- **AI tools directory** and **SmartDoc** are **collector/editor tools** whose job is to help **output SEEDs** — not the product itself.
-
-## Do / Don't
-
-- DO frame features as: discover → collect → edit → publish/share a SEED.
-- DO keep Markdown as the portable SEED body format unless the user asks otherwise.
-- DO NOT treat the editor, P2P demo, or catalog search as the north-star product.
-- DO NOT confuse technical content-hash `seed` / `sd_…` inside SmartDoc with the product concept **SEED** (knowledge book). When unclear, prefer the product meaning and name the hash “content id” / “edition fingerprint”.
-- **Default collaboration**: only edit Markdown; use Traditional Chinese for new/updated docs. Change code or deploy **only** when the owner explicitly says 改程式 / 發布（see `md-first-workflow.mdc`).
-- When the user says publish/部署/上線 **after** asking for code changes (or says both), ship so the live site matches docs.
-
-## Layout reminder
-
-- Hub + AI catalog: `web/`
-- SmartDoc source: `smartdoc-ai/` → build to `web/smartdoc/`
-- Vision source of truth: `docs/00-seed-platform.md`
-- **Status dashboard (what works / gaps / owner attention): `docs/STATUS.md`**
-  - After meaningful feature work or when the user asks “what’s left / what’s wrong”, update `docs/STATUS.md`.
-  - Do not claim the catalog MVP “98% done” as the whole platform.
+- **SEED**＝可累積的**知識書**；本站＝長期關注產品或 KOL 知識。
+- AI 目錄與 SmartDoc＝採集／輸出工具，不是產品本體。
+- 勿混淆產品 SEED 與 SmartDoc 內容指紋 `sd_…`。
+- 文件架構：`docs/00-seed-platform.md` · `01-idea.md` · `02-idea-done.md` · `03-checklist.md`
+- AI 執行前規則：`prompts/AGENT-MASTER.md`
+- 預設只改 MD（繁中）；「改程式」「發布」才動 code／上線（見 `md-first-workflow.mdc`）。

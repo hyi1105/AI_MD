@@ -1,47 +1,86 @@
-# Agent 主提示詞
+# AI 規則（執行前必讀）
 
-你在 **SEED Platform**（知識書 · 長期關注）。  
+你在 **SEED Platform**。  
 AI 查詢目錄與 SmartDoc 是**採集／輸出工具**，不是產品本體。
 
-北極星：`docs/00-seed-platform.md`  
-狀態總覽：`docs/STATUS.md`  
-工作流：`.cursor/rules/md-first-workflow.mdc`
+## 0. 每次動手之前
 
-## 語言與預設行為
+1. 讀 [`docs/00-seed-platform.md`](../docs/00-seed-platform.md)（產品是什麼）  
+2. 讀本檔（工作方式）  
+3. 有待辦／進度 → 更新 [`docs/01-idea.md`](../docs/01-idea.md)  
+4. 完成或取消 → 移到 [`docs/02-idea-done.md`](../docs/02-idea-done.md)  
+5. 驗收項目變化 → 更新 [`docs/03-checklist.md`](../docs/03-checklist.md)  
 
-- 說明、規格、回覆：**繁體中文**
-- **預設只改 Markdown**；負責人未說「改程式」「發布」時，不要改 `web/`、`smartdoc-ai/` 程式，也不要 push／部署
+**不要**再建立平行的 STATUS／standup／requirements／gap 檔來當進度真相。
 
-## 範圍
+---
 
-| 類型 | 路徑 |
-|------|------|
-| 產品定位 | `docs/00-seed-platform.md` |
-| 狀態／缺口 | `docs/STATUS.md`、`docs/02-gap-analysis.md` |
-| 需求 ID | `docs/01-requirements-master.md`、`modules/ai-tools-directory.md`（目錄工具子規格） |
-| 實作 HOW | `docs/03-implementation.md` |
-| 會議／Approve | `docs/standup.md` |
-| 程式（僅在下令後） | `web/`、`smartdoc-ai/` |
+## 1. 語言
 
-## 必做
+- 規格、回覆、文件敘述：**繁體中文**  
+- 路徑、ID、API 名可保留英文  
 
-1. 改定位或進度時更新 `docs/STATUS.md`（與相關 MD）
-2. 目錄工具狀態仍與 F-01～F-10 對齊時，同步 `modules/ai-tools-directory.md`／`01-requirements-master.md`
-3. 回覆用繁體中文；未下令改程式時，文末註明「尚未改程式／尚未發布」
+---
 
-## 禁止（預設）
+## 2. 文件優先（預設）
 
-- 未聽到「改程式」就改 HTML／JS／React／`catalog.json` 等
-- 未聽到「發布／上線／push」就 commit＋push 部署
-- 把產品說成「只做 AI 工具搜尋」（已退役）
-- 混淆產品 **SEED（知識書）** 與 SmartDoc 內容指紋 `sd_…`
+| 負責人說 | 你才可以 |
+|----------|----------|
+| （一般想法／對齊／整理） | **只改 Markdown** |
+| **改程式**／改 code／實作到網站 | 改 `web/`、`smartdoc-ai/`、`catalog.json` 等，並回寫 01／02／03 |
+| **發布**／上線／push／部署 | commit＋push（或依指示部署） |
+| **改程式並發布** | 先改程式與 MD，再發布 |
 
-## 指令
+未下令改程式時，回覆結尾註明：**尚未改程式／尚未發布**。
+
+可改（預設）：`docs/**/*.md`、`README.md`、本檔、必要時 `.cursor/rules/*.mdc`（須與本檔一致）。
+
+---
+
+## 3. 產品語言
+
+- **SEED**＝知識書（產品概念）  
+- SmartDoc 的 `sd_…`＝內容指紋／edition id，**不要叫成產品 SEED**  
+- 禁止說「本專案只做 AI 工具搜尋」（已退役）  
+- 功能敘述順序：發現 → 採集 → 編修 → 發布／分享一本 SEED  
+
+---
+
+## 4. 對話如何入檔（01 / 02）
+
+每次負責人提出想法或需求：
+
+1. 在 `01-idea.md` 新增一筆 `IDEA-xxx`（來源日期、為什麼、要做什麼）  
+2. 若已可操作驗收，在 `03-checklist.md` 加對應勾選項  
+3. 實作完成或明確取消後，**整段移到** `02-idea-done.md`（標 done／cancelled）  
+
+---
+
+## 5. 指令速查
 
 | 負責人說 | 做什麼 |
 |----------|--------|
-| 審查缺口／對齊文件 | 只改 MD；見 [review-gap.md](./review-gap.md) |
-| 更新規格／決策入檔 | 只改 MD；見 [auto-update.md](./auto-update.md) |
-| 改程式 | 才改程式碼，並回寫 STATUS |
-| 發布／上線 | 才 push／部署 |
-| 改程式並發布 | 先改程式與 MD，再發布 |
+| 整理文件／歸檔構想 | 只改 00～03、README、本檔 |
+| 審查缺口 | 對照 00＋01＋03；更新 01／03；繁中回覆 |
+| 改程式 | 改 code＋回寫 01／02／03 |
+| 發布 | 才 push／部署 |
+
+---
+
+## 6. 目錄資料（僅在允許改程式／改目錄時）
+
+- 列表真相：`web/catalog.json`  
+- `web/data.js` 只負責載入＋精選評估，不是完整列表  
+- 日常改目錄：直接改 JSON；不要重跑 bulk 腳本，除非負責人要求整批重建  
+- 詳情無 MD 時用 catalog 欄位 fallback  
+
+---
+
+## 7. 程式路徑（下令後）
+
+| 區域 | 路徑 |
+|------|------|
+| 主站／目錄 | `web/` |
+| SmartDoc 原始碼 | `smartdoc-ai/` → 建置到 `web/smartdoc/` |
+
+SmartDoc 長篇規格：`smartdoc-ai/docs/PRD.md`（子專案內；是否併入 docs/ 由負責人決定）。

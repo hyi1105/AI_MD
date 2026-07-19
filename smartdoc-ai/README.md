@@ -2,9 +2,11 @@
 
 **AI 修訂 + 無網 P2P 協作** — Word 界的 Cursor，斷網也能紅綠色對比修文件。
 
-底層統一使用 Markdown（Local-First）。畫面可切換合約／流程圖／商用報告；右側支援 AI 對話修訂，以及 P2P Seed 節點、CRDT 離線合併與 10% 營收分紅任務模擬。
+底層統一使用 Markdown（Local-First）。畫面可切換合約／流程圖／商用報告；右側支援 AI 對話修訂，以及 P2P 內容指紋節點、CRDT 離線合併與 10% 營收分紅任務模擬。
 
-## 掛在 AI_MD 網站
+平台文件：[`docs/00-seed-platform.md`](../docs/00-seed-platform.md) · 待辦／驗收見 `docs/01-idea.md`、`docs/03-checklist.md` · 詳細規格見 [`docs/PRD.md`](./docs/PRD.md)。
+
+## 掛在 SEED／AI_MD 網站
 
 目前借用 **AI_MD** GitHub Pages 發佈：
 

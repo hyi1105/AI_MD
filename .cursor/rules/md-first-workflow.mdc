@@ -3,45 +3,13 @@ description: 預設只改 Markdown；繁中；未明示勿改程式／發布
 alwaysApply: true
 ---
 
-# 文件優先工作流（負責人規則）
+# 文件優先工作流
 
-與負責人協作時，**預設只改 Markdown（`.md` / 規格／提示詞）**，不要改程式、不要部署。
+完整規則以 **`prompts/AGENT-MASTER.md`** 為準。摘要：
 
-## 語言
-
-- 之後新增或改寫的說明、規格、提示詞、STATUS／standup 紀錄：**一律使用繁體中文**。
-- 既有英文技術識別字（路徑、API、ID、`SEED`、`catalog.json` 等）可保留；敘述句子用中文。
-
-## 預設只改 MD
-
-可改（未禁止時）：
-
-- `docs/**/*.md`
-- `prompts/**/*.md`
-- `modules/**/*.md`
-- `README.md`、`INDEX.md`、各子專案 README
-- `.cursor/rules/*.mdc`（協作規則本身）
-
-**不要**改（除非負責人明確下令）：
-
-- `web/` 下的 HTML／CSS／JS／JSON（含 `catalog.json`）
-- `smartdoc-ai/` 原始碼與建置產物
-- CI／workflow、腳本、依賴鎖檔
-
-目錄內容（`catalog.json`）仍屬「程式／站上資料」：只有負責人明確要改目錄或改程式時才動。
-
-## 觸發詞（才可動程式／上線）
-
-| 負責人說的意思 | Agent 才可做 |
-|----------------|--------------|
-| **改程式**／修改程式／改 code／實作到網站 | 改對應程式碼，並同步更新相關 MD／`docs/STATUS.md` |
-| **發布**／上線／push／部署 | commit＋push（或依其指示部署），使線上與文件一致 |
-| **改程式並發布**／改程式，發布 | 先改程式與文件，再發布 |
-
-若只說想法、對齊文件、檢查衝突、更新規格：**只改 MD**，改完說明「尚未改程式／尚未發布」。
-
-## 與 SEED 的關係
-
-- 產品北極星：`docs/00-seed-platform.md`
-- 狀態總覽：`docs/STATUS.md`（文件或流程有變要回寫）
-- 日常決策與畫面問題：`docs/standup.md`
+1. 敘述用**繁體中文**。
+2. 預設只改：`docs/00`～`03`、`README.md`、`prompts/AGENT-MASTER.md`。
+3. 構想 → `docs/01-idea.md`；完成／取消 → `docs/02-idea-done.md`；操作驗收 → `docs/03-checklist.md`。
+4. 只有負責人說「改程式」才改 `web/`／`smartdoc-ai/`／`catalog.json`。
+5. 只有說「發布」才 push／部署。
+6. **不要**再新增 STATUS／standup／gap 等平行進度檔。

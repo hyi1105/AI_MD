@@ -1,21 +1,21 @@
 ---
-description: Docs and gap workflow when editing Markdown specs
+description: 編輯 docs 時的文件架構
 globs: "docs/**/*.md,**/*.md"
 alwaysApply: false
 ---
 
-# Docs workflow (SEED Platform)
+# Docs 架構（SEED）
 
-This repo is the **SEED Platform** (knowledge books + long-term attention).  
-`web/` AI catalog and `smartdoc-ai/` are **tools** under that platform — see `docs/00-seed-platform.md`.
+只維護這四份＋入口＋AI 規則：
 
-When editing specs or Markdown docs:
+| 檔案 | 用途 |
+|------|------|
+| `docs/00-seed-platform.md` | 產品是什麼 |
+| `docs/01-idea.md` | 待辦＋前因後果 |
+| `docs/02-idea-done.md` | 已完成／已取消 |
+| `docs/03-checklist.md` | 使用者操作驗收 |
+| `README.md` | 對外入口 |
+| `prompts/AGENT-MASTER.md` | AI 規則 |
 
-- Prefer **Traditional Chinese** for narrative text
-- Update `docs/00-seed-platform.md` if product positioning changes
-- Implementation HOW: `docs/03-implementation.md`
-- Gap / standup / STATUS: `docs/02-gap-analysis.md`, `docs/standup.md`, `docs/STATUS.md` when relevant
-- Review prompts remain optional helpers under `prompts/`
-- Unless the owner said 改程式 / 發布, **stop after MD updates** (see `md-first-workflow.mdc`)
-
-Do **not** claim the project “only does AI tool search” — that is outdated.
+定位變 → 改 00；新構想 → 01；做完 → 移到 02；驗收項 → 03。  
+未說「改程式／發布」則停在 MD。

@@ -1,58 +1,13 @@
 ---
-description: AI 工具目录内容更新 — 用户开口时直接改 catalog，不重跑生成脚本
+description: 目錄資料 — 僅在允許改程式／改目錄時改 catalog.json
 alwaysApply: true
 ---
 
-# Catalog content updates (AI_MD)
+# Catalog 更新
 
-目錄資料在 `web/catalog.json`（站上資料，屬程式側）。  
-依 `md-first-workflow.mdc`：**只有**負責人明確說「改目錄／改程式」時才改 JSON；否則只改規格 MD 描述。
+列表真相：`web/catalog.json`（`data.js` 的 `loadCatalog()`）。  
+`data.js` 只放精選評估，不是完整列表。
 
-When the owner asks to add, change, or remove AI tools **and** allows code/data edits, **edit data directly**. Do not rebuild generator code or rerun bulk scripts unless they explicitly ask.
-
-## Source of truth
-
-- **`web/catalog.json`** — the live catalog the site loads (`loadCatalog()` in `data.js`)
-- **`web/data.js`** — only for `TOP_TIER_IDS` / evaluations; not the full tool list
-
-## When allowed to edit catalog (low cost)
-
-1. Edit `web/catalog.json` (add/update/remove entries).
-2. **Do not** run `build_catalog.ps1`, `build_catalog.py`, or `generate-tools-md.ps1` for routine updates.
-3. **Do not** regenerate all `web/tools/*.md` — detail pages fall back to catalog fields in `tool.js` when MD is missing.
-4. Preview locally only if the user asks.
-5. Commit and push **only when the user asks** to publish（發布／上線／push）.
-
-## Entry schema
-
-```json
-{
-  "id": "kebab-case-unique",
-  "name": "Tool Name",
-  "description": "一句話簡介",
-  "category": "對話助手|程式開發|…",
-  "tags": ["标签"],
-  "keywords": ["search", "关键词"],
-  "rating": 4.5,
-  "pricing": "Freemium|免費|付費|試用",
-  "url": "https://…",
-  "bestFor": "最適合場景"
-}
-```
-
-## Preserve stable IDs
-
-Never rename these IDs (links/bookmarks): `chatgpt`, `claude`, `gemini`, `cursor`, `github-copilot`, `midjourney`, `dalle`, `canva-ai`, `runway`, `elevenlabs`, `suno`, `perplexity`, `notion-ai`, `deepl`, `grammarly`, `figma-ai`, `stable-diffusion`, `kimi`, `codeium`, `gamma`, `remove-bg`, `otter`, `jasper`, `pika`.
-
-## Bulk rebuild (rare)
-
-Run `web/scripts/build_catalog.ps1` + `generate-tools-md.ps1` **only** when the user wants a full reseed from `build_catalog.py` SEEDS — not for normal content tweaks.
-
-## User triggers (examples)
-
-- 「加 10 個新的影片 AI 工具」
-- 「更新 ChatGPT 的简介」
-- 「把 XXX 从目录移除并 push」
-- 「参考 Futurepedia 补一批写作工具」
-
-Interpret intent, apply minimal diff to `catalog.json`, then publish if requested.
+依 `prompts/AGENT-MASTER.md`：須負責人說「改目錄」或「改程式」才改 JSON。  
+日常直接改條目；勿重跑 bulk 腳本，除非要求整批從 SEEDS 重建。  
+發布須另行說「發布」。

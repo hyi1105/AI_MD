@@ -2,6 +2,7 @@
 
 > **在 SEED Platform 中的角色**：SmartDoc 是 **採集／編修工具**，用來把專業知識寫成、修訂成可累積的 **SEED（知識書）**。  
 > 平台北極星見 [`docs/00-seed-platform.md`](../../docs/00-seed-platform.md)。  
+> 待辦／已完成／驗收：[`01-idea.md`](../../docs/01-idea.md) · [`02-idea-done.md`](../../docs/02-idea-done.md) · [`03-checklist.md`](../../docs/03-checklist.md)。  
 > 下文的編輯器與 P2P 能力，都服從「輸出 SEED」這一個目的。
 
 > **工具願景（雙軸）**  

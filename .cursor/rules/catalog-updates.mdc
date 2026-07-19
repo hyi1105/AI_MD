@@ -1,13 +1,11 @@
 ---
-description: 目錄資料 — 僅在允許改程式／改目錄時改 catalog.json
+description: 目錄只改 catalog.json
 alwaysApply: true
 ---
 
-# Catalog 更新
+# Catalog
 
-列表真相：`web/catalog.json`（`data.js` 的 `loadCatalog()`）。  
-`data.js` 只放精選評估，不是完整列表。
-
-依 `prompts/AGENT-MASTER.md`：須負責人說「改目錄」或「改程式」才改 JSON。  
-日常直接改條目；勿重跑 bulk 腳本，除非要求整批從 SEEDS 重建。  
-發布須另行說「發布」。
+- 唯一資料：`web/catalog.json`  
+- 須負責人說「改目錄」或「改程式」才改  
+- 禁止恢復 `web/tools/*.md`  
+- 「發布」才 push  

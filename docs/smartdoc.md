@@ -1,13 +1,12 @@
-# SmartDoc — 產品需求文件 (PRD)
+# SmartDoc — AI 資料收集／編修工具規格
 
-> **在 SEED Platform 中的角色**：SmartDoc 是 **採集／編修工具**，用來把專業知識寫成、修訂成可累積的 **SEED（知識書）**。  
-> 平台北極星見 [`docs/00-seed-platform.md`](../../docs/00-seed-platform.md)。  
-> 待辦／已完成／驗收：[`01-idea.md`](../../docs/01-idea.md) · [`02-idea-done.md`](../../docs/02-idea-done.md) · [`03-checklist.md`](../../docs/03-checklist.md)。  
-> 下文的編輯器與 P2P 能力，都服從「輸出 SEED」這一個目的。
+> **這不是子專案**，只是 SEED 平台上**一類 AI 資料收集工具**（編修 Markdown、協助產出知識書）。  
+> 其他類型還有「AI 查詢目錄」等；程式碼放在 `smartdoc-ai/` 只是資料夾，不是獨立產品邊界。  
+> 北極星：[`00-seed-platform.md`](./00-seed-platform.md) · 驗收：[`03-checklist.md`](./03-checklist.md) · 對話入檔：[`01-idea.md`](./01-idea.md)
 
 > **工具願景（雙軸）**  
 > 1. **SmartDoc AI**：「Word 界的 Cursor」——對話式修訂與視覺化 Diff。  
-> 2. **SmartDoc P2P**：斷網仍可協作；內容定址與節點貢獻服務「傳書」，不是平台本體。  
+> 2. **SmartDoc P2P**：斷網仍可協作；內容定址與節點貢獻服務「傳書」，服從 SEED 主線。  
 > **注意**：產品語言的 **SEED（知識書）** ≠ 實作裡的內容雜湊 id（`sd_…` edition fingerprint）。
 
 ---
@@ -28,7 +27,7 @@
 ### 1.3 去中心化層（P2P）
 
 * **Local-First**：資料預設完整存於本地，不依賴中央雲端。
-* **內容定址 (Seed)**：每個檔案／異動生成加密雜湊 Seed；持有 Seed 即可在 P2P 網尋址下載。
+* **內容定址**：每個檔案／異動生成加密雜湊（畫面常稱 Seed／`sd_…`）；持有指紋即可在 P2P 網尋址下載。
 * **多重網路融合 (libp2p 概念)**：
   1. **LAN**：同一台無外網 Wi-Fi 分享器互傳
   2. **Hotspot**：手機熱點互連同步
@@ -55,12 +54,12 @@
 
 * 右側常駐；支援 Mention；Freemium 額度控制
 
-### 功能 D：P2P Seed 與離線合併（本會議新增）
+### 功能 D：P2P 與離線合併
 
-* 文件變更即重算 Seed，可複製分享
+* 文件變更即重算內容指紋，可複製分享
 * 模擬 LAN / Hotspot / Bluetooth 傳輸通道
 * 離線分支編輯後以 CRDT 風格合併，並以 Diff 呈現
-* Seed 下載請求走防作弊驗證後才發放貢獻點數
+* 下載請求走防作弊驗證後才發放貢獻點數
 
 ---
 
@@ -84,7 +83,7 @@ $$V_{point} = \frac{A}{P_{total}}$$
 **點數來源**
 
 * 在線空間貢獻：自願連線提供路由尋址
-* Seed 有效上傳流量：他機以 Seed 從你裝置下載真實檔案
+* 有效上傳流量：他機以內容指紋從你裝置下載真實檔案
 
 **Anti-Cheat**
 
@@ -106,32 +105,34 @@ graph TD
     C --> D[讀取 .md 產生建議]
     D --> E[視覺化渲染 + Diff]
     E --> F[Accept / Reject]
-    F --> G[更新底層 .md + 重算 Seed]
+    F --> G[更新底層 .md + 重算內容指紋]
 ```
 
-### 4.2 P2P Seed 與分紅流程
+### 4.2 P2P 與分紅流程
 
 ```mermaid
 graph TD
-    A[用戶建立/修改文件] --> B[系統生成獨一無二的 Seed]
+    A[用戶建立/修改文件] --> B[系統生成獨一無二的內容指紋]
     B --> C[文件異動經由 CRDT 本地合併]
     C --> D[節點開啟 libp2p 廣播:藍牙/區域網路/外網]
-    D --> E[其他用戶輸入 Seed 請求下載]
+    D --> E[其他用戶輸入指紋請求下載]
     E --> F{觸發防作弊驗證:檢查IP與文件合法性}
-    F -->|合法| G[下載成功 / 記錄貢獻者 Seed 上傳流量]
+    F -->|合法| G[下載成功 / 記錄貢獻者上傳流量]
     F -->|作弊/同IP| H[拒絕發放點數]
     G --> I[月底結算:依據 10% 營收公式發放實際分紅]
 ```
 
 ---
 
-## 5. 實作邊界（本 repo MVP）
+## 5. 實作邊界（目前 demo）
 
-| 項目 | MVP 狀態 |
-|------|----------|
+| 項目 | 狀態 |
+|------|------|
 | 多模式渲染 + Visual Diff + AI Sidebar | ✅ 已實作（AI 為規則引擎示範） |
-| Seed 內容定址 + Local-First 儲存 | ✅ 瀏覽器 Web Crypto + localStorage |
+| 內容定址 + Local-First 儲存 | ✅ 瀏覽器 Web Crypto + localStorage |
 | CRDT 離線合併 | ✅ 段落級合併示範（正式版接 Yjs/Automerge） |
 | libp2p 實體傳輸 | 🟡 UI／協定模擬（LAN/Hotspot/BT） |
 | 真實藍牙／Wi-Fi Direct | ⏳ 原生殼層或 Web API 後續 |
 | 分紅金流出款 | 🟡 點數帳本與公式模擬 |
+
+驗收勾選以 [`03-checklist.md`](./03-checklist.md) 為準。

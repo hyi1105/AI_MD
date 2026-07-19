@@ -1,15 +1,15 @@
 ---
-description: 預設只改 Markdown；繁中；未明示勿改程式／發布
+description: 預設只改 Markdown；繁中；改程式／發布才動 code
 alwaysApply: true
 ---
 
-# 文件優先工作流
+# 文件優先
 
-完整規則以 **`prompts/AGENT-MASTER.md`** 為準。摘要：
+完整規則：`prompts/AGENT-MASTER.md`。
 
-1. 敘述用**繁體中文**。
-2. 預設只改：`docs/00`～`03`、`README.md`、`prompts/AGENT-MASTER.md`。
-3. 構想 → `docs/01-idea.md`；完成／取消 → `docs/02-idea-done.md`；操作驗收 → `docs/03-checklist.md`。
-4. 只有負責人說「改程式」才改 `web/`／`smartdoc-ai/`／`catalog.json`。
-5. 只有說「發布」才 push／部署。
-6. **不要**再新增 STATUS／standup／gap 等平行進度檔。
+1. 繁體中文。  
+2. 構想 → `docs/01-idea.md`＋**寫入** `docs/03-checklist.md`。  
+3. 完成對話 → `docs/02-idea-done.md` 並勾選 checklist。  
+4. 「改程式」才改 `web/`／`smartdoc-ai/`／`catalog.json`。  
+5. 「發布」才 push。  
+6. 勿新建 STATUS／HOW／gap 等平行檔。

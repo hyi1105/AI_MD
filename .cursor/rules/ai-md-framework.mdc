@@ -1,21 +1,18 @@
 ---
-description: 編輯 docs 時的文件架構
+description: 編輯 docs 時的架構
 globs: "docs/**/*.md,**/*.md"
 alwaysApply: false
 ---
 
-# Docs 架構（SEED）
-
-只維護這四份＋入口＋AI 規則：
+# Docs 架構
 
 | 檔案 | 用途 |
 |------|------|
-| `docs/00-seed-platform.md` | 產品是什麼 |
-| `docs/01-idea.md` | 待辦＋前因後果 |
-| `docs/02-idea-done.md` | 已完成／已取消 |
-| `docs/03-checklist.md` | 使用者操作驗收 |
-| `README.md` | 對外入口 |
+| `docs/00-seed-platform.md` | 產品；含 `.mdc` 連結 |
+| `docs/01-idea.md` | 對話入檔 |
+| `docs/02-idea-done.md` | 完成／取消對話 |
+| `docs/03-checklist.md` | 功能勾選真相 |
+| `docs/smartdoc.md` | SmartDoc 收集工具規格 |
 | `prompts/AGENT-MASTER.md` | AI 規則 |
 
-定位變 → 改 00；新構想 → 01；做完 → 移到 02；驗收項 → 03。  
-未說「改程式／發布」則停在 MD。
+新構想必須變成 checklist 條目。

@@ -1,13 +1,12 @@
 ---
-description: SEED 北極星 — 工具只是採集；SEED 是知識書
+description: SEED 北極星 — 收集工具服務知識書
 alwaysApply: true
 ---
 
 # SEED Platform（永遠）
 
-- **SEED**＝可累積的**知識書**；本站＝長期關注產品或 KOL 知識。
-- AI 目錄與 SmartDoc＝採集／輸出工具，不是產品本體。
-- 勿混淆產品 SEED 與 SmartDoc 內容指紋 `sd_…`。
-- 文件架構：`docs/00-seed-platform.md` · `01-idea.md` · `02-idea-done.md` · `03-checklist.md`
-- AI 執行前規則：`prompts/AGENT-MASTER.md`
-- 預設只改 MD（繁中）；「改程式」「發布」才動 code／上線（見 `md-first-workflow.mdc`）。
+- **SEED**＝知識書；工具＝AI 資料收集／輸出（無子專案產品）。
+- 文件只在 `docs/`：`00` 產品 · `01` 對話 · `02` 完成對話 · `03` checklist · `smartdoc.md`。
+- AI 規則：`prompts/AGENT-MASTER.md`；本目錄 `.mdc` 連結見 `docs/00-seed-platform.md`。
+- 目錄資料只靠 `web/catalog.json`。
+- 預設只改 MD；「改程式」「發布」才動 code／上線。

@@ -112,7 +112,7 @@ export function DocumentView({
         {pendingHunks.length > 0 && (
           <div className="proposal-bar">
             <div>
-              <strong>視覺化追蹤修訂</strong>
+              <strong>AI 修改處</strong>
               <span>
                 {proposal?.summary} · 待處理 {pendingHunks.length} 處
               </span>

@@ -1,7 +1,8 @@
 # SEED / Theme
 
 **長期關注產品或 KOL 知識的網站。**  
-主題說明見 [`docs/00-theme.md`](docs/00-theme.md)。
+主題說明見 [`docs/00-theme.md`](docs/00-theme.md)。  
+**合作方式**見 [`prompts/AGENT-MASTER.md`](prompts/AGENT-MASTER.md)。
 
 > 線上：**https://hyi1105.github.io/AI_MD/**
 
@@ -10,11 +11,11 @@
 | 檔案 | 用途 |
 |------|------|
 | [docs/00-theme.md](docs/00-theme.md) | 產品主題 |
-| [docs/01-idea.md](docs/01-idea.md) | 進行中構想（寫清楚） |
-| [docs/02-idea-done.md](docs/02-idea-done.md) | 已結案構想（分開以省查檔成本） |
+| [docs/idea.md](docs/idea.md) | 進行中構想（對話整理後存放） |
+| [docs/idea.history.md](docs/idea.history.md) | 已結案構想（分開以省查檔成本） |
 | [docs/03-checklist.md](docs/03-checklist.md) | **現有功能查核表** |
 | [docs/ai-doc.md](docs/ai-doc.md) | **AI Doc**：AI 改檔 + 顯示修改處 |
-| [prompts/AGENT-MASTER.md](prompts/AGENT-MASTER.md) | AI 規則 |
+| [prompts/AGENT-MASTER.md](prompts/AGENT-MASTER.md) | 合作方式＋AI 規則 |
 
 ## 工具
 
@@ -34,6 +35,6 @@ cd web
 cd aidoc && npm install && npm run build
 ```
 
-構想 → `01-idea` → 改程式／發布成功 → 登記 `03-checklist` → 移 `02-idea-done`。
+想法 → `idea.md` → 改程式／發布成功 → 登記 `03-checklist` → 移 `idea.history`。
 
 MIT

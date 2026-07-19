@@ -2,7 +2,7 @@
 
 > 這是主題下的一類 **AI 資料收集／輸出工具**（不是子專案）。  
 > **舊稱**：SmartDoc／文稿（manuscript）。  
-> 主題：[`00-theme.md`](./00-theme.md) · 構想：[`01-idea.md`](./01-idea.md) · 查核：[`03-checklist.md`](./03-checklist.md)
+> 主題：[`00-theme.md`](./00-theme.md) · 構想：[`idea.md`](./idea.md) · 查核：[`03-checklist.md`](./03-checklist.md)
 
 ---
 
@@ -18,7 +18,7 @@
 
 * 使用者用自然語言下指令（可 Mention 章節）  
 * AI 針對**目前這一份檔**產生修訂建議（不是另開一本無關的新檔當主流程）  
-* 現況：示範用規則引擎；真 LLM 見 `01-idea`
+* 現況：示範用規則引擎；真 LLM 見 `idea.md`
 
 ### 1.2 顯示修改處（編譯／產出後）
 

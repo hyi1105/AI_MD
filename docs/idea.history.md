@@ -1,11 +1,18 @@
-# 02 — Idea Done（已結案構想归档）
+# Idea History（已結案構想归档）
 
-> **與 `01-idea` 拆開的主要原因：查文件時少載入資料、省成本。**  
-> 這裡放已完成或已取消的構想；進行中的只留在 [`01-idea.md`](./01-idea.md)。  
+> **與 `idea.md` 拆開的主要原因：查文件時少載入資料、省成本。**  
+> 這裡放已完成或已取消的構想；進行中的只留在 [`idea.md`](./idea.md)。  
 > 「現在有沒有這個功能」以 [`03-checklist.md`](./03-checklist.md) 查核為準，不是看本檔。  
+> 舊檔名：`02-idea-done.md`。  
 > 更新：2026-07-19
 
 ---
+
+## 2026-07-19 — 合作方式定案：對話整理→idea；發布後→checklist；結案→idea.history
+
+- 結果：done（文件層）  
+- 來源：負責人說明合作模式（英／語音轉文字）  
+- 摘要：`01-idea`→`idea.md`；`02-idea-done`→`idea.history.md`；規則寫進 `AGENT-MASTER`。  
 
 ## 2026-07-19 — 發布：open ideas（XSS／分類／匯出文案／aidoc 改名）
 

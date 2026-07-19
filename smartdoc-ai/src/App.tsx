@@ -74,7 +74,7 @@ export default function App() {
       id: uuid(),
       role: 'assistant',
       content:
-        '你好，我是 SmartDoc。支援 AI 對話修訂，也支援斷網 P2P Seed 協作。試試改違約金，或切到「P2P」面板模擬離線合併。',
+        '你好，我是 AI Doc。像 Cursor 一樣，用對話改這一份檔；AI 產出後會標出修改處，你再 Accept／Reject。試試：「把違約金改成千分之一」。',
       createdAt: Date.now(),
     },
   ])
@@ -364,8 +364,8 @@ export default function App() {
           </a>
           <div className="brand-mark" aria-hidden />
           <div>
-            <div className="brand">SmartDoc</div>
-            <p className="tagline">採集工具 · 把知識寫成 SEED</p>
+            <div className="brand">AI Doc</div>
+            <p className="tagline">AI 改檔 · 顯示修改處（像 Cursor）</p>
           </div>
         </div>
 

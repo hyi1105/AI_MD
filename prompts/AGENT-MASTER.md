@@ -8,7 +8,7 @@
 | [`docs/02-idea-done.md`](../docs/02-idea-done.md) | **已結案**構想归档；與 01 分開＝**查檔少載入、省成本** |
 | [`docs/03-checklist.md`](../docs/03-checklist.md) | **現有功能查核表**；改版後對照現況，發現缺漏功能 |
 
-另：[`docs/00-theme.md`](../docs/00-theme.md) 主題 · [`docs/manuscript.md`](../docs/manuscript.md) 文稿規格 · `.mdc` 見 00-theme。
+另：[`docs/00-theme.md`](../docs/00-theme.md) 主題 · [`docs/ai-doc.md`](../docs/ai-doc.md) AI Doc 規格 · `.mdc` 見 00-theme。
 
 禁止再新建 STATUS／HOW／gap。  
 禁止把「還沒做過的空想」塞進 checklist。
@@ -39,7 +39,7 @@
 | 名稱 | 意思 |
 |------|------|
 | Theme | `00-theme.md` |
-| 文稿（manuscript） | 同檔編修 → A4（舊稱 SmartDoc） |
+| 文稿／AI Doc | **AI Doc**：像 Cursor 改檔並顯示修改處（舊稱 SmartDoc／文稿） |
 | Lister／查核 | 依 checklist 自動對照現況、找缺功能 |
 
 ---

@@ -21,7 +21,8 @@
 ## 1. 入口與品牌
 
 - [x] 首頁品牌與「知識書／長期關注」說明  
-- [x] 頂部可切換「AI 查詢」與「文稿」編修入口（畫面可能仍顯示舊名 SmartDoc）  
+- [x] 頂部可切換「AI 查詢」與「AI Doc」  
+- [x] 首頁說明提到 AI Doc（AI 改檔並顯示修改處）  
 
 ---
 
@@ -38,25 +39,25 @@
 
 ---
 
-## 3. 文稿
+## 3. AI Doc
 
-規格：[`manuscript.md`](./manuscript.md)  
-入口：https://hyi1105.github.io/AI_MD/smartdoc/
+規格：[`ai-doc.md`](./ai-doc.md)  
+入口：https://hyi1105.github.io/AI_MD/aidoc/
 
-- [x] 同一份 Markdown 可持續編修（本機 localStorage）  
+- [x] 品牌顯示為 **AI Doc**（非 SmartDoc）  
+- [x] AI 可針對同一份檔下指令產生修訂（示範引擎）  
+- [x] AI 產出後以 Diff **顯示修改處**（紅刪／綠增）  
+- [x] Accept／Reject 回寫同一份檔  
 - [x] 多模式預覽（合約／流程圖／報告等）  
-- [x] 紅綠 Diff，Accept／Reject 回寫同一份檔  
-- [~] AI 側欄改稿（示範引擎，非真 LLM）  
+- [~] AI 為規則引擎示範（非真 LLM）  
 - [~] 額度／付費按鈕（本機數字，無真金流）  
-- [~] 內容指紋／P2P／合併流程（示範，非真連線）  
-
-（真 A4 輸出等未上線能力 → 只在 `01-idea`，未登記為現有功能。）
+- [~] 內容指紋／P2P／合併（示範，非主路徑）  
 
 ---
 
 ## 4. 文件協作（已定案能力）
 
-- [x] 規格在 `docs/`：`00-theme`／`01-idea`／`02-idea-done`／`03-checklist`／`manuscript`  
+- [x] 規格在 `docs/`：`00-theme`／`01-idea`／`02-idea-done`／`03-checklist`／`ai-doc`  
 - [x] checklist＝**現有功能查核表**（改版後可對照找缺漏）  
 - [x] 01＝進行中構想；02＝已結案（拆開省查檔成本）  
 - [x] Idea 條目含 Why／What／How／Pros／Cons  

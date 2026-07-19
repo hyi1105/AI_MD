@@ -2,7 +2,7 @@
   "name": "smartdoc-ai",
   "private": true,
   "version": "0.2.0",
-  "description": "SmartDoc — AI 修訂與無網 P2P 協作文件系統",
+  "description": "AI Doc — 像 Cursor 一樣用 AI 改檔，並顯示修改處",
   "type": "module",
   "scripts": {
     "dev": "vite",

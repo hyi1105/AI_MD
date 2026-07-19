@@ -9,7 +9,7 @@
 | [`01-idea.md`](./01-idea.md) | **進行中／未結案**的構想（寫清楚 Why／What／How／優缺點） |
 | [`02-idea-done.md`](./02-idea-done.md) | **已結案**構想归档（與 01 分開，查資料時少載入、省成本） |
 | [`03-checklist.md`](./03-checklist.md) | **現有功能查核表**：改版時對照線上／程式，發現「少了什麼功能」 |
-| [`manuscript.md`](./manuscript.md) | **文稿**：同一份檔持續編修 → 輸出 A4 |
+| [`ai-doc.md`](./ai-doc.md) | **AI Doc**：像 Cursor 一樣用 AI 改檔，並顯示修改處 |
 | [`../prompts/AGENT-MASTER.md`](../prompts/AGENT-MASTER.md) | AI 執行前規則 |
 | [`../README.md`](../README.md) | 對外入口 |
 
@@ -25,7 +25,7 @@
 | **編排者** | 在授權下整理、策展他人知識書 |
 | **商業行為** | 訂閱、解鎖、分成、授權等（構想寫 01；做成後列入 checklist 查核） |
 
-> 知識書（SEED）≠ 文稿工具裡的內容指紋 `sd_…`。
+> 知識書（SEED）≠ AI Doc 裡的內容指紋 `sd_…`。
 
 ---
 
@@ -43,14 +43,14 @@
 ```text
 主題（Theme）
 ├── 工具：AI 查詢（catalog.json）— 發現／對照素材
-├── 工具：文稿（程式資料夾暫為 smartdoc-ai/）— 同檔持續編修 → 輸出 A4
-└── （構想中）知識書架 — 關注、編排、分享 → 先寫 01-idea，上線後才進 checklist
+├── 工具：AI Doc（程式資料夾暫為 smartdoc-ai/）— AI 改檔 + 顯示 Diff
+└── （構想中）知識書架 — 關注、編排、分享 → 先寫 01-idea
 ```
 
 | 工具 | 說明 |
 |------|------|
 | AI 查詢 | 搜尋 `web/catalog.json`；詳情只靠 JSON |
-| **文稿** | 規格見 [`manuscript.md`](./manuscript.md)；讓使用者一直編同一份檔，並可輸出 A4 |
+| **AI Doc** | 規格見 [`ai-doc.md`](./ai-doc.md)；AI 像 Cursor 改每一份檔，產出後顯示修改處 |
 
 ---
 
@@ -60,7 +60,7 @@
 |------|--------|------|
 | `01-idea` | 待辦構想匣 | 你說的新想法；寫清楚 Why／What／How／Pros／Cons |
 | `02-idea-done` | 舊構想倉庫 | 已做完或已取消的 idea；**與 01 拆開是為了查檔時少讀資料、省成本** |
-| `03-checklist` | **功能查核表** | 記錄「產品現在應該具備哪些功能」；改版後 AI 對照線上／程式，發現缺漏（例如以前有「建立圖樣」卻不見了） |
+| `03-checklist` | **功能查核表** | 記錄「產品現在應該具備哪些功能」；改版後 AI 對照線上／程式，發現缺漏 |
 
 ```text
 新構想  →  01-idea.md（寫清楚）
@@ -70,7 +70,7 @@
        →  該則從 01 移到 02-idea-done.md（01 保持精簡）
 ```
 
-**Checklist 查核（Lister）**：負責人說「查核／對照 checklist」時，AI 應讀 `03-checklist` 與現況（頁面／程式），回報哪幾項消失或變半真，**不要**把未做過的空想功能塞進 checklist。
+**Checklist 查核（Lister）**：負責人說「查核／對照 checklist」時，AI 應讀 `03-checklist` 與現況（頁面／程式），回報哪幾項消失或變半真。
 
 ---
 
@@ -93,6 +93,6 @@
 |------|------|
 | 主站 | `web/`；GitHub Pages |
 | 列表＋詳情 | **`web/catalog.json` only** |
-| 文稿程式 | `smartdoc-ai/` → `web/smartdoc/`（資料夾名待改程式時再換） |
-| 線上 | https://hyi1105.github.io/AI_MD/ |
+| AI Doc 程式 | `smartdoc-ai/` → 建置到 `web/aidoc/` |
+| 線上 | https://hyi1105.github.io/AI_MD/ · AI Doc：`/aidoc/` |
 | 授權 | MIT |

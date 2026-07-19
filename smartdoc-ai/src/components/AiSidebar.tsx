@@ -78,7 +78,7 @@ export function AiSidebar({
         {messages.map((msg) => (
           <div key={msg.id} className={`chat-bubble role-${msg.role}`}>
             <div className="chat-meta">
-              {msg.role === 'user' ? '你' : 'SmartDoc AI'}
+              {msg.role === 'user' ? '你' : 'AI Doc'}
               {modelHint(msg.model) && <span className="model-tag">{modelHint(msg.model)}</span>}
             </div>
             <div className="chat-body">{msg.content}</div>
@@ -86,7 +86,7 @@ export function AiSidebar({
         ))}
         {busy && (
           <div className="chat-bubble role-assistant typing">
-            <div className="chat-meta">SmartDoc AI</div>
+            <div className="chat-meta">AI Doc</div>
             <div className="chat-body">正在讀取 .md 並調配模型…</div>
           </div>
         )}

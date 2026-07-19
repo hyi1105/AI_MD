@@ -9,6 +9,6 @@
 | 檔案 | 說明 |
 |------|------|
 | `catalog.json` | 唯一工具資料 |
-| `smartdoc/` | 文稿建置產物（資料夾舊名） |
+| `aidoc/` | AI Doc 建置產物 |
 
-線上：https://hyi1105.github.io/AI_MD/
+線上：https://hyi1105.github.io/AI_MD/ · AI Doc：`/aidoc/`

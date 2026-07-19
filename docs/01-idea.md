@@ -33,21 +33,6 @@
 
 ---
 
-## 2026-07-19 — SmartDoc 整改為 AI Doc（Cursor 式改檔＋顯示修改處）
-
-- 狀態：building  
-- 來源：負責人（語音／英文）：把 SmartDoc 整個改掉，改成 AI Doc；目的是 AI 能像 Cursor 一樣 re-edit 每一份檔，編譯後顯示修改的部分  
-- 為什麼（Why）：舊定位（文稿／A4／P2P）偏離主需求；使用者要的是「AI 改檔 + 看 Diff」  
-- 做什麼（What）：產品名改 **AI Doc**；規格改 `docs/ai-doc.md`；站上入口與品牌文案改掉；主路徑強調 AI 改檔與顯示修改處  
-- 怎麼做（How）：改 hub 導覽、`smartdoc-ai` UI／文案、建置輸出至 `web/aidoc/`、Pages workflow、docs／rules；程式資料夾暫仍 `smartdoc-ai/`  
-- 優點（Pros）：名稱與目的一致；像 Cursor 的心智模型清楚  
-- 缺點／風險（Cons）：舊 `/smartdoc/` 連結失效；本機 localStorage key 仍可能帶舊前綴  
-- 不做的替代方案：只改文件不改畫面（已否決）  
-- 完成後列入 checklist：頂部為 AI Doc；能 AI 改檔並看到 Diff  
-- 待拍板：是否連程式資料夾也改名為 `aidoc`（可下一輪）  
-
----
-
 ## （進行中僅保留未結案產品構想）
 
 ## 未上線構想（展開）

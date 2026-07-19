@@ -7,6 +7,11 @@
 
 ---
 
+## 2026-07-19 — 發布：SmartDoc → AI Doc
+
+- 結果：done  
+- 摘要：品牌／導覽／`/aidoc/`／Diff「AI 修改處」已上線；規格 `docs/ai-doc.md`；Pages 部署成功。程式資料夾暫名 `smartdoc-ai/` 仍留在 01。  
+
 ## 2026-07-19 — 第二次發布（theme／文稿／查核定位上線）
 
 - 結果：done  

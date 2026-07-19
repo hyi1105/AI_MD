@@ -66,6 +66,7 @@
 - [x] 目錄只靠 JSON  
 - [x] `.mdc` 可從 [`00-theme.md`](./00-theme.md) 點連結  
 - [x] 2026-07-19 theme／文稿／查核定位已發布至 Pages  
+- [x] 2026-07-19 **AI Doc** 已發布（`/aidoc/`；SmartDoc 品牌已替換）  
 
 ---
 

@@ -1,5 +1,5 @@
 ---
-description: 預設只改 Markdown；上線後才更新 checklist
+description: 預設只改 Markdown；checklist 用於功能查核
 alwaysApply: true
 ---
 
@@ -7,9 +7,9 @@ alwaysApply: true
 
 見 `prompts/AGENT-MASTER.md`。
 
-1. **一律繁體中文**（回覆／文件／語音轉文字後的整理皆然；勿用英文整段回覆）。  
-2. 構想只進 `docs/01-idea.md`（每則必含 Why／What／How／Pros／Cons 等完整欄位）。  
-3. 「發布」成功後才更新 `docs/03-checklist.md`。  
-4. 結案進 `docs/02-idea-done.md`。  
-5. 「改程式」才改 code；「發布」才 push。  
-6. 主題＝`00-theme.md`；文稿＝`manuscript.md`。
+1. 一律繁體中文。  
+2. 構想 → `01-idea.md`（完整 Why／What／How／Pros／Cons）。  
+3. 結案構想 → `02-idea-done.md`（與 01 分開省成本）。  
+4. 新功能發布後登記 → `03-checklist.md`（現有功能查核）。  
+5. 「查核 checklist」→ 對照線上／程式找缺漏。  
+6. 「改程式」才改 code；「發布」才 push。  

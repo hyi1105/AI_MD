@@ -1,26 +1,25 @@
 # AI 規則（執行前必讀）
 
-## 0. 動手之前
+## 0. 三份文件定位（先讀懂）
 
-1. [`docs/00-theme.md`](../docs/00-theme.md) — 產品主題  
-2. 本檔  
-3. 構想 → [`docs/01-idea.md`](../docs/01-idea.md)  
-4. **僅在成功發布上線後**更新 [`docs/03-checklist.md`](../docs/03-checklist.md)  
-5. 結案 → [`docs/02-idea-done.md`](../docs/02-idea-done.md)  
-6. 文稿規格 → [`docs/manuscript.md`](../docs/manuscript.md)  
+| 檔案 | 定位 |
+|------|------|
+| [`docs/01-idea.md`](../docs/01-idea.md) | **進行中**構想（寫清楚 Why／What／How／Pros／Cons） |
+| [`docs/02-idea-done.md`](../docs/02-idea-done.md) | **已結案**構想归档；與 01 分開＝**查檔少載入、省成本** |
+| [`docs/03-checklist.md`](../docs/03-checklist.md) | **現有功能查核表**；改版後對照現況，發現缺漏功能 |
 
-`.mdc`：見 [00-theme](../docs/00-theme.md)。
+另：[`docs/00-theme.md`](../docs/00-theme.md) 主題 · [`docs/manuscript.md`](../docs/manuscript.md) 文稿規格 · `.mdc` 見 00-theme。
 
-禁止再新建 STATUS／HOW／gap；禁止在 checklist **空想加未上線項目**。
+禁止再新建 STATUS／HOW／gap。  
+禁止把「還沒做過的空想」塞進 checklist。
 
 ---
 
 ## 1. 語言（一律繁體中文）
 
-- **所有**回覆、文件、構想整理、PR 說明：**繁體中文**（台灣用語為準）。
-- 負責人若用語音轉文字且出現英文／簡體／錯字：整理進 `01-idea`／規格時**改寫成正確繁中**，不要照抄英文草稿當正文。
-- 僅保留必要英文：檔名、路徑、API、ID、程式識別字（如 `catalog.json`、`manuscript`）。
-- 禁止以英文整段回覆（除非負責人明確要求某段保留原文）。
+- 回覆、文件、構想整理：**繁體中文**。  
+- 語音轉文字若英／簡／錯字：入檔時改寫正確繁中。  
+- 僅路徑／API／ID 可英文。  
 
 ---
 
@@ -28,9 +27,10 @@
 
 | 負責人說 | 你可以 |
 |----------|--------|
-| 一般想法 | 只改 MD；構想寫 `01-idea` |
-| **改程式** | 改 code，仍先不把未上線項寫進 checklist |
-| **發布** | push／部署；**上線成功後**才把對應項寫入 `03-checklist`，構想移 `02` |
+| 一般構想 | 只改 MD；寫入 `01-idea`（完整欄位） |
+| **查核／對照 checklist** | 讀 `03-checklist`＋線上／程式，回報缺漏；消失項標 `[!]` |
+| **改程式** | 改 code |
+| **發布** | push／部署；成功後把**新具備的功能**登記進 `03-checklist`；該則構想移 `02` |
 
 ---
 
@@ -38,39 +38,29 @@
 
 | 名稱 | 意思 |
 |------|------|
-| **Theme** | 產品主題文件 `00-theme.md` |
-| **文稿（manuscript）** | 同檔持續編修 → 輸出 A4（舊稱 SmartDoc） |
-| 知識書／SEED | 累積的知識單位（與內容指紋 `sd_…` 不同） |
-
-不要叫 approver；不要把文稿說成獨立子專案。
+| Theme | `00-theme.md` |
+| 文稿（manuscript） | 同檔編修 → A4（舊稱 SmartDoc） |
+| Lister／查核 | 依 checklist 自動對照現況、找缺功能 |
 
 ---
 
 ## 4. 目錄
 
-只維護 `web/catalog.json`；禁止恢復 `web/tools/*.md`。
+只維護 `web/catalog.json`。
 
 ---
 
 ## 5. 流轉
 
-`01-idea` →（分析／實作）→「發布」成功 → `03-checklist` → 結案 `02-idea-done`。
+```text
+構想 → 01-idea（清楚條列）
+  → 改程式／發布成功
+  → 登記功能到 03-checklist（供日後查核）
+  → 該則構想移到 02-idea-done（讓 01 保持精簡、省成本）
+```
 
 ---
 
 ## 6. 寫入 Idea 的品質（必守）
 
-每次負責人提出構想，寫入 [`docs/01-idea.md`](../docs/01-idea.md) 時**必須**用完整模板，至少包含：
-
-| 欄位 | 意思 |
-|------|------|
-| 為什麼（Why） | 問題與動機 |
-| 做什麼（What） | 使用者可感知的結果 |
-| 怎麼做（How） | 可執行的作法方向 |
-| 優點（Pros） | 做成的好處 |
-| 缺點／風險（Cons） | 代價與風險 |
-| 不做的替代方案 | 若不做的退路 |
-| 上線後 checklist 應出現 | 給 03 的驗收句 |
-| 待拍板 | 要負責人決定的事 |
-
-不可只寫一句口號；語音轉文字先改繁中再補齊上述欄位。
+每則 `01-idea` 至少含：Why／What／How／Pros／Cons／替代方案／完成後列入 checklist 的查核句／待拍板。

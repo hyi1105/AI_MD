@@ -8,12 +8,11 @@ alwaysApply: false
 
 | 檔案 | 用途 |
 |------|------|
-| `docs/00-theme.md` | 產品主題 |
-| `docs/01-idea.md` | 未上線構想 |
-| `docs/02-idea-done.md` | 构想归档 |
-| `docs/03-checklist.md` | 已上線驗收 |
-| `docs/manuscript.md` | 文稿（同檔→A4） |
-| `prompts/AGENT-MASTER.md` | AI 規則 |
+| `00-theme.md` | 產品主題 |
+| `01-idea.md` | 進行中構想 |
+| `02-idea-done.md` | 已結案（省查檔成本） |
+| `03-checklist.md` | 現有功能查核表 |
+| `manuscript.md` | 文稿規格 |
 
 checklist 禁止空想未上線項。  
 `01-idea` 每則必含 Why／What／How／Pros／Cons。

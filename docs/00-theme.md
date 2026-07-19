@@ -43,7 +43,7 @@
 ```text
 主題（Theme）
 ├── 工具：AI 查詢（catalog.json）— 發現／對照素材
-├── 工具：AI Doc（程式資料夾暫為 smartdoc-ai/）— AI 改檔 + 顯示 Diff
+├── 工具：AI Doc（程式資料夾 `aidoc/`）— AI 改檔 + 顯示 Diff
 └── （構想中）知識書架 — 關注、編排、分享 → 先寫 01-idea
 ```
 
@@ -93,6 +93,6 @@
 |------|------|
 | 主站 | `web/`；GitHub Pages |
 | 列表＋詳情 | **`web/catalog.json` only** |
-| AI Doc 程式 | `smartdoc-ai/` → 建置到 `web/aidoc/` |
+| AI Doc 程式 | `aidoc/` → 建置到 `web/aidoc/` |
 | 線上 | https://hyi1105.github.io/AI_MD/ · AI Doc：`/aidoc/` |
 | 授權 | MIT |

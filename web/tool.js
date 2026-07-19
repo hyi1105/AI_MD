@@ -4,9 +4,9 @@ const errorEl = document.getElementById("tool-error");
 
 function renderFallback(tool) {
   headerEl.innerHTML = `
-    <h2 class="tool-page-title">${tool.name}</h2>
-    <p class="tool-page-meta">${tool.category} · ${tool.pricing} · ★ ${tool.rating.toFixed(1)}</p>
-    <a href="${tool.url}" target="_blank" rel="noopener noreferrer" class="btn btn-primary">前往官網 →</a>
+    <h2 class="tool-page-title">${escapeHtml(tool.name)}</h2>
+    <p class="tool-page-meta">${escapeHtml(tool.category)} · ${escapeHtml(tool.pricing)} · ★ ${Number(tool.rating).toFixed(1)}</p>
+    <a href="${escapeAttr(tool.url)}" target="_blank" rel="noopener noreferrer" class="btn btn-primary">前往官網 →</a>
   `;
   contentEl.innerHTML = marked.parse(`
 ## 簡介
@@ -19,7 +19,7 @@ ${tool.bestFor}
 
 ## 標籤
 
-${tool.tags.join("、")}
+${(tool.tags || []).join("、")}
   `);
 }
 
@@ -37,13 +37,13 @@ async function loadTool() {
   document.title = `${tool.name} — AI 工具搜尋`;
 
   try {
-    const res = await fetch(`tools/${id}.md`);
+    const res = await fetch(`tools/${encodeURIComponent(id)}.md`);
     if (!res.ok) throw new Error("no md");
     const md = await res.text();
     headerEl.innerHTML = `
-      <h2 class="tool-page-title">${tool.name}</h2>
-      <p class="tool-page-meta">${tool.category} · ${tool.pricing} · ★ ${tool.rating.toFixed(1)}</p>
-      <a href="${tool.url}" target="_blank" rel="noopener noreferrer" class="btn btn-primary">前往官網 →</a>
+      <h2 class="tool-page-title">${escapeHtml(tool.name)}</h2>
+      <p class="tool-page-meta">${escapeHtml(tool.category)} · ${escapeHtml(tool.pricing)} · ★ ${Number(tool.rating).toFixed(1)}</p>
+      <a href="${escapeAttr(tool.url)}" target="_blank" rel="noopener noreferrer" class="btn btn-primary">前往官網 →</a>
     `;
     contentEl.innerHTML = marked.parse(md);
   } catch {

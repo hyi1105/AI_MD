@@ -61,6 +61,21 @@ function normalize(text) {
   return String(text).toLowerCase().trim();
 }
 
+/** Escape text for safe insertion into HTML. */
+function escapeHtml(value) {
+  return String(value ?? "")
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#39;");
+}
+
+/** Escape for use inside double-quoted HTML attributes. */
+function escapeAttr(value) {
+  return escapeHtml(value);
+}
+
 function toolMatchesTerm(tool, term) {
   if (!term) return false;
   const q = normalize(term);

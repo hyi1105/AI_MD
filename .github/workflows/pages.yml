@@ -27,11 +27,11 @@ jobs:
         with:
           node-version: '22'
           cache: npm
-          cache-dependency-path: smartdoc-ai/package-lock.json
+          cache-dependency-path: aidoc/package-lock.json
 
       - name: Build AI Doc into web/aidoc
         run: |
-          cd smartdoc-ai
+          cd aidoc
           npm ci
           npm run build
 

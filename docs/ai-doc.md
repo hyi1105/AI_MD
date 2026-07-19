@@ -53,6 +53,6 @@ AI 查詢（找素材）→ AI Doc（AI 改檔並顯示修改處）→ 累積成
 | Accept／Reject 回寫 | ✅ |
 | 多模式預覽 | ✅ |
 | 真 LLM | ⏳ 構想中 |
-| 路徑／資料夾舊名 | 程式資料夾可暫為 `smartdoc-ai/`；站上入口改為 `/aidoc/` |
+| 路徑／資料夾 | 程式在 `aidoc/`；站上入口 `/aidoc/` |
 
 驗收以 [`03-checklist.md`](./03-checklist.md) 為準。

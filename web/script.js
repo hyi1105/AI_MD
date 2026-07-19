@@ -9,6 +9,7 @@ const resultsCount = document.getElementById("results-count");
 const emptyState = document.getElementById("empty-state");
 const sortSelect = document.getElementById("sort-select");
 const quickTagsEl = document.getElementById("quick-tags");
+const categoryFiltersEl = document.getElementById("category-filters");
 const watchlistInput = document.getElementById("watchlist-input");
 const watchlistAddBtn = document.getElementById("watchlist-add-btn");
 const watchlistChipsEl = document.getElementById("watchlist-chips");
@@ -22,6 +23,7 @@ let watchlistKeywords = getWatchlist();
 let displayLimit = PAGE_SIZE;
 let suggestionActiveIndex = -1;
 let quickTags = [];
+let activeCategory = "";
 let scrollObserver = null;
 
 let SEARCH_TERMS = [];
@@ -96,6 +98,10 @@ function searchTools(query, sortBy, watchlistOnly) {
     watchMatch: toolMatchesWatchlist(tool, keywords),
   }));
 
+  if (activeCategory) {
+    results = results.filter((r) => r.tool.category === activeCategory);
+  }
+
   if (watchlistOnly && keywords.length) {
     results = results.filter((r) => r.watchMatch);
   }
@@ -137,14 +143,13 @@ function getSuggestions(query) {
 
 function highlightTerm(text, query) {
   const q = query.trim();
-  if (!q) return text;
+  if (!q) return escapeHtml(text);
   const idx = normalize(text).indexOf(normalize(q));
-  if (idx === -1) return text;
-  return (
-    text.slice(0, idx) +
-    `<mark>${text.slice(idx, idx + q.length)}</mark>` +
-    text.slice(idx + q.length)
-  );
+  if (idx === -1) return escapeHtml(text);
+  const before = text.slice(0, idx);
+  const match = text.slice(idx, idx + q.length);
+  const after = text.slice(idx + q.length);
+  return `${escapeHtml(before)}<mark>${escapeHtml(match)}</mark>${escapeHtml(after)}`;
 }
 
 function renderSuggestions(query) {
@@ -160,7 +165,7 @@ function renderSuggestions(query) {
   searchSuggestionsEl.innerHTML = suggestions
     .map(
       (term, i) =>
-        `<li><button type="button" class="search-suggestion-item" data-term="${term}" data-index="${i}">${highlightTerm(term, query)}</button></li>`
+        `<li><button type="button" class="search-suggestion-item" data-term="${escapeAttr(term)}" data-index="${i}">${highlightTerm(term, query)}</button></li>`
     )
     .join("");
   searchSuggestionsEl.hidden = false;
@@ -193,25 +198,25 @@ function renderFeaturedCard(tool) {
   const ev = TOP_TIER_EVALUATIONS[tool.id];
   if (!ev) return "";
 
-  const pros = ev.pros.map((p) => `<li>${p}</li>`).join("");
-  const cons = ev.cons.map((c) => `<li>${c}</li>`).join("");
+  const pros = ev.pros.map((p) => `<li>${escapeHtml(p)}</li>`).join("");
+  const cons = ev.cons.map((c) => `<li>${escapeHtml(c)}</li>`).join("");
 
   return `
     <article class="featured-card">
       <div class="featured-card-header">
-        <span class="featured-name">${tool.name}</span>
+        <span class="featured-name">${escapeHtml(tool.name)}</span>
         <span class="tool-rating">${renderStars(tool.rating)}</span>
       </div>
-      <p class="featured-source"><strong>官網重點：</strong>${ev.sourceSummary}</p>
-      <p class="tool-desc">${tool.description}</p>
+      <p class="featured-source"><strong>官網重點：</strong>${escapeHtml(ev.sourceSummary)}</p>
+      <p class="tool-desc">${escapeHtml(tool.description)}</p>
       <p><strong>優點</strong></p>
       <ul class="featured-eval-list">${pros}</ul>
       <p><strong>限制</strong></p>
       <ul class="featured-eval-list">${cons}</ul>
-      <p class="featured-verdict">評估：${ev.verdict}</p>
+      <p class="featured-verdict">評估：${escapeHtml(ev.verdict)}</p>
       <div class="tool-actions">
-        <a href="tool.html?id=${tool.id}" class="btn btn-secondary">查看詳情</a>
-        <a href="${tool.url}" target="_blank" rel="noopener noreferrer" class="btn btn-primary">前往官網</a>
+        <a href="tool.html?id=${encodeURIComponent(tool.id)}" class="btn btn-secondary">查看詳情</a>
+        <a href="${escapeAttr(tool.url)}" target="_blank" rel="noopener noreferrer" class="btn btn-primary">前往官網</a>
       </div>
     </article>
   `;
@@ -226,7 +231,7 @@ function renderCard({ tool, matchedTags, watchMatch }) {
   const tagsHtml = tool.tags
     .map((tag) => {
       const cls = matchedTags.has(tag) ? "tool-tag highlight" : "tool-tag";
-      return `<span class="${cls}">${tag}</span>`;
+      return `<span class="${cls}">${escapeHtml(tag)}</span>`;
     })
     .join("");
 
@@ -235,19 +240,19 @@ function renderCard({ tool, matchedTags, watchMatch }) {
   return `
     <article class="tool-card${watchClass}">
       <div class="tool-card-header">
-        <span class="tool-name">${tool.name}</span>
+        <span class="tool-name">${escapeHtml(tool.name)}</span>
         <span class="tool-rating">${renderStars(tool.rating)}</span>
       </div>
-      <span class="tool-category">${tool.category}</span>
-      <p class="tool-desc">${tool.description}</p>
+      <span class="tool-category">${escapeHtml(tool.category)}</span>
+      <p class="tool-desc">${escapeHtml(tool.description)}</p>
       <div class="tool-tags">${tagsHtml}</div>
-      <p class="tool-best-for">最適合：${tool.bestFor}</p>
+      <p class="tool-best-for">最適合：${escapeHtml(tool.bestFor)}</p>
       <div class="tool-footer">
-        <span class="tool-pricing">${tool.pricing}</span>
+        <span class="tool-pricing">${escapeHtml(tool.pricing)}</span>
       </div>
       <div class="tool-actions">
-        <a href="tool.html?id=${tool.id}" class="btn btn-secondary">查看詳情</a>
-        <a href="${tool.url}" target="_blank" rel="noopener noreferrer" class="btn btn-primary">前往官網</a>
+        <a href="tool.html?id=${encodeURIComponent(tool.id)}" class="btn btn-secondary">查看詳情</a>
+        <a href="${escapeAttr(tool.url)}" target="_blank" rel="noopener noreferrer" class="btn btn-primary">前往官網</a>
       </div>
     </article>
   `;
@@ -258,8 +263,8 @@ function renderWatchlistChips() {
     .map(
       (kw) =>
         `<span class="watchlist-chip">
-          <button type="button" class="watchlist-chip-label" data-kw="${kw}">${kw}</button>
-          <button type="button" class="watchlist-remove" data-kw="${kw}" aria-label="移除 ${kw}">✕</button>
+          <button type="button" class="watchlist-chip-label" data-kw="${escapeAttr(kw)}">${escapeHtml(kw)}</button>
+          <button type="button" class="watchlist-remove" data-kw="${escapeAttr(kw)}" aria-label="移除 ${escapeAttr(kw)}">✕</button>
         </span>`
     )
     .join("");
@@ -320,7 +325,7 @@ function render(query, { preserveScroll = false } = {}) {
   const watchlistOnly = watchlistOnlyEl.checked;
   const results = searchTools(query, sortBy, watchlistOnly);
   const trimmed = query.trim();
-  const showFeatured = !trimmed && !watchlistOnly;
+  const showFeatured = !trimmed && !watchlistOnly && !activeCategory;
 
   featuredSection.hidden = !showFeatured;
   if (showFeatured) renderFeatured();
@@ -331,6 +336,7 @@ function render(query, { preserveScroll = false } = {}) {
   const count = results.length;
   const shown = visible.length;
   const hasMore = count > displayLimit;
+  const categoryHint = activeCategory ? ` · ${escapeHtml(activeCategory)}` : "";
 
   scrollStatus.hidden = !hasMore;
   scrollStatus.textContent = hasMore
@@ -339,13 +345,13 @@ function render(query, { preserveScroll = false } = {}) {
   scrollSentinel.hidden = !hasMore;
 
   if (watchlistOnly && watchlistKeywords.length) {
-    resultsCount.innerHTML = `追蹤 <strong>${watchlistKeywords.join("、")}</strong>：顯示 <strong>${shown}</strong> / ${count} 個工具`;
+    resultsCount.innerHTML = `追蹤 <strong>${escapeHtml(watchlistKeywords.join("、"))}</strong>：顯示 <strong>${shown}</strong> / ${count} 個工具${categoryHint}`;
   } else if (trimmed) {
-    resultsCount.innerHTML = `找到 <strong>${count}</strong> 個與「${trimmed}」相關的工具（已顯示 ${shown}）`;
+    resultsCount.innerHTML = `找到 <strong>${count}</strong> 個與「${escapeHtml(trimmed)}」相關的工具（已顯示 ${shown}）${categoryHint}`;
   } else if (shown >= count) {
-    resultsCount.innerHTML = `顯示全部 <strong>${count}</strong> 個 AI 工具`;
+    resultsCount.innerHTML = `顯示全部 <strong>${count}</strong> 個 AI 工具${categoryHint}`;
   } else {
-    resultsCount.innerHTML = `顯示 <strong>${shown}</strong> / ${count} 個 AI 工具 · 向下捲動載入更多`;
+    resultsCount.innerHTML = `顯示 <strong>${shown}</strong> / ${count} 個 AI 工具${categoryHint} · 向下捲動載入更多`;
   }
 
   emptyState.hidden = count > 0;
@@ -371,6 +377,27 @@ function initQuickTags() {
     });
     quickTagsEl.appendChild(btn);
   }
+}
+
+function getCategories() {
+  const set = new Set();
+  for (const tool of AI_TOOLS) {
+    if (tool.category) set.add(tool.category);
+  }
+  return [...set].sort((a, b) => a.localeCompare(b, "zh-TW"));
+}
+
+function initCategoryFilters() {
+  if (!categoryFiltersEl) return;
+  const categories = getCategories();
+  const buttonsHtml = [
+    `<button type="button" class="category-btn${!activeCategory ? " active" : ""}" data-category="">全部</button>`,
+    ...categories.map(
+      (cat) =>
+        `<button type="button" class="category-btn${activeCategory === cat ? " active" : ""}" data-category="${escapeAttr(cat)}">${escapeHtml(cat)}</button>`
+    ),
+  ].join("");
+  categoryFiltersEl.innerHTML = `<span class="quick-label">分類：</span>${buttonsHtml}`;
 }
 
 function persistWatchlistInput() {
@@ -484,10 +511,22 @@ clearBtn.addEventListener("click", () => {
 
 sortSelect.addEventListener("change", () => render(searchInput.value));
 
+categoryFiltersEl?.addEventListener("click", (e) => {
+  const btn = e.target.closest("[data-category]");
+  if (!btn || !categoryFiltersEl.contains(btn)) return;
+  activeCategory = btn.dataset.category || "";
+  categoryFiltersEl.querySelectorAll(".category-btn").forEach((el) => {
+    el.classList.toggle("active", (el.dataset.category || "") === activeCategory);
+  });
+  displayLimit = PAGE_SIZE;
+  render(searchInput.value);
+});
+
 function initApp() {
   buildQuickTags();
   buildSearchTerms();
   initQuickTags();
+  initCategoryFilters();
   renderFeatured();
   renderWatchlistChips();
   render("");

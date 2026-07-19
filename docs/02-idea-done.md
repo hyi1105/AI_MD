@@ -7,10 +7,40 @@
 
 ---
 
+## 2026-07-19 — 發布：open ideas（XSS／分類／匯出文案／aidoc 改名）
+
+- 結果：done  
+- 摘要：目錄卡片 XSS 跳脫；分類按鈕篩選；AI Doc 匯出改為 Markdown 文案；AI／P2P 標示範；程式資料夾 `smartdoc-ai` → `aidoc`；CI／文件已對齊。  
+
+## 2026-07-19 — 分類按鈕篩選
+
+- 結果：done  
+- 摘要：首頁可按 category 一鍵篩選列表。  
+
+## 2026-07-19 — 目錄卡片 XSS 防護
+
+- 結果：done  
+- 摘要：`web/script.js`／`tool.js` 渲染前 `escapeHtml`／`escapeAttr`。  
+
+## 2026-07-19 — 匯出文案與能力一致
+
+- 結果：done  
+- 摘要：按鈕／toast／Paywall 改為 Markdown；副檔名 `.md`。  
+
+## 2026-07-19 — 程式資料夾改名 smartdoc-ai → aidoc
+
+- 結果：done  
+- 摘要：`aidoc/`＋Pages workflow cache path；repo 主路徑不再用 smartdoc-ai。  
+
+## 2026-07-19 — AI／P2P 示範標示（誠實 UI）
+
+- 結果：done（替代「真 LLM／真 P2P」拍板前）  
+- 摘要：AI 標「示範引擎」；P2P 標「示範」。  
+
 ## 2026-07-19 — 發布：SmartDoc → AI Doc
 
 - 結果：done  
-- 摘要：品牌／導覽／`/aidoc/`／Diff「AI 修改處」已上線；規格 `docs/ai-doc.md`；Pages 部署成功。程式資料夾暫名 `smartdoc-ai/` 仍留在 01。  
+- 摘要：品牌／導覽／`/aidoc/`／Diff「AI 修改處」已上線；規格 `docs/ai-doc.md`；Pages 部署成功。  
 
 ## 2026-07-19 — 第二次發布（theme／文稿／查核定位上線）
 

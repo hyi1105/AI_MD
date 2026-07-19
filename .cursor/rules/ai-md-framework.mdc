@@ -9,10 +9,10 @@ alwaysApply: false
 | 檔案 | 用途 |
 |------|------|
 | `00-theme.md` | 產品主題 |
-| `01-idea.md` | 進行中構想 |
-| `02-idea-done.md` | 已結案（省查檔成本） |
+| `idea.md` | 進行中構想（對話整理後） |
+| `idea.history.md` | 已結案（省查檔成本） |
 | `03-checklist.md` | 現有功能查核表 |
 | `ai-doc.md` | AI Doc 規格（AI 改檔＋顯示 Diff） |
 
 checklist 禁止空想未上線項。  
-`01-idea` 每則必含 Why／What／How／Pros／Cons。
+`idea.md` 每則必含 Why／What／How／Pros／Cons。

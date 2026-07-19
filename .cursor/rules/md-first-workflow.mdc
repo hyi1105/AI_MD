@@ -8,8 +8,8 @@ alwaysApply: true
 見 `prompts/AGENT-MASTER.md`。
 
 1. 一律繁體中文。  
-2. 構想 → `01-idea.md`（完整 Why／What／How／Pros／Cons）。  
-3. 結案構想 → `02-idea-done.md`（與 01 分開省成本）。  
-4. 新功能發布後登記 → `03-checklist.md`（現有功能查核）。  
+2. 你分享想法 → AI 整理 → `docs/idea.md`（完整 Why／What／How／Pros／Cons）。  
+3. 結案構想 → `docs/idea.history.md`（與 idea 分開省成本）。  
+4. 新功能發布後登記 → `docs/03-checklist.md`（現有功能查核）。  
 5. 「查核 checklist」→ 對照線上／程式找缺漏。  
 6. 「改程式」才改 code；「發布」才 push。  

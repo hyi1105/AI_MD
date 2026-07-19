@@ -3,7 +3,7 @@
 > **這是「現在產品有哪些功能」的查核清單，不是許願池。**  
 > 用途：改版後對照線上／程式，讓 AI（Lister）發現「以前有的功能不見了」。  
 > 例：曾經有「建立圖樣」，改版後找不到 → 查核時應被標成缺漏。  
-> 構想細節在 [`01-idea.md`](./01-idea.md)；舊構想在 [`02-idea-done.md`](./02-idea-done.md)（分開是為了少載入、省成本）。  
+> 構想細節在 [`idea.md`](./idea.md)；舊構想在 [`idea.history.md`](./idea.history.md)（分開是為了少載入、省成本）。  
 > 線上：https://hyi1105.github.io/AI_MD/  
 > 更新：2026-07-19
 
@@ -13,7 +13,7 @@
 
 1. 讀本檔每一條  
 2. 對照線上或本機實際行為／相關程式  
-3. 回報：仍在／半真／**消失**；消失的標 `[!]` 並建議是否開回 `01-idea` 修復  
+3. 回報：仍在／半真／**消失**；消失的標 `[!]` 並建議是否開回 `idea.md` 修復  
 4. **不要**把從未上線過的空想功能加進本檔  
 
 ---
@@ -62,9 +62,10 @@
 
 ## 4. 文件協作（已定案能力）
 
-- [x] 規格在 `docs/`：`00-theme`／`01-idea`／`02-idea-done`／`03-checklist`／`ai-doc`  
+- [x] 規格在 `docs/`：`00-theme`／`idea`／`idea.history`／`03-checklist`／`ai-doc`  
+- [x] 合作方式：想法→AI 整理→`idea.md`；發布後登記 checklist；結案→`idea.history`  
 - [x] checklist＝**現有功能查核表**（改版後可對照找缺漏）  
-- [x] 01＝進行中構想；02＝已結案（拆開省查檔成本）  
+- [x] `idea`＝進行中構想；`idea.history`＝已結案（拆開省查檔成本）  
 - [x] Idea 條目含 Why／What／How／Pros／Cons  
 - [x] 一律繁體中文（含語音轉文字整理）  
 - [x] 預設只改 MD；「改程式」「發布」才動 code／上線  
@@ -73,6 +74,7 @@
 - [x] 2026-07-19 theme／文稿／查核定位已發布至 Pages  
 - [x] 2026-07-19 **AI Doc** 已發布（`/aidoc/`；SmartDoc 品牌已替換）  
 - [x] 2026-07-19 open ideas 已發布（XSS／分類／Markdown 匯出／`aidoc` 改名）  
+- [x] 2026-07-19 檔名定案：`idea.md`／`idea.history.md`（取代 01／02）  
 
 ---
 

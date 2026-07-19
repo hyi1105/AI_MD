@@ -6,11 +6,11 @@
 | 文件 | 用途 |
 |------|------|
 | 本檔 `00-theme.md` | 產品主題是什麼 |
-| [`01-idea.md`](./01-idea.md) | **進行中／未結案**的構想（寫清楚 Why／What／How／優缺點） |
-| [`02-idea-done.md`](./02-idea-done.md) | **已結案**構想归档（與 01 分開，查資料時少載入、省成本） |
+| [`idea.md`](./idea.md) | **進行中**構想：你分享想法 → AI 整理 → 寫入此檔 |
+| [`idea.history.md`](./idea.history.md) | **已結案**構想归档（與 idea 分開，少載入、省成本） |
 | [`03-checklist.md`](./03-checklist.md) | **現有功能查核表**：改版時對照線上／程式，發現「少了什麼功能」 |
 | [`ai-doc.md`](./ai-doc.md) | **AI Doc**：像 Cursor 一樣用 AI 改檔，並顯示修改處 |
-| [`../prompts/AGENT-MASTER.md`](../prompts/AGENT-MASTER.md) | AI 執行前規則 |
+| [`../prompts/AGENT-MASTER.md`](../prompts/AGENT-MASTER.md) | **合作方式＋AI 規則**（先讀這份） |
 | [`../README.md`](../README.md) | 對外入口 |
 
 ---
@@ -23,7 +23,7 @@
 | **知識書（SEED）** | 一個人／產品／KOL 長期累積的專業知識單位 |
 | **讀者／關注者** | 長期追蹤某本知識書 |
 | **編排者** | 在授權下整理、策展他人知識書 |
-| **商業行為** | 訂閱、解鎖、分成、授權等（構想寫 01；做成後列入 checklist 查核） |
+| **商業行為** | 訂閱、解鎖、分成、授權等（構想寫 idea；做成後列入 checklist 查核） |
 
 > 知識書（SEED）≠ AI Doc 裡的內容指紋 `sd_…`。
 
@@ -44,7 +44,7 @@
 主題（Theme）
 ├── 工具：AI 查詢（catalog.json）— 發現／對照素材
 ├── 工具：AI Doc（程式資料夾 `aidoc/`）— AI 改檔 + 顯示 Diff
-└── （構想中）知識書架 — 關注、編排、分享 → 先寫 01-idea
+└── （構想中）知識書架 — 關注、編排、分享 → 先寫 idea.md
 ```
 
 | 工具 | 說明 |
@@ -58,16 +58,16 @@
 
 | 檔案 | 像什麼 | 用途 |
 |------|--------|------|
-| `01-idea` | 待辦構想匣 | 你說的新想法；寫清楚 Why／What／How／Pros／Cons |
-| `02-idea-done` | 舊構想倉庫 | 已做完或已取消的 idea；**與 01 拆開是為了查檔時少讀資料、省成本** |
+| `idea.md` | 待辦構想匣 | 你分享想法；AI 整理對話後寫入（Why／What／How／Pros／Cons） |
+| `idea.history.md` | 舊構想倉庫 | 已做完或已取消；**與 idea 拆開＝少讀資料、省成本** |
 | `03-checklist` | **功能查核表** | 記錄「產品現在應該具備哪些功能」；改版後 AI 對照線上／程式，發現缺漏 |
 
 ```text
-新構想  →  01-idea.md（寫清楚）
+你分享想法  →  AI 整理  →  idea.md
 實作並發布成功後
        →  把該能力登記進 03-checklist.md（供日後查核）
 構想結案
-       →  該則從 01 移到 02-idea-done.md（01 保持精簡）
+       →  該則從 idea.md 移到 idea.history.md
 ```
 
 **Checklist 查核（Lister）**：負責人說「查核／對照 checklist」時，AI 應讀 `03-checklist` 與現況（頁面／程式），回報哪幾項消失或變半真。

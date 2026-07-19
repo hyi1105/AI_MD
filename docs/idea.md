@@ -1,9 +1,10 @@
-# 01 — Idea（進行中的構想）
+# Idea（進行中的構想）
 
-> 用途：記錄**尚未結案**的構想；每則寫清楚 Why／What／How／Pros／Cons。  
-> 與 [`02-idea-done.md`](./02-idea-done.md) 分開：查構想時先讀本檔即可，**少載入舊資料、省成本**。  
+> 用途：你分享想法 → AI 整理對話 → **寫入本檔**。  
+> 與 [`idea.history.md`](./idea.history.md) 分開：查構想時先讀本檔即可，**少載入舊資料、省成本**。  
 > [`03-checklist.md`](./03-checklist.md) 是「現有功能查核表」，不是構想匣。  
-> 做成並發布後：把該能力**登記進 checklist**；本則構想再移到 02。  
+> 做成並發布後：把該能力**登記進 checklist**；本則構想再移到 `idea.history`。  
+> 合作規則總表：[`../prompts/AGENT-MASTER.md`](../prompts/AGENT-MASTER.md)  
 > 更新：2026-07-19
 
 ### 寫入規則（給 AI）
@@ -27,7 +28,7 @@
 - 優點（Pros）：做成後的好處
 - 缺點／風險（Cons）：成本、複雜度、安全、維護、對現有功能影響
 - 不做的替代方案：若不做，有沒有較小做法？
-- 完成後列入 checklist：查核句（給 03 用，描述「產品應具備的功能」）
+- 完成後列入 checklist：查核句（給 checklist 用，描述「產品應具備的功能」）
 - 待拍板：需要負責人決定的問題（無則寫「無」）
 ```
 
@@ -157,10 +158,11 @@
 
 ---
 
-## 較早對話摘要（已結案方向，細節見 02）
+## 較早對話摘要（已結案方向，細節見 idea.history）
 
 | 日期 | 說了什麼 | 去向 |
 |------|----------|------|
-| 2026-07-19 | 實作 open ideas 並發布 | checklist／02 |
-| 2026-07-19 | 發布文件架構 | checklist／02 |
+| 2026-07-19 | 合作方式：對話→idea→checklist；done→idea.history | AGENT-MASTER／history |
+| 2026-07-19 | 實作 open ideas 並發布 | checklist／history |
+| 2026-07-19 | 發布文件架構 | checklist／history |
 | 2026-07-18 | 300 工具、體驗、文稿掛站 | 已上線 → checklist |

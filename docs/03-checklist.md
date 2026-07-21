@@ -5,7 +5,7 @@
 > 例：曾經有「建立圖樣」，改版後找不到 → 查核時應被標成缺漏。  
 > 構想細節在 [`idea.md`](./idea.md)；舊構想在 [`idea.history.md`](./idea.history.md)（分開是為了少載入、省成本）。  
 > 線上：https://hyi1105.github.io/AI_MD/  
-> 更新：2026-07-19
+> 更新：2026-07-21
 
 圖例：`[x]` 現況具備 · `[~]` 有入口但是示範／半真 · `[!]` 查核發現缺漏／回歸（應有卻沒有）
 
@@ -20,14 +20,16 @@
 
 ## 1. 入口與品牌
 
-- [x] 首頁品牌與「知識書／長期關注」說明  
-- [x] 頂部可切換「AI 查詢」與「AI Doc」  
-- [x] 首頁說明提到 AI Doc（AI 改檔並顯示修改處）  
+- [x] 首頁顯示品牌 **SEED** 與 **Hello World** 問候  
+- [x] 首頁可進入 AI 查詢（`query.html`）與 AI Doc  
+- [x] 首頁說明提到長期關注／知識書  
+- [x] AI 查詢頁頂部可切換「AI 查詢」與「AI Doc」  
 
 ---
 
 ## 2. AI 查詢
 
+入口：https://hyi1105.github.io/AI_MD/query.html  
 資料：`web/catalog.json` only。
 
 - [x] 關鍵字搜尋；無結果有提示  

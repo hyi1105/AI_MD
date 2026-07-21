@@ -4,9 +4,15 @@
 > 這裡放已完成或已取消的構想；進行中的只留在 [`idea.md`](./idea.md)。  
 > 「現在有沒有這個功能」以 [`03-checklist.md`](./03-checklist.md) 查核為準，不是看本檔。  
 > 舊檔名：`02-idea-done.md`。  
-> 更新：2026-07-19
+> 更新：2026-07-21
 
 ---
+
+## 2026-07-21 — Hello World 首頁
+
+- 結果：done（已發布）  
+- 來源：對話（「幫我做一個 Hello World 的首頁」→「發佈並提供連結」）  
+- 摘要：首頁改為 SEED + Hello World 落地頁；AI 查詢移至 `query.html`；線上 https://hyi1105.github.io/AI_MD/  
 
 ## 2026-07-19 — 合作方式定案：對話整理→idea；發布後→checklist；結案→idea.history
 

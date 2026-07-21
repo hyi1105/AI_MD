@@ -3,125 +3,28 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SEED — 累積你的知識書</title>
-  <script>
-    (function () {
-      try {
-        var theme = localStorage.getItem("ai_md_theme");
-        if (theme === "dark" || (!theme && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
-          document.documentElement.setAttribute("data-theme", "dark");
-        }
-      } catch (_) {}
-    })();
-  </script>
+  <title>SEED — Hello World</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="hello.css">
 </head>
-<body>
-  <nav class="system-nav" aria-label="採集工具">
-    <div class="system-nav-inner">
-      <a href="index.html" class="system-brand">SEED</a>
-      <span class="system-nav-label">採集工具</span>
-      <div class="system-chips" role="list">
-        <a href="index.html" class="system-chip is-active" role="listitem" aria-current="page">AI 查詢</a>
-        <a href="aidoc/" class="system-chip" role="listitem">AI Doc</a>
-      </div>
+<body class="hello-page">
+  <div class="hello-atmosphere" aria-hidden="true">
+    <div class="hello-orb hello-orb--a"></div>
+    <div class="hello-orb hello-orb--b"></div>
+    <div class="hello-grain"></div>
+  </div>
+
+  <main class="hello-hero">
+    <p class="hello-brand">SEED</p>
+    <h1 class="hello-title">Hello World</h1>
+    <p class="hello-lead">長期關注產品或 KOL 知識，把專業累積成一本可分享的知識書。</p>
+    <div class="hello-actions">
+      <a class="hello-btn hello-btn--primary" href="query.html">進入 AI 查詢</a>
+      <a class="hello-btn hello-btn--ghost" href="aidoc/">打開 AI Doc</a>
     </div>
-  </nav>
-
-  <header class="header">
-    <div class="header-inner">
-      <div class="logo">
-        <span class="logo-icon">✦</span>
-        <div>
-          <h1>SEED</h1>
-          <p class="tagline">長期關注產品或 KOL 知識 · 把專業累積成一本 SEED</p>
-        </div>
-      </div>
-      <button type="button" id="theme-toggle" class="theme-toggle" aria-label="切換背景" title="切換背景">🌙</button>
-    </div>
-  </header>
-
-  <main class="main">
-    <section class="seed-manifesto" aria-label="SEED 平台說明">
-      <p>
-        <strong>SEED</strong> 是可累積、可分享的知識書。下面的工具只是<strong>採集與輸出</strong>：
-        用 AI 查詢蒐集素材，用 AI Doc 像 Cursor 一樣改檔並顯示修改處；之後其他人可以關注、編排與分享。
-      </p>
-    </section>
-
-    <section class="search-section">
-      <div class="search-box">
-        <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <circle cx="11" cy="11" r="8"/>
-          <path d="m21 21-4.35-4.35"/>
-        </svg>
-        <input
-          type="search"
-          id="search-input"
-          placeholder="例如：寫程式、繪圖、翻譯、影片、配音..."
-          autocomplete="off"
-          autofocus
-        >
-        <button type="button" id="clear-btn" class="clear-btn" aria-label="清除搜尋" hidden>✕</button>
-        <ul id="search-suggestions" class="search-suggestions" role="listbox" hidden></ul>
-      </div>
-
-      <div class="quick-tags" id="quick-tags">
-        <span class="quick-label">熱門搜尋：</span>
-      </div>
-      <div class="category-filters" id="category-filters" aria-label="分類篩選">
-        <span class="quick-label">分類：</span>
-      </div>
-    </section>
-
-    <section class="watchlist-section">
-      <div class="watchlist-header">
-        <h2 class="section-title">我的追蹤</h2>
-        <label class="watchlist-filter">
-          <input type="checkbox" id="watchlist-only">
-          只顯示追蹤
-        </label>
-      </div>
-      <div class="watchlist-add">
-        <input type="text" id="watchlist-input" placeholder="新增追蹤關鍵字，例如：攝影、繪圖" maxlength="30">
-        <button type="button" id="watchlist-add-btn" class="btn btn-secondary">新增</button>
-      </div>
-      <div id="watchlist-chips" class="watchlist-chips"></div>
-    </section>
-
-    <section id="featured-section" class="featured-section">
-      <h2 class="section-title">全球三大 AI 工具 · 評估</h2>
-      <p class="featured-note">依各官網公開重點整理，並附上團隊使用評估（非即時爬蟲）。</p>
-      <div id="featured-grid" class="featured-grid"></div>
-    </section>
-
-    <section class="results-section">
-      <div class="results-header">
-        <p id="results-count" class="results-count">載入工具目錄中…</p>
-        <select id="sort-select" class="sort-select" aria-label="排序方式">
-          <option value="relevance">依相關度</option>
-          <option value="rating">依評分</option>
-          <option value="name">依名稱</option>
-        </select>
-      </div>
-
-      <div id="results-grid" class="results-grid"></div>
-      <p id="scroll-status" class="scroll-status" hidden>載入更多工具…</p>
-      <div id="scroll-sentinel" class="scroll-sentinel" aria-hidden="true"></div>
-      <div id="empty-state" class="empty-state" hidden>
-        <span class="empty-icon">🔍</span>
-        <h2>找不到符合的工具</h2>
-        <p>試試其他關鍵字，例如「繪圖」、「寫作」、「程式」</p>
-      </div>
-    </section>
   </main>
-
-  <footer class="footer">
-    <p>資料僅供參考 · 點擊工具卡片可前往官方網站</p>
-  </footer>
-
-  <script src="data.js"></script>
-  <script src="shared.js"></script>
-  <script src="script.js"></script>
 </body>
 </html>

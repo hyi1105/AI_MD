@@ -5,7 +5,7 @@
 > [`03-checklist.md`](./03-checklist.md) 是「現有功能查核表」，不是構想匣。  
 > 做成並發布後：把該能力**登記進 checklist**；本則構想再移到 `idea.history`。  
 > 合作規則總表：[`../prompts/AGENT-MASTER.md`](../prompts/AGENT-MASTER.md)  
-> 更新：2026-07-19
+> 更新：2026-07-23
 
 ### 寫入規則（給 AI）
 
@@ -37,6 +37,20 @@
 ## （進行中僅保留未結案產品構想）
 
 ## 未上線構想（展開）
+
+### MD-DAM／城市知識書
+
+#### MD-DAM：用 Markdown 整理一座城市的細節並寫導覽介紹
+- 狀態：waiting-owner  
+- 來源：對話／語音轉文字（原文：*Let me build an MD-DAM to organize all the details of this city and make an introduction.*）  
+- 為什麼（Why）：城市相關素材若散落對話／檔案，難以長期關注與對外介紹；需要一套以 Markdown 為核心的數位資產管理（DAM），把「這座城」的細節收成可維護的知識書，並產出介紹／導覽入口  
+- 做什麼（What）：建立 **MD-DAM** 結構（資料夾＋索引），收納該城市的地點、人物、事件、素材與註記；並產出一份對外可讀的**城市介紹**（首頁／導覽 MD）  
+- 怎麼做（How）：先定一座城與資料分類（待拍板）；以 Markdown／媒體資產目錄組織（可掛在知識書／SEED 路徑）；介紹文可用 AI Doc 編修；站上入口與「知識書架」銜接（待設計）。本則僅入構想，**未下令改程式前不动 code**  
+- 優點（Pros）：對齊主題「長期關注 × 知識書」；MD 可攜、可版本控管；介紹與細節分離，方便持續更新  
+- 缺點／風險（Cons）：「這座城」未指明則無法開工；分類一多易膨脹；媒體檔與 Pages 託管上限；與現有 AI 查詢／AI Doc 邊界要劃清  
+- 不做的替代方案：先只寫單頁城市介紹 MD，不做完整 DAM 目錄  
+- 完成後列入 checklist：能開啟該城市 MD-DAM 目錄／索引，並看到一份城市介紹頁  
+- 待拍板：哪一座城市？MD-DAM 要做成站上新工具，還是先只做 repo 內資料夾＋介紹頁？素材從哪來（你提供／公開資料／之後再補）？  
 
 ### 主題／知識書
 
@@ -162,6 +176,7 @@
 
 | 日期 | 說了什麼 | 去向 |
 |------|----------|------|
+| 2026-07-23 | 建 MD-DAM 整理城市細節並做介紹 | idea（待拍板） |
 | 2026-07-19 | 合作方式：對話→idea→checklist；done→idea.history | AGENT-MASTER／history |
 | 2026-07-19 | 實作 open ideas 並發布 | checklist／history |
 | 2026-07-19 | 發布文件架構 | checklist／history |

@@ -5,7 +5,7 @@
 > 例：曾經有「建立圖樣」，改版後找不到 → 查核時應被標成缺漏。  
 > 構想細節在 [`idea.md`](./idea.md)；舊構想在 [`idea.history.md`](./idea.history.md)（分開是為了少載入、省成本）。  
 > 線上：https://hyi1105.github.io/AI_MD/  
-> 更新：2026-07-21
+> 更新：2026-08-04
 
 圖例：`[x]` 現況具備 · `[~]` 有入口但是示範／半真 · `[!]` 查核發現缺漏／回歸（應有卻沒有）
 
@@ -24,6 +24,7 @@
 - [x] 首頁可進入 AI 查詢（`query.html`）與 AI Doc  
 - [x] 首頁說明提到長期關注／知識書  
 - [x] AI 查詢頁頂部可切換「AI 查詢」與「AI Doc」  
+- [x] 假圖（聊天氣泡綠色漸層標籤框）可線上開啟：[`/assets/fake-chat-green-gradient-boxes.png`](https://hyi1105.github.io/AI_MD/assets/fake-chat-green-gradient-boxes.png)  
 
 ---
 
@@ -77,6 +78,7 @@
 - [x] 2026-07-19 **AI Doc** 已發布（`/aidoc/`；SmartDoc 品牌已替換）  
 - [x] 2026-07-19 open ideas 已發布（XSS／分類／Markdown 匯出／`aidoc` 改名）  
 - [x] 2026-07-19 檔名定案：`idea.md`／`idea.history.md`（取代 01／02）  
+- [x] 2026-08-04 綠色漸層標籤假圖已發布至 Pages（`/assets/fake-chat-green-gradient-boxes.png`）  
 
 ---
 

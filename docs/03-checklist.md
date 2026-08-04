@@ -78,6 +78,7 @@
 - [x] 2026-07-19 **AI Doc** 已發布（`/aidoc/`；SmartDoc 品牌已替換）  
 - [x] 2026-07-19 open ideas 已發布（XSS／分類／Markdown 匯出／`aidoc` 改名）  
 - [x] 2026-07-19 檔名定案：`idea.md`／`idea.history.md`（取代 01／02）  
+- [x] 2026-08-04 綠色漸層標籤假圖已發布至 Pages（`/assets/fake-chat-green-gradient-boxes.png`）  
 
 ---
 

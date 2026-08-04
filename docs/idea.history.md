@@ -4,9 +4,15 @@
 > 這裡放已完成或已取消的構想；進行中的只留在 [`idea.md`](./idea.md)。  
 > 「現在有沒有這個功能」以 [`03-checklist.md`](./03-checklist.md) 查核為準，不是看本檔。  
 > 舊檔名：`02-idea-done.md`。  
-> 更新：2026-07-21
+> 更新：2026-08-04
 
 ---
+
+## 2026-08-04 — 假圖：聊天氣泡內綠色漸層標籤框
+
+- 結果：done（已發布）  
+- 來源：對話（綠色 box gradient 假圖；「發布並給我線上連結」）  
+- 摘要：靜態假圖掛站（`web/assets/fake-chat-green-gradient-boxes.png`）；未新增其他產品功能。線上 https://hyi1105.github.io/AI_MD/assets/fake-chat-green-gradient-boxes.png  
 
 ## 2026-07-21 — Hello World 首頁
 

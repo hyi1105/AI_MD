@@ -73,9 +73,10 @@
 - 不做的替代方案：只做連結總表、程式仍散在多 REPO（較輕但續做摩擦大）
 - 完成後列入 checklist：存在 `docs/00-map.md` 與 `ideas/*` 慣例，且能從 map 點到任一 idea 的成品／程式
 - 待拍板：
-  1. 母庫新建（如 `workbench`）還是以現有 `AI_MD` 升級成母結構？
-  2. 公司憑證修復包是否進母庫（建議僅內網／私有）？
-  3. 舊 REPO 搬家後要 archive 還是保留？
+  1. ~~母庫新建或升級 AI_MD？~~ → **已定：搬進現有 https://github.com/hyi1105/SEED**
+  2. 公司憑證修復包是否進母庫？→ **不進公開 SEED**（本機 OneDrive）
+  3. 舊 REPO `AI_MD` 搬家後要 archive 還是保留？（待你確認）
+- 進度（2026-08-09）：搬家內容已組好（`ai-md/`、`docs/ai-md/`、`ideas/`、`docs/00-map.md`），因 cloud agent **無法 push 到 SEED**，需你在本機執行推送（見對話指令）。
 
 ---
 

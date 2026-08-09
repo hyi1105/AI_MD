@@ -5,7 +5,7 @@
 > [`03-checklist.md`](./03-checklist.md) 是「現有功能查核表」，不是構想匣。  
 > 做成並發布後：把該能力**登記進 checklist**；本則構想再移到 `idea.history`。  
 > 合作規則總表：[`../prompts/AGENT-MASTER.md`](../prompts/AGENT-MASTER.md)  
-> 更新：2026-08-04
+> 更新：2026-08-09
 
 ### 寫入規則（給 AI）
 
@@ -31,6 +31,51 @@
 - 完成後列入 checklist：查核句（給 checklist 用，描述「產品應具備的功能」）
 - 待拍板：需要負責人決定的問題（無則寫「無」）
 ```
+
+---
+
+## 2026-08-09 — 多 REPO 連程式搬家＋Idea 成品／半成品可擴充歸檔
+- 狀態：waiting-owner
+- 來源：對話（要連程式一起搬家整理；每個 idea 的成品／半成品要好找、可擴充；Rule／Skill 可執行）
+- 為什麼（Why）：構想散在多個 REPO，成品／半成品找不到就無法換地方續做；只做連結索引不夠，需要程式與 idea 同層可查
+- 做什麼（What）：採「一個工作區母庫＋每則 idea 一個資料夾」：構想 MD、狀態、成品／半成品、對應程式套件路徑都在固定位置；總表 `00-map` 可搜尋
+- 怎麼做（How）：
+  - **母結構（建議）**：
+    ```text
+    workbench/                    ← 一個 Git 母庫（或 Cursor Workspace）
+      docs/
+        00-map.md                 ← 全部 idea／套件總表（好找）
+        idea.md                   ← 進行中構想（短摘要＋連到資料夾）
+        idea.history.md           ← 結案摘要
+        03-checklist.md           ← 已上線可查核功能
+      ideas/
+        YYYYMMDD-短名/
+          README.md               ← 必填：狀態／Why一句／入口
+          idea.md                 ← 完整 Why／What／How…
+          status.txt              ← seed｜wip｜shipped｜parked｜trash-candidate
+          artifacts/              ← 成品／半成品（圖、zip、假圖、匯出）
+          notes/                  ← 過程筆記（可空）
+          links.md                ← 線上 URL、舊 REPO、PR
+      packages/                   ← 可跑的程式（搬家後的產品碼）
+        seed-web/                 ← 例：原 AI_MD 的 web＋docs 產品
+        aidoc/
+        cursor-ssl-3m/            ← 工具類也可是 package，非產品
+      .cursor/
+        skills/repo-inventory/    ← 盤點 Skill
+        rules/                    ← 短規則（繁中、先 map 不刪）
+    ```
+  - **每則 idea 狀態機**：`seed`（只有構想）→ `wip`（有半成品／程式）→ `shipped`（已上線並進 checklist）→ `parked`（暫放）／`trash-candidate`（待刪）
+  - **好找規則**：總表 `docs/00-map.md` 一列一個 idea／package；檔名 `YYYYMMDD-短名`；搜尋只靠 map＋資料夾名，不靠記憶
+  - **搬家**：舊 REPO 先標進 map → 程式搬入 `packages/<名>` → 對應 idea 資料夾寫 `links.md` 舊網址 → 舊庫 archive（你點頭才刪）
+  - **Cursor**：流程用 Skill `/repo-inventory`；短提醒用 User Rule；細節見對話建議
+- 優點（Pros）：構想與成品同層；可擴充（新 idea＝新資料夾）；換機器只 clone 母庫；token 友好（先讀 map／單則 README）
+- 缺點／風險（Cons）：首次搬家成本高；母庫變大；私有／公司憑證勿進公開庫
+- 不做的替代方案：只做連結總表、程式仍散在多 REPO（較輕但續做摩擦大）
+- 完成後列入 checklist：存在 `docs/00-map.md` 與 `ideas/*` 慣例，且能從 map 點到任一 idea 的成品／程式
+- 待拍板：
+  1. 母庫新建（如 `workbench`）還是以現有 `AI_MD` 升級成母結構？
+  2. 公司憑證修復包是否進母庫（建議僅內網／私有）？
+  3. 舊 REPO 搬家後要 archive 還是保留？
 
 ---
 
@@ -162,6 +207,7 @@
 
 | 日期 | 說了什麼 | 去向 |
 |------|----------|------|
+| 2026-08-09 | 多 REPO 連程式搬家＋idea 成品歸檔 | idea.md（待拍板） |
 | 2026-08-04 | 綠色漸層標籤假圖→發布 | checklist／history |
 | 2026-07-19 | 合作方式：對話→idea→checklist；done→idea.history | AGENT-MASTER／history |
 | 2026-07-19 | 實作 open ideas 並發布 | checklist／history |

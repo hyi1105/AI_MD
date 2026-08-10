@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SEED — Hello World</title>
+  <title>SEED — Portal</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
@@ -19,12 +19,18 @@
 
   <main class="hello-hero">
     <p class="hello-brand">SEED</p>
-    <h1 class="hello-title">Hello World</h1>
-    <p class="hello-lead">長期關注產品或 KOL 知識，把專業累積成一本可分享的知識書。</p>
-    <div class="hello-actions">
-      <a class="hello-btn hello-btn--primary" href="query.html">進入 AI 查詢</a>
-      <a class="hello-btn hello-btn--ghost" href="aidoc/">打開 AI Doc</a>
-    </div>
+    <h1 class="hello-title">Portal</h1>
+    <p class="hello-lead">長期關注產品或 KOL 知識。選擇一個獨立工具開始採集或輸出。</p>
+    <nav class="portal-grid" aria-label="獨立功能">
+      <a class="portal-tile" href="query.html">
+        <span class="portal-tile-name">AI 查詢</span>
+        <span class="portal-tile-desc">搜尋目錄、追蹤關鍵字、採集素材進知識書</span>
+      </a>
+      <a class="portal-tile" href="aidoc/">
+        <span class="portal-tile-name">AI Doc</span>
+        <span class="portal-tile-desc">像 Cursor 一樣用 AI 改檔，並顯示修改處</span>
+      </a>
+    </nav>
   </main>
 </body>
 </html>

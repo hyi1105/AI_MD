@@ -1,4 +1,4 @@
-/* Hello World 首頁 */
+/* SEED Portal 首頁 */
 
 .hello-page {
   --hw-ink: #10241c;
@@ -12,7 +12,7 @@
   color: var(--hw-ink);
   font-family: "Figtree", "Microsoft JhengHei", sans-serif;
   background: var(--hw-bg);
-  overflow: hidden;
+  overflow-x: hidden;
   position: relative;
 }
 
@@ -104,53 +104,70 @@
   animation: hello-rise 0.9s cubic-bezier(0.22, 1, 0.36, 1) 0.22s both;
 }
 
-.hello-actions {
+.portal-grid {
   display: flex;
-  flex-wrap: wrap;
-  gap: 0.75rem 1rem;
+  flex-direction: column;
+  gap: 0.85rem;
+  width: min(100%, 26rem);
   animation: hello-rise 0.9s cubic-bezier(0.22, 1, 0.36, 1) 0.34s both;
 }
 
-.hello-btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 2.85rem;
-  padding: 0.7rem 1.35rem;
+.portal-tile {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.35rem;
+  width: 100%;
+  padding: 1.05rem 1.25rem;
   border-radius: 0.55rem;
-  font-family: inherit;
-  font-size: 0.98rem;
-  font-weight: 600;
   text-decoration: none;
-  transition: transform 0.2s ease, background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+  color: inherit;
+  background: var(--hw-surface);
+  border: 1px solid rgba(16, 36, 28, 0.14);
+  backdrop-filter: blur(8px);
+  transition: transform 0.2s ease, background 0.2s ease, border-color 0.2s ease;
 }
 
-.hello-btn--primary {
+.portal-tile:hover {
+  background: rgba(255, 255, 255, 0.72);
+  border-color: rgba(13, 122, 95, 0.35);
+  transform: translateY(-2px);
+}
+
+.portal-tile:focus-visible {
+  outline: 2px solid var(--hw-accent);
+  outline-offset: 3px;
+}
+
+.portal-tile:first-child {
   background: var(--hw-accent);
+  border-color: transparent;
   color: #f4fbf8;
   box-shadow: 0 10px 28px rgba(13, 122, 95, 0.22);
 }
 
-.hello-btn--primary:hover {
+.portal-tile:first-child:hover {
   background: var(--hw-accent-deep);
-  transform: translateY(-2px);
+  border-color: transparent;
 }
 
-.hello-btn--ghost {
-  background: var(--hw-surface);
-  color: var(--hw-ink);
-  border: 1px solid rgba(16, 36, 28, 0.14);
-  backdrop-filter: blur(8px);
+.portal-tile:first-child .portal-tile-desc {
+  color: rgba(244, 251, 248, 0.82);
 }
 
-.hello-btn--ghost:hover {
-  background: rgba(255, 255, 255, 0.72);
-  transform: translateY(-2px);
+.portal-tile-name {
+  font-family: "Bricolage Grotesque", "Figtree", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
 }
 
-.hello-btn:focus-visible {
-  outline: 2px solid var(--hw-accent);
-  outline-offset: 3px;
+.portal-tile-desc {
+  font-size: 0.92rem;
+  font-weight: 400;
+  line-height: 1.45;
+  color: var(--hw-muted);
 }
 
 @keyframes hello-rise {
@@ -178,11 +195,7 @@
     align-items: stretch;
   }
 
-  .hello-actions {
-    flex-direction: column;
-  }
-
-  .hello-btn {
+  .portal-grid {
     width: 100%;
   }
 }
@@ -192,11 +205,11 @@
   .hello-brand,
   .hello-title,
   .hello-lead,
-  .hello-actions {
+  .portal-grid {
     animation: none;
   }
 
-  .hello-btn {
+  .portal-tile {
     transition: none;
   }
 }

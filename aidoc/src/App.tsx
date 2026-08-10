@@ -359,8 +359,8 @@ export default function App() {
     <div className="app">
       <header className="topbar">
         <div className="brand-block">
-          <a className="hub-back" href="../index.html" title="返回 SEED 平台">
-            ← SEED
+          <a className="hub-back" href="../index.html" title="返回 SEED Portal">
+            ← Portal
           </a>
           <div className="brand-mark" aria-hidden />
           <div>

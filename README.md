@@ -21,7 +21,8 @@
 
 | 工具 | 說明 |
 |------|------|
-| AI 查詢 | `web/` + `catalog.json` |
+| Portal | 首頁 `web/index.html`；按鈕選擇獨立功能 |
+| AI 查詢 | `web/query.html` + `catalog.json` |
 | **AI Doc** | 像 Cursor 改檔並顯示 Diff（程式在 `aidoc/` → `web/aidoc/`） |
 
 ## 本機

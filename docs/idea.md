@@ -5,7 +5,19 @@
 > [`03-checklist.md`](./03-checklist.md) 是「現有功能查核表」，不是構想匣。  
 > 做成並發布後：把該能力**登記進 checklist**；本則構想再移到 `idea.history`。  
 > 合作規則總表：[`../prompts/AGENT-MASTER.md`](../prompts/AGENT-MASTER.md)  
-> 更新：2026-08-04
+> 更新：2026-08-10
+
+## 2026-08-10 — 首頁改 Portal：獨立功能用按鈕選擇
+- 狀態：building
+- 來源：對話（「幫我把所有獨立功能都獨立出來, 首頁變成portal按鈕可選擇」）
+- 為什麼（Why）：功能已分散在不同頁，但首頁仍像 Hello World 問候頁；跨工具用 chip 互跳，選擇入口不夠清楚。不做的話使用者會搞不清「平台入口」與「單一工具」。
+- 做什麼（What）：首頁變成 SEED Portal：每個獨立功能一顆按鈕可點選進入；AI 查詢、AI Doc 各留在自己的頁／路徑，不再把平台說明塞進工具頁。
+- 怎麼做（How）：改 `web/index.html`＋`hello.css` 為 Portal 按鈕列；`query.html`／`tool.html` 導覽改為回 Portal＋標示目前工具（拿掉互跳 chip、拿掉 seed-manifesto）；AI Doc 維持 `aidoc/` 與回 SEED 連結。不改 `catalog.json`。
+- 優點（Pros）：入口清楚；功能邊界清楚；之後加新工具只要多一顆 Portal 按鈕。
+- 缺點／風險（Cons）：少了工具頁之間一鍵互跳；習慣 Hello World 問候的人會覺得首頁變了。
+- 不做的替代方案：維持現有雙 CTA＋工具頁 chip，只改文案稱 Portal。
+- 完成後列入 checklist：首頁為 Portal 且可用按鈕進入各獨立功能；工具頁可回 Portal
+- 待拍板：無（已進入實作）
 
 ### 寫入規則（給 AI）
 

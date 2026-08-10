@@ -106,59 +106,6 @@ body {
   flex-shrink: 0;
 }
 
-.seed-manifesto {
-  max-width: 960px;
-  margin: 0 auto 1.25rem;
-  padding: 1rem 1.25rem;
-  border: 1px solid var(--accent-border);
-  border-radius: var(--radius);
-  background: var(--accent-soft);
-}
-
-.seed-manifesto p {
-  margin: 0;
-  color: var(--text);
-  font-size: 0.95rem;
-  line-height: 1.65;
-}
-
-.seed-manifesto strong {
-  color: var(--accent);
-}
-
-.system-chips {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.45rem;
-}
-
-.system-chip {
-  display: inline-flex;
-  align-items: center;
-  padding: 0.4rem 0.85rem;
-  border-radius: 999px;
-  border: 1px solid var(--border);
-  background: var(--bg);
-  color: var(--muted);
-  text-decoration: none;
-  font-size: 0.875rem;
-  font-weight: 500;
-  transition: background 0.15s, border-color 0.15s, color 0.15s;
-}
-
-.system-chip:hover {
-  background: var(--surface-hover);
-  color: var(--text);
-  border-color: var(--accent-border);
-}
-
-.system-chip.is-active {
-  background: var(--accent-soft);
-  border-color: var(--accent-border);
-  color: var(--accent);
-  font-weight: 600;
-}
-
 .header {
   border-bottom: 1px solid var(--border);
   background: var(--header-bg);

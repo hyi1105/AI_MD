@@ -42,6 +42,7 @@
 
 ```text
 主題（Theme）
+├── 首頁 Portal（`web/index.html`）— 按鈕選擇獨立功能
 ├── 工具：AI 查詢（catalog.json）— 發現／對照素材
 ├── 工具：AI Doc（程式資料夾 `aidoc/`）— AI 改檔 + 顯示 Diff
 └── （構想中）知識書架 — 關注、編排、分享 → 先寫 idea.md
@@ -49,6 +50,7 @@
 
 | 工具 | 說明 |
 |------|------|
+| Portal | 首頁；每個獨立功能一顆按鈕進入 |
 | AI 查詢 | 搜尋 `web/catalog.json`；詳情只靠 JSON |
 | **AI Doc** | 規格見 [`ai-doc.md`](./ai-doc.md)；AI 像 Cursor 改每一份檔，產出後顯示修改處 |
 

@@ -34,6 +34,25 @@
 
 ---
 
+## 2026-08-11 — 不透過電腦、直接在手機上開發 App
+- 狀態：waiting-owner（探索／資訊；非本 repo 必做功能）
+- 來源：對話（原文：「我想知道能不透過電腦 直接在手機開發APP」；前序：無法遠端裝 iOS、問過 Android／JDK）
+- 為什麼（Why）：沒有／不想用電腦時，仍想寫、跑、裝自己的 App；否則只能瀏覽現有網站或等 Mac／PC。
+- 做什麼（What）：釐清「手機上開發」可行到什麼程度，以及跟本專案（SEED 原生 iOS／靜態站）的關係。
+- 怎麼做（How）：**結論：可以「在手機上做簡單 App／原型」，但做不到完整取代電腦的原生商店級開發。** 常見路徑：
+  1. **積木／無程式碼（最省事）**：Sketchware（Android）、Thunkable、Glide、Adalo 等 — 在手機或瀏覽器拼畫面，產出可裝的 App／PWA。
+  2. **手機上的程式編輯器**：Android 如 AIDE、Termux＋編譯工具（門檻高、過時風險）；iPhone 較受限，較像筆記／遠端連線，不是完整 Xcode。
+  3. **iPad＋Swift Playgrounds**：較接近「蘋果生態裡用平板寫 Swift」，仍不是完整 Xcode／App Store 上架流程。
+  4. **手機瀏覽器開雲端 IDE**（GitHub Codespaces、Cursor 網頁等）：程式在雲端，手機只是螢幕；真要簽章、裝 iOS 仍常卡在 Apple／Mac。
+  5. **本專案現況**：`ios/` 原生 Swift **必須** Mac＋Xcode 才能裝到 iPhone；網站 https://hyi1105.github.io/AI_MD/ 則**不需開發**，手機瀏覽器直接開即可當「Hello World 體驗」。
+- 優點（Pros）：無電腦也能學／做小工具；積木路線上手快。
+- 缺點／風險（Cons）：原生 iOS 簽章與上架幾乎離不開 Apple 開發者流程／電腦；手機編輯體驗差；品質與維護不如正規專案；與本 repo 的 Swift 專案無法在手機直接編譯安裝。
+- 不做的替代方案：用手機瀏覽器使用現有 SEED 網站；或之後做 Android APK 用檔案傳輸安裝（仍建議在電腦建置一次）。
+- 完成後列入 checklist：無（純探索，除非之後做成產品內功能）
+- 待拍板：目標是「在手機上玩開發」還是「一定要原生 App 裝進桌面」？若只要體驗 Hello World → 開網站即可；若要 Android 可直裝 → 再說「改程式做 Android」。
+
+---
+
 ## 2026-08-11 — 手機 App Hello World
 - 狀態：building
 - 來源：對話（「我能做一個手機App的hello world」→「幫我創建原生的iPhone APP」）
@@ -176,6 +195,7 @@
 
 | 日期 | 說了什麼 | 去向 |
 |------|----------|------|
+| 2026-08-11 | 能否不靠電腦、在手機上開發 App（探索） | idea（waiting-owner） |
 | 2026-08-11 | 手機 App Hello World → 定案原生 iPhone／SwiftUI | idea（building） |
 | 2026-08-04 | 綠色漸層標籤假圖→發布 | checklist／history |
 | 2026-07-19 | 合作方式：對話→idea→checklist；done→idea.history | AGENT-MASTER／history |

@@ -23,6 +23,7 @@
 |------|------|
 | AI 查詢 | `web/` + `catalog.json` |
 | **AI Doc** | 像 Cursor 改檔並顯示 Diff（程式在 `aidoc/` → `web/aidoc/`） |
+| **iOS App（試作）** | 原生 SwiftUI Hello World：`ios/SEED.xcodeproj`（需 Mac＋Xcode） |
 
 ## 本機
 

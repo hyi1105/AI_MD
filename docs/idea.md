@@ -5,7 +5,7 @@
 > [`03-checklist.md`](./03-checklist.md) 是「現有功能查核表」，不是構想匣。  
 > 做成並發布後：把該能力**登記進 checklist**；本則構想再移到 `idea.history`。  
 > 合作規則總表：[`../prompts/AGENT-MASTER.md`](../prompts/AGENT-MASTER.md)  
-> 更新：2026-08-04
+> 更新：2026-08-11
 
 ### 寫入規則（給 AI）
 
@@ -31,6 +31,58 @@
 - 完成後列入 checklist：查核句（給 checklist 用，描述「產品應具備的功能」）
 - 待拍板：需要負責人決定的問題（無則寫「無」）
 ```
+
+---
+
+## 2026-08-11 — Android 手機上直接開發 APK 並安裝使用
+- 狀態：waiting-owner（探索／資訊）
+- 來源：對話（原文：「在Android手機上開發APK，能否直接開發並安裝使用」）
+- 為什麼（Why）：想確認不靠電腦時，能否在 Android 上完成「寫→產生 APK→裝到同一支手機並使用」。
+- 做什麼（What）：給出可行／不可行的清楚結論，並對照若本專案要做 SEED Android Hello World 時的差異。
+- 怎麼做（How）：**結論：可以。** Android（不像 iPhone）允許在同一支手機上開發、匯出 APK、再開啟安裝使用。常見做法：
+  1. **積木 App（最推薦入門）**：Sketchware／Sketchware Pro 等 — 在手機拼畫面與邏輯 → 產生 APK → 用檔案管理員開啟安裝（需允許「安裝未知應用程式」）。
+  2. **手機 IDE**：AIDE 等可寫 Java／類似 Android 專案並編譯 APK（工具偏舊、相容新系統較辛苦）。
+  3. **Termux＋命令列工具**：進階、設定重，一般不建議當第一條路。
+  4. **限制**：適合學習與小工具；複雜專案、Play 商店上架、正式簽章與維護仍多半要電腦。系統升級後部分手機 IDE 可能壞掉。
+  5. **與本 repo**：目前**沒有** Android／APK；既有是網站＋`ios/` Swift。若要「SEED Hello World 的 APK」給你傳到手機裝，需再說「改程式做 Android」（建置仍在電腦／CI 產出 APK；**在手機上從零開發**則是用上面那些 App，不經過本 repo）。
+- 優點（Pros）：真的能不靠電腦完成「開發→安裝→使用」閉環；比 iOS 現實得多。
+- 缺點／風險（Cons）：品質／可維護性有限；未知來源安裝有安全風險；與本站 Swift／靜態站不同技術棧。
+- 不做的替代方案：手機瀏覽器開 SEED 網站；或之後由本 repo 產出 APK 用檔案傳輸安裝（開發在電腦，使用在手機）。
+- 完成後列入 checklist：無（純探索）；若做成 SEED Android App 再另寫查核句
+- 待拍板：要「自己在手機用 Sketchware 玩」還是「要我在 repo 做可安裝的 SEED APK」？
+
+---
+
+## 2026-08-11 — 不透過電腦、直接在手機上開發 App
+- 狀態：waiting-owner（探索／資訊；非本 repo 必做功能）
+- 來源：對話（原文：「我想知道能不透過電腦 直接在手機開發APP」；前序：無法遠端裝 iOS、問過 Android／JDK）
+- 為什麼（Why）：沒有／不想用電腦時，仍想寫、跑、裝自己的 App；否則只能瀏覽現有網站或等 Mac／PC。
+- 做什麼（What）：釐清「手機上開發」可行到什麼程度，以及跟本專案（SEED 原生 iOS／靜態站）的關係。
+- 怎麼做（How）：**結論：可以「在手機上做簡單 App／原型」，但做不到完整取代電腦的原生商店級開發。** 常見路徑：
+  1. **積木／無程式碼（最省事）**：Sketchware（Android）、Thunkable、Glide、Adalo 等 — 在手機或瀏覽器拼畫面，產出可裝的 App／PWA。
+  2. **手機上的程式編輯器**：Android 如 AIDE、Termux＋編譯工具（門檻高、過時風險）；iPhone 較受限，較像筆記／遠端連線，不是完整 Xcode。
+  3. **iPad＋Swift Playgrounds**：較接近「蘋果生態裡用平板寫 Swift」，仍不是完整 Xcode／App Store 上架流程。
+  4. **手機瀏覽器開雲端 IDE**（GitHub Codespaces、Cursor 網頁等）：程式在雲端，手機只是螢幕；真要簽章、裝 iOS 仍常卡在 Apple／Mac。
+  5. **本專案現況**：`ios/` 原生 Swift **必須** Mac＋Xcode 才能裝到 iPhone；網站 https://hyi1105.github.io/AI_MD/ 則**不需開發**，手機瀏覽器直接開即可當「Hello World 體驗」。
+- 優點（Pros）：無電腦也能學／做小工具；積木路線上手快。
+- 缺點／風險（Cons）：原生 iOS 簽章與上架幾乎離不開 Apple 開發者流程／電腦；手機編輯體驗差；品質與維護不如正規專案；與本 repo 的 Swift 專案無法在手機直接編譯安裝。
+- 不做的替代方案：用手機瀏覽器使用現有 SEED 網站；或之後做 Android APK 用檔案傳輸安裝（仍建議在電腦建置一次）。
+- 完成後列入 checklist：無（純探索，除非之後做成產品內功能）
+- 待拍板：目標是「在手機上玩開發」還是「一定要原生 App 裝進桌面」？若只要體驗 Hello World → 開網站即可；若要 Android 可直裝 → 再說「改程式做 Android」。
+
+---
+
+## 2026-08-11 — 手機 App Hello World
+- 狀態：building
+- 來源：對話（「我能做一個手機App的hello world」→「幫我創建原生的iPhone APP」）
+- 為什麼（Why）：網站已有 SEED＋Hello World 首頁；要踏出原生 iPhone App，否則產品只停在瀏覽器。
+- 做什麼（What）：用 Xcode 開啟專案後，在 iPhone 模擬器／真機看到 SEED 品牌與 Hello World（對齊網頁首頁精神）。
+- 怎麼做（How）：**定案原生 SwiftUI**（非 Expo／PWA）。專案在 `ios/`：`SEED.xcodeproj`＋`SEED/` 原始碼。本 Cloud 環境是 Linux，無法在此編譯／上架；需在 Mac 用 Xcode 開啟執行。上架 App Store 另案。
+- 優點（Pros）：真原生；品牌與網頁 Hello World 一致；之後可擴充。
+- 缺點／風險（Cons）：需 Mac＋Xcode；與純靜態 Pages 分流維護；無法在 Linux CI 直接驗 iOS 建置。
+- 不做的替代方案：手機瀏覽器開現有網站；或 PWA／Expo。
+- 完成後列入 checklist：Mac 上用 Xcode 開啟 `ios/SEED.xcodeproj` 可跑出 SEED／Hello World
+- 待拍板：無（路線已定原生 iPhone）；上架與否之後再說。
 
 ---
 
@@ -162,6 +214,9 @@
 
 | 日期 | 說了什麼 | 去向 |
 |------|----------|------|
+| 2026-08-11 | Android 上直接開發 APK 並安裝？（可以，有限制） | idea（waiting-owner） |
+| 2026-08-11 | 能否不靠電腦、在手機上開發 App（探索） | idea（waiting-owner） |
+| 2026-08-11 | 手機 App Hello World → 定案原生 iPhone／SwiftUI | idea（building） |
 | 2026-08-04 | 綠色漸層標籤假圖→發布 | checklist／history |
 | 2026-07-19 | 合作方式：對話→idea→checklist；done→idea.history | AGENT-MASTER／history |
 | 2026-07-19 | 實作 open ideas 並發布 | checklist／history |

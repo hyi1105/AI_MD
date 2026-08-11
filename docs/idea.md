@@ -5,7 +5,7 @@
 > [`03-checklist.md`](./03-checklist.md) 是「現有功能查核表」，不是構想匣。  
 > 做成並發布後：把該能力**登記進 checklist**；本則構想再移到 `idea.history`。  
 > 合作規則總表：[`../prompts/AGENT-MASTER.md`](../prompts/AGENT-MASTER.md)  
-> 更新：2026-08-04
+> 更新：2026-08-11
 
 ### 寫入規則（給 AI）
 
@@ -31,6 +31,28 @@
 - 完成後列入 checklist：查核句（給 checklist 用，描述「產品應具備的功能」）
 - 待拍板：需要負責人決定的問題（無則寫「無」）
 ```
+
+---
+
+## 2026-08-11 — 手機 App Hello World
+- 狀態：waiting-owner
+- 來源：對話（原文：「我能做一個手機App的hello world」）
+- 為什麼（Why）：網站已有 SEED＋Hello World 首頁；想確認／踏出「手機 App」這一步，否則產品仍只停在瀏覽器。
+- 做什麼（What）：在手機上開啟一個 App，畫面顯示品牌（SEED）與「Hello World」問候（對齊現有網頁首頁精神）。
+- 怎麼做（How）：依技術路線擇一（待拍板）：
+  1. **PWA／加到主畫面**：沿用現有 `web/`，幾乎零新專案，但不是真正原生 App。
+  2. **Expo（React Native）**：新建 `mobile/`（或獨立 repo），單頁 Hello World；可之後裝到實體機／模擬器。
+  3. **Capacitor 包現有網頁**：把 GitHub Pages／本機 `web/` 包進殼，仍是 WebView。
+  4. 其他（Flutter／原生 Swift／Kotlin）— 成本較高，Hello World 不划算。
+  說「改程式」後才建專案與畫面；上架商店另案（需帳號、審核）。
+- 優點（Pros）：驗證手機路徑；與現有 Hello World 品牌一致；之後可接 AI 查詢／AI Doc。
+- 缺點／風險（Cons）：新技術棧與維護面；若走原生／Expo 會與現有純靜態 Pages 分流；上架不在本則範圍。
+- 不做的替代方案：繼續只用手機瀏覽器開 https://hyi1105.github.io/AI_MD/（已可顯示 Hello World）。
+- 完成後列入 checklist：手機 App（或約定形態）可開啟並看到 SEED／Hello World
+- 待拍板：
+  1. 要「真 App」（建議 Expo）還是「手機可開的網頁／PWA」就夠？
+  2. 要放在本 repo 的 `mobile/`，還是先本機示範、不上架？
+  3. 確認後說「改程式」再動手。
 
 ---
 

@@ -3,3 +3,12 @@ dist/
 *.local
 .DS_Store
 npm-debug.log*
+
+# iOS / Xcode
+ios/**/xcuserdata/
+ios/**/DerivedData/
+ios/**/*.xcuserstate
+*.ipa
+*.dSYM.zip
+*.dSYM
+

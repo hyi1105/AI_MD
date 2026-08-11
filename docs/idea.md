@@ -35,24 +35,16 @@
 ---
 
 ## 2026-08-11 — 手機 App Hello World
-- 狀態：waiting-owner
-- 來源：對話（原文：「我能做一個手機App的hello world」）
-- 為什麼（Why）：網站已有 SEED＋Hello World 首頁；想確認／踏出「手機 App」這一步，否則產品仍只停在瀏覽器。
-- 做什麼（What）：在手機上開啟一個 App，畫面顯示品牌（SEED）與「Hello World」問候（對齊現有網頁首頁精神）。
-- 怎麼做（How）：依技術路線擇一（待拍板）：
-  1. **PWA／加到主畫面**：沿用現有 `web/`，幾乎零新專案，但不是真正原生 App。
-  2. **Expo（React Native）**：新建 `mobile/`（或獨立 repo），單頁 Hello World；可之後裝到實體機／模擬器。
-  3. **Capacitor 包現有網頁**：把 GitHub Pages／本機 `web/` 包進殼，仍是 WebView。
-  4. 其他（Flutter／原生 Swift／Kotlin）— 成本較高，Hello World 不划算。
-  說「改程式」後才建專案與畫面；上架商店另案（需帳號、審核）。
-- 優點（Pros）：驗證手機路徑；與現有 Hello World 品牌一致；之後可接 AI 查詢／AI Doc。
-- 缺點／風險（Cons）：新技術棧與維護面；若走原生／Expo 會與現有純靜態 Pages 分流；上架不在本則範圍。
-- 不做的替代方案：繼續只用手機瀏覽器開 https://hyi1105.github.io/AI_MD/（已可顯示 Hello World）。
-- 完成後列入 checklist：手機 App（或約定形態）可開啟並看到 SEED／Hello World
-- 待拍板：
-  1. 要「真 App」（建議 Expo）還是「手機可開的網頁／PWA」就夠？
-  2. 要放在本 repo 的 `mobile/`，還是先本機示範、不上架？
-  3. 確認後說「改程式」再動手。
+- 狀態：building
+- 來源：對話（「我能做一個手機App的hello world」→「幫我創建原生的iPhone APP」）
+- 為什麼（Why）：網站已有 SEED＋Hello World 首頁；要踏出原生 iPhone App，否則產品只停在瀏覽器。
+- 做什麼（What）：用 Xcode 開啟專案後，在 iPhone 模擬器／真機看到 SEED 品牌與 Hello World（對齊網頁首頁精神）。
+- 怎麼做（How）：**定案原生 SwiftUI**（非 Expo／PWA）。專案在 `ios/`：`SEED.xcodeproj`＋`SEED/` 原始碼。本 Cloud 環境是 Linux，無法在此編譯／上架；需在 Mac 用 Xcode 開啟執行。上架 App Store 另案。
+- 優點（Pros）：真原生；品牌與網頁 Hello World 一致；之後可擴充。
+- 缺點／風險（Cons）：需 Mac＋Xcode；與純靜態 Pages 分流維護；無法在 Linux CI 直接驗 iOS 建置。
+- 不做的替代方案：手機瀏覽器開現有網站；或 PWA／Expo。
+- 完成後列入 checklist：Mac 上用 Xcode 開啟 `ios/SEED.xcodeproj` 可跑出 SEED／Hello World
+- 待拍板：無（路線已定原生 iPhone）；上架與否之後再說。
 
 ---
 
@@ -184,6 +176,7 @@
 
 | 日期 | 說了什麼 | 去向 |
 |------|----------|------|
+| 2026-08-11 | 手機 App Hello World → 定案原生 iPhone／SwiftUI | idea（building） |
 | 2026-08-04 | 綠色漸層標籤假圖→發布 | checklist／history |
 | 2026-07-19 | 合作方式：對話→idea→checklist；done→idea.history | AGENT-MASTER／history |
 | 2026-07-19 | 實作 open ideas 並發布 | checklist／history |

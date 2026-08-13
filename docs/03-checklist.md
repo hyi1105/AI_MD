@@ -21,12 +21,13 @@
 ## 1. 入口與品牌
 
 - [x] 首頁顯示品牌 **SEED** 與 **Hello World** 問候  
-- [x] 首頁可進入 AI 查詢（`query.html`）、AI Doc 與**簽核 Demo**（`approval/`）  
+- [x] 首頁可進入 AI 查詢（`query.html`）、AI Doc、**簽核 Demo**（`approval/`）與**系統地圖**（`system-map/`）  
 - [x] 首頁說明提到長期關注／知識書  
 - [x] AI 查詢頁頂部可切換「AI 查詢」與「AI Doc」  
 - [x] 假圖（聊天氣泡綠色漸層標籤框）可線上開啟：[`/assets/fake-chat-green-gradient-boxes.png`](https://hyi1105.github.io/AI_MD/assets/fake-chat-green-gradient-boxes.png)  
 - [x] 簽核假畫面可線上開啟：[`/approval/`](https://hyi1105.github.io/AI_MD/approval/)（Teams 風紙本單／簽名流水線／對話室 Demo）  
 - [x] 簽核表單 schema 範例可開啟：[`/schema/form-schema.example.json`](https://hyi1105.github.io/AI_MD/schema/form-schema.example.json)  
+- [x] 系統地圖可線上開啟：[`/system-map/`](https://hyi1105.github.io/AI_MD/system-map/)（簽核／申請；流程圖／SQL／Power Automate／Shared Enclosure 四視角切換，層級節點對齊）  
 
 ---
 
@@ -82,6 +83,7 @@
 - [x] 2026-07-19 檔名定案：`idea.md`／`idea.history.md`（取代 01／02）  
 - [x] 2026-08-04 綠色漸層標籤假圖已發布至 Pages（`/assets/fake-chat-green-gradient-boxes.png`）  
 - [x] 2026-08-13 Approval 簽核假畫面已發布至 Pages（`/approval/`；schema 範例 `/schema/`）  
+- [x] 2026-08-13 系統地圖（簽核四視角）已發布至 Pages（`/system-map/`）  
 
 ---
 

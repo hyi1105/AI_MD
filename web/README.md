@@ -11,4 +11,4 @@
 | `catalog.json` | 唯一工具資料 |
 | `aidoc/` | AI Doc 建置產物 |
 
-線上：https://hyi1105.github.io/AI_MD/ · AI Doc：`/aidoc/`
+線上：https://hyi1105.github.io/AI_MD/ · AI Doc：`/aidoc/` · 系統地圖：`/system-map/`

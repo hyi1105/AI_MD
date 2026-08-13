@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>系統地圖｜簽核／申請（四視角）</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="atmosphere" aria-hidden="true">
+    <div class="grid-fade"></div>
+    <div class="orb orb-a"></div>
+    <div class="orb orb-b"></div>
+  </div>
+
+  <header class="top">
+    <div class="top-brand">
+      <a class="back" href="../">← SEED</a>
+      <h1>系統地圖</h1>
+      <p class="tag">示範：簽核／申請 · 同一張地圖、四個鏡頭</p>
+    </div>
+    <nav class="views" role="tablist" aria-label="視角">
+      <button type="button" class="view-btn is-active" role="tab" aria-selected="true" data-view="flowchart">流程圖</button>
+      <button type="button" class="view-btn" role="tab" aria-selected="false" data-view="sql">SQL</button>
+      <button type="button" class="view-btn" role="tab" aria-selected="false" data-view="powerautomate">Power Automate</button>
+      <button type="button" class="view-btn" role="tab" aria-selected="false" data-view="enclosure">Shared Enclosure</button>
+    </nav>
+  </header>
+
+  <main class="layout">
+    <aside class="layers" aria-label="層級展開">
+      <p class="aside-label">層級（大 → 小）</p>
+      <div id="tree" class="tree"></div>
+      <section class="method">
+        <h2>怎麼讀</h2>
+        <ol>
+          <li>第一層只留兩個主幹：<strong>流程控</strong>、<strong>資料存</strong>。</li>
+          <li>同一深度先橫向看齊，再往下鑽。</li>
+          <li>切換視角時，節點 ID 不變——換鏡頭，不換地圖。</li>
+        </ol>
+        <p class="method-link"><a href="../approval/">打開簽核 Demo 假畫面 →</a></p>
+      </section>
+    </aside>
+
+    <section class="stage" aria-live="polite">
+      <div class="stage-head">
+        <p class="view-label" id="view-label">視角：流程圖</p>
+        <p class="focus-label" id="focus-label">焦點：簽核／申請（整系統）</p>
+      </div>
+      <div id="scene" class="scene" data-view="flowchart"></div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

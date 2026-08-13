@@ -24,6 +24,7 @@
 | AI 查詢 | `web/` + `catalog.json` |
 | AI Doc | 像 Cursor 改檔並顯示 Diff（程式在 `aidoc/` → `web/aidoc/`） |
 | **簽核 Demo** | Teams 風紙本請假假畫面（`web/approval/`） |
+| **系統地圖** | 簽核／申請：同一地圖切換 SQL／Enclosure／流程圖／PA（`web/system-map/`） |
 
 ## 本機
 

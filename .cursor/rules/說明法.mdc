@@ -1,0 +1,60 @@
+---
+description: 說明法——讀文件／讀程式／講結構（可複製到任何 repo）
+alwaysApply: true
+---
+
+# 說明法（永遠）
+
+口令：「用說明法」或「結構＋介紹」。
+
+適用：讀 repo 結構、讀文件、讀原始碼、講解法。
+
+## 必守
+
+1. 真實結構樹（path／文件標題／函式／if／for）。
+2. 父層同行介紹＋子層同行旁註；語氣「都在這裡面／放這…」。
+3. 一次最多 5 條；下一批空一行直接接（不必等「繼續」）。
+4. 讀原始碼：左邊貼近原文（少用 `...`）；一層一層——先外層，再進 if／for 內。
+5. 禁止：房間／故事比喻、虛流程、職稱標籤腔、一次 >5。
+
+## 範本
+
+```text
+web/ 客人在網上看的東西都在這裡面
+├── index.html     — 一進來先看到的那頁放這
+├── query.html     — 要查工具時開的頁面放這
+├── catalog.json   — 工具名單資料都寫在這一份
+├── approval/      — 簽核相關的示範畫面都放這
+└── system-map/    — 系統地圖相關畫面都放這
+
+├── tool.html      — 看單一工具詳情的頁面放這
+├── tool.js        — 上面那頁會用到的程式放這
+├── script.js      — 查詢頁會用到的程式放這
+├── shared.js      — 好多頁共用的程式放這
+└── style.css      — 網站看起來長怎樣的樣子放這
+```
+
+```text
+function doSubmit() { 真的送出申請
+├── const gaps = requiredGaps();
+│     — 先問還缺什麼
+├── if (gaps.length) { ... return; }
+│     — 有缺就不往下送
+├── markMissing([]);
+│     — 沒缺就清紅字
+├── status = "submitted";
+│     — 狀態改成已送出
+└── appendSystem({...}); showToast(...); refreshPrimaryAction();
+      — 留訊息、提示、更新大按鈕
+```
+
+## 帶到別的 repo
+
+- 複製本檔到該 repo 的 `.cursor/rules/說明法.mdc`（或 `explanation-method.mdc`）
+- 或把下方口令卡貼進 Cursor → Settings → Rules → User Rules（所有專案生效）
+
+```text
+用說明法：真實結構樹＋同行簡短介紹；一次≤5；空一行接續；
+左邊盡量原始碼／原文；一層一層（先外層再進 if／for）；
+不要房間比喻、不要職稱標籤腔、不必等我說繼續。
+```

@@ -162,6 +162,7 @@
 
 | 日期 | 說了什麼 | 去向 |
 |------|----------|------|
+| 2026-08-13 | 簽核＝LINE＋格式卡；執行並發布 | checklist／history |
 | 2026-08-13 | 接續 Approval 簽核假畫面→發布 | checklist／history |
 | 2026-08-04 | 綠色漸層標籤假圖→發布 | checklist／history |
 | 2026-07-19 | 合作方式：對話→idea→checklist；done→idea.history | AGENT-MASTER／history |

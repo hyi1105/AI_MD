@@ -25,7 +25,10 @@
 - [x] 首頁說明提到長期關注／知識書  
 - [x] AI 查詢頁頂部可切換「AI 查詢」與「AI Doc」  
 - [x] 假圖（聊天氣泡綠色漸層標籤框）可線上開啟：[`/assets/fake-chat-green-gradient-boxes.png`](https://hyi1105.github.io/AI_MD/assets/fake-chat-green-gradient-boxes.png)  
-- [x] 簽核假畫面可線上開啟：[`/approval/`](https://hyi1105.github.io/AI_MD/approval/)（Teams 風紙本單／簽名流水線／對話室 Demo）  
+- [x] 簽核 Demo 可線上開啟：[`/approval/`](https://hyi1105.github.io/AI_MD/approval/)（**LINE 風對話**＋**獨立格式卡**；聊天≠卡片）  
+- [x] 簽核：申請人「送出申請」＝submit；簽核人「核准」＝approve；未填必填不可送出  
+- [x] 簽核：駁回／退回為對話內**系統訊息＋按鈕**（可填理由）  
+- [x] 簽核：個人備註欄僅申請人格式卡可見；簽核人視角整格消失  
 - [x] 簽核表單 schema 範例可開啟：[`/schema/form-schema.example.json`](https://hyi1105.github.io/AI_MD/schema/form-schema.example.json)  
 
 ---
@@ -82,6 +85,7 @@
 - [x] 2026-07-19 檔名定案：`idea.md`／`idea.history.md`（取代 01／02）  
 - [x] 2026-08-04 綠色漸層標籤假圖已發布至 Pages（`/assets/fake-chat-green-gradient-boxes.png`）  
 - [x] 2026-08-13 Approval 簽核假畫面已發布至 Pages（`/approval/`；schema 範例 `/schema/`）  
+- [x] 2026-08-13 簽核改為 LINE 對話＋獨立格式卡；submit／approve；駁回退回系統訊息  
 
 ---
 

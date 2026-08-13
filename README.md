@@ -23,7 +23,7 @@
 |------|------|
 | AI 查詢 | `web/` + `catalog.json` |
 | AI Doc | 像 Cursor 改檔並顯示 Diff（程式在 `aidoc/` → `web/aidoc/`） |
-| **簽核 Demo** | Teams 風紙本請假假畫面（`web/approval/`） |
+| **簽核 Demo** | LINE 對話＋獨立格式卡（`web/approval/`）；submit／approve |
 
 ## 本機
 

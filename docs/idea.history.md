@@ -8,6 +8,12 @@
 
 ---
 
+## 2026-08-13 — 簽核＝像打 LINE＋獨立格式卡；送出＝submit／approve
+
+- 結果：done（已發布）  
+- 來源：對話（填寫欄位＝對話框 → 主要像打 LINE、有必填格式、送出＝submit／approve → 拍板：格式卡／聊天≠卡片／駁回退回要 →「執行並發布」）  
+- 摘要：`web/approval/` 主錨為 LINE 風聊天；格式卡為手上文件（必填未完成不可送出）；申請人送出＝submit、簽核人核准＝approve；駁回／退回為對話系統訊息＋按鈕。線上 https://hyi1105.github.io/AI_MD/approval/  
+
 ## 2026-08-13 — Approval 簽核假畫面掛站（A2）
 
 - 結果：done（已發布至 AI_MD Pages）  

@@ -3,12 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Approval｜Teams 風格假畫面</title>
+  <title>Approval｜LINE 對話＋格式卡</title>
   <link rel="stylesheet" href="./styles.css" />
 </head>
 <body>
   <div class="app" id="app">
-    <!-- Teams 左側圖示列 -->
     <nav class="rail" aria-label="主選單">
       <button class="rail-btn" title="活動" type="button">🔔</button>
       <button class="rail-btn active" title="聊天" type="button">💬</button>
@@ -20,11 +19,10 @@
       <button class="rail-btn avatar" title="我" type="button" id="me-rail">我</button>
     </nav>
 
-    <!-- 頻道／聊天清單 -->
     <aside class="sidebar">
       <header class="sidebar-head">
         <h1>聊天</h1>
-        <span class="demo-pill">假畫面 Demo</span>
+        <span class="demo-pill">Demo</span>
       </header>
       <label class="search">
         <span class="sr-only">搜尋</span>
@@ -35,7 +33,7 @@
           <span class="dot online"></span>
           <div>
             <strong>簽核｜請假申請</strong>
-            <p>王小明：請幫我簽一下…</p>
+            <p>像打 LINE · 手上另有格式卡</p>
           </div>
         </li>
         <li class="chat-item">
@@ -45,75 +43,85 @@
             <p>本週表單改版說明</p>
           </div>
         </li>
-        <li class="chat-item">
-          <span class="dot online"></span>
-          <div>
-            <strong>專案群組</strong>
-            <p>明天站立會議 10:00</p>
-          </div>
-        </li>
       </ul>
     </aside>
 
-    <!-- 主內容：像 Teams 對話＋簽核卡 -->
     <main class="main">
       <header class="main-head">
         <div>
           <h2>簽核｜請假申請</h2>
-          <p class="sub">頻道 · 假資料 · 僅示範畫面</p>
+          <p class="sub" id="viewer-role">檢視中：申請人 · 聊天 ≠ 格式卡</p>
         </div>
         <div class="main-actions">
-          <button type="button" class="ghost" id="btn-design">設計預覽</button>
+          <button type="button" class="ghost" id="btn-toggle-card">手上文件</button>
           <button type="button" class="ghost" id="btn-as-approver">切成簽核人視角</button>
         </div>
       </header>
 
       <div class="stage">
-        <!-- 紙本表單卡 -->
-        <section class="paper" id="paper" aria-label="紙本簽核表單">
-          <div class="paper-meta">
-            <span>表單：leave_request_v1</span>
-            <span id="viewer-role">檢視中：申請人（含個人欄）</span>
+        <!-- 主錨：LINE 風對話（一般聊天） -->
+        <section class="thread" aria-label="對話室">
+          <div class="thread-banner">
+            <strong>一般聊天</strong>
+            <span>像打 LINE · 不是填表</span>
           </div>
-          <h3 class="paper-title">請假申請單</h3>
+          <div class="boxes" id="boxes"></div>
+          <form class="composer" id="composer">
+            <input type="text" id="msg" placeholder="輸入聊天訊息…" autocomplete="off" />
+            <button type="submit" class="primary">傳送</button>
+          </form>
+        </section>
 
-          <div class="grid" id="field-grid">
+        <!-- 另一個東西：手上的格式卡（文件） -->
+        <aside class="format-card" id="format-card" aria-label="格式卡（手上文件）">
+          <div class="card-top">
+            <div>
+              <p class="card-kicker">手上文件 · 格式卡</p>
+              <h3 class="card-title">請假申請單</h3>
+            </div>
+            <button type="button" class="ghost card-close" id="btn-close-card" aria-label="收起格式卡">收起</button>
+          </div>
+          <p class="card-meta">leave_request_v1 · 必填未完成不可送出</p>
+          <p class="card-missing hidden" id="card-missing" role="status"></p>
+
+          <form class="card-form" id="card-form">
             <label class="field">
               <span class="label">申請人</span>
-              <input type="text" value="王小明" readonly />
+              <input type="text" name="applicant" value="王小明" readonly data-required="true" />
             </label>
             <label class="field">
-              <span class="label">假別</span>
-              <select disabled>
-                <option>特休</option>
-                <option selected>事假</option>
-                <option>病假</option>
+              <span class="label">假別 <em>必填</em></span>
+              <select name="leave_type" data-required="true">
+                <option value="">請選擇</option>
+                <option value="特休">特休</option>
+                <option value="事假" selected>事假</option>
+                <option value="病假">病假</option>
+                <option value="其他">其他</option>
               </select>
             </label>
             <label class="field">
-              <span class="label">天數</span>
-              <input type="number" value="1" readonly />
+              <span class="label">天數 <em>必填</em></span>
+              <input type="number" name="days" value="1" min="0.5" step="0.5" data-required="true" />
             </label>
             <label class="field">
               <span class="label">是否需代理人</span>
-              <select disabled>
-                <option>否</option>
-                <option selected>是</option>
+              <select name="need_agent">
+                <option value="否">否</option>
+                <option value="是" selected>是</option>
               </select>
             </label>
             <label class="field">
               <span class="label">代理人</span>
-              <input type="text" value="陳美玲" readonly />
+              <input type="text" name="agent" value="陳美玲" />
             </label>
             <label class="field personal" id="private-field">
               <span class="label">僅自己可見備註 <em>personal</em></span>
-              <input type="text" value="醫生回診（別人看不到這格）" readonly />
+              <input type="text" name="private_note" value="醫生回診（別人看不到這格）" />
             </label>
-          </div>
+          </form>
 
-          <!-- 簽名流水線 -->
           <div class="waterline" aria-label="簽名流水線">
-            <p class="waterline-caption">簽名流水線（點人名可操作）</p>
+            <p class="waterline-caption">簽名流水線（點人名）</p>
             <ol class="nodes" id="sign-nodes">
               <li class="node done" data-role="applicant">
                 <button type="button" class="node-btn" data-action="self">
@@ -122,7 +130,7 @@
                   <span class="role">申請人</span>
                 </button>
               </li>
-              <li class="pipe"></li>
+              <li class="pipe" aria-hidden="true"></li>
               <li class="node" data-role="agent">
                 <button type="button" class="node-btn" data-action="agent">
                   <span class="avatar-sm">陳</span>
@@ -130,7 +138,7 @@
                   <span class="role">代理人</span>
                 </button>
               </li>
-              <li class="pipe"></li>
+              <li class="pipe" aria-hidden="true"></li>
               <li class="node current" data-role="approver">
                 <button type="button" class="node-btn" data-action="approver">
                   <span class="avatar-sm">林</span>
@@ -141,43 +149,14 @@
             </ol>
           </div>
 
-          <div class="btn-row">
-            <button type="button" class="primary" id="btn-submit">送出</button>
-            <button type="button" class="ok" id="btn-approve">核准</button>
-            <button type="button" class="danger" id="btn-deny">駁回</button>
-            <button type="button" class="ghost" id="btn-return">退回</button>
+          <div class="btn-row" id="card-actions">
+            <button type="button" class="primary" id="btn-primary-action">送出申請</button>
           </div>
-        </section>
-
-        <!-- 類 LINE 對話室 -->
-        <section class="thread" aria-label="對話室">
-          <h3>對話室 <span class="hint">一人一句一格 · 可限定欄位</span></h3>
-          <div class="boxes" id="boxes">
-            <article class="box me">
-              <header><strong>王小明</strong><time>昨天 17:02</time></header>
-              <p>請幫我簽一下，明天上午請假。</p>
-              <footer class="bound">綁定欄：假別、天數</footer>
-            </article>
-            <article class="box">
-              <header><strong>林主管</strong><time>昨天 17:10</time></header>
-              <p>代理人確認過了嗎？</p>
-              <footer class="bound">綁定欄：代理人</footer>
-            </article>
-            <article class="box me">
-              <header><strong>王小明</strong><time>昨天 17:12</time></header>
-              <p>有，陳美玲已同意代理。</p>
-            </article>
-          </div>
-          <form class="composer" id="composer">
-            <input type="text" id="msg" placeholder="輸入一則訊息（假畫面，不會真的送出）" autocomplete="off" />
-            <button type="submit">傳送</button>
-          </form>
-        </section>
+        </aside>
       </div>
     </main>
   </div>
 
-  <!-- 點人操作選單 -->
   <div class="sheet hidden" id="sheet" role="dialog" aria-modal="true" aria-labelledby="sheet-title">
     <div class="sheet-card">
       <h3 id="sheet-title">操作</h3>
@@ -187,7 +166,6 @@
     </div>
   </div>
 
-  <!-- 個人資料卡 -->
   <div class="sheet hidden" id="profile" role="dialog" aria-modal="true">
     <div class="sheet-card">
       <h3 id="profile-title">個人資料</h3>
@@ -196,11 +174,26 @@
     </div>
   </div>
 
+  <div class="sheet hidden" id="reason-sheet" role="dialog" aria-modal="true">
+    <div class="sheet-card">
+      <h3 id="reason-title">請填理由</h3>
+      <p id="reason-desc"></p>
+      <label class="reason-field">
+        <span class="sr-only">理由</span>
+        <textarea id="reason-input" rows="3" placeholder="輸入理由…"></textarea>
+      </label>
+      <div class="btn-row">
+        <button type="button" class="primary" id="reason-confirm">確認</button>
+        <button type="button" class="ghost" id="reason-cancel">取消</button>
+      </div>
+    </div>
+  </div>
+
   <div class="toast hidden" id="toast" role="status"></div>
-  <p class="demo-foot" style="position:fixed;right:12px;bottom:10px;z-index:5;margin:0;font-size:12px;opacity:.85;">
-    <a href="../" style="color:inherit;">← SEED 首頁</a>
+  <p class="demo-foot">
+    <a href="../">← SEED 首頁</a>
     ·
-    <a href="../schema/form-schema.example.json" style="color:inherit;">表單 schema 範例</a>
+    <a href="../schema/form-schema.example.json">表單 schema 範例</a>
   </p>
   <script src="./app.js"></script>
 </body>

@@ -7,7 +7,7 @@ alwaysApply: true
 
 - 主題：`docs/00-theme.md`
 - **合作方式**：`prompts/AGENT-MASTER.md`（想法→idea→**確認細節**→直接開發並發布→checklist；結案→idea.history）
-- **說明法**：真實 path 樹＋同行介紹；一次 ≤5；不要房間比喻；見 AGENT-MASTER §7
+- **說明法**：真實 path 樹＋同行介紹；一次 ≤5；下一批直接接續；不要房間比喻；見 AGENT-MASTER §7
 - **AI Doc**：像 Cursor 用 AI 改每一份檔，並顯示修改處；規格 `docs/ai-doc.md`（舊稱 SmartDoc／文稿）
 - `idea.md`＝進行中構想（Why／What／How／Pros／Cons）
 - `idea.history.md`＝已結案；與 idea 分開＝少載入、省成本

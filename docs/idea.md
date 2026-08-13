@@ -6,7 +6,7 @@
 > 做成並發布後：把該能力**登記進 checklist**；本則構想再移到 `idea.history`。  
 > 流轉：**想法 → idea → 確認細節 → 直接開發並發布**（見 AGENT-MASTER）。  
 > 合作規則總表：[`../prompts/AGENT-MASTER.md`](../prompts/AGENT-MASTER.md)  
-> 更新：2026-08-13（追加：說明法擴充類型）
+> 更新：2026-08-13（追加：說明法 App／變現）
 
 ### 寫入規則（給 AI）
 

@@ -4,9 +4,15 @@
 > 這裡放已完成或已取消的構想；進行中的只留在 [`idea.md`](./idea.md)。  
 > 「現在有沒有這個功能」以 [`03-checklist.md`](./03-checklist.md) 查核為準，不是看本檔。  
 > 舊檔名：`02-idea-done.md`。  
-> 更新：2026-08-04
+> 更新：2026-08-13
 
 ---
+
+## 2026-08-13 — Approval 簽核假畫面掛站（A2）
+
+- 結果：done（已發布至 AI_MD Pages）  
+- 來源：對話（「接續 approval 網站，讓他發布到 GitHub」）  
+- 摘要：自 `hyi1105/Approval` 歷史還原 Teams 風格紙本請假 Demo（`web/approval/`）＋表單 schema 範例；首頁加「簽核 Demo」入口。線上 https://hyi1105.github.io/AI_MD/approval/ 。正式庫 `Approval` 本 Agent 無權 push（403），待授權後再遷回。  
 
 ## 2026-08-04 — 假圖：聊天氣泡內綠色漸層標籤框
 

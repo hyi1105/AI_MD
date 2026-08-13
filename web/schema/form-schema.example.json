@@ -1,0 +1,94 @@
+{
+  "$schema_version": "0.1",
+  "form_id": "leave_request_v1",
+  "title": "請假申請（紙本風）",
+  "layout": {
+    "style": "paper_text",
+    "columns_per_row": 2,
+    "show_design_preview": true
+  },
+  "fields": [
+    {
+      "name": "applicant",
+      "display_name": "申請人",
+      "type": "person",
+      "required": true,
+      "editable_by": ["applicant"],
+      "visible_to": ["applicant", "approver", "agent"],
+      "storage": "shared",
+      "readonly_when": ["status != draft"]
+    },
+    {
+      "name": "leave_type",
+      "display_name": "假別",
+      "type": "dropdown",
+      "options": ["特休", "事假", "病假", "其他"],
+      "required": true,
+      "editable_by": ["applicant"],
+      "visible_to": ["applicant", "approver", "agent"],
+      "storage": "shared"
+    },
+    {
+      "name": "days",
+      "display_name": "天數",
+      "type": "number",
+      "required": true,
+      "editable_by": ["applicant"],
+      "visible_to": ["applicant", "approver", "agent"],
+      "storage": "shared",
+      "required_when": "leave_type != null"
+    },
+    {
+      "name": "need_cover",
+      "display_name": "是否需代理人",
+      "type": "yes_no",
+      "required": true,
+      "editable_by": ["applicant"],
+      "visible_to": ["applicant", "approver", "agent"],
+      "storage": "shared"
+    },
+    {
+      "name": "agent",
+      "display_name": "代理人",
+      "type": "person",
+      "required": false,
+      "required_when": "need_cover == yes",
+      "visible_when": "need_cover == yes",
+      "editable_by": ["applicant"],
+      "visible_to": ["applicant", "approver", "agent"],
+      "storage": "shared"
+    },
+    {
+      "name": "private_note",
+      "display_name": "僅自己可見備註",
+      "type": "text",
+      "required": false,
+      "editable_by": ["owner"],
+      "visible_to": ["owner"],
+      "storage": "personal",
+      "note": "不寫入共用清單；依登入者 ID 從個人儲存空間讀出後填入畫面"
+    }
+  ],
+  "actions": ["submit", "approve", "deny", "return", "notify_request"],
+  "signature_line": {
+    "style": "waterline",
+    "nodes": [
+      { "role": "applicant", "label": "申請人", "click": ["change_agent", "view_profile"] },
+      { "role": "agent", "label": "代理人", "click": ["change_agent", "view_profile"] },
+      { "role": "approver", "label": "簽核人", "click": ["change_approver", "return", "notify_request", "view_profile"] }
+    ]
+  },
+  "conversation": {
+    "style": "line_boxes",
+    "bound_fields_mode": "whitelist",
+    "default_bound_fields": ["leave_type", "days"],
+    "each_message_is_box": true,
+    "reply_creates_new_box": true
+  },
+  "privacy": {
+    "identity_key": "user_id",
+    "shared_store": "sharepoint_list",
+    "personal_store": "user_personal_space",
+    "rule": "畫面只渲染 visible_to 含目前登入者的欄位；personal 欄位內容不存在於共用應用資料，僅依 ID 即時讀取"
+  }
+}

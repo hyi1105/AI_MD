@@ -5,7 +5,7 @@
 > [`03-checklist.md`](./03-checklist.md) 是「現有功能查核表」，不是構想匣。  
 > 做成並發布後：把該能力**登記進 checklist**；本則構想再移到 `idea.history`。  
 > 合作規則總表：[`../prompts/AGENT-MASTER.md`](../prompts/AGENT-MASTER.md)  
-> 更新：2026-08-04
+> 更新：2026-08-13
 
 ### 寫入規則（給 AI）
 
@@ -162,6 +162,7 @@
 
 | 日期 | 說了什麼 | 去向 |
 |------|----------|------|
+| 2026-08-13 | 系統分層＋四視角統一場景→開發發布 | checklist／history |
 | 2026-08-13 | 簽核＝LINE＋格式卡；執行並發布 | checklist／history |
 | 2026-08-13 | 接續 Approval 簽核假畫面→發布 | checklist／history |
 | 2026-08-04 | 綠色漸層標籤假圖→發布 | checklist／history |

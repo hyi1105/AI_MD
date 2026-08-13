@@ -8,6 +8,12 @@
 
 ---
 
+## 2026-08-13 — 系統分層認識＋多視角統一場景（簽核示範）
+
+- 結果：done（已發布至 AI_MD Pages）  
+- 來源：對話（分層認識、統一場景；「沒想法先自行」→「開發並發布」）  
+- 摘要：靜態系統地圖 `web/system-map/`——同一張簽核／申請地圖可切換流程圖／SQL／Power Automate／Shared Enclosure；第一層兩主幹（流程控、資料存）；首頁加入口。線上 https://hyi1105.github.io/AI_MD/system-map/  
+
 ## 2026-08-13 — 簽核＝像打 LINE＋獨立格式卡；送出＝submit／approve
 
 - 結果：done（已發布）  

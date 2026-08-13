@@ -86,7 +86,7 @@
 | [catalog-updates.mdc](../.cursor/rules/catalog-updates.mdc) | 目錄只改 `catalog.json` |
 | [ai-md-framework.mdc](../.cursor/rules/ai-md-framework.mdc) | 編輯 docs 時的架構提醒 |
 
-完整說明：[`AGENT-MASTER.md`](../prompts/AGENT-MASTER.md)（§7：路線＋錨點＋旁註）
+完整說明：[`AGENT-MASTER.md`](../prompts/AGENT-MASTER.md)（§7 **說明法**：讀文件／讀程式都用；口令「用說明法」）
 
 ---
 

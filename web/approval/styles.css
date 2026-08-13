@@ -144,6 +144,23 @@ body {
   flex: 1;
   overflow: hidden;
 }
+body.card-collapsed .stage {
+  grid-template-columns: 1fr;
+}
+
+.main-head {
+  position: relative;
+  z-index: 8;
+}
+.main-actions {
+  position: relative;
+  z-index: 9;
+}
+.main-actions .ghost {
+  position: relative;
+  z-index: 9;
+  pointer-events: auto;
+}
 
 /* LINE-like thread — chat is chat */
 .thread {
@@ -262,6 +279,10 @@ body {
   font-family: var(--font-paper);
   box-shadow: inset 0 0 0 1px rgba(0,0,0,.06);
   position: relative;
+  z-index: 6;
+}
+.format-card.collapsed {
+  display: none;
 }
 .format-card::before {
   content: "";
@@ -502,6 +523,27 @@ button.ghost {
 }
 .toast.hidden { display: none; }
 
+/* 收合後永遠可點的重開按鈕 */
+.card-reopen {
+  position: fixed;
+  right: 16px;
+  bottom: 56px;
+  z-index: 40;
+  border: 0;
+  border-radius: 999px;
+  padding: 14px 20px;
+  min-height: 48px;
+  font: 700 15px/1 var(--font-ui);
+  background: var(--line);
+  color: #102014;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+  cursor: pointer;
+  pointer-events: auto;
+  touch-action: manipulation;
+}
+.card-reopen:hover { filter: brightness(1.05); }
+.card-reopen.hidden { display: none; }
+
 .demo-foot {
   position: fixed;
   right: 12px;
@@ -524,14 +566,28 @@ button.ghost {
     z-index: 15;
     border-radius: 16px 16px 0 0;
     box-shadow: 0 -12px 40px rgba(0,0,0,.45);
-    transform: translateY(110%);
-    transition: transform 0.25s ease;
-  }
-  .format-card.open,
-  body.card-open .format-card {
     transform: translateY(0);
+    transition: transform 0.25s ease;
+    display: block;
+  }
+  .format-card.collapsed {
+    display: block;
+    transform: translateY(110%);
+    pointer-events: none;
+    visibility: hidden;
+  }
+  .format-card.open {
+    transform: translateY(0);
+    pointer-events: auto;
+    visibility: visible;
   }
   .thread { border-right: 0; }
+  .card-reopen {
+    bottom: calc(16px + env(safe-area-inset-bottom, 0px));
+    left: 16px;
+    right: 16px;
+    width: auto;
+  }
 }
 @media (max-width: 560px) {
   .card-form { grid-template-columns: 1fr; }

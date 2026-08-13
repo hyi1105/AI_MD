@@ -53,7 +53,7 @@
           <p class="sub" id="viewer-role">檢視中：申請人 · 聊天 ≠ 格式卡</p>
         </div>
         <div class="main-actions">
-          <button type="button" class="ghost" id="btn-toggle-card">手上文件</button>
+          <button type="button" class="ghost" id="btn-toggle-card" aria-controls="format-card" aria-expanded="true">收起格式卡</button>
           <button type="button" class="ghost" id="btn-as-approver">切成簽核人視角</button>
         </div>
       </header>
@@ -188,6 +188,11 @@
       </div>
     </div>
   </div>
+
+  <!-- 收合後固定可點：避免被底層擋住 -->
+  <button type="button" class="card-reopen hidden" id="btn-reopen-card" aria-controls="format-card">
+    打開格式卡
+  </button>
 
   <div class="toast hidden" id="toast" role="status"></div>
   <p class="demo-foot">

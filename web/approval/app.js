@@ -18,6 +18,24 @@
   const reasonTitle = document.getElementById("reason-title");
   const reasonDesc = document.getElementById("reason-desc");
   const reasonInput = document.getElementById("reason-input");
+  const btnToggleCard = document.getElementById("btn-toggle-card");
+  const btnReopenCard = document.getElementById("btn-reopen-card");
+
+  function setCardOpen(open) {
+    formatCard.classList.toggle("open", open);
+    formatCard.classList.toggle("collapsed", !open);
+    document.body.classList.toggle("card-open", open);
+    document.body.classList.toggle("card-collapsed", !open);
+    formatCard.setAttribute("aria-hidden", open ? "false" : "true");
+    btnToggleCard.setAttribute("aria-expanded", open ? "true" : "false");
+    btnToggleCard.textContent = open ? "收起格式卡" : "打開格式卡";
+    btnReopenCard.classList.toggle("hidden", open);
+    if (open) {
+      formatCard.removeAttribute("inert");
+    } else {
+      formatCard.setAttribute("inert", "");
+    }
+  }
 
   let asApprover = false;
   let reasonCallback = null;
@@ -201,8 +219,7 @@
       const label = f.querySelector(".label")?.childNodes[0]?.textContent?.trim();
       f.classList.toggle("invalid", gaps.includes(label) || (gaps.includes("代理人") && input.name === "agent"));
     });
-    formatCard.classList.add("open");
-    document.body.classList.add("card-open");
+    setCardOpen(true);
   }
 
   function setFormEditable(editable) {
@@ -386,14 +403,20 @@
     showToast(asApprover ? "簽核人：聊天歸聊天，文件看格式卡" : "申請人：可改格式卡並送出");
   });
 
-  document.getElementById("btn-toggle-card").addEventListener("click", () => {
-    const open = !formatCard.classList.contains("open");
-    formatCard.classList.toggle("open", open);
-    document.body.classList.toggle("card-open", open);
+  btnToggleCard.addEventListener("click", (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+    setCardOpen(!formatCard.classList.contains("open"));
   });
-  document.getElementById("btn-close-card").addEventListener("click", () => {
-    formatCard.classList.remove("open");
-    document.body.classList.remove("card-open");
+  btnReopenCard.addEventListener("click", (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+    setCardOpen(true);
+  });
+  document.getElementById("btn-close-card").addEventListener("click", (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+    setCardOpen(false);
   });
 
   document.getElementById("composer").addEventListener("submit", (e) => {
@@ -417,6 +440,5 @@
     body: "左邊／上面是一般聊天（像打 LINE）。右邊／手上是格式卡（文件）。送出申請＝submit；核准＝approve。駁回／退回會出現在對話的系統訊息。",
   });
   refreshPrimaryAction();
-  formatCard.classList.add("open");
-  document.body.classList.add("card-open");
+  setCardOpen(true);
 })();

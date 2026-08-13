@@ -37,6 +37,6 @@ cd web
 cd aidoc && npm install && npm run build
 ```
 
-想法 → `idea.md` → 改程式／發布成功 → 登記 `03-checklist` → 移 `idea.history`。
+想法 → `idea.md` → **確認細節** → 直接開發並發布 → 登記 `03-checklist` → 移 `idea.history`。
 
 MIT

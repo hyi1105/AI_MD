@@ -72,12 +72,12 @@
 ## 4. 文件協作（已定案能力）
 
 - [x] 規格在 `docs/`：`00-theme`／`idea`／`idea.history`／`03-checklist`／`ai-doc`  
-- [x] 合作方式：想法→AI 整理→`idea.md`；發布後登記 checklist；結案→`idea.history`  
+- [x] 合作方式：想法→AI 整理→`idea.md`→**確認細節**→直接開發並發布→checklist；結案→`idea.history`  
 - [x] checklist＝**現有功能查核表**（改版後可對照找缺漏）  
 - [x] `idea`＝進行中構想；`idea.history`＝已結案（拆開省查檔成本）  
 - [x] Idea 條目含 Why／What／How／Pros／Cons  
 - [x] 一律繁體中文（含語音轉文字整理）  
-- [x] 預設只改 MD；「改程式」「發布」才動 code／上線  
+- [x] 預設只改 MD；**細節確認後直接開發並發布**（舊詞「改程式」「發布」仍有效）  
 - [x] 目錄只靠 JSON  
 - [x] `.mdc` 可從 [`00-theme.md`](./00-theme.md) 點連結  
 - [x] 2026-07-19 theme／文稿／查核定位已發布至 Pages  

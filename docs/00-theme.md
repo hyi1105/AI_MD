@@ -52,7 +52,7 @@
 |------|------|
 | AI 查詢 | 搜尋 `web/catalog.json`；詳情只靠 JSON |
 | **AI Doc** | 規格見 [`ai-doc.md`](./ai-doc.md)；AI 像 Cursor 改每一份檔，產出後顯示修改處 |
-| 系統地圖 | 簽核／申請四視角（流程圖／SQL／PA／Shared Enclosure）：`/system-map/` |
+| 系統地圖 | 簽核積木磁貼四視角換皮（流程圖／SQL／PA／Shared Enclosure）：`/system-map/` |
 
 ---
 
@@ -65,8 +65,9 @@
 | `03-checklist` | **功能查核表** | 記錄「產品現在應該具備哪些功能」；改版後 AI 對照線上／程式，發現缺漏 |
 
 ```text
-你分享想法  →  AI 整理  →  idea.md
-實作並發布成功後
+你分享想法  →  AI 整理  →  idea.md  →  列出待確認細節
+負責人確認細節後
+       →  AI 直接開發並發布
        →  把該能力登記進 03-checklist.md（供日後查核）
 構想結案
        →  該則從 idea.md 移到 idea.history.md
@@ -81,7 +82,7 @@
 | 規則檔 | 內容 |
 |--------|------|
 | [theme.mdc](../.cursor/rules/theme.mdc) | 產品主題（永遠套用） |
-| [md-first-workflow.mdc](../.cursor/rules/md-first-workflow.mdc) | 預設只改 MD；改程式／發布觸發詞 |
+| [md-first-workflow.mdc](../.cursor/rules/md-first-workflow.mdc) | 預設只改 MD；**確認細節後直接開發並發布** |
 | [catalog-updates.mdc](../.cursor/rules/catalog-updates.mdc) | 目錄只改 `catalog.json` |
 | [ai-md-framework.mdc](../.cursor/rules/ai-md-framework.mdc) | 編輯 docs 時的架構提醒 |
 

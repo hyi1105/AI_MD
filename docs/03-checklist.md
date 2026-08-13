@@ -30,7 +30,7 @@
 - [x] 簽核：駁回／退回為對話內**系統訊息＋按鈕**（可填理由）  
 - [x] 簽核：個人備註欄僅申請人格式卡可見；簽核人視角整格消失  
 - [x] 簽核表單 schema 範例可開啟：[`/schema/form-schema.example.json`](https://hyi1105.github.io/AI_MD/schema/form-schema.example.json)  
-- [x] 系統地圖可線上開啟：[`/system-map/`](https://hyi1105.github.io/AI_MD/system-map/)（簽核／申請；流程圖／SQL／Power Automate／Shared Enclosure 四視角切換，層級節點對齊）  
+- [x] 系統地圖可線上開啟：[`/system-map/`](https://hyi1105.github.io/AI_MD/system-map/)（簽核／申請；**積木／磁貼圖塊**；流程圖／SQL／Power Automate／Shared Enclosure 四視角換皮，節點對齊可辨）  
 
 ---
 
@@ -72,12 +72,12 @@
 ## 4. 文件協作（已定案能力）
 
 - [x] 規格在 `docs/`：`00-theme`／`idea`／`idea.history`／`03-checklist`／`ai-doc`  
-- [x] 合作方式：想法→AI 整理→`idea.md`；發布後登記 checklist；結案→`idea.history`  
+- [x] 合作方式：想法→AI 整理→`idea.md`→**確認細節**→直接開發並發布→checklist；結案→`idea.history`  
 - [x] checklist＝**現有功能查核表**（改版後可對照找缺漏）  
 - [x] `idea`＝進行中構想；`idea.history`＝已結案（拆開省查檔成本）  
 - [x] Idea 條目含 Why／What／How／Pros／Cons  
 - [x] 一律繁體中文（含語音轉文字整理）  
-- [x] 預設只改 MD；「改程式」「發布」才動 code／上線  
+- [x] 預設只改 MD；**細節確認後直接開發並發布**（舊詞「改程式」「發布」仍有效）  
 - [x] 目錄只靠 JSON  
 - [x] `.mdc` 可從 [`00-theme.md`](./00-theme.md) 點連結  
 - [x] 2026-07-19 theme／文稿／查核定位已發布至 Pages  
@@ -87,7 +87,9 @@
 - [x] 2026-08-04 綠色漸層標籤假圖已發布至 Pages（`/assets/fake-chat-green-gradient-boxes.png`）  
 - [x] 2026-08-13 Approval 簽核假畫面已發布至 Pages（`/approval/`；schema 範例 `/schema/`）  
 - [x] 2026-08-13 簽核改為 LINE 對話＋獨立格式卡；submit／approve；駁回退回系統訊息  
-- [x] 2026-08-13 系統地圖（簽核四視角）已發布至 Pages（`/system-map/`）
+- [x] 2026-08-13 系統地圖（簽核四視角）已發布至 Pages（`/system-map/`）  
+- [x] 2026-08-13 系統地圖改為積木／磁貼圖塊＋四視角換皮動畫  
+- [x] 2026-08-13 合作規則改為：確認細節後直接開發並發布
 
 ---
 

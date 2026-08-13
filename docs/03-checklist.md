@@ -30,7 +30,7 @@
 - [x] 簽核：駁回／退回為對話內**系統訊息＋按鈕**（可填理由）  
 - [x] 簽核：個人備註欄僅申請人格式卡可見；簽核人視角整格消失  
 - [x] 簽核表單 schema 範例可開啟：[`/schema/form-schema.example.json`](https://hyi1105.github.io/AI_MD/schema/form-schema.example.json)  
-- [x] 系統地圖可線上開啟：[`/system-map/`](https://hyi1105.github.io/AI_MD/system-map/)（簽核／申請；流程圖／SQL／Power Automate／Shared Enclosure 四視角切換，層級節點對齊）  
+- [x] 系統地圖可線上開啟：[`/system-map/`](https://hyi1105.github.io/AI_MD/system-map/)（簽核／申請；**積木／磁貼圖塊**；流程圖／SQL／Power Automate／Shared Enclosure 四視角換皮，節點對齊可辨）  
 
 ---
 
@@ -87,7 +87,9 @@
 - [x] 2026-08-04 綠色漸層標籤假圖已發布至 Pages（`/assets/fake-chat-green-gradient-boxes.png`）  
 - [x] 2026-08-13 Approval 簽核假畫面已發布至 Pages（`/approval/`；schema 範例 `/schema/`）  
 - [x] 2026-08-13 簽核改為 LINE 對話＋獨立格式卡；submit／approve；駁回退回系統訊息  
-- [x] 2026-08-13 系統地圖（簽核四視角）已發布至 Pages（`/system-map/`）
+- [x] 2026-08-13 系統地圖（簽核四視角）已發布至 Pages（`/system-map/`）  
+- [x] 2026-08-13 系統地圖改為積木／磁貼圖塊＋四視角換皮動畫  
+- [x] 2026-08-13 合作規則改為：確認細節後直接開發並發布
 
 ---
 

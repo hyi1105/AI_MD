@@ -22,6 +22,7 @@
 | 工具 | 說明 |
 |------|------|
 | AI 查詢 | `web/` + `catalog.json` |
+| **說明法** | 文字／文件／圖片 → 說明法樹（真 AI BYOK）：`/explain/` |
 | AI Doc | 像 Cursor 改檔並顯示 Diff（程式在 `aidoc/` → `web/aidoc/`） |
 | **簽核 Demo** | LINE 對話＋獨立格式卡（`web/approval/`）；submit／approve |
 | **系統地圖** | 簽核／申請：同一地圖切換 SQL／Enclosure／流程圖／PA（`web/system-map/`） |

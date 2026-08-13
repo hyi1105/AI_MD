@@ -8,6 +8,12 @@
 
 ---
 
+## 2026-08-13 — 說明法 Web MVP（B＋真 AI＋本站）
+
+- 結果：done（已發布）  
+- 來源：對話（B 很不錯從 MVP→文字／文件／圖片、真 AI API、先本站）  
+- 摘要：`web/explain/`；BYOK OpenAI 相容 API；支援文字／文件／圖片；說明法 system prompt；下一層；首頁入口。線上 https://hyi1105.github.io/AI_MD/explain/  
+
 ## 2026-08-13 — 說明法含欄位血緣（願意讀完）
 
 - 結果：done（血緣寫進 §7／說明法.mdc）  

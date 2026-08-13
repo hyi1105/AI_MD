@@ -21,7 +21,7 @@
 ## 1. 入口與品牌
 
 - [x] 首頁顯示品牌 **SEED** 與 **Hello World** 問候  
-- [x] 首頁可進入 AI 查詢（`query.html`）、AI Doc、**簽核 Demo**（`approval/`）與**系統地圖**（`system-map/`）  
+- [x] 首頁可進入 AI 查詢（`query.html`）、AI Doc、**說明法**（`explain/`）、**簽核 Demo**（`approval/`）與**系統地圖**（`system-map/`）  
 - [x] 首頁說明提到長期關注／知識書  
 - [x] AI 查詢頁頂部可切換「AI 查詢」與「AI Doc」  
 - [x] 假圖（聊天氣泡綠色漸層標籤框）可線上開啟：[`/assets/fake-chat-green-gradient-boxes.png`](https://hyi1105.github.io/AI_MD/assets/fake-chat-green-gradient-boxes.png)  
@@ -78,7 +78,8 @@
 - [x] Idea 條目含 Why／What／How／Pros／Cons  
 - [x] 一律繁體中文（含語音轉文字整理）  
 - [x] 預設只改 MD；**細節確認後直接開發並發布**（舊詞「改程式」「發布」仍有效）  
-- [x] **說明法（永遠）**：讀文件／讀程式／**欄位血緣**；一次 ≤5；一層一層；口令「用說明法」；**跑 .ps1 前先說明**；可攜 `.cursor/rules/說明法.mdc`  
+- [x] 說明法 Web MVP 可線上開啟：[`/explain/`](https://hyi1105.github.io/AI_MD/explain/)（文字／文件／圖片；真 AI BYOK；產出說明法樹；可「下一層」）  
+- [x] 說明法（永遠）：讀文件／讀程式／**欄位血緣**；一次 ≤5；一層一層；口令「用說明法」；**跑 .ps1 前先說明**；可攜 `.cursor/rules/說明法.mdc`  
 - [x] 目錄只靠 JSON  
 - [x] `.mdc` 可從 [`00-theme.md`](./00-theme.md) 點連結  
 - [x] 2026-07-19 theme／文稿／查核定位已發布至 Pages  

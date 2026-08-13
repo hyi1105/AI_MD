@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>說明法 — SEED</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700&family=Figtree:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header class="top">
+    <a class="back" href="../">← SEED</a>
+    <div class="top-titles">
+      <p class="eyebrow">說明法 MVP</p>
+      <h1>結構＋介紹，一次 ≤5</h1>
+    </div>
+    <button type="button" class="btn ghost" id="btn-settings">API 設定</button>
+  </header>
+
+  <p class="banner">
+    真 AI：金鑰只存在你的瀏覽器（BYOK）。GitHub Pages 無法藏伺服器金鑰。
+    圖片請選支援 vision 的模型（例如 <code>gpt-4o</code>）。
+  </p>
+
+  <main class="layout">
+    <section class="panel input-panel">
+      <div class="tabs" role="tablist">
+        <button type="button" class="tab active" data-tab="text" role="tab">文字</button>
+        <button type="button" class="tab" data-tab="file" role="tab">文件</button>
+        <button type="button" class="tab" data-tab="image" role="tab">圖片</button>
+      </div>
+
+      <div class="tab-panel" id="panel-text">
+        <label class="label" for="text-input">貼上程式、文件或流程說明</label>
+        <textarea id="text-input" rows="14" placeholder="貼上原始碼、Markdown、流程文字…"></textarea>
+      </div>
+
+      <div class="tab-panel hidden" id="panel-file">
+        <label class="label" for="file-input">上傳文字檔（.txt .md .json .csv .js .ts .py…）</label>
+        <input id="file-input" type="file" accept=".txt,.md,.markdown,.json,.csv,.js,.ts,.tsx,.jsx,.py,.html,.css,.xml,.yaml,.yml,.log" />
+        <p class="hint" id="file-name">尚未選擇檔案。PDF 請先複製成文字，或改用圖片分頁拍頁面。</p>
+        <textarea id="file-preview" rows="10" readonly placeholder="檔案內容預覽…"></textarea>
+      </div>
+
+      <div class="tab-panel hidden" id="panel-image">
+        <label class="label" for="image-input">上傳流程圖／截圖</label>
+        <input id="image-input" type="file" accept="image/*" />
+        <p class="hint" id="image-name">尚未選擇圖片</p>
+        <div class="image-wrap">
+          <img id="image-preview" alt="" hidden />
+        </div>
+        <label class="label" for="image-note">（可選）你想先看哪一層</label>
+        <input id="image-note" type="text" placeholder="例如：先三個系統，再紅圈 1" />
+      </div>
+
+      <label class="label" for="focus-input">（可選）這一輪焦點</label>
+      <input id="focus-input" type="text" placeholder="例如：只要外層；或跟 leave_type 血緣" />
+
+      <div class="actions">
+        <button type="button" class="btn primary" id="btn-generate">產生說明法</button>
+        <button type="button" class="btn ghost" id="btn-next" disabled>下一層</button>
+        <button type="button" class="btn ghost" id="btn-clear">清空輸出</button>
+      </div>
+      <p class="status" id="status" role="status"></p>
+    </section>
+
+    <section class="panel output-panel">
+      <div class="out-head">
+        <h2>說明法輸出</h2>
+        <button type="button" class="btn ghost small" id="btn-copy" disabled>複製</button>
+      </div>
+      <pre id="output" class="output" aria-live="polite">還沒產生。先在左側放素材，再按「產生說明法」。</pre>
+    </section>
+  </main>
+
+  <dialog class="settings" id="settings-dialog">
+    <form method="dialog" id="settings-form">
+      <h2>API 設定（存在本機）</h2>
+      <label class="label" for="api-base">API Base URL</label>
+      <input id="api-base" type="url" value="https://api.openai.com/v1" required />
+      <label class="label" for="api-key">API Key</label>
+      <input id="api-key" type="password" autocomplete="off" placeholder="sk-…" required />
+      <label class="label" for="api-model">Model</label>
+      <input id="api-model" type="text" value="gpt-4o" required />
+      <p class="hint">相容 OpenAI Chat Completions。金鑰不會上傳到本站伺服器（本站無後端）。</p>
+      <div class="actions">
+        <button type="submit" class="btn primary" value="save">儲存</button>
+        <button type="button" class="btn ghost" id="btn-settings-close">關閉</button>
+      </div>
+    </form>
+  </dialog>
+
+  <script src="./app.js"></script>
+</body>
+</html>

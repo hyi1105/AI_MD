@@ -3,10 +3,16 @@
 > **與 `idea.md` 拆開的主要原因：查文件時少載入資料、省成本。**  
 > 這裡放已完成或已取消的構想；進行中的只留在 [`idea.md`](./idea.md)。  
 > 「現在有沒有這個功能」以 [`checklist.md`](./checklist.md) 查核為準，不是看本檔。  
-> 舊檔名：`02-idea-done.md`。  
+> 架構地圖：[`README.md`](./README.md)。  
 > 更新：2026-08-15
 
 ---
+
+## 2026-08-15 — MD 架構整理（分類地圖＋specs）
+
+- 結果：done（文件層）  
+- 來源：對話（「幫我整理 MD 架構；分類有些亂」）  
+- 摘要：新增 `docs/README.md` 為唯一分類地圖；`theme.md` 只留產品；`ai-doc.md`→`docs/specs/ai-doc.md`；流程長文只留 `AGENT-MASTER`；更新規則與根 README。  
 
 ## 2026-08-15 — 清空全部未完成 idea＋文件名統一
 

@@ -1,8 +1,7 @@
 # SEED / Theme
 
 **長期關注產品或 KOL 知識的網站。**  
-主題說明見 [`docs/theme.md`](docs/theme.md)。  
-**合作方式**見 [`prompts/AGENT-MASTER.md`](prompts/AGENT-MASTER.md)。
+文件地圖：[`docs/README.md`](docs/README.md) · 主題：[`docs/theme.md`](docs/theme.md) · 合作：[`prompts/AGENT-MASTER.md`](prompts/AGENT-MASTER.md)。
 
 > 線上：**https://hyi1105.github.io/AI_MD/**
 
@@ -10,12 +9,13 @@
 
 | 檔案 | 用途 |
 |------|------|
+| [docs/README.md](docs/README.md) | **架構地圖**（分類從這開始） |
 | [docs/theme.md](docs/theme.md) | 產品主題 |
-| [docs/idea.md](docs/idea.md) | 進行中構想（對話整理後存放） |
-| [docs/idea.history.md](docs/idea.history.md) | 已結案構想（分開以省查檔成本） |
-| [docs/checklist.md](docs/checklist.md) | **現有功能查核表** |
-| [docs/ai-doc.md](docs/ai-doc.md) | **AI Doc**：AI 改檔 + 顯示修改處 |
-| [prompts/AGENT-MASTER.md](prompts/AGENT-MASTER.md) | 合作方式＋AI 規則 |
+| [docs/idea.md](docs/idea.md) | 進行中構想 |
+| [docs/idea.history.md](docs/idea.history.md) | 已結案構想 |
+| [docs/checklist.md](docs/checklist.md) | 現有功能查核表 |
+| [docs/specs/ai-doc.md](docs/specs/ai-doc.md) | AI Doc 規格 |
+| [prompts/AGENT-MASTER.md](prompts/AGENT-MASTER.md) | 合作方式＋說明法 |
 
 ## 工具
 

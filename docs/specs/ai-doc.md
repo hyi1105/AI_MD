@@ -2,7 +2,7 @@
 
 > 這是主題下的一類 **AI 資料收集／輸出工具**（不是子專案）。  
 > **舊稱**：SmartDoc／文稿（manuscript）。  
-> 主題：[`theme.md`](./theme.md) · 構想：[`idea.md`](./idea.md) · 查核：[`checklist.md`](./checklist.md)
+> 主題：[`../theme.md`](../theme.md) · 構想：[`../idea.md`](../idea.md) · 查核：[`../checklist.md`](../checklist.md) · 架構：[`../README.md`](../README.md)
 
 ---
 
@@ -55,4 +55,4 @@ AI 查詢（找素材）→ AI Doc（AI 改檔並顯示修改處）→ 累積成
 | 真 LLM | ⏳ 構想中 |
 | 路徑／資料夾 | 程式在 `aidoc/`；站上入口 `/aidoc/` |
 
-驗收以 [`checklist.md`](./checklist.md) 為準。
+驗收以 [`../checklist.md`](../checklist.md) 為準。

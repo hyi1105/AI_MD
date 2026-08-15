@@ -5,7 +5,7 @@
 > 例：曾經有「建立圖樣」，改版後找不到 → 查核時應被標成缺漏。  
 > 構想細節在 [`idea.md`](./idea.md)；舊構想在 [`idea.history.md`](./idea.history.md)（分開是為了少載入、省成本）。  
 > 線上：https://hyi1105.github.io/AI_MD/  
-> 更新：2026-08-15（檔名由 `03-checklist.md` 統一為 `checklist.md`）
+> 更新：2026-08-15（MD 架構整理：`docs/README.md`＋`specs/`）
 
 圖例：`[x]` 現況具備 · `[~]` 有入口但是示範／半真 · `[!]` 查核發現缺漏／回歸（應有卻沒有）
 
@@ -52,7 +52,7 @@
 
 ## 3. AI Doc
 
-規格：[`ai-doc.md`](./ai-doc.md)  
+規格：[`specs/ai-doc.md`](./specs/ai-doc.md)  
 入口：https://hyi1105.github.io/AI_MD/aidoc/
 
 - [x] 品牌顯示為 **AI Doc**（非 SmartDoc）  
@@ -71,7 +71,7 @@
 
 ## 4. 文件協作（已定案能力）
 
-- [x] 規格在 `docs/`：`theme`／`idea`／`idea.history`／`checklist`／`ai-doc`  
+- [x] 規格在 `docs/`：`README`（地圖）／`theme`／`idea`／`idea.history`／`checklist`／`specs/`  
 - [x] 合作方式：想法→AI 整理→`idea.md`→**確認細節**→直接開發並發布→checklist；結案→`idea.history`  
 - [x] checklist＝**現有功能查核表**（改版後可對照找缺漏）  
 - [x] `idea`＝進行中構想；`idea.history`＝已結案（拆開省查檔成本）  
@@ -81,12 +81,13 @@
 - [x] 說明法 Web MVP 可線上開啟：[`/explain/`](https://hyi1105.github.io/AI_MD/explain/)（文字／文件／圖片；真 AI BYOK；產出說明法樹；可「下一層」）  
 - [x] 說明法（永遠）：讀文件／讀程式／**欄位血緣**；一次 ≤5；一層一層；口令「用說明法」；**跑 .ps1 前先說明**；可攜 `.cursor/rules/說明法.mdc`  
 - [x] 目錄只靠 JSON  
-- [x] `.mdc` 可從 [`theme.md`](./theme.md) 點連結  
+- [x] 文件分類地圖：[`README.md`](./README.md)（theme 不再重複流程長文）  
 - [x] 2026-07-19 theme／文稿／查核定位已發布至 Pages  
 - [x] 2026-07-19 **AI Doc** 已發布（`/aidoc/`；SmartDoc 品牌已替換）  
 - [x] 2026-07-19 open ideas 已發布（XSS／分類／Markdown 匯出／`aidoc` 改名）  
 - [x] 2026-07-19 檔名定案：`idea.md`／`idea.history.md`（取代 01／02）  
 - [x] 2026-08-15 文件名統一：`theme.md`／`checklist.md`（取代 `00-theme`／`03-checklist`）；未完成 idea 已清空  
+- [x] 2026-08-15 MD 架構整理：`docs/README.md` 為唯一地圖；`ai-doc`→`specs/`；theme 只留產品  
 - [x] 2026-08-04 綠色漸層標籤假圖已發布至 Pages（`/assets/fake-chat-green-gradient-boxes.png`）  
 - [x] 2026-08-13 Approval 簽核假畫面已發布至 Pages（`/approval/`；schema 範例 `/schema/`）  
 - [x] 2026-08-13 簽核改為 LINE 對話＋獨立格式卡；submit／approve；駁回退回系統訊息  

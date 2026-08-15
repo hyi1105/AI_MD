@@ -1,6 +1,6 @@
 # web／— 本機預覽
 
-見 [README.md](../README.md)、[docs/theme.md](../docs/theme.md)。
+見 [README.md](../README.md)、[docs/README.md](../docs/README.md)、[docs/theme.md](../docs/theme.md)。
 
 ```powershell
 .\start-local.ps1

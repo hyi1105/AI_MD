@@ -30,13 +30,17 @@
 
 ## 1. 文件定位
 
+架構地圖：[`docs/README.md`](../docs/README.md)（唯一分類說明）。
+
 | 檔案 | 定位 |
 |------|------|
-| [`docs/idea.md`](../docs/idea.md) | **進行中**構想（對話整理後存放處） |
-| [`docs/idea.history.md`](../docs/idea.history.md) | **已結案**構想归档（舊名 `02-idea-done`）；與 idea 分開＝少載入、省成本 |
-| [`docs/checklist.md`](../docs/checklist.md) | **現有功能查核表**；改版後對照現況，發現缺漏 |
+| [`docs/theme.md`](../docs/theme.md) | **產品主題**（SEED／知識書） |
+| [`docs/idea.md`](../docs/idea.md) | **進行中**構想 |
+| [`docs/idea.history.md`](../docs/idea.history.md) | **已結案**構想归档（與 idea 分開＝少載入） |
+| [`docs/checklist.md`](../docs/checklist.md) | **現有功能查核表** |
+| [`docs/specs/`](../docs/specs/) | **工具規格**（目前：`ai-doc.md`） |
 
-另：[`docs/theme.md`](../docs/theme.md) 主題 · [`docs/ai-doc.md`](../docs/ai-doc.md) AI Doc 規格 · `.mdc` 見 theme。
+本檔＝合作方式＋說明法。`.cursor/rules/`＝開新對話自動套用的短規則。
 
 禁止再新建 STATUS／HOW／gap。  
 禁止把「還沒做過的空想」塞進 checklist。

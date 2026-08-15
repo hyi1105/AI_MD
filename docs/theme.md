@@ -1,17 +1,8 @@
 # Theme（產品主題）
 
-> 更新：2026-08-15（檔名由 `00-theme.md` 統一為 `theme.md`）  
-> 一句話：**本站主題是長期關注某個產品或 KOL 的知識；把專業累積成可分享的知識書（產品語言仍可稱 SEED）。畫面上是不同類型的 AI 資料收集／輸出工具。**
-
-| 文件 | 用途 |
-|------|------|
-| 本檔 `theme.md` | 產品主題是什麼 |
-| [`idea.md`](./idea.md) | **進行中**構想：你分享想法 → AI 整理 → 寫入此檔 |
-| [`idea.history.md`](./idea.history.md) | **已結案**構想归档（與 idea 分開，少載入、省成本） |
-| [`checklist.md`](./checklist.md) | **現有功能查核表**：改版時對照線上／程式，發現「少了什麼功能」 |
-| [`ai-doc.md`](./ai-doc.md) | **AI Doc**：像 Cursor 一樣用 AI 改檔，並顯示修改處 |
-| [`../prompts/AGENT-MASTER.md`](../prompts/AGENT-MASTER.md) | **合作方式＋AI 規則**（先讀這份） |
-| [`../README.md`](../README.md) | 對外入口 |
+> 更新：2026-08-15  
+> 一句話：**本站主題是長期關注某個產品或 KOL 的知識；把專業累積成可分享的知識書（產品語言仍可稱 SEED）。畫面上是不同類型的 AI 資料收集／輸出工具。**  
+> 文件分類見 [`README.md`](./README.md)；合作方式見 [`../prompts/AGENT-MASTER.md`](../prompts/AGENT-MASTER.md)。
 
 ---
 
@@ -53,46 +44,13 @@
 |------|------|
 | AI 查詢 | 搜尋 `web/catalog.json`；詳情只靠 JSON |
 | **說明法** | 文字／文件／圖片 → 說明法樹；真 AI（BYOK）；`/explain/` |
-| **AI Doc** | 規格見 [`ai-doc.md`](./ai-doc.md)；AI 像 Cursor 改每一份檔，產出後顯示修改處 |
+| **AI Doc** | 規格見 [`specs/ai-doc.md`](./specs/ai-doc.md)；AI 像 Cursor 改每一份檔，產出後顯示修改處 |
+| 簽核 Demo | LINE 對話＋獨立格式卡；`/approval/` |
 | 系統地圖 | 簽核積木磁貼四視角換皮（流程圖／SQL／PA／Shared Enclosure）：`/system-map/` |
 
 ---
 
-## 4. 三份文件怎麼分工（重要）
-
-| 檔案 | 像什麼 | 用途 |
-|------|--------|------|
-| `idea.md` | 待辦構想匣 | 你分享想法；AI 整理對話後寫入（Why／What／How／Pros／Cons） |
-| `idea.history.md` | 舊構想倉庫 | 已做完或已取消；**與 idea 拆開＝少讀資料、省成本** |
-| `checklist` | **功能查核表** | 記錄「產品現在應該具備哪些功能」；改版後 AI 對照線上／程式，發現缺漏 |
-
-```text
-你分享想法  →  AI 整理  →  idea.md  →  列出待確認細節
-負責人確認細節後
-       →  AI 直接開發並發布
-       →  把該能力登記進 checklist.md（供日後查核）
-構想結案
-       →  該則從 idea.md 移到 idea.history.md
-```
-
-**Checklist 查核（Lister）**：負責人說「查核／對照 checklist」時，AI 應讀 `checklist` 與現況（頁面／程式），回報哪幾項消失或變半真。
-
----
-
-## 5. AI 規則檔（`.mdc`）
-
-| 規則檔 | 內容 |
-|--------|------|
-| [theme.mdc](../.cursor/rules/theme.mdc) | 產品主題（永遠套用） |
-| [md-first-workflow.mdc](../.cursor/rules/md-first-workflow.mdc) | 預設只改 MD；**確認細節後直接開發並發布** |
-| [catalog-updates.mdc](../.cursor/rules/catalog-updates.mdc) | 目錄只改 `catalog.json` |
-| [ai-md-framework.mdc](../.cursor/rules/ai-md-framework.mdc) | 編輯 docs 時的架構提醒 |
-
-完整說明：[`AGENT-MASTER.md`](../prompts/AGENT-MASTER.md)（§7 **說明法**：讀文件／讀程式都用；口令「用說明法」）
-
----
-
-## 6. 技術現況（摘要）
+## 4. 技術現況（摘要）
 
 | 項目 | 現況 |
 |------|------|

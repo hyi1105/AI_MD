@@ -1,21 +1,16 @@
 # Idea（進行中的構想）
 
-> 用途：你分享想法 → AI 整理對話 → **寫入本檔**。  
-> 與 [`idea.history.md`](./idea.history.md) 分開：查構想時先讀本檔即可，**少載入舊資料、省成本**。  
-> [`checklist.md`](./checklist.md) 是「現有功能查核表」，不是構想匣。  
-> 做成並發布後：把該能力**登記進 checklist**；本則構想再移到 `idea.history`。  
-> 流轉：**想法 → idea → 確認細節 → 直接開發並發布**（見 AGENT-MASTER）。  
-> 合作規則總表：[`../prompts/AGENT-MASTER.md`](../prompts/AGENT-MASTER.md)  
-> 更新：2026-08-15（清空未完成構想；文件名統一為無編號）
+> **進行中**構想匣。已結案見 [`idea.history.md`](./idea.history.md)；功能查核見 [`checklist.md`](./checklist.md)。  
+> 流轉與寫入品質：[`../prompts/AGENT-MASTER.md`](../prompts/AGENT-MASTER.md)。  
+> 架構地圖：[`README.md`](./README.md)。  
+> 更新：2026-08-15
 
 ### 寫入規則（給 AI）
-
-負責人每說一則構想（含語音轉文字），AI 必須：
 
 1. 改寫成**繁體中文**  
 2. 用下方完整模板補齊（缺的標「待補／待拍板」）  
 3. **追加**到本檔最上方  
-4. 未真正具備的功能不要塞進 checklist；checklist 只登記「現在應該查核得到」的能力  
+4. 未真正具備的功能不要塞進 checklist  
 
 ### 完整模板（每則必用）
 
@@ -37,4 +32,4 @@
 
 ## （進行中僅保留未結案產品構想）
 
-（目前無未結案構想。2026-08-15 負責人指示清空全部未完成 idea。）
+（目前無未結案構想。）

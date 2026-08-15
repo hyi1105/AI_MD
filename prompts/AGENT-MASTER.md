@@ -39,8 +39,9 @@
 | [`docs/idea.history.md`](../docs/idea.history.md) | **已結案**構想归档（與 idea 分開＝少載入） |
 | [`docs/checklist.md`](../docs/checklist.md) | **現有功能查核表** |
 | [`docs/specs/`](../docs/specs/) | **工具規格**（目前：`ai-doc.md`） |
+| [`web/apps.json`](../web/apps.json) | **首頁按鈕登錄表**（獨立 idea＝獨立資料夾） |
 
-本檔＝合作方式＋說明法。`.cursor/rules/`＝開新對話自動套用的短規則。
+本檔＝合作方式＋說明法。整庫分類見 [`docs/README.md`](../docs/README.md)。`.cursor/rules/`＝開新對話自動套用的短規則。
 
 禁止再新建 STATUS／HOW／gap。  
 禁止把「還沒做過的空想」塞進 checklist。

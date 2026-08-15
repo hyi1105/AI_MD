@@ -21,6 +21,7 @@
 ## 1. 入口與品牌
 
 - [x] 首頁顯示品牌 **SEED** 與 **Hello World** 問候  
+- [x] 首頁按鈕由 [`apps.json`](../web/apps.json) 登錄，依 **工具／示範** 分組（獨立 idea＝獨立資料夾＝一個按鈕）  
 - [x] 首頁可進入 AI 查詢（`query.html`）、AI Doc、**說明法**（`explain/`）、**簽核 Demo**（`approval/`）與**系統地圖**（`system-map/`）  
 - [x] 首頁說明提到長期關注／知識書  
 - [x] AI 查詢頁頂部可切換「AI 查詢」與「AI Doc」  
@@ -88,6 +89,7 @@
 - [x] 2026-07-19 檔名定案：`idea.md`／`idea.history.md`（取代 01／02）  
 - [x] 2026-08-15 文件名統一：`theme.md`／`checklist.md`（取代 `00-theme`／`03-checklist`）；未完成 idea 已清空  
 - [x] 2026-08-15 MD 架構整理：`docs/README.md` 為唯一地圖；`ai-doc`→`specs/`；theme 只留產品  
+- [x] 2026-08-15 整庫分類：`apps.json` 登錄首頁按鈕；類別＝工具／示範；慣例寫進 docs/README  
 - [x] 2026-08-04 綠色漸層標籤假圖已發布至 Pages（`/assets/fake-chat-green-gradient-boxes.png`）  
 - [x] 2026-08-13 Approval 簽核假畫面已發布至 Pages（`/approval/`；schema 範例 `/schema/`）  
 - [x] 2026-08-13 簽核改為 LINE 對話＋獨立格式卡；submit／approve；駁回退回系統訊息  

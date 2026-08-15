@@ -96,7 +96,7 @@
 
 .hello-lead {
   margin: 0 0 2rem;
-  max-width: 28rem;
+  max-width: 32rem;
   font-size: clamp(1rem, 2.2vw, 1.15rem);
   font-weight: 400;
   line-height: 1.55;
@@ -104,11 +104,51 @@
   animation: hello-rise 0.9s cubic-bezier(0.22, 1, 0.36, 1) 0.22s both;
 }
 
+.hello-apps {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 100%;
+}
+
+.hello-group {
+  animation: hello-rise 0.9s cubic-bezier(0.22, 1, 0.36, 1) var(--hello-group-delay, 0.34s) both;
+}
+
+.hello-group__head {
+  margin: 0 0 0.65rem;
+}
+
+.hello-group__title {
+  margin: 0;
+  font-family: "Bricolage Grotesque", "Figtree", sans-serif;
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--hw-accent-deep);
+}
+
+.hello-group__blurb {
+  margin: 0.2rem 0 0;
+  font-size: 0.88rem;
+  color: var(--hw-muted);
+}
+
+.hello-apps-fallback {
+  margin: 0;
+  color: var(--hw-muted);
+}
+
+.hello-apps-fallback a {
+  color: var(--hw-accent-deep);
+  font-weight: 600;
+}
+
 .hello-actions {
   display: flex;
   flex-wrap: wrap;
   gap: 0.75rem 1rem;
-  animation: hello-rise 0.9s cubic-bezier(0.22, 1, 0.36, 1) 0.34s both;
 }
 
 .hello-btn {
@@ -192,7 +232,7 @@
   .hello-brand,
   .hello-title,
   .hello-lead,
-  .hello-actions {
+  .hello-group {
     animation: none;
   }
 

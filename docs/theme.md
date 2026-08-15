@@ -29,15 +29,20 @@
 
 ---
 
-## 3. 工具（都是收集／輸出工具，沒有子專案）
+## 3. 工具（獨立 idea＝獨立資料夾＝首頁按鈕）
+
+登錄表：[`../web/apps.json`](../web/apps.json)（首頁只認這份）。  
+分類：`tool` 工具｜`demo` 示範。細節見 [`README.md`](./README.md)。
 
 ```text
 主題（Theme）
-├── 工具：AI 查詢（catalog.json）— 發現／對照素材
-├── 工具：說明法（`web/explain/`）— 文字／文件／圖片 → 分層說明
-├── 工具：AI Doc（程式資料夾 `aidoc/`）— AI 改檔 + 顯示 Diff
-├── 示範：簽核 Demo（`web/approval/`）／系統地圖（`web/system-map/`）
-└── （構想中）知識書架 — 關注、編排、分享 → 先寫 idea.md
+├── 工具 tool
+│   ├── AI 查詢 — query.html + catalog.json
+│   ├── 說明法 — web/explain/
+│   └── AI Doc — aidoc/ → web/aidoc/
+└── 示範 demo
+    ├── 簽核 Demo — web/approval/
+    └── 系統地圖 — web/system-map/
 ```
 
 | 工具 | 說明 |

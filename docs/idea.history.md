@@ -2,11 +2,17 @@
 
 > **與 `idea.md` 拆開的主要原因：查文件時少載入資料、省成本。**  
 > 這裡放已完成或已取消的構想；進行中的只留在 [`idea.md`](./idea.md)。  
-> 「現在有沒有這個功能」以 [`03-checklist.md`](./03-checklist.md) 查核為準，不是看本檔。  
+> 「現在有沒有這個功能」以 [`checklist.md`](./checklist.md) 查核為準，不是看本檔。  
 > 舊檔名：`02-idea-done.md`。  
-> 更新：2026-08-13
+> 更新：2026-08-15
 
 ---
+
+## 2026-08-15 — 清空全部未完成 idea＋文件名統一
+
+- 結果：cancelled（負責人指示刪除未完成構想；非做成）  
+- 來源：對話（「把未完成的 idea 全部刪除；資料夾名統一」）  
+- 摘要：`idea.md` 清空 open／waiting-owner 條目（說明法非線性、知識書架／關注／編排／分享、商業、登入同步、真 LLM、真 P2P、下一季優先、Repo 改名等）。`docs/00-theme.md`→`theme.md`、`docs/03-checklist.md`→`checklist.md`，與 `idea.md`／`ai-doc.md` 無編號命名對齊；規則與 README 連結已更新。  
 
 ## 2026-08-13 — 說明法 Web MVP（B＋真 AI＋本站）
 
@@ -142,7 +148,7 @@
 ## 2026-07-19 — 第二次發布（theme／文稿／查核定位上線）
 
 - 結果：done  
-- 摘要：`main` 已含 `00-theme`、`manuscript`、checklist＝功能查核、01／02 拆開省成本、Idea 完整欄位、一律繁中；Pages 部署成功  
+- 摘要：`main` 已含 `theme`、`manuscript`、checklist＝功能查核、01／02 拆開省成本、Idea 完整欄位、一律繁中；Pages 部署成功  
 
 ## 2026-07-19 — Checklist＝功能查核；01／02 拆開省成本
 
@@ -162,7 +168,7 @@
 ## 2026-07-19 — 改為 Theme／文稿
 
 - 結果：done（文件層；UI／資料夾名待「改程式」）  
-- 摘要：`00-theme.md`；`manuscript.md`（文稿＝同檔編修→A4）  
+- 摘要：`theme.md`；`manuscript.md`（文稿＝同檔編修→A4）  
 
 ## 2026-07-19 — 發布上線（文件架構）
 

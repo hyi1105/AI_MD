@@ -5,13 +5,13 @@ alwaysApply: true
 
 # Theme（永遠）
 
-- 主題：`docs/00-theme.md`
+- 主題：`docs/theme.md`
 - **合作方式**：`prompts/AGENT-MASTER.md`（想法→idea→**確認細節**→直接開發並發布→checklist；結案→idea.history）
 - **說明法（永遠）**：讀文件／讀程式；口令「用說明法」。**跑 .ps1 前先說明，同意後再跑**。可攜：`.cursor/rules/說明法.mdc`；見 `AGENT-MASTER` §7
 - **AI Doc**：像 Cursor 用 AI 改每一份檔，並顯示修改處；規格 `docs/ai-doc.md`（舊稱 SmartDoc／文稿）
 - `idea.md`＝進行中構想（Why／What／How／Pros／Cons）
 - `idea.history.md`＝已結案；與 idea 分開＝少載入、省成本
-- `03-checklist`＝現有功能查核表（Lister）
+- `checklist`＝現有功能查核表（Lister）
 - 一律繁體中文
 - 目錄只靠 `catalog.json`
 - 詳見 `prompts/AGENT-MASTER.md`

@@ -10,7 +10,7 @@
 
 你確認細節（確認／OK／就這樣／沒意見…）
   → AI **直接開發並發布**（不必再說「改程式」「發布」）
-  → 成功後登記 docs/03-checklist.md
+  → 成功後登記 docs/checklist.md
   → 該則構想從 idea.md 移到 docs/idea.history.md
 
 之後改版時說「查核 checklist」
@@ -21,7 +21,7 @@
 |----------|-----------|
 | 分享想法、聊天、語音轉文字 | 改寫繁中、補齊欄位、**只改 MD**，存進 `idea.md`；並列出待確認細節 |
 | **確認細節**（確認／OK／就這樣／沒意見等） | **直接開發並發布**上線；成功後登記 checklist，構想移 `idea.history` |
-| 說「查核／對照 checklist」 | 讀 `03-checklist`＋現況，回報缺漏 |
+| 說「查核／對照 checklist」 | 讀 `checklist`＋現況，回報缺漏 |
 | （可選）仍說「改程式」／「發布」 | 同等觸發開發／上線（舊詞仍有效） |
 
 **硬規則**：細節**未**跟負責人確認前，只改 MD、不動 code、不上線。確認後不必再等第二次口令。
@@ -34,9 +34,9 @@
 |------|------|
 | [`docs/idea.md`](../docs/idea.md) | **進行中**構想（對話整理後存放處） |
 | [`docs/idea.history.md`](../docs/idea.history.md) | **已結案**構想归档（舊名 `02-idea-done`）；與 idea 分開＝少載入、省成本 |
-| [`docs/03-checklist.md`](../docs/03-checklist.md) | **現有功能查核表**；改版後對照現況，發現缺漏 |
+| [`docs/checklist.md`](../docs/checklist.md) | **現有功能查核表**；改版後對照現況，發現缺漏 |
 
-另：[`docs/00-theme.md`](../docs/00-theme.md) 主題 · [`docs/ai-doc.md`](../docs/ai-doc.md) AI Doc 規格 · `.mdc` 見 00-theme。
+另：[`docs/theme.md`](../docs/theme.md) 主題 · [`docs/ai-doc.md`](../docs/ai-doc.md) AI Doc 規格 · `.mdc` 見 theme。
 
 禁止再新建 STATUS／HOW／gap。  
 禁止把「還沒做過的空想」塞進 checklist。
@@ -55,7 +55,7 @@
 
 | 名稱 | 意思 |
 |------|------|
-| Theme | `00-theme.md` |
+| Theme | `theme.md` |
 | Idea | `idea.md`（進行中）／`idea.history.md`（已結案） |
 | 文稿／AI Doc | **AI Doc**：像 Cursor 改檔並顯示修改處（舊稱 SmartDoc／文稿） |
 | Lister／查核 | 依 checklist 自動對照現況、找缺功能 |
@@ -75,7 +75,7 @@
 對話／想法 → AI 整理 → idea.md → 列出待確認細節
   → 負責人確認細節
   → AI 直接開發並發布
-  → 登記功能到 03-checklist.md（供日後查核）
+  → 登記功能到 checklist.md（供日後查核）
   → 該則構想移到 idea.history.md（讓 idea.md 保持精簡）
 ```
 

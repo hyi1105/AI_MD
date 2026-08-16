@@ -4,9 +4,15 @@
 > 這裡放已完成或已取消的構想；進行中的只留在 [`idea.md`](./idea.md)。  
 > 「現在有沒有這個功能」以 [`03-checklist.md`](./03-checklist.md) 查核為準，不是看本檔。  
 > 舊檔名：`02-idea-done.md`。  
-> 更新：2026-08-13
+> 更新：2026-08-16
 
 ---
+
+## 2026-08-16 — 個人節點系統核心第一刀（架構＋可感受 /node/）
+
+- 結果：done（A 已發布；B／C 仍在 idea）  
+- 來源：對話（夙願；簽核／對話去中心；過期手機常開；平台只連線；類 Foxy；要架構出來）  
+- 摘要：`docs/personal-node.md` 定核心；`web/node/` 本機 IndexedDB 簽核對話＋匯出／匯入同步包；主題／checklist／首頁已接。線上 https://hyi1105.github.io/AI_MD/node/  
 
 ## 2026-08-13 — 說明法 Web MVP（B＋真 AI＋本站）
 

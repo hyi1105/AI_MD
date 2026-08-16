@@ -6,6 +6,7 @@ alwaysApply: true
 # Theme（永遠）
 
 - 主題：`docs/00-theme.md`
+- **系統核心**：個人節點（平台只連線、資料在裝置）；`docs/personal-node.md` · `/node/`
 - **合作方式**：`prompts/AGENT-MASTER.md`（想法→idea→**確認細節**→直接開發並發布→checklist；結案→idea.history）
 - **說明法（永遠）**：讀文件／讀程式；口令「用說明法」。**跑 .ps1 前先說明，同意後再跑**。可攜：`.cursor/rules/說明法.mdc`；見 `AGENT-MASTER` §7
 - **AI Doc**：像 Cursor 用 AI 改每一份檔，並顯示修改處；規格 `docs/ai-doc.md`（舊稱 SmartDoc／文稿）

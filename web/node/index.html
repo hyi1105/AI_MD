@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>個人節點 — SEED</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700&family=Figtree:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header class="top">
+    <a class="back" href="../">← SEED</a>
+    <div class="top-titles">
+      <p class="eyebrow">系統核心 · 個人節點</p>
+      <h1>平台只連線，資料在你這</h1>
+    </div>
+  </header>
+
+  <p class="banner">
+    本頁<strong>不把簽核／對話存到伺服器</strong>。主資料在這台裝置的瀏覽器（你的節點）。
+    過期手機可一直開著當「常開存取機」——匯出同步包到那台即可，概念像以前的 Foxy：資料在你那邊，平台只幫忙連上。
+  </p>
+
+  <main class="layout">
+    <section class="panel node-panel">
+      <h2>這台裝置的節點</h2>
+      <dl class="meta">
+        <div><dt>節點 ID</dt><dd id="node-id">…</dd></div>
+        <div><dt>裝置角色</dt><dd>
+          <select id="device-role" aria-label="裝置角色">
+            <option value="daily">日常手機（操作）</option>
+            <option value="always-on">常開存取機（過期手機／專屬）</option>
+          </select>
+        </dd></div>
+        <div><dt>本機紀錄</dt><dd id="store-stat">尚無</dd></div>
+      </dl>
+      <div class="actions">
+        <button type="button" class="btn primary" id="btn-export">匯出同步包</button>
+        <label class="btn ghost file-btn">
+          匯入同步包
+          <input type="file" id="import-file" accept="application/json,.json" hidden />
+        </label>
+        <button type="button" class="btn ghost" id="btn-reset">清空本機節點</button>
+      </div>
+      <p class="status" id="status" role="status"></p>
+    </section>
+
+    <section class="panel chat-panel">
+      <div class="out-head">
+        <h2>去中心簽核 · 對話</h2>
+        <span class="pill" id="case-status">草稿</span>
+      </div>
+      <div class="thread" id="thread" aria-live="polite"></div>
+      <form class="composer" id="composer">
+        <label class="label" for="leave-type">假別</label>
+        <select id="leave-type">
+          <option value="">請選擇</option>
+          <option value="特休">特休</option>
+          <option value="事假">事假</option>
+          <option value="病假">病假</option>
+        </select>
+        <label class="label" for="msg-input">訊息</label>
+        <textarea id="msg-input" rows="2" placeholder="寫一句給簽核脈絡…"></textarea>
+        <div class="actions">
+          <button type="button" class="btn ghost" id="btn-send">送出訊息</button>
+          <button type="button" class="btn primary" id="btn-submit">送出申請</button>
+          <button type="button" class="btn ghost" id="btn-approve">核准</button>
+          <button type="button" class="btn ghost" id="btn-return">退回</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <p class="footnote">
+    架構說明：<a href="https://github.com/hyi1105/AI_MD/blob/main/docs/personal-node.md">docs/personal-node.md</a>
+    · 中心化假畫面對照：<a href="../approval/">簽核 Demo</a>
+  </p>
+
+  <script src="./app.js"></script>
+</body>
+</html>

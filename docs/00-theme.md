@@ -9,6 +9,7 @@
 | [`idea.md`](./idea.md) | **進行中**構想：你分享想法 → AI 整理 → 寫入此檔 |
 | [`idea.history.md`](./idea.history.md) | **已結案**構想归档（與 idea 分開，少載入、省成本） |
 | [`03-checklist.md`](./03-checklist.md) | **現有功能查核表**：改版時對照線上／程式，發現「少了什麼功能」 |
+| [`personal-node.md`](./personal-node.md) | **系統核心**：個人節點／平台只連線／去中心簽核與對話 |
 | [`ai-doc.md`](./ai-doc.md) | **AI Doc**：像 Cursor 一樣用 AI 改檔，並顯示修改處 |
 | [`../prompts/AGENT-MASTER.md`](../prompts/AGENT-MASTER.md) | **合作方式＋AI 規則**（先讀這份） |
 | [`../README.md`](../README.md) | 對外入口 |
@@ -42,6 +43,8 @@
 
 ```text
 主題（Theme）
+├── **系統核心：個人節點**（`docs/personal-node.md` · `web/node/`）
+│   — 平台只連線；資料／認證在使用者裝置；簽核／對話去中心
 ├── 工具：AI 查詢（catalog.json）— 發現／對照素材
 ├── 工具：說明法（`web/explain/`）— 文字／文件／圖片 → 分層說明
 ├── 工具：AI Doc（程式資料夾 `aidoc/`）— AI 改檔 + 顯示 Diff
@@ -51,6 +54,7 @@
 
 | 工具 | 說明 |
 |------|------|
+| **個人節點（核心）** | 平台只連線；本機節點簽核／對話；同步包；架構見 [`personal-node.md`](./personal-node.md)；`/node/` |
 | AI 查詢 | 搜尋 `web/catalog.json`；詳情只靠 JSON |
 | **說明法** | 文字／文件／圖片 → 說明法樹；真 AI（BYOK）；`/explain/` |
 | **AI Doc** | 規格見 [`ai-doc.md`](./ai-doc.md)；AI 像 Cursor 改每一份檔，產出後顯示修改處 |

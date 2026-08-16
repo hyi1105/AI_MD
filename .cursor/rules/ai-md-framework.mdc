@@ -6,13 +6,17 @@ alwaysApply: false
 
 # Docs 架構
 
-| 檔案 | 用途 |
+完整地圖：`docs/README.md`。
+
+| 路徑 | 用途 |
 |------|------|
-| `00-theme.md` | 產品主題 |
-| `idea.md` | 進行中構想（對話整理後） |
+| `docs/README.md` | 唯一分類地圖 |
+| `theme.md` | 產品主題 |
+| `idea.md` | 進行中構想 |
 | `idea.history.md` | 已結案（省查檔成本） |
-| `03-checklist.md` | 現有功能查核表 |
-| `ai-doc.md` | AI Doc 規格（AI 改檔＋顯示 Diff） |
+| `checklist.md` | 現有功能查核表 |
+| `specs/` | 工具規格（如 `ai-doc.md`） |
 
 checklist 禁止空想未上線項。  
-`idea.md` 每則必含 Why／What／How／Pros／Cons。
+`idea.md` 每則必含 Why／What／How／Pros／Cons。  
+合作流程只寫在 `prompts/AGENT-MASTER.md`，不要在 theme 重複長篇。

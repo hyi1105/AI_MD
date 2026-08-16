@@ -1,0 +1,55 @@
+{
+  "categories": [
+    {
+      "id": "tool",
+      "label": "工具",
+      "blurb": "可直接用來做事"
+    },
+    {
+      "id": "demo",
+      "label": "示範",
+      "blurb": "假畫面／學習用，可獨立汰換"
+    }
+  ],
+  "apps": [
+    {
+      "id": "query",
+      "title": "AI 查詢",
+      "href": "query.html",
+      "category": "tool",
+      "primary": true,
+      "folder": null,
+      "note": "殼在 query.html；資料是 catalog.json（外部工具名單）"
+    },
+    {
+      "id": "explain",
+      "title": "說明法",
+      "href": "explain/",
+      "category": "tool",
+      "folder": "web/explain"
+    },
+    {
+      "id": "aidoc",
+      "title": "AI Doc",
+      "href": "aidoc/",
+      "category": "tool",
+      "folder": "web/aidoc",
+      "source": "aidoc/",
+      "note": "原始碼在 repo 根 aidoc/，建置後進 web/aidoc/"
+    },
+    {
+      "id": "approval",
+      "title": "簽核 Demo",
+      "href": "approval/",
+      "category": "demo",
+      "folder": "web/approval"
+    },
+    {
+      "id": "system-map",
+      "title": "系統地圖",
+      "href": "system-map/",
+      "category": "demo",
+      "folder": "web/system-map"
+    }
+  ]
+}

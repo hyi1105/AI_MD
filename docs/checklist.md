@@ -1,11 +1,11 @@
-# 03 — Checklist（現有功能查核表）
+# Checklist（現有功能查核表）
 
 > **這是「現在產品有哪些功能」的查核清單，不是許願池。**  
 > 用途：改版後對照線上／程式，讓 AI（Lister）發現「以前有的功能不見了」。  
 > 例：曾經有「建立圖樣」，改版後找不到 → 查核時應被標成缺漏。  
 > 構想細節在 [`idea.md`](./idea.md)；舊構想在 [`idea.history.md`](./idea.history.md)（分開是為了少載入、省成本）。  
 > 線上：https://hyi1105.github.io/AI_MD/  
-> 更新：2026-08-13
+> 更新：2026-08-15（MD 架構整理：`docs/README.md`＋`specs/`）
 
 圖例：`[x]` 現況具備 · `[~]` 有入口但是示範／半真 · `[!]` 查核發現缺漏／回歸（應有卻沒有）
 
@@ -21,6 +21,7 @@
 ## 1. 入口與品牌
 
 - [x] 首頁顯示品牌 **SEED** 與 **Hello World** 問候  
+- [x] 首頁按鈕由 [`apps.json`](../web/apps.json) 登錄，依 **工具／示範** 分組（獨立 idea＝獨立資料夾＝一個按鈕）  
 - [x] 首頁可進入 AI 查詢（`query.html`）、AI Doc、**說明法**（`explain/`）、**簽核 Demo**（`approval/`）與**系統地圖**（`system-map/`）  
 - [x] 首頁說明提到長期關注／知識書  
 - [x] AI 查詢頁頂部可切換「AI 查詢」與「AI Doc」  
@@ -52,7 +53,7 @@
 
 ## 3. AI Doc
 
-規格：[`ai-doc.md`](./ai-doc.md)  
+規格：[`specs/ai-doc.md`](./specs/ai-doc.md)  
 入口：https://hyi1105.github.io/AI_MD/aidoc/
 
 - [x] 品牌顯示為 **AI Doc**（非 SmartDoc）  
@@ -71,27 +72,31 @@
 
 ## 4. 文件協作（已定案能力）
 
-- [x] 規格在 `docs/`：`00-theme`／`idea`／`idea.history`／`03-checklist`／`ai-doc`  
-- [x] 合作方式：想法→AI 整理→`idea.md`→**確認細節**→直接開發並發布→checklist；結案→`idea.history`  
+- [x] 規格在 `docs/`：`README`（地圖）／`theme`／`idea`／`idea.history`／`checklist`／`specs/`  
+- [x] 合作方式：想法→AI 整理→`idea.md`→**直接開發並發布**→checklist；結案→`idea.history`（不必等確認細節）  
 - [x] checklist＝**現有功能查核表**（改版後可對照找缺漏）  
 - [x] `idea`＝進行中構想；`idea.history`＝已結案（拆開省查檔成本）  
 - [x] Idea 條目含 Why／What／How／Pros／Cons  
 - [x] 一律繁體中文（含語音轉文字整理）  
-- [x] 預設只改 MD；**細節確認後直接開發並發布**（舊詞「改程式」「發布」仍有效）  
+- [x] 有構想就**直接開發並發布**；只有負責人說「先別做」才停（舊詞「改程式」「發布」「確認」仍有效）  
 - [x] 說明法 Web MVP 可線上開啟：[`/explain/`](https://hyi1105.github.io/AI_MD/explain/)（文字／文件／圖片；真 AI BYOK；產出說明法樹；可「下一層」）  
 - [x] 說明法（永遠）：讀文件／讀程式／**欄位血緣**；一次 ≤5；一層一層；口令「用說明法」；**跑 .ps1 前先說明**；可攜 `.cursor/rules/說明法.mdc`  
 - [x] 目錄只靠 JSON  
-- [x] `.mdc` 可從 [`00-theme.md`](./00-theme.md) 點連結  
+- [x] 文件分類地圖：[`README.md`](./README.md)（theme 不再重複流程長文）  
 - [x] 2026-07-19 theme／文稿／查核定位已發布至 Pages  
 - [x] 2026-07-19 **AI Doc** 已發布（`/aidoc/`；SmartDoc 品牌已替換）  
 - [x] 2026-07-19 open ideas 已發布（XSS／分類／Markdown 匯出／`aidoc` 改名）  
 - [x] 2026-07-19 檔名定案：`idea.md`／`idea.history.md`（取代 01／02）  
+- [x] 2026-08-15 文件名統一：`theme.md`／`checklist.md`（取代 `00-theme`／`03-checklist`）；未完成 idea 已清空  
+- [x] 2026-08-15 MD 架構整理：`docs/README.md` 為唯一地圖；`ai-doc`→`specs/`；theme 只留產品  
+- [x] 2026-08-15 整庫分類：`apps.json` 登錄首頁按鈕；類別＝工具／示範；慣例寫進 docs/README  
 - [x] 2026-08-04 綠色漸層標籤假圖已發布至 Pages（`/assets/fake-chat-green-gradient-boxes.png`）  
 - [x] 2026-08-13 Approval 簽核假畫面已發布至 Pages（`/approval/`；schema 範例 `/schema/`）  
 - [x] 2026-08-13 簽核改為 LINE 對話＋獨立格式卡；submit／approve；駁回退回系統訊息  
 - [x] 2026-08-13 系統地圖（簽核四視角）已發布至 Pages（`/system-map/`）  
 - [x] 2026-08-13 系統地圖改為積木／磁貼圖塊＋四視角換皮動畫  
 - [x] 2026-08-13 合作規則改為：確認細節後直接開發並發布  
+- [x] 2026-08-16 合作規則再改：不必等確認細節，有構想直接開發並發布（說「先別做」才停）  
 - [x] 2026-08-13 說明法定案：**真實 path 錨點＋旁註**（§7）  
 - [x] 2026-08-13 說明法 Web MVP 已發布至 Pages（`/explain/`；文字／文件／圖片；真 AI BYOK）
 

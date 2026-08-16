@@ -20,14 +20,20 @@
   <main class="hello-hero">
     <p class="hello-brand">SEED</p>
     <h1 class="hello-title">Hello World</h1>
-    <p class="hello-lead">長期關注產品或 KOL 知識，把專業累積成一本可分享的知識書。</p>
-    <div class="hello-actions">
-      <a class="hello-btn hello-btn--primary" href="query.html">進入 AI 查詢</a>
-      <a class="hello-btn hello-btn--ghost" href="aidoc/">打開 AI Doc</a>
-      <a class="hello-btn hello-btn--ghost" href="explain/">說明法</a>
-      <a class="hello-btn hello-btn--ghost" href="approval/">簽核 Demo</a>
-      <a class="hello-btn hello-btn--ghost" href="system-map/">系統地圖</a>
+    <p class="hello-lead">長期關注產品或 KOL 知識，把專業累積成一本可分享的知識書。每個獨立 idea 一個資料夾、首頁一個按鈕。</p>
+    <div id="hello-apps" class="hello-apps" aria-live="polite">
+      <!-- 由 home.js 依 apps.json 分組渲染；下方為無 JS 後備 -->
+      <noscript>
+        <div class="hello-actions">
+          <a class="hello-btn hello-btn--primary" href="query.html">進入 AI 查詢</a>
+          <a class="hello-btn hello-btn--ghost" href="explain/">說明法</a>
+          <a class="hello-btn hello-btn--ghost" href="aidoc/">AI Doc</a>
+          <a class="hello-btn hello-btn--ghost" href="approval/">簽核 Demo</a>
+          <a class="hello-btn hello-btn--ghost" href="system-map/">系統地圖</a>
+        </div>
+      </noscript>
     </div>
   </main>
+  <script src="home.js" defer></script>
 </body>
 </html>

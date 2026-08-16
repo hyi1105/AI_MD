@@ -18,10 +18,25 @@
 
 ---
 
+## 0. 系統核心（個人節點）
+
+規格：[`personal-node.md`](./personal-node.md)  
+入口：https://hyi1105.github.io/AI_MD/node/
+
+- [x] 架構文件寫明：平台只連線；資料／認證在使用者裝置；類 Foxy 常開存取  
+- [x] `/node/` 可線上開啟（去中心簽核＋對話可實際操作）  
+- [x] 簽核／對話主資料存瀏覽器本機（IndexedDB）；頁面標示平台不持有主庫  
+- [x] 可匯出／匯入同步包（模擬日常機 ↔ 常開過期手機）  
+- [x] 裝置可標「日常手機」或「常開存取機」  
+- [x] 首頁有「個人節點」入口  
+- [~] 真常駐 App／真 P2P 多節點同步（尚未；見 idea）  
+
+---
+
 ## 1. 入口與品牌
 
 - [x] 首頁顯示品牌 **SEED** 與 **Hello World** 問候  
-- [x] 首頁可進入 AI 查詢（`query.html`）、AI Doc、**說明法**（`explain/`）、**Mermaid 流程圖**（`mermaid/`）、**簽核 Demo**（`approval/`）與**系統地圖**（`system-map/`）  
+- [x] 首頁可進入 AI 查詢（`query.html`）、AI Doc、**個人節點**（`node/`）、**說明法**（`explain/`）、**Mermaid 流程圖**（`mermaid/`）、**簽核 Demo**（`approval/`）與**系統地圖**（`system-map/`）  
 - [x] Mermaid 流程圖可線上開啟：[`/mermaid/`](https://hyi1105.github.io/AI_MD/mermaid/)（貼語法即時出圖；範例可載入；錯誤提示；本機 localStorage 記住上次內容）  
 - [x] 首頁說明提到長期關注／知識書  
 - [x] AI 查詢頁頂部可切換「AI 查詢」與「AI Doc」  
@@ -72,7 +87,7 @@
 
 ## 4. 文件協作（已定案能力）
 
-- [x] 規格在 `docs/`：`00-theme`／`idea`／`idea.history`／`03-checklist`／`ai-doc`  
+- [x] 規格在 `docs/`：`00-theme`／`idea`／`idea.history`／`03-checklist`／`ai-doc`／`personal-node`  
 - [x] 合作方式：想法→AI 整理→`idea.md`→**確認細節**→直接開發並發布→checklist；結案→`idea.history`  
 - [x] checklist＝**現有功能查核表**（改版後可對照找缺漏）  
 - [x] `idea`＝進行中構想；`idea.history`＝已結案（拆開省查檔成本）  
@@ -96,6 +111,7 @@
 - [x] 2026-08-13 說明法定案：**真實 path 錨點＋旁註**（§7）  
 - [x] 2026-08-13 說明法 Web MVP 已發布至 Pages（`/explain/`；文字／文件／圖片；真 AI BYOK）
 - [x] 2026-08-16 Mermaid 流程圖獨立頁已發布（`/mermaid/`；貼語法即時預覽）
+- [x] 2026-08-16 個人節點系統核心第一刀已發布（`docs/personal-node.md`＋`/node/` 本機簽核對話＋同步包）
 
 ---
 

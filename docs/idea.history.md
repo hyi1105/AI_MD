@@ -4,9 +4,15 @@
 > 這裡放已完成或已取消的構想；進行中的只留在 [`idea.md`](./idea.md)。  
 > 「現在有沒有這個功能」以 [`03-checklist.md`](./03-checklist.md) 查核為準，不是看本檔。  
 > 舊檔名：`02-idea-done.md`。  
-> 更新：2026-08-13
+> 更新：2026-08-16
 
 ---
+
+## 2026-08-16 — Mermaid 流程圖獨立頁
+
+- 結果：done（已發布）  
+- 來源：對話（問哪邊能用 Mermaid →「幫我新增一個單獨的支援這個功能的頁面」）  
+- 摘要：`web/mermaid/`；貼語法即時出圖、範例載入、錯誤提示、localStorage；首頁入口。線上 https://hyi1105.github.io/AI_MD/mermaid/  
 
 ## 2026-08-13 — 說明法 Web MVP（B＋真 AI＋本站）
 

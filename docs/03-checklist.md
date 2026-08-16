@@ -5,7 +5,7 @@
 > 例：曾經有「建立圖樣」，改版後找不到 → 查核時應被標成缺漏。  
 > 構想細節在 [`idea.md`](./idea.md)；舊構想在 [`idea.history.md`](./idea.history.md)（分開是為了少載入、省成本）。  
 > 線上：https://hyi1105.github.io/AI_MD/  
-> 更新：2026-08-13
+> 更新：2026-08-16
 
 圖例：`[x]` 現況具備 · `[~]` 有入口但是示範／半真 · `[!]` 查核發現缺漏／回歸（應有卻沒有）
 
@@ -21,7 +21,8 @@
 ## 1. 入口與品牌
 
 - [x] 首頁顯示品牌 **SEED** 與 **Hello World** 問候  
-- [x] 首頁可進入 AI 查詢（`query.html`）、AI Doc、**說明法**（`explain/`）、**簽核 Demo**（`approval/`）與**系統地圖**（`system-map/`）  
+- [x] 首頁可進入 AI 查詢（`query.html`）、AI Doc、**說明法**（`explain/`）、**Mermaid 流程圖**（`mermaid/`）、**簽核 Demo**（`approval/`）與**系統地圖**（`system-map/`）  
+- [x] Mermaid 流程圖可線上開啟：[`/mermaid/`](https://hyi1105.github.io/AI_MD/mermaid/)（貼語法即時出圖；範例可載入；錯誤提示；本機 localStorage 記住上次內容）  
 - [x] 首頁說明提到長期關注／知識書  
 - [x] AI 查詢頁頂部可切換「AI 查詢」與「AI Doc」  
 - [x] 假圖（聊天氣泡綠色漸層標籤框）可線上開啟：[`/assets/fake-chat-green-gradient-boxes.png`](https://hyi1105.github.io/AI_MD/assets/fake-chat-green-gradient-boxes.png)  
@@ -94,6 +95,7 @@
 - [x] 2026-08-13 合作規則改為：確認細節後直接開發並發布  
 - [x] 2026-08-13 說明法定案：**真實 path 錨點＋旁註**（§7）  
 - [x] 2026-08-13 說明法 Web MVP 已發布至 Pages（`/explain/`；文字／文件／圖片；真 AI BYOK）
+- [x] 2026-08-16 Mermaid 流程圖獨立頁已發布（`/mermaid/`；貼語法即時預覽）
 
 ---
 

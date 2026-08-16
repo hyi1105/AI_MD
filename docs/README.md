@@ -59,7 +59,7 @@
 | `tool` | 工具 | 真的給人用、可重複打開做事 |
 | `demo` | 示範 | 假畫面／教學／驗證互動（可先丟、可後汰） |
 
-### 新 idea 上線三步（確認細節後）
+### 新 idea 上線三步（不必等確認）
 
 ```text
 1. 建 web/<slug>/（獨立資料夾，自含頁面）
@@ -86,8 +86,9 @@
 ## 流轉（細節見 AGENT-MASTER）
 
 ```text
-想法 → idea.md → 確認細節 → 開發並發布（資料夾＋apps.json＋按鈕）→ 登記 checklist → 移 idea.history
+想法 → idea.md → 直接開發並發布（資料夾＋apps.json＋按鈕）→ 登記 checklist → 移 idea.history
 ```
 
 禁止再新建 STATUS／HOW／gap 類文件。  
 checklist 禁止塞未上線空想。
+**不必**等負責人確認細節；只有明確說「先別做」才停。

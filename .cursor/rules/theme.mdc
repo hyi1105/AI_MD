@@ -7,8 +7,8 @@ alwaysApply: true
 
 - 文件地圖：`docs/README.md`（含整庫：獨立 idea＝`web/<slug>/`＝`apps.json` 按鈕）
 - 主題：`docs/theme.md`（只放產品；不放流程長文）
-- **合作方式**：`prompts/AGENT-MASTER.md`（想法→idea→**確認細節**→直接開發並發布→checklist；結案→idea.history）
-- **說明法（永遠）**：讀文件／讀程式；口令「用說明法」。**跑 .ps1 前先說明，同意後再跑**。可攜：`.cursor/rules/說明法.mdc`；見 `AGENT-MASTER` §7
+- **合作方式**：`prompts/AGENT-MASTER.md`（想法→idea→**直接開發並發布**→checklist；結案→idea.history；不必等確認細節）
+- **說明法（永遠）**：讀文件／讀程式；口令「用說明法」。**跑 .ps1 前先說明，說明後直接跑**。可攜：`.cursor/rules/說明法.mdc`；見 `AGENT-MASTER` §7
 - **AI Doc**：規格 `docs/specs/ai-doc.md`（舊稱 SmartDoc／文稿）
 - 首頁按鈕登錄：`web/apps.json`（category：`tool`｜`demo`）
 - `idea.md`＝進行中構想（Why／What／How／Pros／Cons）

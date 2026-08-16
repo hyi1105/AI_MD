@@ -38,6 +38,6 @@ cd web
 cd aidoc && npm install && npm run build
 ```
 
-想法 → `idea.md` → **確認細節** → `web/<slug>/` + `apps.json` → 登記 `checklist` → 移 `idea.history`。
+想法 → `idea.md` → **直接開發並發布**（`web/<slug>/` + `apps.json`）→ 登記 `checklist` → 移 `idea.history`。
 
 MIT

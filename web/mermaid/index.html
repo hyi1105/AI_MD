@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mermaid 流程圖 — SEED</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700&family=Figtree:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header class="top">
+    <a class="back" href="../">← SEED</a>
+    <div class="top-titles">
+      <p class="eyebrow">Mermaid 預覽</p>
+      <h1>貼語法，立刻看流程圖</h1>
+    </div>
+    <a class="btn ghost" href="https://mermaid.js.org/syntax/flowchart.html" target="_blank" rel="noopener noreferrer">語法說明</a>
+  </header>
+
+  <p class="banner">
+    左側寫 Mermaid 語法，右側即時出圖。內容只存在你的瀏覽器，不會上傳到伺服器。
+  </p>
+
+  <main class="layout">
+    <section class="panel input-panel">
+      <div class="toolbar">
+        <label class="label tight" for="sample-select">範例</label>
+        <select id="sample-select" aria-label="載入範例">
+          <option value="approval">簽核流程</option>
+          <option value="sequence">系統呼叫順序</option>
+          <option value="lr">左到右流程</option>
+        </select>
+        <button type="button" class="btn ghost small" id="btn-load-sample">載入</button>
+      </div>
+
+      <label class="label" for="source">Mermaid 原始碼</label>
+      <textarea id="source" rows="18" spellcheck="false" aria-describedby="status"></textarea>
+
+      <div class="actions">
+        <button type="button" class="btn primary" id="btn-render">重新繪製</button>
+        <button type="button" class="btn ghost" id="btn-copy">複製語法</button>
+        <button type="button" class="btn ghost" id="btn-clear">清空</button>
+      </div>
+      <p class="status" id="status" role="status"></p>
+    </section>
+
+    <section class="panel output-panel">
+      <div class="out-head">
+        <h2>預覽</h2>
+        <span class="hint-inline" id="render-meta">自動更新</span>
+      </div>
+      <div id="preview" class="preview" aria-live="polite"></div>
+    </section>
+  </main>
+
+  <script type="module" src="./app.js"></script>
+</body>
+</html>

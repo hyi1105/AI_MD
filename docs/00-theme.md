@@ -44,6 +44,7 @@
 主題（Theme）
 ├── 工具：AI 查詢（catalog.json）— 發現／對照素材
 ├── 工具：說明法（`web/explain/`）— 文字／文件／圖片 → 分層說明
+├── 工具：Mermaid 流程圖（`web/mermaid/`）— 貼語法即時出圖
 ├── 工具：AI Doc（程式資料夾 `aidoc/`）— AI 改檔 + 顯示 Diff
 ├── 示範：簽核 Demo（`web/approval/`）／系統地圖（`web/system-map/`）
 └── （構想中）知識書架 — 關注、編排、分享 → 先寫 idea.md
@@ -53,6 +54,7 @@
 |------|------|
 | AI 查詢 | 搜尋 `web/catalog.json`；詳情只靠 JSON |
 | **說明法** | 文字／文件／圖片 → 說明法樹；真 AI（BYOK）；`/explain/` |
+| **Mermaid 流程圖** | 單獨頁貼 Mermaid 語法、即時預覽；`/mermaid/` |
 | **AI Doc** | 規格見 [`ai-doc.md`](./ai-doc.md)；AI 像 Cursor 改每一份檔，產出後顯示修改處 |
 | 系統地圖 | 簽核積木磁貼四視角換皮（流程圖／SQL／PA／Shared Enclosure）：`/system-map/` |
 

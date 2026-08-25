@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>簽核系統｜請假申請流程</title>
+  <link rel="stylesheet" href="./flow.css" />
+</head>
+<body>
+  <p class="page-nav">
+    <a href="./">← 簽核 Demo</a>
+    ·
+    <a href="../">SEED 首頁</a>
+  </p>
+
+  <article class="flow" aria-label="簽核系統請假申請流程圖">
+    <header class="flow-title">簽核系統｜請假申請流程</header>
+
+    <!-- 起點：深藍 -->
+    <div class="flow-col">
+      <div class="node start">
+        <p class="node-main">申請人填寫格式卡</p>
+        <p class="node-sub">草稿 draft · 聊天歸聊天、文件在手上</p>
+      </div>
+      <div class="arrow" aria-hidden="true"></div>
+    </div>
+
+    <!-- 送出前檢查：成功／失敗分叉 -->
+    <div class="branch">
+      <div class="branch-main">
+        <div class="node ok">
+          <p class="node-main">必填完成，送出申請</p>
+          <p class="node-sub">submit · 格式卡鎖定</p>
+        </div>
+        <div class="arrow" aria-hidden="true"></div>
+        <p class="side-note">簽名流水線：申請人 → 代理人 → 簽核人</p>
+        <div class="node ok">
+          <p class="node-main">簽核人收到待簽</p>
+          <p class="node-sub">對話出現系統卡：核准／駁回／退回</p>
+        </div>
+        <div class="arrow" aria-hidden="true"></div>
+      </div>
+      <div class="branch-fail">
+        <div class="connector-h" aria-hidden="true"></div>
+        <div class="node fail">
+          <p class="node-main">必填未完成</p>
+          <p class="node-sub">紅字提示 · 不可送出</p>
+        </div>
+        <div class="arrow arrow-muted" aria-hidden="true"></div>
+        <div class="node fail terminal">
+          <p class="node-main">停留草稿</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 簽核結果分叉 -->
+    <div class="branch branch-decision">
+      <div class="branch-main">
+        <div class="node ok">
+          <p class="node-main">核准</p>
+          <p class="node-sub">approve · 寫入對話系統訊息</p>
+        </div>
+        <div class="arrow" aria-hidden="true"></div>
+        <div class="node ok end">
+          <p class="node-main">申請完成</p>
+          <p class="node-sub">請假單已核准</p>
+        </div>
+      </div>
+      <div class="branch-fail branch-fail-stack">
+        <div class="fail-path">
+          <div class="connector-h" aria-hidden="true"></div>
+          <div class="node fail">
+            <p class="node-main">駁回</p>
+            <p class="node-sub">可填理由 · 終態</p>
+          </div>
+          <div class="arrow arrow-muted" aria-hidden="true"></div>
+          <div class="node fail terminal">
+            <p class="node-main">申請不通過</p>
+          </div>
+        </div>
+        <div class="fail-path">
+          <div class="connector-h" aria-hidden="true"></div>
+          <div class="node fail">
+            <p class="node-main">退回</p>
+            <p class="node-sub">可填理由 · 申請人可改卡</p>
+          </div>
+          <div class="arrow arrow-muted" aria-hidden="true"></div>
+          <div class="node fail">
+            <p class="node-main">退回修改</p>
+            <p class="node-sub">returned → 可再 submit</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="flow-note">
+      <span class="bulb" aria-hidden="true">💡</span>
+      <p>對應 Demo：一般聊天 ≠ 格式卡；送出＝submit、核准＝approve；駁回／退回為對話內系統訊息＋按鈕。</p>
+    </footer>
+  </article>
+</body>
+</html>

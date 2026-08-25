@@ -36,7 +36,7 @@
 ## 1. 入口與品牌
 
 - [x] 首頁顯示品牌 **SEED** 與 **Hello World** 問候  
-- [x] 首頁可進入 AI 查詢（`query.html`）、AI Doc、**個人節點**（`node/`）、**說明法**（`explain/`）、**Mermaid 流程圖**（`mermaid/`）、**簽核 Demo**（`approval/`）與**系統地圖**（`system-map/`）  
+- [x] 首頁可進入 AI 查詢（`query.html`）、AI Doc、**個人節點**（`node/`）、**說明法**（`explain/`）、**Mermaid 流程圖**（`mermaid/`）、**簽核 Demo**（`approval/`）、**簽核流程圖**（`approval/flow.html`）與**系統地圖**（`system-map/`）  
 - [x] Mermaid 流程圖可線上開啟：[`/mermaid/`](https://hyi1105.github.io/AI_MD/mermaid/)（貼語法即時出圖；範例可載入；錯誤提示；本機 localStorage 記住上次內容）  
 - [x] 首頁說明提到長期關注／知識書  
 - [x] AI 查詢頁頂部可切換「AI 查詢」與「AI Doc」  
@@ -45,6 +45,7 @@
 - [x] 簽核：申請人「送出申請」＝submit；簽核人「核准」＝approve；未填必填不可送出  
 - [x] 簽核：駁回／退回為對話內**系統訊息＋按鈕**（可填理由）  
 - [x] 簽核：個人備註欄僅申請人格式卡可見；簽核人視角整格消失  
+- [x] 簽核流程圖可線上開啟：[`/approval/flow.html`](https://hyi1105.github.io/AI_MD/approval/flow.html)（紅標題／深藍起點／橘成功路徑／灰失敗分叉；對齊 draft→submit→核准／駁回／退回）  
 - [x] 簽核表單 schema 範例可開啟：[`/schema/form-schema.example.json`](https://hyi1105.github.io/AI_MD/schema/form-schema.example.json)  
 - [x] 系統地圖可線上開啟：[`/system-map/`](https://hyi1105.github.io/AI_MD/system-map/)（簽核／申請；**積木／磁貼圖塊**；流程圖／SQL／Power Automate／Shared Enclosure 四視角換皮，節點對齊可辨）  
 
@@ -112,6 +113,7 @@
 - [x] 2026-08-13 說明法 Web MVP 已發布至 Pages（`/explain/`；文字／文件／圖片；真 AI BYOK）
 - [x] 2026-08-16 Mermaid 流程圖獨立頁已發布（`/mermaid/`；貼語法即時預覽）
 - [x] 2026-08-16 個人節點系統核心第一刀已發布（`docs/personal-node.md`＋`/node/` 本機簽核對話＋同步包）
+- [x] 2026-08-25 簽核流程圖已發布（`/approval/flow.html`；紅／深藍／橘／灰垂直分叉）
 
 ---
 

@@ -6,7 +6,7 @@
 > 做成並發布後：把該能力**登記進 checklist**；本則構想再移到 `idea.history`。  
 > 流轉：**想法 → idea → 確認細節 → 直接開發並發布**（見 AGENT-MASTER）。  
 > 合作規則總表：[`../prompts/AGENT-MASTER.md`](../prompts/AGENT-MASTER.md)  
-> 更新：2026-09-29（GitHub 資源盤點；整合構想 waiting-owner）
+> 更新：2026-09-29（Approval 約定併入本庫；整合構想已結案）
 
 ### 寫入規則（給 AI）
 
@@ -38,40 +38,6 @@
 ## （進行中僅保留未結案產品構想）
 
 ## 未上線構想（展開）
-
-### 倉庫／資源治理
-
-#### 2026-09-29 — 把 GitHub 資源整進同一個 repo（AI_MD）
-- 狀態：waiting-owner
-- 來源：對話「幫我看我在 github 上有哪些資源, 我想整合到同一個 repo」
-- 為什麼（Why）：帳號下兩庫並行、約定與可執行站拆開，Agent／自己常不知讀哪邊；Approval 已 archived、Pages 已 404，卻仍有學習約定與 system-map Skill 只活在那裡。
-- 做什麼（What）：以 `hyi1105/AI_MD` 為唯一主庫；把 `Approval` 裡仍有用的「約定／Skill／口味」遷入本庫對應位置；之後只維護一處。
-- 怎麼做（How）：
-  1. 盤點（已完成，見下方「現況盤點」）。
-  2. 依你拍板路徑：把 `Approval/約定/**` 併入本庫（建議 `docs/約定/` 或沿用 `.cursor/`＋`docs/`）；Skill 放 `.cursor/skills/`。
-  3. 對照刪重複（SEED 主題／AI-Doc／idea 流在本庫已有更新版，勿覆蓋新的）。
-  4. `Approval` 留 README 轉址到 AI_MD 後可保持 archived，或之後刪庫。
-- 優點（Pros）：單一真相來源；Agent 規則與產品站同 repo；少開錯庫。
-- 缺點／風險（Cons）：約定檔與現行 `AGENT-MASTER`／`idea.md` 可能衝突，需人工對齊；誤覆蓋會丟較新進度。
-- 不做的替代方案：Approval 維持 archived 唯讀備忘；需要時手動 copy 單檔。
-- 完成後列入 checklist：約定入口在本庫可讀；system-map Skill 在本庫 `.cursor/skills/`；Approval 有轉址說明
-- 待拍板：
-  1. 主庫確認＝`AI_MD`？（建議是）
-  2. 約定放哪：`docs/約定/` 還是合併進現有 `docs/`＋`.cursor/rules/`？
-  3. Approval 庫處理：只加轉址 README／維持 archived／之後刪除？
-  4. 哪些 Approval 檔要搬、哪些以本庫為準丟棄？（建議：搬「口味累積、學習節奏、system-map Skill／references、英語」；SEED／構想流以本庫為準不覆蓋）
-
-##### 現況盤點（hyi1105 · 2026-09-29）
-
-| 資源 | 狀態 | 內容摘要 |
-|------|------|----------|
-| [`AI_MD`](https://github.com/hyi1105/AI_MD) | **現行主庫** · public · Pages 200 | 主題／idea／checklist、AI Doc、`web/`（查詢、簽核 demo、system-map、explain、mermaid、node） |
-| [`Approval`](https://github.com/hyi1105/Approval) | **archived** · public · Pages **404** | 僅「約定」MD＋`.cursor` Skill；可執行產物已刪；曾寫「AI_MD 擬刪」但實際相反 |
-| Gists／Packages | 公開側未見可用資源 | — |
-| Org | 無可見 org | — |
-
-Approval 內值得併入的檔（約 22 個 blob）：`約定/核心.md`、`個人/口味累積.md`、`個人/英語.md`、`學習/*`、`系統/system-map/SKILL.md`＋`references/`、`.cursor/skills/system-map/`。  
-本庫已較新、不宜被 Approval 覆蓋：`docs/00-theme.md`、`docs/ai-doc.md`、`docs/idea*.md`、`prompts/AGENT-MASTER.md`、`web/approval/`、`web/system-map/`。
 
 ### 個人化公司／地端主權
 

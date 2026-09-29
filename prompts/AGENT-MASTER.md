@@ -35,11 +35,13 @@
 | [`docs/idea.md`](../docs/idea.md) | **進行中**構想（對話整理後存放處） |
 | [`docs/idea.history.md`](../docs/idea.history.md) | **已結案**構想归档（舊名 `02-idea-done`）；與 idea 分開＝少載入、省成本 |
 | [`docs/03-checklist.md`](../docs/03-checklist.md) | **現有功能查核表**；改版後對照現況，發現缺漏 |
+| [`docs/約定/README.md`](../docs/約定/README.md) | **約定**（個人／學習／口味）；按觸發表加讀，禁止整包 |
 
-另：[`docs/00-theme.md`](../docs/00-theme.md) 主題 · [`docs/ai-doc.md`](../docs/ai-doc.md) AI Doc 規格 · `.mdc` 見 00-theme。
+另：[`docs/00-theme.md`](../docs/00-theme.md) 主題 · [`docs/ai-doc.md`](../docs/ai-doc.md) AI Doc 規格 · `.mdc` 見 00-theme · system-map Skill 見 `.cursor/skills/system-map/`。
 
 禁止再新建 STATUS／HOW／gap。  
-禁止把「還沒做過的空想」塞進 checklist。
+禁止把「還沒做過的空想」塞進 checklist。  
+禁止把約定併回單一巨檔；口味與產品 idea 分檔。
 
 ---
 

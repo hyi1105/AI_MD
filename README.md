@@ -15,6 +15,7 @@
 | [docs/idea.history.md](docs/idea.history.md) | 已結案構想（分開以省查檔成本） |
 | [docs/03-checklist.md](docs/03-checklist.md) | **現有功能查核表** |
 | [docs/ai-doc.md](docs/ai-doc.md) | **AI Doc**：AI 改檔 + 顯示修改處 |
+| [docs/約定/README.md](docs/約定/README.md) | **約定**（個人／學習／口味；觸發加讀、省 token） |
 | [prompts/AGENT-MASTER.md](prompts/AGENT-MASTER.md) | 合作方式＋AI 規則 |
 
 ## 工具
@@ -25,7 +26,7 @@
 | **說明法** | 文字／文件／圖片 → 說明法樹（真 AI BYOK）：`/explain/` |
 | AI Doc | 像 Cursor 改檔並顯示 Diff（程式在 `aidoc/` → `web/aidoc/`） |
 | **簽核 Demo** | LINE 對話＋獨立格式卡（`web/approval/`）；submit／approve |
-| **系統地圖** | 簽核／申請：同一地圖切換 SQL／Enclosure／流程圖／PA（`web/system-map/`） |
+| **系統地圖** | 簽核／申請：同一地圖切換 SQL／Enclosure／流程圖／PA（`web/system-map/`）；Agent Skill：`.cursor/skills/system-map/` |
 
 ## 本機
 

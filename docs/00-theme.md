@@ -1,6 +1,6 @@
 # 00 — Theme（產品主題）
 
-> 更新：2026-07-19  
+> 更新：2026-09-29  
 > 一句話：**本站主題是長期關注某個產品或 KOL 的知識；把專業累積成可分享的知識書（產品語言仍可稱 SEED）。畫面上是不同類型的 AI 資料收集／輸出工具。**
 
 | 文件 | 用途 |
@@ -11,6 +11,7 @@
 | [`03-checklist.md`](./03-checklist.md) | **現有功能查核表**：改版時對照線上／程式，發現「少了什麼功能」 |
 | [`personal-node.md`](./personal-node.md) | **系統核心**：個人節點／平台只連線／去中心簽核與對話 |
 | [`ai-doc.md`](./ai-doc.md) | **AI Doc**：像 Cursor 一樣用 AI 改檔，並顯示修改處 |
+| [`約定/README.md`](./約定/README.md) | **約定**：個人／學習／口味；觸發加讀、省 token（舊 Approval 庫已併入） |
 | [`../prompts/AGENT-MASTER.md`](../prompts/AGENT-MASTER.md) | **合作方式＋AI 規則**（先讀這份） |
 | [`../README.md`](../README.md) | 對外入口 |
 
@@ -90,6 +91,8 @@
 | 規則檔 | 內容 |
 |--------|------|
 | [theme.mdc](../.cursor/rules/theme.mdc) | 產品主題（永遠套用） |
+| [約定.mdc](../.cursor/rules/約定.mdc) | 約定觸發／個性硬規則摘要（省 token） |
+| [說明法.mdc](../.cursor/rules/說明法.mdc) | 說明法（永遠） |
 | [md-first-workflow.mdc](../.cursor/rules/md-first-workflow.mdc) | 預設只改 MD；**確認細節後直接開發並發布** |
 | [catalog-updates.mdc](../.cursor/rules/catalog-updates.mdc) | 目錄只改 `catalog.json` |
 | [ai-md-framework.mdc](../.cursor/rules/ai-md-framework.mdc) | 編輯 docs 時的架構提醒 |

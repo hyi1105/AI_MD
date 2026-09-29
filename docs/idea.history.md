@@ -4,9 +4,15 @@
 > 這裡放已完成或已取消的構想；進行中的只留在 [`idea.md`](./idea.md)。  
 > 「現在有沒有這個功能」以 [`03-checklist.md`](./03-checklist.md) 查核為準，不是看本檔。  
 > 舊檔名：`02-idea-done.md`。  
-> 更新：2026-08-25
+> 更新：2026-09-29
 
 ---
+
+## 2026-09-29 — GitHub 資源整進 AI_MD（Approval 約定併入）
+
+- 結果：done（已發布於本庫文件／Skill；**請自行刪除** `hyi1105/Approval`）  
+- 來源：對話確認（主庫 AI_MD；約定重擬省 token；Approval 之後刪；口味／學習／system-map 一起搬；SEED／idea 以本庫為準）  
+- 摘要：新建 `docs/約定/`（README 觸發表＋核心／個人／學習／系統）；`.cursor/skills/system-map/`；`.cursor/rules/約定.mdc`；未覆蓋 idea／SEED／AGENT-MASTER。  
 
 ## 2026-08-25 — 簽核流程圖（蝦皮海外配送風格）
 

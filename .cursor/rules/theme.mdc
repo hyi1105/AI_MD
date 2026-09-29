@@ -15,4 +15,5 @@ alwaysApply: true
 - `03-checklist`＝現有功能查核表（Lister）
 - 一律繁體中文
 - 目錄只靠 `catalog.json`
+- **約定**（個人／學習／口味；省 token 觸發加讀）：`docs/約定/README.md`；硬規則摘要見 `.cursor/rules/約定.mdc`
 - 詳見 `prompts/AGENT-MASTER.md`

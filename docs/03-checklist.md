@@ -5,7 +5,7 @@
 > 例：曾經有「建立圖樣」，改版後找不到 → 查核時應被標成缺漏。  
 > 構想細節在 [`idea.md`](./idea.md)；舊構想在 [`idea.history.md`](./idea.history.md)（分開是為了少載入、省成本）。  
 > 線上：https://hyi1105.github.io/AI_MD/  
-> 更新：2026-08-16
+> 更新：2026-09-29
 
 圖例：`[x]` 現況具備 · `[~]` 有入口但是示範／半真 · `[!]` 查核發現缺漏／回歸（應有卻沒有）
 
@@ -88,7 +88,11 @@
 
 ## 4. 文件協作（已定案能力）
 
-- [x] 規格在 `docs/`：`00-theme`／`idea`／`idea.history`／`03-checklist`／`ai-doc`／`personal-node`  
+- [x] 規格在 `docs/`：`00-theme`／`idea`／`idea.history`／`03-checklist`／`ai-doc`／`personal-node`／**`約定/`**  
+- [x] 約定入口可讀：[`約定/README.md`](./約定/README.md)（觸發表）；硬規則 [`約定/核心.md`](./約定/核心.md)；`.cursor/rules/約定.mdc`  
+- [x] 口味累積／英語／學習節奏／NotebookLM／dive-into-llms／可貼版 在 `docs/約定/`  
+- [x] 簽核產品記憶：[`約定/系統/簽核.md`](./約定/系統/簽核.md)；主線：[`約定/系統/主線.md`](./約定/系統/主線.md)  
+- [x] system-map Agent Skill：`.cursor/skills/system-map/`（SKILL＋references）  
 - [x] 合作方式：想法→AI 整理→`idea.md`→**確認細節**→直接開發並發布→checklist；結案→`idea.history`  
 - [x] checklist＝**現有功能查核表**（改版後可對照找缺漏）  
 - [x] `idea`＝進行中構想；`idea.history`＝已結案（拆開省查檔成本）  
@@ -114,6 +118,7 @@
 - [x] 2026-08-16 Mermaid 流程圖獨立頁已發布（`/mermaid/`；貼語法即時預覽）
 - [x] 2026-08-16 個人節點系統核心第一刀已發布（`docs/personal-node.md`＋`/node/` 本機簽核對話＋同步包）
 - [x] 2026-08-25 簽核流程圖已發布（`/approval/flow.html`；紅／深藍／橘／灰垂直分叉）
+- [x] 2026-09-29 舊庫 Approval 約定／Skill 已併入本庫（`docs/約定/`＋`.cursor/skills/system-map/`）；Approval repo 可刪除
 
 ---
 

@@ -6,7 +6,7 @@
 > 做成並發布後：把該能力**登記進 checklist**；本則構想再移到 `idea.history`。  
 > 流轉：**想法 → idea → 確認細節 → 直接開發並發布**（見 AGENT-MASTER）。  
 > 合作規則總表：[`../prompts/AGENT-MASTER.md`](../prompts/AGENT-MASTER.md)  
-> 更新：2026-08-16（個人節點＝系統核心；細節已確認）
+> 更新：2026-08-25（簽核流程圖已結案→history）
 
 ### 寫入規則（給 AI）
 
@@ -191,6 +191,7 @@
 
 | 日期 | 說了什麼 | 去向 |
 |------|----------|------|
+| 2026-08-25 | 簽核用蝦皮海外配送風格畫流程圖→發布 | checklist／history |
 | 2026-08-13 | 說明法 Web MVP：文字／文件／圖片＋真 AI BYOK＋本站 /explain/ | checklist／history |
 | 2026-08-13 | 記憶法定案：路線＋錨點＋旁註；結構跟著出現 | checklist／history |
 | 2026-08-13 | 記憶法＝故事串連；禁一次講完再對照；§7 改寫直發 | checklist／history |
